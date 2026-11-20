@@ -32,6 +32,12 @@ VENUES = {
     "circus": "CIRCUS Tokyo",
     "zero": "ZERO TOKYO",
     "womb": "WOMB",
+    "vent": "VENT",
+    "dommune": "DOMMUNE",
+    "liquid": "LIQUIDROOM",
+    "unit": "UNIT",
+    "www": "WWW",
+    "oeast": "Spotify O-EAST",
 }
 
 
@@ -486,7 +492,203 @@ def scrape_womb():
     return events
 
 
-SCRAPERS = {"asia": scrape_asia, "circus": scrape_circus, "zero": scrape_zero, "womb": scrape_womb}
+# ---------------------------------------------------------------- ライブ会場（来日公演の検知用）
+# ここは邦楽ライブなども多いので、画面側ではフォロー中のアーティスト・レーベルに一致したものだけ表示する。
+# 一覧ページだけを読み、詳細ページは取りにいかない。
+
+LIVE_MONTHS_AHEAD = 5
+
+
+def months_ahead(n):
+    y, m = TODAY.year, TODAY.month
+    for _ in range(n + 1):
+        yield y, m
+        m += 1
+        if m > 12:
+            y, m = y + 1, 1
+
+
+def split_acts(s):
+    parts = re.split(r"\s+/\s+|\s*／\s*|\s*、\s*|\s+[x×]\s+", unicodedata.normalize("NFKC", s or ""))
+    return dedupe([re.sub(r"^(guest|special guest|opening act|o\.a\.?|support|w/|with)\s*[:：]?\s*", "", p.strip(), flags=re.I).strip()
+                   for p in parts if p.strip()])[:30]
+
+
+def first(pattern, chunk):
+    m = re.search(pattern, chunk, re.S)
+    return to_text(m.group(1)).replace("\n", " ").strip() if m else ""
+
+
+def live_event(venue, slug, date, url, title, acts, open_, extra=""):
+    lineup = [a for a in acts if 1 < len(a) <= 60]
+    return {"id": f"{venue}:{slug}", "venue": venue, "date": date, "url": url, "title": title or (lineup[0] if lineup else slug),
+            "open": open_, "genres": [], "lineup": lineup, "text": "\n".join(x for x in (title, " / ".join(lineup), extra) if x)}
+
+
+def scrape_liquid():
+    events = []
+    for y, m in months_ahead(LIVE_MONTHS_AHEAD):
+        try:
+            page = fetch(f"https://www.liquidroom.net/schedule/{y}/{m:02d}")
+        except Exception as e:
+            print(f"  liquid {y}/{m:02d}: {e}", file=sys.stderr)
+            continue
+        for chunk in page.split("<article")[1:]:
+            href = re.search(r'class="s_link" href="([^"]+)"', chunk)
+            day = re.search(r"<time[^>]*>\s*(\d{1,2})", chunk)
+            if not (href and day):
+                continue
+            main, sub = first(r"<h2>(.*?)</h2>", chunk), first(r'class="subtitle">(.*?)</p>', chunk)
+            lu = first(r"LINE UP</dt>\s*<dd>(.*?)</dd>", chunk)
+            events.append(live_event("liquid", href.group(1).rstrip("/").rsplit("/", 1)[-1], f"{y}-{m:02d}-{int(day.group(1)):02d}",
+                                     href.group(1), " — ".join(x for x in (main, sub) if x), split_acts(main) + split_acts(lu),
+                                     first(r"OPEN</dt>\s*<dd>(.*?)</dd>", chunk)))
+    return events
+
+
+def scrape_unit():
+    events = []
+    for y, m in months_ahead(LIVE_MONTHS_AHEAD):
+        try:
+            page = fetch(f"https://www.unit-tokyo.com/schedule/{y}-{m:02d}/")
+        except Exception as e:
+            print(f"  unit {y}-{m:02d}: {e}", file=sys.stderr)
+            continue
+        for chunk in page.split('class="p-schedule__item ')[1:]:
+            href = re.search(r'<a href="(https://www\.unit-tokyo\.com/schedule/(\d+)/)"', chunk)
+            d = re.search(r'p-schedule__item-date">\s*(\d{1,2})/(\d{1,2})', chunk)
+            if not (href and d) or int(d.group(1)) != m:
+                continue
+            title = first(r'p-schedule__item-title">(.*?)</h2>', chunk)
+            events.append(live_event("unit", href.group(2), f"{y}-{m:02d}-{int(d.group(2)):02d}", href.group(1), title,
+                                     split_acts(first(r'p-schedule__item-lineup">(.*?)</p>', chunk)),
+                                     first(r'p-schedule__item-open">OPEN\s*<span>(.*?)</span>', chunk)))
+    return events
+
+
+def scrape_www():
+    events = []
+    for y, m in months_ahead(LIVE_MONTHS_AHEAD):
+        try:
+            page = fetch(f"https://www-shibuya.jp/schedule/{y}{m:02d}.php")
+        except Exception as e:
+            print(f"  www {y}{m:02d}: {e}", file=sys.stderr)
+            continue
+        for chunk in page.split('<article class="column')[1:]:
+            href = re.search(r'href="(https://www-shibuya\.jp/schedule/(\d+)\.php)" class="pageLink"', chunk)
+            day = re.search(r'class="day">\s*(\d{1,2})', chunk)
+            if not (href and day):
+                continue
+            acts, exp = first(r'class="title"><span>(.*?)</span>', chunk), first(r'class="exp"><span>(.*?)</span>', chunk)
+            ev = live_event("www", href.group(2), f"{y}-{m:02d}-{int(day.group(1)):02d}", href.group(1),
+                            " — ".join(x for x in (acts, exp) if x), split_acts(acts),
+                            (re.findall(r"\d{1,2}:\d{2}", first(r'class="openstart">(.*?)</p>', chunk)) or [""])[0])
+            place = first(r'class="placeLabel">(.*?)</div>', chunk)
+            if place:
+                ev["venue_name"] = place
+            events.append(ev)
+    return events
+
+
+def scrape_oeast():
+    events = []
+    for y, m in months_ahead(LIVE_MONTHS_AHEAD):
+        try:
+            page = fetch(f"https://shibuya-o.com/east/schedule/?y={y}&m={m}")
+        except Exception as e:
+            print(f"  oeast {y}/{m}: {e}", file=sys.stderr)
+            continue
+        for chunk in page.split('p-scheduled-card p-scheduled-card--horizontal')[1:]:
+            href = re.search(r'<a href="(https://shibuya-o\.com/east/schedule/([^"/]+)/?)"', chunk)
+            d = re.search(r'p-scheduled-card__date-item">\s*(\d{1,2})\s*/\s*(\d{1,2})', chunk)
+            if not (href and d) or int(d.group(1)) != m:
+                continue
+            title = " ".join(x for x in (first(r'title-main">(.*?)</span>', chunk), first(r'title-bottom">(.*?)</span>', chunk)) if x)
+            acts = [to_text(a).strip() for a in re.findall(r'p-scheduled-card__artist-item">(.*?)</li>', chunk, re.S)]
+            acts = [x for a in acts for x in split_acts(a)]
+            events.append(live_event("oeast", urllib.parse.unquote(href.group(2))[:80], f"{y}-{m:02d}-{int(d.group(2)):02d}", href.group(1),
+                                     title, acts, (re.findall(r"\d{1,2}:\d{2}", first(r'date-open">(.*?)</span>', chunk)) or [""])[0]))
+    return events
+
+
+# ---------------------------------------------------------------- VENT (The Events Calendar の公開API)
+
+def scrape_vent():
+    # サーバーが古い TLS しか話せず https では接続できないため http で読む（公開ページの読み取りのみ）
+    start = (TODAY - dt.timedelta(days=KEEP_PAST_DAYS)).isoformat()
+    data = json.loads(fetch(f"http://vent-tokyo.net/wp-json/tribe/events/v1/events?per_page=50&start_date={start}"))
+    events = []
+    for o in data.get("events", []):
+        start_s = str(o.get("start_date") or "")
+        if len(start_s) < 10:
+            continue
+        title = to_text(str(o.get("title") or "")).replace("\n", " ")
+        body = to_text(str(o.get("description") or ""))
+        slug = str(o.get("slug") or o.get("id"))
+        if re.fullmatch(r"vent[_-]?\d+", title, re.I):  # 仮タイトルのまま公開されている枠
+            title = "VENT（タイトル未定）"
+        ev = {"id": f"vent:{slug}", "venue": "vent", "date": start_s[:10], "url": str(o.get("url") or "http://vent-tokyo.net/schedule/"),
+              "title": title or slug, "open": start_s[11:16], "genres": scan_genres(title + "\n" + body),
+              "lineup": parse_lineup(body) or split_acts(title), "text": body[:4000]}
+        cost = re.sub(r"^\$", "¥", to_text(str(o.get("cost") or "")).strip())
+        if cost:
+            ev["price"] = cost
+        # 出演者は個別ページにだけ構造化されている（APIの本文は紹介文のみ）
+        try:
+            d = fetch(ev["url"])
+            main = [to_text(x).strip() for x in re.findall(r'class="mainAct[^"]*">\s*<strong>(.*?)</strong>', d, re.S)]
+            acts = [to_text(x).strip() for x in re.findall(r'class="act">\s*<strong>(.*?)</strong>', d, re.S)]
+            names = dedupe([n.replace("\n", " ") for n in main + acts if n])
+            if names:
+                ev["lineup"] = names
+                ev["text"] = "\n".join(names)
+            if not title or title.startswith("VENT（"):
+                ev["title"] = " / ".join(n.replace("\n", " ") for n in main if n) or ev["title"]
+        except Exception as e:
+            print(f"  vent detail failed {slug}: {e}", file=sys.stderr)
+        events.append(ev)
+    return events
+
+
+# ---------------------------------------------------------------- DOMMUNE（配信スタジオの番組表）
+
+def scrape_dommune():
+    page = fetch("https://www.dommune.com/")
+    cutoff = TODAY - dt.timedelta(days=KEEP_PAST_DAYS)
+    events = {}
+    for chunk in page.split('<article class="ScheduleTeaser"')[1:]:
+        href = re.search(r'href="(/streamings/(\d{4})/(\d{2})(\d{2})(\d{2})/)"', chunk)
+        if not href:
+            continue
+        try:
+            day = dt.date(int(href.group(2)), int(href.group(3)), int(href.group(4)))
+        except ValueError:
+            continue
+        if day < cutoff:
+            continue
+        full = first(r'ScheduleTeaser__title">(.*?)</h3>', chunk)
+        head = re.split(r"\s*●", full)[0].strip() or full[:80]
+        acts = []
+        for role, names in re.findall(r"●\s*([^：:●]{1,24})[：:]\s*([^●]*)", full):
+            if re.search(r"VJ|MC|司会|Moderator|協力|主催", role, re.I):
+                continue
+            names = re.split(r"[｜|]", names)[0]
+            for n in re.split(r"\s*[、,]\s*|\s+&\s+|\s+/\s+", names):
+                n = re.sub(r"\s*[(（＜<][^)）＞>]*[)）＞>]\s*", "", n).strip(" 　.!！")
+                n = re.sub(r"\s*and more.*$", "", n, flags=re.I).strip()
+                if 1 < len(n) <= 40:
+                    acts.append(n)
+        slug = f"{href.group(2)}-{href.group(3)}{href.group(4)}{href.group(5)}"
+        events[slug] = {"id": f"dommune:{slug}", "venue": "dommune", "date": day.isoformat(),
+                        "url": "https://www.dommune.com" + href.group(1), "title": head[:140],
+                        "open": first(r'ScheduleTeaser__time"[^>]*>(.*?)</time>', chunk).split("-")[0].strip(),
+                        "genres": [], "lineup": dedupe(acts)[:40], "text": full[:1500]}
+    return list(events.values())
+
+
+SCRAPERS = {"asia": scrape_asia, "circus": scrape_circus, "zero": scrape_zero, "womb": scrape_womb,
+            "vent": scrape_vent, "dommune": scrape_dommune,
+            "liquid": scrape_liquid, "unit": scrape_unit, "www": scrape_www, "oeast": scrape_oeast}
 
 
 # ---------------------------------------------------------------- labels (MusicBrainz)
@@ -594,10 +796,11 @@ def main():
         # 一覧から消えた過去イベントも保持期間内は残す
         merged.update({e["id"]: e for e in old})
         for e in fresh:
-            e["venue_name"] = VENUES[venue]
+            e.setdefault("venue_name", VENUES[venue])
             old_e = prev_by_id.get(e["id"])
             # 初回実行は全件が「新着」になってしまうので first_seen を付けない
-            e["first_seen"] = old_e.get("first_seen") if old_e else (None if first_run else TODAY.isoformat())
+            # （会場を新しく追加した回も同じ理由で付けない）
+            e["first_seen"] = old_e.get("first_seen") if old_e else (None if first_run or not old else TODAY.isoformat())
             merged[e["id"]] = e
         print(f"[{venue}] {len(fresh)} events", file=sys.stderr)
 
