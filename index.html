@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Club Calendar</title>
+<style>
+:root {
+  --bg: #0e0e11; --panel: #17171c; --panel-2: #1f1f26; --line: #2c2c36;
+  --text: #ececf1; --muted: #9a9aa8; --accent: #ffd84a; --accent-ink: #1a1500;
+  --asia: #ff5a5f; --circus: #ffb020; --zero: #5ac8fa; --rdc: #7be08a; --other: #b9a3ff;
+  --radius: 10px;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f5f1; --panel: #ffffff; --panel-2: #f0efea; --line: #dddbd3;
+    --text: #1b1b1f; --muted: #6a6a75; --accent: #b98900; --accent-ink: #ffffff;
+    --asia: #d6303a; --circus: #b87400; --zero: #0f7fb5; --rdc: #2a8f3d; --other: #6a4fd0;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif;
+}
+button, input, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+a { color: inherit; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px 80px; }
+
+header.top { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; padding: 22px 0 6px; }
+header.top h1 { margin: 0; font-size: 22px; letter-spacing: .04em; font-weight: 800; }
+header.top .meta { color: var(--muted); font-size: 12.5px; }
+header.top .spacer { flex: 1; }
+.btn {
+  border: 1px solid var(--line); background: var(--panel); border-radius: 999px;
+  padding: 7px 14px; font-size: 13.5px;
+}
+.btn:hover { border-color: var(--muted); }
+.btn.primary { background: var(--accent); color: var(--accent-ink); border-color: transparent; font-weight: 700; }
+.warn { margin: 8px 0 0; padding: 8px 12px; border: 1px solid var(--asia); border-radius: var(--radius); font-size: 13px; color: var(--asia); }
+
+h2 { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 30px 0 10px; font-weight: 700; }
+h2 small { letter-spacing: 0; text-transform: none; font-weight: 400; margin-left: 8px; }
+
+/* event cards (おすすめ / 新着 / 日別) */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+.card {
+  text-align: left; background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--vc, var(--other));
+  border-radius: var(--radius); padding: 11px 13px; display: block; width: 100%; min-width: 0;
+}
+.card:hover { background: var(--panel-2); }
+.card .when { font-size: 12.5px; color: var(--muted); display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.card .when b { color: var(--text); font-variant-numeric: tabular-nums; }
+.card .venue { color: var(--vc, var(--other)); font-weight: 700; }
+.card .title { font-weight: 700; margin: 3px 0 5px; overflow-wrap: anywhere; }
+.card .why { display: flex; flex-wrap: wrap; gap: 5px; }
+.card .acts { color: var(--muted); font-size: 12.5px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.tag { font-size: 11.5px; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
+.tag.hit { background: var(--accent); color: var(--accent-ink); border-color: transparent; font-weight: 700; }
+.tag.new { background: var(--text); color: var(--bg); border-color: transparent; font-weight: 700; }
+.empty { color: var(--muted); background: var(--panel); border: 1px dashed var(--line); border-radius: var(--radius); padding: 16px; font-size: 14px; }
+.more { margin-top: 10px; }
+
+/* toolbar */
+.toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 10px; }
+.toolbar .month { font-size: 20px; font-weight: 800; min-width: 7.5em; text-align: center; font-variant-numeric: tabular-nums; }
+.toolbar .spacer { flex: 1; }
+.chip {
+  border: 1px solid var(--line); background: transparent; border-radius: 999px; padding: 5px 11px; font-size: 13px;
+  display: inline-flex; align-items: center; gap: 6px; color: var(--muted);
+}
+.chip::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--vc, var(--muted)); opacity: .35; }
+.chip[aria-pressed="true"] { color: var(--text); background: var(--panel); }
+.chip[aria-pressed="true"]::before { opacity: 1; }
+.chip.plain::before { display: none; }
+.chip.plain[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: transparent; font-weight: 700; }
+
+/* calendar */
+.cal { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.dow { background: var(--panel-2); text-align: center; font-size: 11.5px; color: var(--muted); padding: 5px 0; letter-spacing: .08em; }
+.day { background: var(--panel); min-height: 104px; padding: 5px; border: 0; text-align: left; display: flex; flex-direction: column; gap: 3px; min-width: 0; cursor: pointer; }
+.day:focus-visible { outline: 2px solid var(--text); outline-offset: -2px; }
+.day.out { background: var(--bg); }
+.day.out .num { opacity: .35; }
+.day.past .ev { opacity: .45; }
+.day .num { font-size: 12.5px; color: var(--muted); font-variant-numeric: tabular-nums; align-self: flex-start; padding: 0 5px; border-radius: 999px; }
+.day.today .num { background: var(--text); color: var(--bg); font-weight: 700; }
+.day.sel { outline: 2px solid var(--accent); outline-offset: -2px; }
+.ev {
+  font-size: 11.5px; line-height: 1.3; padding: 2px 5px; border-radius: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  background: color-mix(in srgb, var(--vc, var(--other)) 16%, transparent); border: 0; border-left: 3px solid var(--vc, var(--other));
+  display: block; width: 100%; text-align: left; color: inherit; font-family: inherit; cursor: pointer;
+}
+.ev:hover { filter: brightness(1.25); }
+.ev.hit { background: var(--accent); color: var(--accent-ink); font-weight: 700; }
+.day .rest { font-size: 11px; color: var(--muted); padding-left: 5px; }
+.dots { display: none; flex-wrap: wrap; gap: 3px; padding: 2px 3px; }
+.dot { width: 7px; height: 7px; border-radius: 50%; background: var(--vc, var(--other)); }
+.dot.hit { outline: 2px solid var(--accent); outline-offset: 1px; }
+@media (max-width: 720px) {
+  .day { min-height: 58px; padding: 4px 2px; align-items: center; }
+  .day .num { align-self: center; }
+  .ev, .day .rest { display: none; }
+  .dots { display: flex; justify-content: center; }
+  .toolbar .month { font-size: 17px; min-width: 6.5em; }
+}
+
+/* dialogs */
+dialog { border: 1px solid var(--line); background: var(--panel); color: var(--text); border-radius: 14px; padding: 0; width: min(640px, calc(100vw - 24px)); max-height: calc(100dvh - 32px); }
+dialog::backdrop { background: rgba(0,0,0,.6); }
+.dlg { padding: 20px; }
+.dlg h3 { margin: 4px 0 6px; font-size: 20px; line-height: 1.3; overflow-wrap: anywhere; }
+.dlg .sub { color: var(--muted); font-size: 13.5px; }
+.dlg .sub .venue { color: var(--vc, var(--other)); font-weight: 700; }
+.dlg h4 { font-size: 12px; letter-spacing: .1em; color: var(--muted); margin: 18px 0 7px; text-transform: uppercase; }
+.picks { display: flex; flex-wrap: wrap; gap: 6px; }
+.pick { border: 1px solid var(--line); background: transparent; border-radius: 999px; padding: 4px 11px; font-size: 13.5px; max-width: 100%; overflow-wrap: anywhere; text-align: left; }
+.pick[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: transparent; font-weight: 700; }
+.pick[aria-pressed="true"]::before { content: "★ "; }
+.dlg pre { white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; font-size: 13px; color: var(--muted); background: var(--panel-2); border-radius: var(--radius); padding: 12px; margin: 8px 0 0; max-height: 260px; overflow: auto; }
+.dlg details summary { cursor: pointer; color: var(--muted); font-size: 13px; margin-top: 16px; }
+.dlg .foot { display: flex; gap: 8px; justify-content: space-between; align-items: center; margin-top: 20px; flex-wrap: wrap; }
+.hint { color: var(--muted); font-size: 12.5px; }
+.addrow { display: flex; gap: 6px; margin-bottom: 8px; }
+.addrow input, .dlg textarea { flex: 1; min-width: 0; background: var(--panel-2); border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; }
+.dlg textarea { width: 100%; min-height: 90px; font: 12px/1.4 ui-monospace, Menlo, monospace; }
+.sugg { margin-top: 6px; }
+.sugg .pick { font-size: 12.5px; padding: 2px 9px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>CLUB CALENDAR</h1>
+    <span class="meta" id="updated"></span>
+    <span class="spacer"></span>
+    <button class="btn" id="openPrefs">★ 好みを設定</button>
+  </header>
+  <div id="warnings"></div>
+
+  <h2>あなた向け<small id="forYouNote"></small></h2>
+  <div id="forYou"></div>
+
+  <h2>新着<small>直近7日間に追加されたイベント</small></h2>
+  <div id="fresh"></div>
+
+  <h2>カレンダー</h2>
+  <div class="toolbar">
+    <button class="btn" id="prev" aria-label="前の月">←</button>
+    <div class="month" id="monthLabel"></div>
+    <button class="btn" id="next" aria-label="次の月">→</button>
+    <button class="btn" id="todayBtn">今日</button>
+    <span class="spacer"></span>
+    <span id="venueChips" style="display:contents"></span>
+    <button class="chip plain" id="onlyHits" aria-pressed="false">★ 好みだけ</button>
+  </div>
+  <div class="cal" id="cal"></div>
+
+  <h2 id="dayTitle"></h2>
+  <div id="dayList"></div>
+</div>
+
+<dialog id="eventDlg"><div class="dlg" id="eventBody"></div></dialog>
+<dialog id="prefsDlg"><div class="dlg" id="prefsBody"></div></dialog>
+
+<script src="data/events.js"></script>
+<script>
+"use strict";
+const DATA = window.CLUB_DATA || { events: [], sources: {}, updated: "" };
+const VENUES = {
+  asia:   { name: "club asia",          color: "var(--asia)" },
+  circus: { name: "CIRCUS Tokyo",       color: "var(--circus)" },
+  zero:   { name: "ZERO TOKYO",         color: "var(--zero)" },
+  rdc:    { name: "Rainbow Disco Club", color: "var(--rdc)" },
+};
+const DOW = ["日", "月", "火", "水", "木", "金", "土"];
+const STORE = "club-calendar:v1";
+
+// ---------- tiny DOM helper (スクレイピングした文字列は必ず textContent 経由で入れる)
+function h(tag, attrs, ...kids) {
+  const el = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs || {})) {
+    if (v == null || v === false) continue;
+    if (k === "class") el.className = v;
+    else if (k === "style") el.style.cssText = v;
+    else if (k.startsWith("on")) el.addEventListener(k.slice(2), v);
+    else el.setAttribute(k, v === true ? "" : v);
+  }
+  fill(el, kids);
+  return el;
+}
+// 入れ子の配列や null を許す replaceChildren（素の replaceChildren は null を "null" と描いてしまう）
+function fill(el, ...kids) {
+  el.replaceChildren(...kids.flat(Infinity).filter(k => k != null && k !== false));
+  return el;
+}
+const norm = s => String(s || "").normalize("NFKC").toLowerCase().replace(/[’`]/g, "'").replace(/\s+/g, " ").trim();
+const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const pad = n => String(n).padStart(2, "0");
+const iso = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+const parse = s => { const [y, m, d] = s.split("-").map(Number); return new Date(y, m - 1, d); };
+// 日本時間の「今日」。深夜イベント中（朝6時まで）は前日扱いにして、今夜の分が過去に落ちないようにする
+const TODAY = (() => {
+  const p = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Tokyo", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", hourCycle: "h23" })
+    .formatToParts(new Date()).reduce((a, x) => (a[x.type] = x.value, a), {});
+  const d = new Date(+p.year, +p.month - 1, +p.day);
+  if (+p.hour < 6) d.setDate(d.getDate() - 1);
+  return iso(d);
+})();
+const fmtDay = s => { const d = parse(s); return `${d.getMonth() + 1}/${d.getDate()}(${DOW[d.getDay()]})`; };
+const vcolor = v => (VENUES[v] || {}).color || "var(--other)";
+const vname = e => e.venue_name || (VENUES[e.venue] || {}).name || e.venue;
+
+// ---------- state
+const state = { prefs: { artists: [], keywords: [], genres: [] }, venues: {}, onlyHits: false, month: TODAY.slice(0, 7), sel: TODAY };
+try {
+  const saved = JSON.parse(localStorage.getItem(STORE) || "null");
+  if (saved && saved.prefs) for (const k of ["artists", "keywords", "genres"]) if (Array.isArray(saved.prefs[k])) state.prefs[k] = saved.prefs[k].map(String);
+  if (saved && saved.venues) state.venues = saved.venues;
+} catch (_) { /* 保存領域が使えなくても表示はできる */ }
+function save() {
+  try { localStorage.setItem(STORE, JSON.stringify({ prefs: state.prefs, venues: state.venues })); } catch (_) {}
+}
+const has = (kind, v) => state.prefs[kind].some(x => norm(x) === norm(v));
+function toggle(kind, v) {
+  if (has(kind, v)) state.prefs[kind] = state.prefs[kind].filter(x => norm(x) !== norm(v));
+  else state.prefs[kind].push(String(v).trim());
+  save(); computeMatches(); renderAll();
+}
+
+// ---------- matching
+const EVENTS = DATA.events.map(e => ({ ...e, last: e.end_date || e.date }));
+for (const e of EVENTS) {
+  e._lineup = (e.lineup || []).map(norm);
+  e._genres = (e.genres || []).map(norm);
+  e._hay = norm([e.title, (e.lineup || []).join("\n"), e.text].join("\n"));
+}
+// 「Can」のような短い名前が他の単語の一部に当たらないよう、英数字の境界を見る
+const wordRe = s => new RegExp("(?<![a-z0-9])" + escRe(norm(s)) + "(?![a-z0-9])");
+function computeMatches() {
+  const A = state.prefs.artists.filter(x => norm(x)).map(x => [x, norm(x), wordRe(x)]);
+  const K = state.prefs.keywords.filter(x => norm(x)).map(x => [x, wordRe(x)]);
+  const G = state.prefs.genres.map(norm).filter(Boolean);
+  for (const e of EVENTS) {
+    e.hits = [];
+    for (const [raw, n, re] of A) if (e._lineup.includes(n) || re.test(e._hay)) e.hits.push({ kind: "artist", label: raw, w: 10 });
+    for (const [raw, re] of K) if (re.test(e._hay)) e.hits.push({ kind: "keyword", label: raw, w: 5 });
+    (e.genres || []).forEach((g, i) => { if (G.includes(e._genres[i])) e.hits.push({ kind: "genre", label: g, w: 2 }); });
+    e.score = e.hits.reduce((s, x) => s + x.w, 0);
+    e.strong = e.hits.some(x => x.kind !== "genre");
+  }
+}
+const isNew = e => {
+  if (!e.first_seen) return false;
+  return (parse(TODAY) - parse(e.first_seen)) / 864e5 <= 7;
+};
+const upcoming = () => EVENTS.filter(e => e.last >= TODAY);
+const venueOn = v => state.venues[v] !== false;
+const visible = e => venueOn(e.venue) && (!state.onlyHits || e.score > 0);
+
+// ---------- rendering
+function card(e) {
+  const acts = (e.lineup || []).slice(0, 8).join(" / ");
+  const range = e.end_date ? `${fmtDay(e.date)} – ${fmtDay(e.end_date)}` : fmtDay(e.date);
+  return h("button", { class: "card", style: `--vc:${vcolor(e.venue)}`, onclick: () => openEvent(e) },
+    h("div", { class: "when" }, h("b", {}, range), e.open ? h("span", {}, e.open) : null,
+      h("span", { class: "venue" }, vname(e)), isNew(e) ? h("span", { class: "tag new" }, "NEW") : null),
+    h("div", { class: "title" }, e.title),
+    e.hits.length ? h("div", { class: "why" }, e.hits.slice(0, 6).map(x => h("span", { class: "tag hit" }, (x.kind === "artist" ? "★ " : "") + x.label))) : null,
+    acts ? h("div", { class: "acts" }, acts) : null);
+}
+function cardList(list, limit, emptyText) {
+  const box = h("div", {});
+  if (!list.length) { box.append(h("div", { class: "empty" }, emptyText)); return box; }
+  const grid = h("div", { class: "cards" }, list.slice(0, limit).map(card));
+  box.append(grid);
+  if (list.length > limit) {
+    const b = h("button", { class: "btn more", onclick: () => { grid.replaceChildren(...list.map(card)); b.remove(); } }, `残り ${list.length - limit} 件を表示`);
+    box.append(b);
+  }
+  return box;
+}
+function renderTop() {
+  const n = state.prefs.artists.length + state.prefs.keywords.length + state.prefs.genres.length;
+  const up = upcoming();
+  const mine = up.filter(e => e.score > 0).sort((a, b) => (b.strong - a.strong) || a.date.localeCompare(b.date) || b.score - a.score);
+  document.getElementById("forYouNote").textContent = n ? `好みに一致 ${mine.length} 件（アーティスト・キーワード一致を先頭に表示）` : "";
+  document.getElementById("forYou").replaceChildren(cardList(mine, 9,
+    n ? "いま登録している好みに一致する今後のイベントはありません。" :
+        "まだ好みが登録されていません。イベントを開いて出演者やジャンルをタップすると★が付き、ここに一致するイベントが並びます。"));
+  const fresh = up.filter(isNew).sort((a, b) => b.score - a.score || (b.first_seen || "").localeCompare(a.first_seen || "") || a.date.localeCompare(b.date));
+  document.getElementById("fresh").replaceChildren(cardList(fresh, 6, "直近7日間に新しく追加されたイベントはありません。"));
+}
+function eventsOn(day) { return EVENTS.filter(e => e.date <= day && day <= e.last && visible(e)).sort((a, b) => b.score - a.score || a.venue.localeCompare(b.venue)); }
+function renderCal() {
+  const [y, m] = state.month.split("-").map(Number);
+  document.getElementById("monthLabel").textContent = `${y}年 ${m}月`;
+  const first = new Date(y, m - 1, 1);
+  const start = new Date(first); start.setDate(1 - ((first.getDay() + 6) % 7)); // 月曜始まり（金土日を並べる）
+  const cells = ["月", "火", "水", "木", "金", "土", "日"].map(d => h("div", { class: "dow" }, d));
+  for (let i = 0; i < 42; i++) {
+    const d = new Date(start); d.setDate(start.getDate() + i);
+    const key = iso(d), list = eventsOn(key);
+    if (i === 35 && d.getMonth() !== m - 1) break;
+    const cls = ["day", d.getMonth() !== m - 1 && "out", key === TODAY && "today", key < TODAY && "past", key === state.sel && "sel"].filter(Boolean).join(" ");
+    const pickDay = () => { state.sel = key; renderCal(); renderDay(); };
+    cells.push(h("div", { class: cls, role: "button", tabindex: "0", "aria-label": `${fmtDay(key)} ${list.length}件`, onclick: pickDay,
+      onkeydown: ev => { if (ev.target === ev.currentTarget && (ev.key === "Enter" || ev.key === " ")) { ev.preventDefault(); pickDay(); } } },
+      h("span", { class: "num" }, String(d.getDate())),
+      list.slice(0, 3).map(e => h("button", { class: "ev" + (e.score > 0 ? " hit" : ""), style: `--vc:${vcolor(e.venue)}`, title: `${vname(e)} / ${e.title}`,
+        onclick: ev => { ev.stopPropagation(); if (state.sel !== key) { state.sel = key; renderCal(); renderDay(); } openEvent(e); } }, e.title)),
+      list.length > 3 ? h("span", { class: "rest", onclick: ev => { ev.stopPropagation(); pickDay(); document.getElementById("dayTitle").scrollIntoView({ behavior: "smooth", block: "start" }); } }, `+${list.length - 3}`) : null,
+      h("span", { class: "dots" }, list.slice(0, 8).map(e => h("span", { class: "dot" + (e.score > 0 ? " hit" : ""), style: `--vc:${vcolor(e.venue)}` })))));
+  }
+  document.getElementById("cal").replaceChildren(...cells);
+}
+function renderDay() {
+  const list = eventsOn(state.sel);
+  document.getElementById("dayTitle").textContent = `${fmtDay(state.sel)} のイベント`;
+  document.getElementById("dayList").replaceChildren(cardList(list, 30, "この日の掲載イベントはありません。"));
+}
+function renderChips() {
+  const present = [...new Set(EVENTS.map(e => e.venue))].sort((a, b) => Object.keys(VENUES).indexOf(a) - Object.keys(VENUES).indexOf(b));
+  document.getElementById("venueChips").replaceChildren(...present.map(v =>
+    h("button", { class: "chip", style: `--vc:${vcolor(v)}`, "aria-pressed": String(venueOn(v)), onclick: () => { state.venues[v] = !venueOn(v); save(); renderAll(); } },
+      (VENUES[v] || {}).name || v)));
+  const b = document.getElementById("onlyHits"); b.setAttribute("aria-pressed", String(state.onlyHits));
+}
+function renderAll() { renderTop(); renderChips(); renderCal(); renderDay(); if (openId) fillEvent(EVENTS.find(e => e.id === openId)); }
+
+// ---------- event dialog
+let openId = null;
+const eventDlg = document.getElementById("eventDlg");
+function pick(kind, label) {
+  return h("button", { class: "pick", "aria-pressed": String(has(kind, label)), onclick: () => toggle(kind, label) }, label);
+}
+function fillEvent(e) {
+  if (!e) return;
+  const safeUrl = /^https?:\/\//.test(e.url || "") ? e.url : null;
+  const range = e.end_date ? `${fmtDay(e.date)} – ${fmtDay(e.end_date)}` : fmtDay(e.date);
+  const body = document.getElementById("eventBody");
+  const scroll = eventDlg.scrollTop;
+  fill(body,
+    h("div", { class: "sub", style: `--vc:${vcolor(e.venue)}` }, h("span", { class: "venue" }, vname(e)), ` ・ ${range}`, e.open ? ` ・ OPEN ${e.open}` : ""),
+    h("h3", {}, e.title),
+    e.price ? h("div", { class: "sub" }, e.price) : null,
+    (e.genres || []).length ? [h("h4", {}, "ジャンル"), h("div", { class: "picks" }, e.genres.map(g => pick("genres", g)))] : null,
+    h("h4", {}, "出演者"),
+    (e.lineup || []).length ? h("div", { class: "picks" }, e.lineup.map(a => pick("artists", a)))
+      : h("div", { class: "hint" }, "出演者を自動で読み取れませんでした（未発表の場合もあります）。"),
+    h("div", { class: "hint", style: "margin-top:8px" }, "タップで★を付けると、今後そのアーティスト・ジャンルのイベントが上に出ます。出演者は公式サイトの文面から自動抽出しているため、誤りが混ざることがあります。"),
+    e.text ? h("details", {}, h("summary", {}, "掲載情報（抜粋）を見る"), h("pre", {}, e.text)) : null,
+    h("div", { class: "foot" },
+      safeUrl ? h("a", { class: "btn primary", href: safeUrl, target: "_blank", rel: "noopener noreferrer" }, "公式ページを開く ↗") : h("span", {}),
+      h("button", { class: "btn", onclick: () => eventDlg.close() }, "閉じる")));
+  eventDlg.scrollTop = scroll;
+}
+function openEvent(e) { openId = e.id; fillEvent(e); if (!eventDlg.open) eventDlg.showModal(); eventDlg.scrollTop = 0; }
+eventDlg.addEventListener("close", () => { openId = null; });
+for (const d of document.querySelectorAll("dialog")) d.addEventListener("click", ev => { if (ev.target === d) d.close(); });
+
+// ---------- prefs dialog
+const prefsDlg = document.getElementById("prefsDlg");
+function topCounts(getter, kind, limit) {
+  const c = new Map();
+  for (const e of upcoming()) for (const x of getter(e)) { const k = norm(x); if (!c.has(k)) c.set(k, [x, 0]); c.get(k)[1]++; }
+  return [...c.values()].filter(([x]) => !has(kind, x)).sort((a, b) => b[1] - a[1]).slice(0, limit);
+}
+function prefSection(kind, title, placeholder, suggestions) {
+  const input = h("input", { placeholder, "aria-label": title });
+  const add = () => { const v = input.value.trim(); if (v && !has(kind, v)) { toggle(kind, v); fillPrefs(); } input.value = ""; };
+  input.addEventListener("keydown", ev => { if (ev.key === "Enter" && !ev.isComposing) { ev.preventDefault(); add(); } });
+  return [
+    h("h4", {}, title),
+    h("div", { class: "addrow" }, input, h("button", { class: "btn", onclick: add }, "追加")),
+    h("div", { class: "picks" }, state.prefs[kind].length
+      ? state.prefs[kind].map(v => h("button", { class: "pick", "aria-pressed": "true", title: "タップで外す", onclick: () => { toggle(kind, v); fillPrefs(); } }, v))
+      : h("span", { class: "hint" }, "未登録")),
+    suggestions && suggestions.length ? h("div", { class: "picks sugg" }, h("span", { class: "hint" }, "今後の出演が多い順："),
+      suggestions.map(([v, n]) => h("button", { class: "pick", onclick: () => { toggle(kind, v); fillPrefs(); } }, `${v} ×${n}`))) : null,
+  ];
+}
+function fillPrefs() {
+  const ta = h("textarea", { "aria-label": "好みデータ(JSON)" });
+  ta.value = JSON.stringify(state.prefs);
+  const msg = h("span", { class: "hint" });
+  fill(document.getElementById("prefsBody"),
+    h("h3", {}, "好みの設定"),
+    h("div", { class: "hint" }, "一致したイベントが「あなた向け」とカレンダーで強調されます。このブラウザにだけ保存されます。"),
+    prefSection("artists", "アーティスト", "例: DJ Nobu", topCounts(e => e.lineup || [], "artists", 14)),
+    prefSection("keywords", "レーベル・パーティー名などのキーワード", "例: BLACK SMOKER / りんご音楽祭", null),
+    prefSection("genres", "ジャンル", "例: Techno", topCounts(e => e.genres || [], "genres", 16)),
+    h("details", {}, h("summary", {}, "別の端末に移す（書き出し・読み込み）"),
+      h("div", { class: "hint", style: "margin:8px 0" }, "下の文字列をコピーして、別の端末のこの欄に貼り付けて「読み込む」を押してください。"),
+      ta,
+      h("div", { class: "foot", style: "margin-top:8px" }, msg, h("button", { class: "btn", onclick: () => {
+        try {
+          const j = JSON.parse(ta.value);
+          for (const k of ["artists", "keywords", "genres"]) state.prefs[k] = Array.isArray(j[k]) ? j[k].map(String) : [];
+          save(); computeMatches(); renderAll(); fillPrefs();
+        } catch (_) { msg.textContent = "読み込めませんでした（形式が正しくありません）。"; }
+      } }, "読み込む"))),
+    h("div", { class: "foot" }, h("span", {}), h("button", { class: "btn primary", onclick: () => prefsDlg.close() }, "完了")));
+}
+document.getElementById("openPrefs").addEventListener("click", () => { fillPrefs(); prefsDlg.showModal(); });
+
+// ---------- header / navigation
+function shiftMonth(n) { const [y, m] = state.month.split("-").map(Number); const d = new Date(y, m - 1 + n, 1); state.month = `${d.getFullYear()}-${pad(d.getMonth() + 1)}`; renderCal(); }
+document.getElementById("prev").addEventListener("click", () => shiftMonth(-1));
+document.getElementById("next").addEventListener("click", () => shiftMonth(1));
+document.getElementById("todayBtn").addEventListener("click", () => { state.month = TODAY.slice(0, 7); state.sel = TODAY; renderCal(); renderDay(); });
+document.getElementById("onlyHits").addEventListener("click", () => { state.onlyHits = !state.onlyHits; renderAll(); });
+
+(function header() {
+  const up = document.getElementById("updated");
+  if (!window.CLUB_DATA) {
+    document.getElementById("warnings").append(h("div", { class: "warn" }, "data/events.js が見つかりません。先に python3 scrape.py を実行してください。"));
+    return;
+  }
+  const last = EVENTS.reduce((m, e) => e.last > m ? e.last : m, "");
+  up.textContent = `最終更新 ${String(DATA.updated).replace("T", " ").slice(0, 16)} ・ 今後 ${upcoming().length} 件${last ? `（${fmtDay(last)} まで掲載）` : ""}`;
+  for (const [v, s] of Object.entries(DATA.sources || {})) {
+    if (s && s.ok === false) document.getElementById("warnings").append(
+      h("div", { class: "warn" }, `${(VENUES[v] || {}).name || v} の取得に失敗しています（前回取得分を表示中）: ${s.error || ""}`));
+  }
+})();
+
+computeMatches();
+renderAll();
+</script>
+</body>
+</html>
