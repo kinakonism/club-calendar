@@ -222,6 +222,11 @@ header.top nav { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex
 .dlg .sub { font-family: var(--mono); font-size: 11.5px; color: var(--muted); }
 .pick .lb { color: var(--hot); font-size: 11.5px; font-weight: 700; }
 .pick[aria-pressed="true"] .lb { color: var(--accent-ink); }
+.roster { margin-top: 10px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 4px; background: var(--panel-2); }
+.roster .names { margin-top: 10px; max-height: 220px; overflow-y: auto; font-size: 13px; line-height: 1.8; color: var(--muted); overflow-wrap: anywhere; }
+.pick.label[aria-expanded="true"] { border-color: var(--accent); }
+button.pick.label { cursor: pointer; }
+.roster .pick[aria-pressed="true"]::before { content: none; }
 .field { margin-top: 14px; }
 .field label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 5px; }
 .field input, .dlg textarea { width: 100%; background: var(--panel-2); border: 1px solid var(--line); border-radius: 4px; padding: 8px 11px; }
@@ -563,6 +568,19 @@ function prefSection(kind, title, placeholder, suggestions) {
       suggestions.map(([v, n]) => h("button", { class: "pick", onclick: () => { toggle(kind, v); fillPrefs(); } }, `${v} ×${n}`))) : null,
   ];
 }
+let openLabel = null;   // 好み設定で所属アーティスト一覧を開いているレーベル
+function rosterBox(l) {
+  const list = (DATA.labels || {})[l] || [];
+  // 今後のイベントに出演がある人を先頭に
+  const playing = new Map();
+  for (const e of EVENTS) if (e.last >= TODAY) (e.lineup || []).forEach((a, i) => { if (!playing.has(e._lineup[i])) playing.set(e._lineup[i], e); });
+  const on = list.filter(a => playing.has(norm(a))), off = list.filter(a => !playing.has(norm(a)));
+  return h("div", { class: "roster" },
+    h("div", { class: "hint" }, `${l} の所属アーティスト ${list.length}組（リリース数の多い順・MusicBrainz調べ）`),
+    on.length ? h("div", { class: "picks", style: "margin-top:8px" }, on.map(a => h("button", { class: "pick", "aria-pressed": "true",
+      onclick: () => { prefsDlg.close(); openEvent(playing.get(norm(a))); } }, `${a} — 出演あり`))) : null,
+    h("div", { class: "names" }, off.join(" ・ ")));
+}
 function fillPrefs() {
   const ta = h("textarea", { class: "code", "aria-label": "好みデータ(JSON)" });
   ta.value = JSON.stringify(state.prefs);
@@ -573,8 +591,11 @@ function fillPrefs() {
     prefSection("artists", "アーティスト", "例: DJ Nobu", topCounts(e => e.lineup || [], "artists", 14)),
     h("h4", {}, "レーベル（所属アーティストごと追う）"),
     h("div", { class: "picks" }, FOLLOW.labels.length
-      ? FOLLOW.labels.map(l => h("span", { class: "pick label" }, l, h("span", { class: "lb" }, `  ${((DATA.labels || {})[l] || []).length}組`)))
+      ? FOLLOW.labels.map(l => h("button", { class: "pick label", "aria-expanded": String(openLabel === l),
+          onclick: () => { openLabel = openLabel === l ? null : l; fillPrefs(); } },
+          l, h("span", { class: "lb" }, `  ${((DATA.labels || {})[l] || []).length}組 ${openLabel === l ? "▴" : "▾"}`)))
       : h("span", { class: "hint" }, "未登録")),
+    openLabel && FOLLOW.labels.includes(openLabel) ? rosterBox(openLabel) : null,
     h("div", { class: "hint", style: "margin-top:8px" }, "レーベルと常時フォローの追加は「追加リクエスト」から送ってください。"),
     prefSection("keywords", "パーティー名などのキーワード", "例: BLACK SMOKER / りんご音楽祭", null),
     prefSection("genres", "ジャンル", "例: Techno", topCounts(e => e.genres || [], "genres", 16)),
