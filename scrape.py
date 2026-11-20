@@ -31,6 +31,7 @@ VENUES = {
     "asia": "club asia",
     "circus": "CIRCUS Tokyo",
     "zero": "ZERO TOKYO",
+    "womb": "WOMB",
 }
 
 
@@ -437,7 +438,123 @@ def scrape_zero():
     return events
 
 
-SCRAPERS = {"asia": scrape_asia, "circus": scrape_circus, "zero": scrape_zero}
+# ---------------------------------------------------------------- WOMB (Next.js + microCMS)
+
+def scrape_womb():
+    """一覧ページに全イベントの構造化データ（出演者・ジャンル込み）が埋まっているので1リクエストで済む。"""
+    base = "https://www.womb.co.jp"
+    page = fetch(base + "/ja/events")
+    chunks = re.findall(r'self\.__next_f\.push\(\[1,("(?:[^"\\]|\\.)*")\]\)', page)
+    txt = "".join(json.loads(c) for c in chunks)
+    dec = json.JSONDecoder()
+    found = {}
+    for m in re.finditer(r'\{"id":"[A-Za-z0-9_-]+","createdAt"', txt):
+        try:
+            o, _ = dec.raw_decode(txt, m.start())
+        except ValueError:
+            continue
+        if isinstance(o, dict) and all(k in o for k in ("title", "date", "url")):
+            found[o["id"]] = o
+    if not found:
+        raise RuntimeError("no event data found in page payload")
+
+    cutoff = TODAY - dt.timedelta(days=KEEP_PAST_DAYS)
+    events = []
+    for o in found.values():
+        try:
+            when = dt.datetime.fromisoformat(str(o["date"]).replace("Z", "+00:00")).astimezone(JST)
+        except ValueError:
+            continue
+        if when.date() < cutoff:
+            continue
+        slug = str(o["url"])
+        lineup = []
+        for a in o.get("artist") or []:
+            art = a.get("artist") if isinstance(a, dict) else None
+            if isinstance(art, dict) and art.get("artist_name"):
+                lineup.append(str(art["artist_name"]).strip())
+        genres = [norm_genre(str(g.get("genre", ""))) for g in (o.get("genre") or []) if isinstance(g, dict) and g.get("genre")]
+        fee = str(o.get("fee") or "").strip()
+        time_s = str(o.get("time") or "").strip()
+        ev = {"id": f"womb:{slug}", "venue": "womb", "date": when.date().isoformat(),
+              "url": f"{base}/ja/events/{urllib.parse.quote(slug)}", "title": str(o["title"]).strip() or slug,
+              "open": time_s.split("-")[0].strip(), "genres": dedupe(genres), "lineup": dedupe(lineup),
+              "text": "\n".join(x for x in (time_s, fee) if x)}
+        if fee:
+            ev["price"] = fee.replace("\n", " / ")
+        events.append(ev)
+    return events
+
+
+SCRAPERS = {"asia": scrape_asia, "circus": scrape_circus, "zero": scrape_zero, "womb": scrape_womb}
+
+
+# ---------------------------------------------------------------- labels (MusicBrainz)
+
+MB = "https://musicbrainz.org/ws/2"
+LABEL_REFRESH_DAYS = 30
+LABEL_MIN_RELEASES = 2   # そのレーベルから2作以上出しているアーティストを「所属」とみなす
+
+
+def mb_json(path):
+    body = fetch(MB + path)
+    time.sleep(0.7)  # MusicBrainz は 1リクエスト/秒まで
+    return json.loads(body)
+
+
+def label_roster(name, mbid=None):
+    """レーベル名 → そのレーベルからリリースのあるアーティスト一覧（MusicBrainz のリリース情報から集計）。"""
+    label_name = name
+    if not mbid:
+        q = urllib.parse.quote(f'label:"{name}"')
+        hits = mb_json(f"/label?query={q}&fmt=json&limit=5").get("labels", [])
+        if not hits:
+            raise RuntimeError(f"label not found: {name}")
+        mbid, label_name = hits[0]["id"], hits[0].get("name", name)
+    counts, shown = {}, {}
+    offset, total = 0, 1
+    while offset < total and offset < 6000:
+        d = mb_json(f"/release?label={mbid}&inc=artist-credits&fmt=json&limit=100&offset={offset}")
+        total = int(d.get("release-count", 0))
+        rel = d.get("releases", [])
+        if not rel:
+            break
+        for r in rel:
+            for n in {(c.get("artist") or {}).get("name") for c in r.get("artist-credit", []) if isinstance(c, dict)}:
+                if n and n not in ("Various Artists", "[unknown]", "[no artist]"):
+                    k = n.lower()
+                    counts[k] = counts.get(k, 0) + 1
+                    shown[k] = n
+        offset += len(rel)
+    roster = sorted((k for k, c in counts.items() if c >= LABEL_MIN_RELEASES), key=lambda k: (-counts[k], k))
+    return {"mbid": mbid, "mb_name": label_name, "releases": total, "fetched": TODAY.isoformat(),
+            "artists": [shown[k] for k in roster][:600]}
+
+
+def build_labels(follow):
+    path = DATA / "labels.json"
+    cache = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+    out = {}
+    for item in follow.get("labels", []):
+        name, mbid = (item, None) if isinstance(item, str) else (item.get("name"), item.get("mbid"))
+        if not name:
+            continue
+        old = cache.get(name)
+        fresh_enough = old and (TODAY - dt.date.fromisoformat(old.get("fetched", "2000-01-01"))).days < LABEL_REFRESH_DAYS
+        if fresh_enough or "--no-labels" in sys.argv:
+            if old:
+                out[name] = old
+            continue
+        try:
+            print(f"[label] {name}: fetching roster from MusicBrainz…", file=sys.stderr)
+            out[name] = label_roster(name, mbid)
+            print(f"[label] {name}: {len(out[name]['artists'])} artists", file=sys.stderr)
+        except Exception as e:
+            print(f"[label] {name} FAILED: {e}", file=sys.stderr)
+            if old:
+                out[name] = old
+    path.write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    return out
 
 
 # ---------------------------------------------------------------- merge & write
@@ -497,7 +614,16 @@ def main():
         e["text"] = strip_prose(e.get("text", ""))
     events.sort(key=lambda e: (e["date"], e["venue"], e["title"]))
 
-    out = {"updated": now if targets else prev.get("updated", now), "sources": sources, "events": events}
+    # フォローしているアーティスト・レーベル（data/follow.json）と、レーベルの所属アーティスト
+    follow_path = DATA / "follow.json"
+    follow = json.loads(follow_path.read_text(encoding="utf-8")) if follow_path.exists() else {}
+    follow = {"artists": [str(a) for a in follow.get("artists", [])], "labels": follow.get("labels", [])}
+    labels = build_labels(follow)
+    follow_out = {"artists": follow["artists"],
+                  "labels": [x if isinstance(x, str) else x.get("name") for x in follow["labels"]]}
+
+    out = {"updated": now if targets else prev.get("updated", now), "sources": sources,
+           "follow": follow_out, "labels": {k: v["artists"] for k, v in labels.items()}, "events": events}
     DATA.mkdir(exist_ok=True)
     out_path.write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     js = json.dumps(out, ensure_ascii=False).replace("</", "<\\/")

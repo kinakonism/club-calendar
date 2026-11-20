@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T17:11+09:00",
+ "updated": "2026-11-20T17:28+09:00",
  "sources": {
   "asia": {
    "ok": true,
@@ -15,9 +15,556 @@
    "ok": true,
    "count": 70,
    "checked": "2026-11-20T17:11+09:00"
+  },
+  "womb": {
+   "ok": true,
+   "count": 50,
+   "checked": "2026-11-20T17:28+09:00"
   }
  },
+ "follow": {
+  "artists": [
+   "Squarepusher",
+   "Aphex Twin"
+  ],
+  "labels": [
+   "Warp"
+  ]
+ },
+ "labels": {
+  "Warp": [
+   "Autechre",
+   "Aphex Twin",
+   "Nightmares on Wax",
+   "Squarepusher",
+   "Maxïmo Park",
+   "Boards of Canada",
+   "Flying Lotus",
+   "Bibio",
+   "!!!",
+   "Plaid",
+   "Oneohtrix Point Never",
+   "Broadcast",
+   "Clark",
+   "Brian Eno",
+   "Kelela",
+   "Grizzly Bear",
+   "Seefeel",
+   "Battles",
+   "Mark Pritchard",
+   "Mount Kimbie",
+   "Red Snapper",
+   "Hudson Mohawke",
+   "LFO",
+   "Danny Brown",
+   "Prefuse 73",
+   "Squid",
+   "Jimi Tenor",
+   "Jamie Lidell",
+   "Born Ruffians",
+   "Stereolab",
+   "Polygon Window",
+   "Yves Tumor",
+   "AFX",
+   "Darkstar",
+   "Thom Yorke",
+   "Mira Calix",
+   "The Sabres of Paradise",
+   "Two Lone Swordsmen",
+   "Gonjasufi",
+   "Rustie",
+   "B12",
+   "Gravenhurst",
+   "The Black Dog",
+   "Jackson and His Computer Band",
+   "Kelly Moran",
+   "Lorenzo Senni",
+   "Leila",
+   "LoneLady",
+   "Nala Sinephro",
+   "Africa HiTech",
+   "Chris Morris",
+   "Karl Hyde",
+   "The Hundred in the Hands",
+   "Kassa Overall",
+   "Kwes.",
+   "patten",
+   "Daniel Rossen",
+   "Sweet Exorcist",
+   "Clarissa Connelly",
+   "Coco Steel & Lovebomb",
+   "Gaika",
+   "Harmonic 313",
+   "Jimmy Edgar",
+   "PVT",
+   "Req",
+   "Rick Holland",
+   "TNGHT",
+   "Evian Christ",
+   "Jon Hopkins",
+   "Leo Abrahams",
+   "RAC",
+   "Shobaleader One",
+   "Speedy J",
+   "Tricky Disco",
+   "Antipop Consortium",
+   "Beans",
+   "Brothomstates",
+   "Disjecta",
+   "F.U.S.E.",
+   "GAK",
+   "Jake Slazenger",
+   "Kai Campos",
+   "Nikki Nair",
+   "Plone",
+   "Wu-Lu",
+   "Bob Jaroc",
+   "Daniel Lopatin",
+   "DiY",
+   "Dorian Concept",
+   "Elecktroids",
+   "Jeremiah Jae",
+   "Jockstrap",
+   "King Krule",
+   "Nozinja",
+   "PC",
+   "Savath & Savalas",
+   "Strictly Kev",
+   "The Other People Place",
+   "Tim Exile",
+   "Vincent Gallo",
+   "Babe Rainbow",
+   "CANT",
+   "DJ Mujava",
+   "DRC Music",
+   "Future Brown",
+   "Gang Gang Dance",
+   "Kendrick Lamar",
+   "Kid Unknown",
+   "Link & E621",
+   "Luke Vibert",
+   "Mike Ink",
+   "Move D",
+   "Oli XL",
+   "Rhythm Invention",
+   "Richard Devine",
+   "Russell Haswell",
+   "The Step",
+   "Tuff Little Unit",
+   "Tyondai Braxton",
+   "秋田昌美",
+   "Adrian Sherwood",
+   "Children of Alice",
+   "Circle City",
+   "David Holmes",
+   "Dominic Maker",
+   "Drexciya",
+   "El‐P",
+   "EPROM",
+   "Eskmo",
+   "Eternal",
+   "Freeform",
+   "Gescom",
+   "Ghostface Killah",
+   "Harmonic 33",
+   "Home Video",
+   "Jaco",
+   "James Ellis Ford",
+   "James McVinnie",
+   "Joey Beltram",
+   "John Callaghan",
+   "Kelli Hand",
+   "Kenny Larkin",
+   "Ko-Wreck Technique",
+   "KUKII",
+   "Mica Levi",
+   "Milanese",
+   "Nice Nice",
+   "Nicolas Jaar",
+   "Resoraz",
+   "Richard H. Kirk",
+   "School of Seven Bells",
+   "Slauson Malone",
+   "Sote",
+   "Surgeon",
+   "Swan",
+   "Sympletic",
+   "The Focus Group",
+   "Theo Croker",
+   "THK",
+   "Tom Jenkinson",
+   "Tortoise",
+   "Wild Planet",
+   "Z-Machines"
+  ]
+ },
  "events": [
+  {
+   "id": "womb:101626",
+   "venue": "womb",
+   "date": "2026-10-16",
+   "url": "https://www.womb.co.jp/ja/events/101626",
+   "title": "DEEP DIVE DRIVE",
+   "open": "23:00",
+   "genres": [
+    "Techno"
+   ],
+   "lineup": [
+    "DJ KURI",
+    "PETER VAN HOESEN",
+    "SO",
+    "DELTA FUNKTIONEN",
+    "FULL SENTIMENTAL",
+    "NICO",
+    "YO NISHIJIMA",
+    "JOHN PLAZA",
+    "LØST",
+    "OPML",
+    "REMI OHSUGI"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥5000\nADVANCE TICKETS: ¥4000",
+   "price": "DOOR: ¥5000 / ADVANCE TICKETS: ¥4000",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "womb:101726",
+   "venue": "womb",
+   "date": "2026-10-17",
+   "url": "https://www.womb.co.jp/ja/events/101726",
+   "title": "SESSION 25TH ANNIVERSARY",
+   "open": "23:00",
+   "genres": [
+    "Techno"
+   ],
+   "lineup": [
+    "BART SKILS",
+    "DRUNKEN KONG",
+    "TOMMY WADA",
+    "KARIBIZA",
+    "AHREUM",
+    "OHTA",
+    "KRIS FUJI",
+    "KIKU",
+    "Q'HEY",
+    "KULAGE",
+    "YU-S-KE",
+    "SOMA OUE"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥4000 *UNDER 23 ¥2000\nADVANCE TICKETS: ¥3500",
+   "price": "DOOR: ¥4000 *UNDER 23 ¥2000 / ADVANCE TICKETS: ¥3500",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "womb:101826",
+   "venue": "womb",
+   "date": "2026-10-18",
+   "url": "https://www.womb.co.jp/ja/events/101826",
+   "title": "ASK TASK",
+   "open": "23:00",
+   "genres": [
+    "Tech House",
+    "Hard Techno"
+   ],
+   "lineup": [
+    "Y'K",
+    "You Liang",
+    "Dylahn",
+    "Kino Carey",
+    "KIBΘ",
+    "CHIKA",
+    "K4BUKI",
+    "CALAVERA",
+    "RÉ:ØN",
+    "SOULUNA",
+    "NAOHIRO YAKO"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥1500",
+   "price": "DOOR: ¥1500",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "womb:102026",
+   "venue": "womb",
+   "date": "2026-10-20",
+   "url": "https://www.womb.co.jp/ja/events/102026",
+   "title": "ASIA TECH PRODUCED BY 2K21 RECORDS JAPAN",
+   "open": "23:00",
+   "genres": [
+    "Electro House",
+    "Tech House",
+    "Techno"
+   ],
+   "lineup": [
+    "JUSTIN OWEN",
+    "WONDERBOI",
+    "Cody-K",
+    "S4KU",
+    "SABLEYE",
+    "MUNAGE"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥1500",
+   "price": "DOOR: ¥1500",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "womb:102126",
+   "venue": "womb",
+   "date": "2026-10-21",
+   "url": "https://www.womb.co.jp/ja/events/102126",
+   "title": "RECOMBINATION",
+   "open": "23:00",
+   "genres": [
+    "Drum & Bass",
+    "Hard Techno"
+   ],
+   "lineup": [
+    "DJ AKi",
+    "KEiTA",
+    "JABBA",
+    "ASSIGN",
+    "RNG",
+    "ASIN",
+    "CHIKA",
+    "SHO",
+    "YOXIKI",
+    "YURI VALEN"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥1500",
+   "price": "DOOR: ¥1500",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "womb:102226",
+   "venue": "womb",
+   "date": "2026-10-22",
+   "url": "https://www.womb.co.jp/ja/events/102226",
+   "title": "BABA LOOP -TAKEOVER-",
+   "open": "23:00",
+   "genres": [
+    "Tech House"
+   ],
+   "lineup": [
+    "GIORGIO NOLA",
+    "JUSTIN TIME",
+    "TOSHI",
+    "WAN ISSARA"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥2000",
+   "price": "DOOR: ¥2000",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "womb:102326",
+   "venue": "womb",
+   "date": "2026-10-23",
+   "url": "https://www.womb.co.jp/ja/events/102326",
+   "title": "INTER 4TH ANNIVERSARY EDITION",
+   "open": "23:00",
+   "genres": [
+    "Techno",
+    "House"
+   ],
+   "lineup": [
+    "SHINICHI OSAWA",
+    "DJ EMMA",
+    "SHANNON BROTHERS",
+    "ANNE FUTAGAMI",
+    "AKIRA ARASAWA",
+    "CAPTAIN 25",
+    "HANNAH",
+    "MUSCLE ∞ BROTHERS",
+    "STRATAH",
+    "YURI VALEN",
+    "KUNPEI",
+    "SHIHAL"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥3500 *UNDER 24 & BEFORE 0:00 ¥2500\nADVANCE TICKETS: ¥3000",
+   "price": "DOOR: ¥3500 *UNDER 24 & BEFORE 0:00 ¥2500 / ADVANCE TICKETS: ¥3000",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "womb:102426",
+   "venue": "womb",
+   "date": "2026-10-24",
+   "url": "https://www.womb.co.jp/ja/events/102426",
+   "title": "CARTULIS",
+   "open": "23:00",
+   "genres": [
+    "Techno",
+    "House"
+   ],
+   "lineup": [
+    "Z@P",
+    "UNAI TROTTI",
+    "Junki Inoue",
+    "CHIDA",
+    "DSKE",
+    "P-YAN",
+    "RYOKEI",
+    "teppei",
+    "YAMA"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥4000 *UNDER 23 ¥2500\nADVANCE TICKETS: ¥3000",
+   "price": "DOOR: ¥4000 *UNDER 23 ¥2500 / ADVANCE TICKETS: ¥3000",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "womb:102526",
+   "venue": "womb",
+   "date": "2026-10-25",
+   "url": "https://www.womb.co.jp/ja/events/102526",
+   "title": "NESTAL",
+   "open": "23:00",
+   "genres": [
+    "K-POP"
+   ],
+   "lineup": [
+    "JUNK.PARK",
+    "CHIKA",
+    "MUTSUMI PAPA"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥2000 (1DRINK付/ 1DRINK INCLUDED)",
+   "price": "DOOR: ¥2000 (1DRINK付/ 1DRINK INCLUDED)",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "womb:102726",
+   "venue": "womb",
+   "date": "2026-10-27",
+   "url": "https://www.womb.co.jp/ja/events/102726",
+   "title": "ASIA TECH 3RD ANNIVERSARY",
+   "open": "23:00",
+   "genres": [
+    "Electro House",
+    "Tech House",
+    "Techno"
+   ],
+   "lineup": [
+    "JUSTIN OWEN",
+    "RYOTA",
+    "WONDERBOI",
+    "Cody-K",
+    "S4KU",
+    "SABLEYE",
+    "MUNAGE"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥1500",
+   "price": "DOOR: ¥1500",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "womb:102826",
+   "venue": "womb",
+   "date": "2026-10-28",
+   "url": "https://www.womb.co.jp/ja/events/102826",
+   "title": "WTW PRESENTS F2F",
+   "open": "23:00",
+   "genres": [
+    "House",
+    "Tech House"
+   ],
+   "lineup": [
+    "YAMARIKI",
+    "PUNK N MATRIX",
+    "ANZU",
+    "HiToMi",
+    "Kijta",
+    "Deep Benjamin"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥1500",
+   "price": "DOOR: ¥1500",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "womb:102926",
+   "venue": "womb",
+   "date": "2026-10-29",
+   "url": "https://www.womb.co.jp/ja/events/102926",
+   "title": "SONIC BOOM",
+   "open": "23:00",
+   "genres": [
+    "Techno"
+   ],
+   "lineup": [
+    "AGUSTINA ALIAGA",
+    "YUXI",
+    "Monochrome",
+    "KAORI WATT",
+    "DOAMA",
+    "KOSUKE",
+    "DALJAE",
+    "KLYDE",
+    "SAMJ",
+    "uuu7",
+    "CALAVERA"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥2000\nADVANCE TICKET: ¥1700",
+   "price": "DOOR: ¥2000 / ADVANCE TICKET: ¥1700",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "womb:103026",
+   "venue": "womb",
+   "date": "2026-10-30",
+   "url": "https://www.womb.co.jp/ja/events/103026",
+   "title": "REPRISE",
+   "open": "23:00",
+   "genres": [
+    "Techno"
+   ],
+   "lineup": [
+    "AKUA",
+    "DJ NOBU",
+    "lostbaggage",
+    "I-SHA",
+    "SHHHHH",
+    "imus",
+    "HELLO KENNY",
+    "YOU FORGOT"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥4000\nADVANCE TICKETS: ¥3000",
+   "price": "DOOR: ¥4000 / ADVANCE TICKETS: ¥3000",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "womb:103126",
+   "venue": "womb",
+   "date": "2026-10-31",
+   "url": "https://www.womb.co.jp/ja/events/103126",
+   "title": "WOMB HALLOWEEN PRESENTS COLLISIONS",
+   "open": "23:00",
+   "genres": [
+    "Techno",
+    "House"
+   ],
+   "lineup": [
+    "CRAIG RICHARDS",
+    "IVAN SMAGGHE",
+    "SATOSHI OTSUKI",
+    "GABRIEL RAI",
+    "CELTER",
+    "KOTSU",
+    "HIMAWARI",
+    "kengotaki"
+   ],
+   "text": "23:00-4:30\n▶︎DOOR: ¥4000\n▶︎ADVANCE TICKETS: ¥3500",
+   "price": "▶︎DOOR: ¥4000 / 【仮装割引】全身の70%以上仮装: ¥1000 OFF/ ワンポイント仮装: ¥500 OFF (エントランスにてスタッフが判断。割引は当日券のみ対象。)  / 【COSTUME DISCOUNT】70%+ FULL COSTUME: ¥1,000 OFF / ONE-POINT COSTUME: ¥500 OFF (Discount applies to door tickets only, not advance tickets. Costume eligibility determined by staff.) /  / ▶︎ADVANCE TICKETS: ¥3500",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
   {
    "id": "zero:sync-1101",
    "venue": "zero",
@@ -60,6 +607,33 @@
    "first_seen": null
   },
   {
+   "id": "womb:110226",
+   "venue": "womb",
+   "date": "2026-11-02",
+   "url": "https://www.womb.co.jp/ja/events/110226",
+   "title": "UNBOUD",
+   "open": "23:00",
+   "genres": [
+    "Techno"
+   ],
+   "lineup": [
+    "DJ YAZI",
+    "KOJIRO",
+    "SHIHAL",
+    "Arisue Go",
+    "GROUND",
+    "shamanriyo",
+    "uuu7",
+    "Hypnotic Black Magic",
+    "KanaK",
+    "WAKA XINXI"
+   ],
+   "text": "23:00-4:30\n▶︎ DOOR: ¥5000　*渋谷エンタメフェス2026回遊リストバンド着用の方は¥3000 *SHIBUYA ENTERTAINMENT FESTIVAL 2026 WRISTBAND HOLDER ¥3000\n▶︎ ADVANCE TICKET: ¥4000",
+   "price": "▶︎ DOOR: ¥5000　*渋谷エンタメフェス2026回遊リストバンド着用の方は¥3000 *SHIBUYA ENTERTAINMENT FESTIVAL 2026 WRISTBAND HOLDER ¥3000 / ▶︎ ADVANCE TICKET: ¥4000",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
    "id": "zero:bresh-1102",
    "venue": "zero",
    "date": "2026-11-02",
@@ -79,6 +653,76 @@
    "price": "DOOR：¥5,000- / EARLY BIRD：¥3,500-（優先入場・入場料金含む）※SOLD OUT / FASTPASS TICKET TIER 1：¥4,000-（優先入場・入場料金含む）※SOLD OUT / FASTPASS TICKET TIER 2：¥4,500-（優先入場・入場料金含む） / VIP STAGE TICKET：¥10,000-（優先入場＋VIP STAGE・入場料金含む） / 整列開始：10:30PM / ※各種優待対象外",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
+  },
+  {
+   "id": "womb:110326",
+   "venue": "womb",
+   "date": "2026-11-03",
+   "url": "https://www.womb.co.jp/ja/events/110326",
+   "title": "ASIA TECH PRODUCED BY 2K21 RECORDS",
+   "open": "23:00",
+   "genres": [
+    "Electro House",
+    "Tech House",
+    "Techno"
+   ],
+   "lineup": [
+    "JUSTIN OWEN",
+    "WONDERBOI",
+    "Cody-K",
+    "S4KU",
+    "SABLEYE",
+    "MUNAGE"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥1500",
+   "price": "DOOR: ¥1500",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "womb:110426",
+   "venue": "womb",
+   "date": "2026-11-04",
+   "url": "https://www.womb.co.jp/ja/events/110426",
+   "title": "WTW",
+   "open": "23:00",
+   "genres": [
+    "House",
+    "Tech House"
+   ],
+   "lineup": [
+    "SHOTARO MAEDA",
+    "ISPA",
+    "HERO",
+    "AYA MURAMATSU",
+    "YUKI"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥1500",
+   "price": "DOOR: ¥1500",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "womb:110526",
+   "venue": "womb",
+   "date": "2026-11-05",
+   "url": "https://www.womb.co.jp/ja/events/110526",
+   "title": "LITTLE HELPERS LABEL SHOWCASE IN TOKYO",
+   "open": "23:00",
+   "genres": [
+    "Tech House"
+   ],
+   "lineup": [
+    "BUTANE",
+    "TARO TOKO",
+    "DJ YOGURT",
+    "MASSA",
+    "ANNA WAKANA"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥1500",
+   "price": "DOOR: ¥1500",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
   },
   {
    "id": "zero:doors-1105",
@@ -117,6 +761,33 @@
    "first_seen": null
   },
   {
+   "id": "womb:110626",
+   "venue": "womb",
+   "date": "2026-11-06",
+   "url": "https://www.womb.co.jp/ja/events/110626",
+   "title": "06S 25TH ANNIVERSARY",
+   "open": "23:00",
+   "genres": [
+    "Drum & Bass"
+   ],
+   "lineup": [
+    "FRICTION",
+    "DJ AKi",
+    "YELLOCK",
+    "KEiTA",
+    "YASUKI",
+    "YUUKi MC",
+    "KULAGE",
+    "Shun Kurashima",
+    "Onsawa&tkc",
+    "Y'K"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥4000\nADVANCE TICKETS: ¥3000",
+   "price": "DOOR: ¥4000  / ADVANCE TICKETS: ¥3000",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
    "id": "zero:cybertokyo-1106",
    "venue": "zero",
    "date": "2026-11-06",
@@ -145,6 +816,33 @@
    "first_seen": null
   },
   {
+   "id": "womb:110726",
+   "venue": "womb",
+   "date": "2026-11-07",
+   "url": "https://www.womb.co.jp/ja/events/110726",
+   "title": "WOMB PRESENTS HERNAN CATTANEO",
+   "open": "23:00",
+   "genres": [
+    "Progressive House",
+    "Techno",
+    "House"
+   ],
+   "lineup": [
+    "HERNAN CATTANEO",
+    "DJ OGAWA",
+    "RINDEAU",
+    "Rio Kawamoto",
+    "TORAO",
+    "MONKEY TIMERS",
+    "GLASS ELEVATOR",
+    "YUICHIRO KOTANI"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥4000\nADVANCE TICKETS: ¥3500",
+   "price": "DOOR: ¥4000 / ADVANCE TICKETS: ¥3500",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
    "id": "zero:yonaguni-fiesta-1107",
    "venue": "zero",
    "date": "2026-11-07",
@@ -160,6 +858,28 @@
    "price": "WOMEN：¥3,000- / MEN：¥4,000- / FASTPASS TICKET： / WOMEN：¥2,500- (優先入場・入場料金含む) / MEN：¥3,500- (優先入場・入場料金含む) / 整列開始：10PM / ※各種優待対象外",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
+  },
+  {
+   "id": "womb:110826",
+   "venue": "womb",
+   "date": "2026-11-08",
+   "url": "https://www.womb.co.jp/ja/events/110826",
+   "title": "NESTAL",
+   "open": "23:00",
+   "genres": [
+    "K-POP"
+   ],
+   "lineup": [
+    "JUNK.PARK",
+    "CHIKA",
+    "MUTSUMI PAPA",
+    "KENDI",
+    "MAO"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥2000 (1DRINK付/ 1DRINK INCLUDED)",
+   "price": "DOOR: ¥2000 (1DRINK付/ 1DRINK INCLUDED)",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
   },
   {
    "id": "zero:drop-the-beat-1108",
@@ -212,6 +932,32 @@
    "first_seen": null
   },
   {
+   "id": "womb:111026",
+   "venue": "womb",
+   "date": "2026-11-10",
+   "url": "https://www.womb.co.jp/ja/events/111026",
+   "title": "ASIA TECH PRODUCED BY 2K21 RECORDS",
+   "open": "23:00",
+   "genres": [
+    "Electro House",
+    "Tech House",
+    "Techno"
+   ],
+   "lineup": [
+    "JUSTIN OWEN",
+    "RYOTA",
+    "WONDERBOI",
+    "Cody-K",
+    "S4KU",
+    "SABLEYE",
+    "MUNAGE"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥1500",
+   "price": "DOOR: ¥1500",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
    "id": "asia:exodus-vol.258",
    "venue": "asia",
    "date": "2026-11-11",
@@ -246,6 +992,27 @@
    "text": "🔥 EXODUS｜2026.11.11 WED 🔥\n📍#clubasia 1F･2F OPEN ➤ 23:00\nOPEN - 24:00 ENTRANCE FREE !\n✸ MUSIC：HIP HOP / TECHNO / ROCK / DRUM & BASS / PHONK\nOn November 11, Lil'Yukichi joins as the special guest.\nEXODUS keeps getting hotter. Pull up and check it.\n-————\n✸ 𝐆𝐔𝐄𝐒𝐓\nLil'Yukichi @lilyukichan\n✸ 𝐄𝐗𝐎𝐃𝐔𝐒 𝐃𝐉’𝐬\nFUJI TRILL @fuji_trill\nYU-RI @dj_yu_ri\nDJ KOTARO @dj_kotaro_\nKUROMAKU @9609_kuromaku\nLeisu @leisurely_w0lf\nKANT @kan.t.kotoro\nyak @yak_swamp\nLoku @loku_369\nBAN @hvckslum3\nKotaroUchida @ktrucd\nLΞMΞ @leme429_reimei\nCUE KITAZAWA @9xcue9\nKuronosu @kuron_osuta\n✸ 𝐋𝐈𝐕𝐄 𝐓𝐀𝐓𝐓𝐎𝐎\nkazü @kazu.inkman\n✸ 𝐋𝐈𝐕𝐄 𝐏𝐀𝐈𝐍𝐓\nEightBall @eightballsmfworld\n✸ 𝐄𝐗𝐇𝐈𝐁𝐈𝐓𝐈𝐎𝐍\n✸ 𝐄𝐍𝐓𝐑𝐀𝐍𝐂𝐄\n23:00 - 24:00 ENTRANCE FREE\n24:00 - Till Dawn ¥2,000 +1D\nW/ PHOTO FLYER ¥1,500 +1D",
    "venue_name": "club asia",
    "first_seen": null
+  },
+  {
+   "id": "womb:111126",
+   "venue": "womb",
+   "date": "2026-11-11",
+   "url": "https://www.womb.co.jp/ja/events/111126",
+   "title": "WTW",
+   "open": "23:00",
+   "genres": [
+    "House"
+   ],
+   "lineup": [
+    "YOUNGISLAND",
+    "YO.AN",
+    "s.a.y",
+    "Stack"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥1500",
+   "price": "DOOR: ¥1500",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
   },
   {
    "id": "asia:clubasiathursday-11122",
@@ -286,6 +1053,28 @@
    "text": "2026.11.12_THU 23:00\n『𝗰𝗹𝘂𝗯𝗮𝘀𝗶𝗮 𝗧𝗛𝗨𝗥𝗦𝗗𝗔𝗬』➤ #clubasia\nVENUE：clubasia｜ LOUNGE FLOOR\nPRICE：¥1,000\n✸🥤23:00-00:00｜BUY 1D ➤ GET 1D!\n✷ 4周年目に突入したBUDDHAHOUSE、haraが贈る第二木曜”club asia THURSDAY”!!\nSoundCloud出身、今夏1st Albumもリリースした前澤がゲストに登場!!\n✷ LINEUP\n前澤 @maezawa_lab\nhara @haraqlo\nBUDDHAHOUSE @buddhahouse\n《ATTENTION》",
    "venue_name": "club asia",
    "first_seen": null
+  },
+  {
+   "id": "womb:111226",
+   "venue": "womb",
+   "date": "2026-11-12",
+   "url": "https://www.womb.co.jp/ja/events/111226",
+   "title": "WTW × AFP",
+   "open": "23:00",
+   "genres": [
+    "House",
+    "Tech House"
+   ],
+   "lineup": [
+    "DUKWA",
+    "Nari",
+    "PAUL GATO",
+    "SEKITOVA"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥2000",
+   "price": "DOOR: ¥2000",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
   },
   {
    "id": "zero:aureka006_1112",
@@ -375,6 +1164,32 @@
    "first_seen": null
   },
   {
+   "id": "womb:111326",
+   "venue": "womb",
+   "date": "2026-11-13",
+   "url": "https://www.womb.co.jp/ja/events/111326",
+   "title": "PICNIC PEOPLE PANIC",
+   "open": "23:00",
+   "genres": [
+    "Techno",
+    "House"
+   ],
+   "lineup": [
+    "Roman Flügel",
+    "KABUTO",
+    "MOODMAN",
+    "KATIMI AI",
+    "MASAYASU",
+    "Timothy Really Lab.",
+    "Gero",
+    "VJ CAMEL"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥4000 *UNDER 23 ¥2500\nADVANCE TICKETS: ¥3000",
+   "price": "DOOR: ¥4000 *UNDER 23 ¥2500 / ADVANCE TICKETS: ¥3000",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
    "id": "zero:bunker-1113",
    "venue": "zero",
    "date": "2026-11-13",
@@ -440,6 +1255,35 @@
    "text": "2026.11.14_SAT 23:00\n『BOTH WINGS 25周年-RAGGA RISE AGAIN in TOKYO-』\n➤ #clubasia\n- DOOR：¥3,500-\n- 1:00まで：LADIES FREE\n- ADV：¥2,500-\nhttps://cultureofasia.zaiko.io/buy/1CnB:Tms:8bf49\n-1F FLOOR-\nDUB PLATE SESSION EDITION\n★GUEST SOUND\nARTICAL PRIDE from 千葉\nBARRIER FREE from 大阪\nBLAST STAR from 東京\nMAXIMUM from 埼玉\n★HOST SOUND\nBOTH WINGS\n★FOOD\nJERK TIME\n★PHOTO\nRETASU\n★SOUND SYSTEM\nTRAVELLERS BOXXX\n-2F FLOOR-\nBACK TO BASIC ALL 80’S～2000’S NIGHT\n★SOUND (A-Z)\nBIG BLAZE WILDERS\nDJ KIXXX from MASTERPIECE SOUND\nMAD FREAK\nMAVERICK\nRACY BULLET\nRAW QUALITY\n★FLOOR VIBES\nUCHIKO\nAYA BLAZIN\nJOY\nMILKY\nSHIHO (FOPPISH)\n—————\n《ATTENTION》",
    "venue_name": "club asia",
    "first_seen": null
+  },
+  {
+   "id": "womb:111426",
+   "venue": "womb",
+   "date": "2026-11-14",
+   "url": "https://www.womb.co.jp/ja/events/111426",
+   "title": "KULU",
+   "open": "23:00",
+   "genres": [
+    "House",
+    "Techno"
+   ],
+   "lineup": [
+    "Mita Gami",
+    "Robbie Akbal",
+    "DSKE",
+    "KO UMEHARA",
+    "boys be kko",
+    "SATICA",
+    "NAMIMI SENSEI",
+    "LOUIS SHANNON",
+    "VINO",
+    "Sante Visioni",
+    "KUNPEI"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥5000\nADVANCE TICKET: ¥4000",
+   "price": "DOOR: ¥5000 / ADVANCE TICKET: ¥4000",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
   },
   {
    "id": "zero:favela-fest-1114",
@@ -537,6 +1381,31 @@
    "first_seen": null
   },
   {
+   "id": "womb:111726",
+   "venue": "womb",
+   "date": "2026-11-17",
+   "url": "https://www.womb.co.jp/ja/events/111726",
+   "title": "ASIA TECH PRODUCED BY 2K21 RECORDS",
+   "open": "23:00",
+   "genres": [
+    "Electro House",
+    "Tech House",
+    "Techno"
+   ],
+   "lineup": [
+    "JUSTIN OWEN",
+    "WONDERBOI",
+    "Cody-K",
+    "S4KU",
+    "SABLEYE",
+    "MUNAGE"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥1500",
+   "price": "DOOR: ¥1500",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
    "id": "zero:tohji-officialafterparty-1117",
    "venue": "zero",
    "date": "2026-11-17",
@@ -596,6 +1465,35 @@
    "first_seen": null
   },
   {
+   "id": "womb:111826",
+   "venue": "womb",
+   "date": "2026-11-18",
+   "url": "https://www.womb.co.jp/ja/events/111826",
+   "title": "RECOMBINATION",
+   "open": "23:00",
+   "genres": [
+    "Drum & Bass"
+   ],
+   "lineup": [
+    "DJ AKi",
+    "KEiTA",
+    "SPYKEY",
+    "RYUKI",
+    "ATMK",
+    "Nim",
+    "ReFuCafé",
+    "MENTIA",
+    "AMANE",
+    "omeme_gangimari",
+    "MAZ",
+    "osushidayo"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥1500",
+   "price": "DOOR: ¥1500",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
    "id": "asia:𝗗𝗘𝗝𝗜",
    "venue": "asia",
    "date": "2026-11-19",
@@ -643,6 +1541,31 @@
    "text": "2026.11.19_THU 23:00\n『 club asia THURSDAY』➤ #clubasia\nVENUE：clubasia｜📍LOUNGE FLOOR\nPRICE：door ¥2,000\n✷ LINEUP\nAxefield (Intercept Records) From Amsterdam\nAlbino Sound\nNOVA\nRomy Mats\n🔽2F FLOOR『 𝗗𝗘𝗝𝗜!! 』と回遊可能🔽\n✷ LINEUP (AtoZ)\nTakeru\nS3R4PH\nSEKITOVA\nMinami-no-shima\nkiyota\nVJ\nCUE KITAZAWA",
    "venue_name": "club asia",
    "first_seen": null
+  },
+  {
+   "id": "womb:111926",
+   "venue": "womb",
+   "date": "2026-11-19",
+   "url": "https://www.womb.co.jp/ja/events/111926",
+   "title": "RETURN",
+   "open": "23:00",
+   "genres": [
+    "House",
+    "Techno"
+   ],
+   "lineup": [
+    "RICKEY SHANNON",
+    "LOUIS SHANNON",
+    "ALEXANDER M",
+    "KUNPEI",
+    "∞",
+    "DOAMA",
+    "MASA.M"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥1500",
+   "price": "DOOR: ¥1500",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
   },
   {
    "id": "zero:coincidence-1119",
@@ -767,6 +1690,33 @@
    "text": "LINE UP：\nQrion\nokadada\nPARKGOLF\nBUDDHAHOUSE\nSEKITOVA\nOPEN 23:00\nADV : ¥3,000\nDOOR : ¥3,500\nTICKET:\nRA\neplus",
    "venue_name": "CIRCUS Tokyo",
    "first_seen": null
+  },
+  {
+   "id": "womb:112026",
+   "venue": "womb",
+   "date": "2026-11-20",
+   "url": "https://www.womb.co.jp/ja/events/112026",
+   "title": "RAINBOW DISCO CLUB PRESENTS FOLD",
+   "open": "23:00",
+   "genres": [
+    "Techno",
+    "House"
+   ],
+   "lineup": [
+    "DJ MARIA.",
+    "HARUKA",
+    "Voicedrone B2B James Newmarch",
+    "悪魔の沼 (AKUMA NO NUMA)",
+    "kenji Takimi",
+    "KIKIORIX",
+    "MAYURASHKA",
+    "Nari",
+    "Manami Sakamoto"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥4000\nADVANCE TICKETS: ¥3000",
+   "price": "DOOR: ¥4000 / ADVANCE TICKETS: ¥3000",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
   },
   {
    "id": "zero:giga-1120",
@@ -903,6 +1853,31 @@
    "first_seen": null
   },
   {
+   "id": "womb:112126",
+   "venue": "womb",
+   "date": "2026-11-21",
+   "url": "https://www.womb.co.jp/ja/events/112126",
+   "title": "HOUSETRIBE",
+   "open": "23:00",
+   "genres": [
+    "Tech House",
+    "House"
+   ],
+   "lineup": [
+    "Nausica",
+    "YAMARIKI",
+    "CARTOON",
+    "Addiy",
+    "Chika Luna",
+    "PUNK N MATRIX",
+    "Juni"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥3500 *UNDER 23 ¥2000\nADVANCE TICKET: ¥3000",
+   "price": "DOOR: ¥3500 *UNDER 23 ¥2000 / ADVANCE TICKET: ¥3000",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
    "id": "zero:gold-disc-1121",
    "venue": "zero",
    "date": "2026-11-21",
@@ -1008,6 +1983,32 @@
    "text": "LINE UP：\n=ROOM1=\n-GUEST-\nRASH BONE B2B OTA feat. Kee Rooz & Catarrh Nisin\nandrew ( TREKKIE TRAX ) feat. ONJUICY & TRICO as MAKA\n-LIVE-\nNATURAL VYBZ\n-ACT-\nEnzybox feat. Tommy Mage & LAY\nkskskm feat. PAKIN & Marina\nKOPERO\n-VJ-\nMIW\n=ROOM2=\n-DJ-\nChameleon-t\nDUCK\nOgasawara\nsaqess\nVECSILLE\nOPEN 23:00\nDOOR ¥3,500\nADV / With Flyer ¥3,000",
    "venue_name": "CIRCUS Tokyo",
    "first_seen": null
+  },
+  {
+   "id": "womb:112226",
+   "venue": "womb",
+   "date": "2026-11-22",
+   "url": "https://www.womb.co.jp/ja/events/112226",
+   "title": "NEWNEU. SYNAPSE. PRESENTS JOSEPH CAPRIATI",
+   "open": "23:00",
+   "genres": [],
+   "lineup": [
+    "Joseph Capriati",
+    "Koki Byrd",
+    "TOSHI",
+    "ALEXANDER M",
+    "TARO TOKO",
+    "EIGHT",
+    "DONAES",
+    "A.R.A",
+    "CAPTAIN 25",
+    "KAIKAI",
+    "TENJU"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥8000\nEARLY BIRD: ¥5000 (100枚限定 / LIMITED 100)\nADVANCE TICKET: ¥6500",
+   "price": "DOOR: ¥8000  / EARLY BIRD: ¥5000 (100枚限定 / LIMITED 100) / ADVANCE TICKET: ¥6500",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
   },
   {
    "id": "zero:the-gong-1122",
@@ -1123,6 +2124,32 @@
    "first_seen": null
   },
   {
+   "id": "womb:112426",
+   "venue": "womb",
+   "date": "2026-11-24",
+   "url": "https://www.womb.co.jp/ja/events/112426",
+   "title": "ASIA TECH PRODUCED BY 2K21 RECORDS",
+   "open": "23:00",
+   "genres": [
+    "Electro House",
+    "Tech House",
+    "Techno"
+   ],
+   "lineup": [
+    "RYOTA",
+    "JUSTIN OWEN",
+    "WONDERBOI",
+    "Cody-K",
+    "S4KU",
+    "SABLEYE",
+    "MUNAGE"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥1500",
+   "price": "DOOR: ¥1500",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
    "id": "asia:exodus-vol.260",
    "venue": "asia",
    "date": "2026-11-25",
@@ -1181,6 +2208,26 @@
    "first_seen": null
   },
   {
+   "id": "womb:112526",
+   "venue": "womb",
+   "date": "2026-11-25",
+   "url": "https://www.womb.co.jp/ja/events/112526",
+   "title": "WTW",
+   "open": "23:00",
+   "genres": [
+    "Techno"
+   ],
+   "lineup": [
+    "Kyper",
+    "KABUTO",
+    "SAMO"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥1500",
+   "price": "DOOR: ¥1500",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
    "id": "asia:club-asia-thursday-261126",
    "venue": "asia",
    "date": "2026-11-26",
@@ -1215,6 +2262,32 @@
    "text": "LINE UP：\nSBTRKT\nOPEN 19:00\nADV: ¥3,000\nTICKET: RA",
    "venue_name": "CIRCUS Tokyo",
    "first_seen": null
+  },
+  {
+   "id": "womb:112626",
+   "venue": "womb",
+   "date": "2026-11-26",
+   "url": "https://www.womb.co.jp/ja/events/112626",
+   "title": "PASSION 4TH ANNIVERSARY",
+   "open": "23:00",
+   "genres": [
+    "House",
+    "Tech House"
+   ],
+   "lineup": [
+    "TONBO",
+    "NAMIMI SENSEI",
+    "LIN",
+    "TAIYONA",
+    "Ozwick",
+    "PIERO",
+    "ANJU",
+    "SAO"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥2500 *BEFORE 0:00: ¥1500 *STUDENT:  ¥1000",
+   "price": "DOOR: ¥2500 *BEFORE 0:00: ¥1500 *STUDENT:  ¥1000",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
   },
   {
    "id": "zero:viral_1126",
@@ -1287,6 +2360,36 @@
    "text": "LINE UP：\n-LIVE-\nBIM\nFREEDOM\nYoshi T.\n-DJ-\nGeorge Bolton\nTukasa\nuin\nYujiliwada\nOPEN 23:00\nADV ¥3,500 + ¥800/1D（キーチェーン付き）\nDOOR ¥4,000 + ¥800/1D\nTICKET: LIVEPOCKET",
    "venue_name": "CIRCUS Tokyo",
    "first_seen": null
+  },
+  {
+   "id": "womb:112726",
+   "venue": "womb",
+   "date": "2026-11-27",
+   "url": "https://www.womb.co.jp/ja/events/112726",
+   "title": "NEURON",
+   "open": "23:00",
+   "genres": [
+    "Melodic Techno",
+    "Tech House"
+   ],
+   "lineup": [
+    "Trikk",
+    "KANDARTA",
+    "RYOHEI",
+    "FALYN",
+    "ANDY DEDE",
+    "EIGHT",
+    "TenTen",
+    "AHREUM",
+    "LYOM",
+    "KRIS FUJI",
+    "TOCHAN",
+    "TONTON"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥4000\nADVANCE TICKET: ¥3000",
+   "price": "DOOR: ¥4000 / ADVANCE TICKET: ¥3000",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
   },
   {
    "id": "zero:neon-stars-1127",
@@ -1462,6 +2565,35 @@
    "first_seen": null
   },
   {
+   "id": "womb:112826",
+   "venue": "womb",
+   "date": "2026-11-28",
+   "url": "https://www.womb.co.jp/ja/events/112826",
+   "title": "SO FAR",
+   "open": "23:00",
+   "genres": [
+    "Techno"
+   ],
+   "lineup": [
+    "DJ DEXTRO",
+    "RISA TANIGUCHI",
+    "KULAGE",
+    "SHOGO ITO",
+    "TOMMY WADA",
+    "SENNY D",
+    "MEI",
+    "ASTERA",
+    "AYANA KOSHIBA",
+    "FUJIWARAMONE",
+    "YOSHITAKAKONDO",
+    "H2KGRAPHICS"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥3500 *UNDER 23 ¥2500\nADVANCE TICKETS: ¥3000",
+   "price": "DOOR: ¥3500 *UNDER 23 ¥2500 / ADVANCE TICKETS: ¥3000",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
    "id": "zero:locker-room-1128",
    "venue": "zero",
    "date": "2026-11-28",
@@ -1571,6 +2703,52 @@
    "first_seen": null
   },
   {
+   "id": "womb:120226",
+   "venue": "womb",
+   "date": "2026-12-02",
+   "url": "https://www.womb.co.jp/ja/events/120226",
+   "title": "LYRA ROOM × WTW",
+   "open": "23:00",
+   "genres": [
+    "Tech House"
+   ],
+   "lineup": [
+    "Viene",
+    "uuu7",
+    "Lui",
+    "Fruit Cake",
+    "KOTONO SHIRAI"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥1500",
+   "price": "DOOR: ¥1500",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "womb:120326",
+   "venue": "womb",
+   "date": "2026-12-03",
+   "url": "https://www.womb.co.jp/ja/events/120326",
+   "title": "CROSSFADES 3RD ANNIVERSARY",
+   "open": "21:00",
+   "genres": [
+    "House",
+    "Techno"
+   ],
+   "lineup": [
+    "SATOSHI TOMIIE",
+    "KEN ISHII",
+    "ANDY DEDE",
+    "TENJU",
+    "KAORU INOUE",
+    "MASANORI IKEDA"
+   ],
+   "text": "21:00-4:30 (1F: 21:00 OPEN / 2F: 23:00 OPEN)\nDOOR: ¥2500",
+   "price": "DOOR: ¥2500",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
    "id": "zero:tba-32",
    "venue": "zero",
    "date": "2026-12-03",
@@ -1582,6 +2760,34 @@
    "text": "",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
+  },
+  {
+   "id": "womb:120426",
+   "venue": "womb",
+   "date": "2026-12-04",
+   "url": "https://www.womb.co.jp/ja/events/120426",
+   "title": "WICKED 5TH ANNIVERSARY WITH RED AXES (4-HOUR SET)",
+   "open": "23:00",
+   "genres": [
+    "House",
+    "Disco"
+   ],
+   "lineup": [
+    "Red Axes",
+    "MONKEY TIMERS",
+    "The People In Fog",
+    "SO",
+    "Mendel",
+    "imus",
+    "Connor",
+    "r1ku",
+    "Nektar",
+    "Manami Sakamoto"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥5000 *UNDER 23 ¥3000\nEARLY BIRD(10/15-10/25): ¥3000 (100枚限定 / LIMITED 100)\nADVANCE TICKET (10/26-12/4 8pm): ¥4000",
+   "price": "DOOR: ¥5000 *UNDER 23 ¥3000 / EARLY BIRD(10/15-10/25): ¥3000 (100枚限定 / LIMITED 100) / ADVANCE TICKET (10/26-12/4 8pm): ¥4000",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
   },
   {
    "id": "zero:marlon-hoffstadt-1204",
@@ -1646,6 +2852,33 @@
    "text": "LIVE：武瑠\n【メンバー】\n武瑠 feat. Gt HIROTO(Alice Nine.), Ba RENA, Dr shinpei\n【時間】OPEN 17:30 / START 18:00\n【料金】\n●通常チケット¥6,500+tax (税込¥7,150)\nスタンディング / DRINK代別\nLIVE POCKET：https://livepocket.jp/e/tch1205c\n【一般発売】\n8/9(日)21:00〜\n【お問い合わせ】\nakubi Inc. / contact@akubiinc.tokyo",
    "venue_name": "CIRCUS Tokyo",
    "first_seen": null
+  },
+  {
+   "id": "womb:120526",
+   "venue": "womb",
+   "date": "2026-12-05",
+   "url": "https://www.womb.co.jp/ja/events/120526",
+   "title": "ACID: “THE HAPPY EDITION” - NINA KRAVIZ",
+   "open": "23:00",
+   "genres": [
+    "Techno"
+   ],
+   "lineup": [
+    "NINA KRAVIZ",
+    "TNSEEI",
+    "YUVIE",
+    "GROUND",
+    "KAIKAI",
+    "Kobashi Mitsuki",
+    "DANA NADA",
+    "Dani Savant",
+    "SHIHAL",
+    "AIBA"
+   ],
+   "text": "23:00-4:30\nDOOR: TBA\nEARLY BIRD (100枚限定 / LIMITED 100): ¥5000 (完売 / SOLD OUT)\nADVANCE TICKET: ¥6500",
+   "price": "DOOR: TBA / EARLY BIRD (100枚限定 / LIMITED 100): ¥5000 (完売 / SOLD OUT) / ADVANCE TICKET: ¥6500",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
   },
   {
    "id": "zero:trance-essentials-vii-10th",
@@ -1797,6 +3030,27 @@
    "first_seen": null
   },
   {
+   "id": "womb:121126",
+   "venue": "womb",
+   "date": "2026-12-11",
+   "url": "https://www.womb.co.jp/ja/events/121126",
+   "title": "ADVENTURE -ADS DAIBOUNENKAI 2026-",
+   "open": "23:00",
+   "genres": [],
+   "lineup": [
+    "Z-CAT",
+    "AJ",
+    "AYAKA",
+    "HK.",
+    "DJ YAGI",
+    "WATARU"
+   ],
+   "text": "23:00-4:30\nDOOR : ¥4500\nADVANCE TICKET: ¥3500",
+   "price": "DOOR : ¥4500 / ADVANCE TICKET: ¥3500",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
    "id": "zero:tba-38",
    "venue": "zero",
    "date": "2026-12-11",
@@ -1826,6 +3080,31 @@
    "text": "LINE UP:\nIVY LAB\nand more\nOPEN 23:00\nADV : 3000YEN\nTICKET : https://ja.ra.co/events/2580257",
    "venue_name": "CIRCUS Tokyo",
    "first_seen": null
+  },
+  {
+   "id": "womb:121226",
+   "venue": "womb",
+   "date": "2026-12-12",
+   "url": "https://www.womb.co.jp/ja/events/121226",
+   "title": "CABARET RECORDINGS",
+   "open": "23:00",
+   "genres": [
+    "Techno"
+   ],
+   "lineup": [
+    "dj masda",
+    "ONUR ÖZER",
+    "Samuel Jabba",
+    "CHIDA",
+    "SATOSHI OTSUKI",
+    "Licaxxx",
+    "FELINE",
+    "kengotaki"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥4000\nADVANCE TICKET: ¥3000",
+   "price": "DOOR: ¥4000 / ADVANCE TICKET: ¥3000",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
   },
   {
    "id": "zero:mau-p-1212",
@@ -1928,6 +3207,25 @@
    "first_seen": null
   },
   {
+   "id": "womb:121826",
+   "venue": "womb",
+   "date": "2026-12-18",
+   "url": "https://www.womb.co.jp/ja/events/121826",
+   "title": "AMNESIA IBIZA 50TH ANNIVERSARY",
+   "open": "23:00",
+   "genres": [
+    "Tech House"
+   ],
+   "lineup": [
+    "MARCO FARAONE",
+    "MAR-T"
+   ],
+   "text": "23:00-4:30\nDOOR: TBA\nADVANCE TICKET(限定 100枚/LIMITED 100): ¥5000",
+   "price": "DOOR: TBA / ADVANCE TICKET(限定 100枚/LIMITED 100): ¥5000",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
    "id": "zero:the-one-1218",
    "venue": "zero",
    "date": "2026-12-18",
@@ -2014,6 +3312,32 @@
    "first_seen": null
   },
   {
+   "id": "womb:121926",
+   "venue": "womb",
+   "date": "2026-12-19",
+   "url": "https://www.womb.co.jp/ja/events/121926",
+   "title": "KULU PRESENTS MIRA - 30-YEAR ANNIVERSARY",
+   "open": "23:00",
+   "genres": [
+    "House",
+    "Techno"
+   ],
+   "lineup": [
+    "MIRA",
+    "KUNIYUKI",
+    "SHHHHH",
+    "GROUND",
+    "OCCA",
+    "TONBO",
+    "TAIHEI",
+    "鏡民 (Kyomi)"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥5000\nADVANCE TICKET: ¥4000",
+   "price": "DOOR: ¥5000 / ADVANCE TICKET: ¥4000",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
    "id": "zero:essence-1219",
    "venue": "zero",
    "date": "2026-12-19",
@@ -2086,6 +3410,34 @@
    "first_seen": null
   },
   {
+   "id": "womb:122526",
+   "venue": "womb",
+   "date": "2026-12-25",
+   "url": "https://www.womb.co.jp/ja/events/122526",
+   "title": "WOMB PRESENTS DUBFIRE 20",
+   "open": "23:00",
+   "genres": [
+    "Techno"
+   ],
+   "lineup": [
+    "DUBFIRE",
+    "DJ NOA",
+    "WAKATAKA",
+    "NAGAI",
+    "KATIMI AI",
+    "YUVIE",
+    "r1ku",
+    "KENNETH",
+    "AIBA",
+    "H2KGRAPHICS",
+    "MORIYA"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥4000 *UNDER 23 & BEFORE 0:00: ¥2500\nADVANCE TICKETS: ¥3000",
+   "price": "DOOR: ¥4000 *UNDER 23 & BEFORE 0:00: ¥2500 / ADVANCE TICKETS: ¥3000",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
    "id": "zero:tba-67",
    "venue": "zero",
    "date": "2026-12-25",
@@ -2112,6 +3464,33 @@
    "text": "LINE UP：\nTRAXMAN\nand more\nOPEN: 23:00\nADV: ¥3,000\nTICKET: RA",
    "venue_name": "CIRCUS Tokyo",
    "first_seen": null
+  },
+  {
+   "id": "womb:122626",
+   "venue": "womb",
+   "date": "2026-12-26",
+   "url": "https://www.womb.co.jp/ja/events/122626",
+   "title": "WANDERLUST",
+   "open": "23:00",
+   "genres": [
+    "Techno"
+   ],
+   "lineup": [
+    "SURGEON",
+    "Patrick Russell",
+    "Wata Igarashi",
+    "TSUTOMU",
+    "imus",
+    "Shinsuke Goto",
+    "TRI3YE",
+    "DR. NISHIMURA",
+    "BOW",
+    "KAMO"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥4000\nADVANCE TICKET: ¥3500",
+   "price": "DOOR: ¥4000 / ADVANCE TICKET: ¥3500",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
   },
   {
    "id": "zero:neon-stars-1226",
@@ -2171,6 +3550,36 @@
    "first_seen": null
   },
   {
+   "id": "womb:122926",
+   "venue": "womb",
+   "date": "2026-12-29",
+   "url": "https://www.womb.co.jp/ja/events/122926",
+   "title": "INTENTION 12TH ANNIVERSARY",
+   "open": "23:00",
+   "genres": [
+    "Techno",
+    "Trance"
+   ],
+   "lineup": [
+    "DRUNKEN KONG",
+    "TSUYOSHI SUZUKI",
+    "O-MAN",
+    "Dani Savant",
+    "U:ICHI",
+    "KO KIMURA",
+    "SHOGO ITO",
+    "JIT",
+    "UNI",
+    "AJ",
+    "MARIHO",
+    "KEITA"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥3500\nADVANCE TICKET: ¥3000",
+   "price": "DOOR: ¥3500 / ADVANCE TICKET: ¥3000",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
    "id": "zero:essence-1229",
    "venue": "zero",
    "date": "2026-12-29",
@@ -2206,6 +3615,36 @@
    "first_seen": null
   },
   {
+   "id": "womb:123026",
+   "venue": "womb",
+   "date": "2026-12-30",
+   "url": "https://www.womb.co.jp/ja/events/123026",
+   "title": "GRASSHOPPER & GREEN MAGIC PRESENTS  大忘年会2026 - ROUND OF NIGHT",
+   "open": "23:00",
+   "genres": [
+    "Trance",
+    "Techno"
+   ],
+   "lineup": [
+    "GROOVEBOX",
+    "MIROK",
+    "RISHI",
+    "HANABI",
+    "DJ MISTER",
+    "TAKU",
+    "ABURA",
+    "DAIJIRO",
+    "ERIMIYA",
+    "AXIOM",
+    "426h",
+    "HATTA"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥4000\nADVANCE TICKET: ¥3000",
+   "price": "DOOR: ¥4000 / ADVANCE TICKET: ¥3000",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
+  },
+  {
    "id": "zero:viral-1230",
    "venue": "zero",
    "date": "2026-12-30",
@@ -2220,6 +3659,24 @@
    "price": "DOOR : TBA / VIP TICKET（着席指定席） : ￥120,000 (5名様まで入場可能・Z HALL入場保証・エントランス最優先入場) / PREMIUM TICKET : ￥10,000 (エントランス優先入場・Z HALL入場保証・最前列エリア入場・1ドリンクチケット付き) / FASTPASS TICKET TIER 1 : ￥5,500 (ドリンクチケットなし) / FASTPASS TICKET TIER 2 : TBA / ※本イベントはオールナイト公演のため、20歳未満の方はご入場いただけません。ご入場時にご本人確認と年齢確認を行いますので、顔写真付きの身分証明書（運転免許証 / パスポート / 住民基本台帳カード / マイナンバーカード / 在留カード / 特別永住者証明書）をご提示ください。ご提示いただけない場合は、いかなる理由でもご入場いただけませんので、あらかじめご了承ください。 / 抽選受付期間（全券種共通） 2026年11月13日（金）12:00〜11月27日（金）23:59 / 抽選結果発表 2026年11月28日（土）予定 / 【VIP TICKET（着席指定席）】 / 〈特典〉 / ・レッドブルウォッカセット×1（CIROC×1、Red Bull×6） / 〈注意事項〉 / ・座席は、ZEROTOKYO B4F「Z HALL」のFV7〜14の中から抽選で決定します。シートはお選びいただけません。チケット1枚につき5名様までご入場いただけます。VIP TICKETでは最前列エリアにはご入場いただけません。 / ・チケットは代表者の方がお申し込みください。当日は、ご同伴の皆様がお揃いのうえでご来場ください。 / ・VIP TICKETをご利用の方は、全員ZEROTOKYO 1FのVIP専用レーンにて受付をお願いいたします。22:00より列整理を開始し、22:30より身分証明書の確認、荷物チェック・ボディチェック、チケットのもぎりを行います。入場開始は23:00です。 / ・受付時に顔写真付き身分証明書で年齢確認を行い、確認が取れた方に専用リストバンドをお渡しします。遅れてご来場される方がいる場合は、代表者の方が受付でその旨をお伝えください。遅れてご来場される方は、24:30（翌0:30）までにZEROTOKYOにて受付をお済ませください。 / ※混雑時は、入店規制やメインホールへの入場規制を行う場合がございます。入店規制時は、FASTPASS TICKETをお持ちの方もご入店いただけない場合がございますので、お早めにご来場ください。",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
+  },
+  {
+   "id": "womb:123126",
+   "venue": "womb",
+   "date": "2026-12-31",
+   "url": "https://www.womb.co.jp/ja/events/123126",
+   "title": "WOMB PRESENTS NEW YEAR COUNTDOWN TO 2027",
+   "open": "23:00",
+   "genres": [
+    "Techno"
+   ],
+   "lineup": [
+    "SVEN VÄTH"
+   ],
+   "text": "23:00-4:30\n【当日券/DOOR】 BEFORE 1:00 ¥8000 ‖ AFTER 1:00 ¥5000\n【早割券/EARLY BIRD】 (100枚限定/LIMITED 100) ¥5000 ▶︎完売/SOLD OUT\n【前売券/ADVANCE TICKETS】¥6000",
+   "price": "【当日券/DOOR】 BEFORE 1:00 ¥8000 ‖ AFTER 1:00 ¥5000 / 【早割券/EARLY BIRD】 (100枚限定/LIMITED 100) ¥5000 ▶︎完売/SOLD OUT / 【前売券/ADVANCE TICKETS】¥6000",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-20"
   },
   {
    "id": "zero:tba-70",
