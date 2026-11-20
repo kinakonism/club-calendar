@@ -605,30 +605,54 @@ function fillReq() {
   const msg = h("div", { class: "hint", style: "margin-top:10px", role: "status" });
   const trap = h("input", { class: "hp", tabindex: "-1", autocomplete: "off", "aria-hidden": "true" }); // bot よけ（人は入力しない欄）
   let busy = false;
-  const send = async () => {
-    const text = body.value.trim();
-    if (busy) return;
-    if (!text) { msg.textContent = "内容を入力してください。"; body.focus(); return; }
-    const out = `【Club Calendar 追加リクエスト】\n種類: ${kind}\n内容: ${text}${who.value.trim() ? `\n名前: ${who.value.trim()}` : ""}`;
-    if (REQUEST_ENDPOINT) {
-      busy = true; msg.textContent = "送信中…";
-      try {
-        // text/plain にするとプリフライトなしで Apps Script に届く
-        const res = await fetch(REQUEST_ENDPOINT, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" },
-          body: JSON.stringify({ kind, text, name: who.value.trim(), website: trap.value }) });
-        const j = await res.json();
-        busy = false;
-        if (j && j.ok) { msg.textContent = "送信しました。管理者が確認してから反映します。"; body.value = ""; return; }
-        if (j && j.error === "busy") { msg.textContent = "本日の受付上限に達しました。明日もう一度お試しください。"; return; }
-      } catch (_) { busy = false; }
-      msg.textContent = "送信できませんでした。代わりに文面を共有します。";
-    }
+  const note = (text, bad) => { msg.textContent = text; msg.style.color = bad ? "var(--asia)" : ""; };
+  const share = async out => {
     try {
-      if (navigator.share) { await navigator.share({ text: out }); msg.textContent = "共有メニューから管理者に送ってください。"; return; }
+      if (navigator.share) { await navigator.share({ text: out }); note("共有メニューから管理者に送ってください。"); return; }
     } catch (err) { if (err && err.name === "AbortError") return; }
-    try { await navigator.clipboard.writeText(out); msg.textContent = "文面をコピーしました。LINEなどで管理者に貼り付けて送ってください。"; }
+    try { await navigator.clipboard.writeText(out); note("文面をコピーしました。LINEなどで管理者に貼り付けて送ってください。"); }
     catch (_) { fill(msg, "コピーできませんでした。下の文面を選択してコピーしてください。", h("pre", {}, out)); }
   };
+  const done = (text, name) => fill(document.getElementById("reqBody"),
+    h("h3", { style: "color:var(--accent)" }, "✓ 送信しました"),
+    h("div", { class: "hint" }, "管理者に届きました。確認のうえ反映されます（その場では追加されません）。"),
+    h("h4", {}, "送った内容"),
+    h("pre", {}, `種類: ${kind}\n内容: ${text}${name ? `\n名前: ${name}` : ""}`),
+    h("div", { class: "foot" }, h("button", { class: "btn", onclick: fillReq }, "もう1件送る"), h("button", { class: "btn primary", onclick: () => reqDlg.close() }, "閉じる")));
+  const sendBtn = h("button", { class: "btn primary" }, REQUEST_ENDPOINT ? "送信" : "文面を作って送る");
+  const shareBtn = h("button", { class: "btn", hidden: true }, "文面を共有する");
+  const send = async () => {
+    const text = body.value.trim(), name = who.value.trim();
+    if (busy) return;
+    if (!text) { note("内容を入力してください。", true); body.focus(); return; }
+    const out = `【Club Calendar 追加リクエスト】\n種類: ${kind}\n内容: ${text}${name ? `\n名前: ${name}` : ""}`;
+    shareBtn.onclick = () => share(out);
+    if (!REQUEST_ENDPOINT) { share(out); return; }
+    busy = true; sendBtn.disabled = true; sendBtn.textContent = "送信中…"; sendBtn.style.opacity = ".6";
+    note("送信しています。数秒〜30秒ほどかかることがあります。このままお待ちください。");
+    // Apps Script はたまに応答が返ってこないことがあるので、10秒で打ち切って同じ送信IDで送り直す（サーバー側で重複は捨てる）
+    const id = (crypto.randomUUID && crypto.randomUUID()) || String(Date.now()) + Math.random().toString(36).slice(2);
+    let j = null, failed = false;
+    for (let attempt = 1; attempt <= 3 && !j; attempt++) {
+      if (attempt > 1) note(`応答待ちのため送り直しています（${attempt}/3）。このままお待ちください。`);
+      const ctl = new AbortController();
+      const timer = setTimeout(() => ctl.abort(), 10000);
+      try {
+        // text/plain にするとプリフライトなしで Apps Script に届く
+        const res = await fetch(REQUEST_ENDPOINT, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, signal: ctl.signal,
+          body: JSON.stringify({ id, kind, text, name, website: trap.value }) });
+        j = await res.json(); failed = false;
+      } catch (_) { failed = true; }
+      clearTimeout(timer);
+    }
+    busy = false; sendBtn.disabled = false; sendBtn.textContent = "送信"; sendBtn.style.opacity = "";
+    if (j && j.ok) { done(text, name); return; }
+    if (j && j.error === "busy") { note("本日の受付上限に達しました。明日もう一度お試しください。", true); return; }
+    note(failed ? "送信できたか確認できませんでした。少し待ってからもう一度「送信」を押すか、「文面を共有する」で直接送ってください。"
+                : "送信できませんでした。もう一度試すか、「文面を共有する」で直接送ってください。", true);
+    shareBtn.hidden = false;
+  };
+  sendBtn.addEventListener("click", send);
   fill(document.getElementById("reqBody"),
     h("h3", {}, "追加リクエスト"),
     h("div", { class: "hint" }, "追ってほしいアーティスト・レーベル・箱を送れます。ここでは追加されず、管理者が確認してから反映します。"),
@@ -636,7 +660,7 @@ function fillReq() {
     h("div", { class: "field" }, h("label", {}, "内容"), body),
     h("div", { class: "field" }, h("label", {}, "名前"), who),
     trap, msg,
-    h("div", { class: "foot" }, h("button", { class: "btn", onclick: () => reqDlg.close() }, "閉じる"), h("button", { class: "btn primary", onclick: send }, REQUEST_ENDPOINT ? "送信" : "文面を作って送る")));
+    h("div", { class: "foot" }, h("button", { class: "btn", onclick: () => reqDlg.close() }, "閉じる"), h("span", { style: "display:flex;gap:8px" }, shareBtn, sendBtn)));
 }
 document.getElementById("openReq").addEventListener("click", () => { fillReq(); reqDlg.showModal(); });
 

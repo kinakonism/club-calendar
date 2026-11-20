@@ -48,6 +48,7 @@ function doPost(e) {
     const kind = String(d.kind || '').slice(0, 20);
     const text = String(d.text || '').trim().slice(0, MAX_TEXT);
     const name = String(d.name || '').trim().slice(0, 40);
+    const id = String(d.id || '').replace(/[^A-Za-z0-9-]/g, '').slice(0, 64);  // 再送時の二重登録を防ぐための送信ID
     if (!text) return json_({ ok: false, error: 'empty' });
 
     const props = PropertiesService.getScriptProperties();
@@ -57,12 +58,15 @@ function doPost(e) {
     const lock = LockService.getScriptLock();
     lock.waitLock(8000);
     try {
+      const cache = CacheService.getScriptCache();
+      if (id && cache.get('id_' + id)) return json_({ ok: true, dup: true });  // 応答が届かず再送されたもの
       const key = 'count_' + Utilities.formatDate(new Date(), 'Asia/Tokyo', 'yyyyMMdd');
       const n = Number(props.getProperty(key) || 0);
       if (n >= DAILY_CAP) return json_({ ok: false, error: 'busy' });
       props.setProperty(key, String(n + 1));
       SpreadsheetApp.openById(sheetId).getSheetByName(SHEET_NAME)
         .appendRow([new Date(), safeCell_(kind), safeCell_(text), safeCell_(name), '未確認']);
+      if (id) cache.put('id_' + id, '1', 21600);
     } finally {
       lock.releaseLock();
     }
