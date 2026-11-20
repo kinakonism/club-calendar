@@ -235,6 +235,13 @@ button.pick.label { cursor: pointer; }
 .act.on { border-color: var(--accent); }
 .act.on button { color: var(--accent); }
 .act .lb { color: var(--hot); font-size: 11.5px; font-weight: 700; }
+.tag.mark { background: var(--accent); color: var(--accent-ink); border-color: transparent; font-weight: 700; }
+.tag.mark.maybe { background: transparent; color: var(--accent); border-color: var(--accent); }
+.ev.mark { outline: 2px solid var(--accent); outline-offset: -2px; }
+.dot.mark { box-shadow: 0 0 0 2px var(--accent); }
+.pick.markbtn[aria-pressed="true"]::before { content: "✓ "; }
+.pick.link { color: var(--muted); text-decoration: none; display: inline-flex; align-items: center; }
+.pick.link:hover { color: var(--text); }
 .field { margin-top: 14px; }
 .radios .pick[aria-pressed="true"]::before { content: none; }
 .act a { padding-top: 8px; padding-bottom: 8px; }
@@ -268,6 +275,9 @@ button.pick.label { cursor: pointer; }
   <div id="warnings"></div>
 
   <section class="hero" id="hero" aria-label="今夜のイベント"></section>
+
+  <h2 id="plansH" hidden>自分の予定<small>「行く」「気になる」を付けたイベント</small></h2>
+  <div id="plans" hidden></div>
 
   <h2>あなた向け<small id="forYouNote"></small></h2>
   <div id="forYou"></div>
@@ -314,6 +324,8 @@ const VENUES = {
   unit:    { name: "UNIT",               color: "var(--live)", live: true },
   www:     { name: "WWW / WWW X",        color: "var(--live)", live: true },
   oeast:   { name: "Spotify O-EAST",     color: "var(--live)", live: true },
+  cman:      { name: "来日・ツアー（Creativeman）", color: "var(--live)", live: true },
+  clubberia: { name: "そのほかの会場",              color: "var(--live)", live: true },
 };
 const DOW = ["日", "月", "火", "水", "木", "金", "土"];
 const DOW_EN = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
@@ -341,6 +353,13 @@ function fill(el, ...kids) {
   return el;
 }
 const norm = s => String(s || "").normalize("NFKC").toLowerCase().replace(/[’`]/g, "'").replace(/\s+/g, " ").trim();
+// 出演者名の表記ゆれ対策: 括弧書きや「(Live)」「DJ set」などを外した名前でも照合する。「A b2b B」は A と B に分ける
+const stripName = s => String(s || "").normalize("NFKC").replace(/(?<=.)[(\[【〈<][^)\]】〉>]*[)\]】〉>]/g, " ")   // 先頭の括弧は名前の一部（"(sic)boy" など）なので残す
+  .replace(/\s+[-–—]\s*(live|dj|dj set|live set|hybrid set)\s*[-–—]?\s*$/i, " ")
+  .replace(/\s+(live set|dj set|hybrid set|live)\s*$/i, " ").replace(/\s+/g, " ").trim();
+const splitActs = s => String(s || "").split(/\s+(?:b2b|b3b|vs\.?)\s+/i).map(x => x.trim()).filter(Boolean);
+const core = s => { const c = norm(stripName(s)); return c.length >= 2 ? c : norm(s); };
+const variants = s => [...new Set([norm(s), core(s), ...splitActs(s).map(core)])].filter(Boolean);
 const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const pad = n => String(n).padStart(2, "0");
 const iso = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
@@ -360,10 +379,11 @@ const vname = e => e.venue_name || (VENUES[e.venue] || {}).name || e.venue;
 const isLive = v => !!(VENUES[v] || {}).live;
 
 // ---------- state
-const state = { prefs: { artists: [], keywords: [], genres: [] }, venues: {}, onlyHits: false, month: TODAY.slice(0, 7), sel: TODAY };
+const PREF_KEYS = ["artists", "keywords", "genres", "going", "maybe"];   // going / maybe は印を付けたイベントのID
+const state = { prefs: { artists: [], keywords: [], genres: [], going: [], maybe: [] }, venues: {}, onlyHits: false, month: TODAY.slice(0, 7), sel: TODAY };
 try {
   const saved = JSON.parse(localStorage.getItem(STORE) || "null");
-  if (saved && saved.prefs) for (const k of ["artists", "keywords", "genres"]) if (Array.isArray(saved.prefs[k])) state.prefs[k] = saved.prefs[k].map(String);
+  if (saved && saved.prefs) for (const k of PREF_KEYS) if (Array.isArray(saved.prefs[k])) state.prefs[k] = saved.prefs[k].map(String);
   if (saved && saved.venues) state.venues = saved.venues;
 } catch (_) { /* 保存領域が使えなくても表示はできる */ }
 function store() {
@@ -376,7 +396,7 @@ function save() { store(); queuePush(); }
 const SYNC_STORE = "club-calendar:sync";
 let sync = null;          // { key, t }  t = この端末で最後に好みを変えた時刻
 let syncMsg = "";
-try { const j = JSON.parse(localStorage.getItem(SYNC_STORE) || "null"); if (j && /^[0-9a-f]{64}$/.test(j.key)) sync = { key: j.key, t: Number(j.t) || 0 }; } catch (_) {}
+try { const j = JSON.parse(localStorage.getItem(SYNC_STORE) || "null"); if (j && /^[0-9a-f]{64}$/.test(j.key)) sync = { key: j.key, t: Number(j.t) || 0, notify: !!j.notify }; } catch (_) {}
 function storeSync() {
   try { sync ? localStorage.setItem(SYNC_STORE, JSON.stringify(sync)) : localStorage.removeItem(SYNC_STORE); } catch (_) {}
 }
@@ -420,7 +440,7 @@ async function pushPrefs() {
   return !!(j && j.ok);
 }
 function adoptPrefs(data, t) {
-  for (const k of ["artists", "keywords", "genres"]) state.prefs[k] = Array.isArray(data && data[k]) ? data[k].map(String) : [];
+  for (const k of PREF_KEYS) state.prefs[k] = Array.isArray(data && data[k]) ? data[k].map(String) : [];
   sync.t = t; storeSync(); store();
   computeMatches(); renderAll();
   if (prefsDlg.open) fillPrefs();
@@ -433,10 +453,11 @@ async function pullPrefs(merge) {
   const j = await api({ action: "prefs_get", key });
   if (!sync || sync.key !== key) return false;
   if (!j || !j.ok) { setSyncMsg("同期できませんでした。次に開いたときにもう一度試します。"); return false; }
+  if (!!j.notify !== !!sync.notify) { sync.notify = !!j.notify; storeSync(); if (prefsDlg.open) fillPrefs(); }
   if (!j.found) { if (!sync.t) sync.t = Date.now(); storeSync(); return pushPrefs(); }
   if (merge) {
     const out = {};
-    for (const k of ["artists", "keywords", "genres"]) {
+    for (const k of PREF_KEYS) {
       out[k] = [...state.prefs[k]];
       for (const v of (j.data[k] || [])) if (!out[k].some(x => norm(x) === norm(v))) out[k].push(String(v));
     }
@@ -448,11 +469,41 @@ async function pullPrefs(merge) {
   setSyncMsg(`同期済み（${nowHM()}）`);
   return true;
 }
+// 新着メール: お気に入りに一致するイベントが新しく載ったら、毎朝まとめてメールする（宛先は管理者が許可したアドレスだけ）
+let notifyMsg = "";
+function notifySection() {
+  const msg = h("span", { class: "hint", role: "status" }, notifyMsg);
+  const say = t => { notifyMsg = t; msg.textContent = t; };
+  const call = async (email, btn) => {
+    btn.disabled = true; say("送信中…");
+    const j = await api({ action: "notify_set", key: sync.key, email });
+    btn.disabled = false;
+    if (j && j.ok) { sync.notify = !!j.notify; storeSync(); notifyMsg = j.notify ? "登録しました。明日の朝から届きます（初回は、いま一致しているイベントの一覧）。" : "新着メールを止めました。"; fillPrefs(); return; }
+    say(j && j.error === "not_allowed" ? "このアドレスにはまだ送れません。管理者に、新着メールを使いたいアドレスを伝えてください。"
+      : j && j.error === "email" ? "メールアドレスの形が正しくありません。"
+      : j && j.error === "nokey" ? "先にお気に入りを1つ登録して、同期を済ませてください。"
+      : "登録できませんでした。少し待ってからもう一度お試しください。");
+  };
+  if (sync.notify) {
+    const stop = h("button", { class: "btn" }, "新着メールを止める");
+    stop.addEventListener("click", () => call("", stop));
+    return [h("h4", {}, "新着メール"), h("div", { class: "hint" }, "登録済みです。お気に入りに一致するイベントが新しく載ると、朝にメールが届きます。"),
+      h("div", { class: "foot", style: "margin-top:8px" }, msg, stop)];
+  }
+  const mail = h("input", { type: "email", placeholder: "メールアドレス", "aria-label": "新着メールの宛先", autocomplete: "email", autocapitalize: "off", spellcheck: "false" });
+  const go = h("button", { class: "btn" }, "登録");
+  go.addEventListener("click", () => { const v = mail.value.trim(); if (!v) { say("メールアドレスを入れてください。"); mail.focus(); return; } call(v, go); });
+  return [h("h4", {}, "新着メール"),
+    h("div", { class: "hint" }, "お気に入りのアーティスト・レーベル・キーワードに一致するイベントが新しく載ったら、朝にメールでお知らせします。"),
+    h("div", { class: "field", style: "display:flex;gap:8px" }, mail, go),
+    h("div", { style: "margin-top:8px" }, msg)];
+}
 function syncSection() {
   const status = h("span", { class: "hint", id: "syncMsg", role: "status" }, syncMsg);
   if (sync) return [
+    notifySection(),
     h("h4", {}, "端末間で同期"),
-    h("div", { class: "hint" }, "この端末は同期中です。同じ合言葉を入れた端末と、お気に入り（アーティスト・キーワード・ジャンル）が同じになります。"),
+    h("div", { class: "hint" }, "この端末は同期中です。同じ合言葉を入れた端末と、お気に入りと「行く・気になる」の印が同じになります。"),
     h("div", { class: "foot", style: "margin-top:8px" }, status, h("span", { style: "display:flex;gap:8px" },
       h("button", { class: "btn", onclick: () => pullPrefs(false) }, "今すぐ同期"),
       h("button", { class: "btn", onclick: () => { sync = null; storeSync(); syncMsg = "同期をやめました。この端末のお気に入りはそのまま残ります。"; fillPrefs(); } }, "同期をやめる")))];
@@ -470,20 +521,31 @@ function syncSection() {
   });
   return [
     h("h4", {}, "端末間で同期"),
-    h("div", { class: "hint" }, "合言葉を決めて、使う端末すべてで同じものを入れると、お気に入りが同じになります。ブラウザのデータを消しても、合言葉を入れ直せば戻ります。合言葉を知っている人は内容を見たり変えたりできるので、推測されにくいものにしてください。"),
+    h("div", { class: "hint" }, "合言葉を決めて、使う端末すべてで同じものを入れると、お気に入りと「行く・気になる」の印が同じになります。同期を始めると、新着をメールで受け取る設定もできます。ブラウザのデータを消しても、合言葉を入れ直せば戻ります。合言葉を知っている人は内容を見たり変えたりできるので、推測されにくいものにしてください。"),
     h("div", { class: "field", style: "display:flex;gap:8px" }, pass, go),
     h("div", { style: "margin-top:8px" }, status)];
 }
 // リポジトリ側（data/follow.json）で固定フォローしているアーティスト・レーベルと、レーベルの所属アーティスト
 const FOLLOW = { artists: (DATA.follow && DATA.follow.artists) || [], labels: (DATA.follow && DATA.follow.labels) || [] };
-const ROSTERS = FOLLOW.labels.map(l => [l, new Set(((DATA.labels || {})[l] || []).map(norm).filter(n => n.length >= 3))]);
-const isFollowed = v => FOLLOW.artists.some(x => norm(x) === norm(v));
-const labelsOf = v => ROSTERS.filter(([, set]) => set.has(norm(v))).map(([l]) => l);
-const has = (kind, v) => state.prefs[kind].some(x => norm(x) === norm(v)) || (kind === "artists" && isFollowed(v));
+const ROSTERS = FOLLOW.labels.map(l => [l, new Set(((DATA.labels || {})[l] || []).flatMap(a => [norm(a), core(a)]).filter(n => n.length >= 3))]);
+const prefKey = (kind, v) => kind === "artists" ? core(v) : norm(v);
+const isFollowed = v => FOLLOW.artists.some(x => core(x) === core(v));
+const labelsOf = v => ROSTERS.filter(([, set]) => variants(v).some(x => set.has(x))).map(([l]) => l);
+const has = (kind, v) => state.prefs[kind].some(x => prefKey(kind, x) === prefKey(kind, v)) || (kind === "artists" && isFollowed(v));
 function toggle(kind, v) {
   if (kind === "artists" && isFollowed(v)) return; // follow.json 側の登録は画面からは外せない
-  if (has(kind, v)) state.prefs[kind] = state.prefs[kind].filter(x => norm(x) !== norm(v));
-  else state.prefs[kind].push(String(v).trim());
+  if (has(kind, v)) state.prefs[kind] = state.prefs[kind].filter(x => prefKey(kind, x) !== prefKey(kind, v));
+  else state.prefs[kind].push(kind === "artists" && stripName(v).length >= 2 ? stripName(v) : String(v).trim());
+  save(); computeMatches(); renderAll();
+}
+// ---------- 行く / 気になる
+const markOf = e => state.prefs.going.includes(e.id) ? "going" : state.prefs.maybe.includes(e.id) ? "maybe" : null;
+const MARK_LABEL = { going: "行く", maybe: "気になる" };
+function setMark(e, kind) {
+  const was = markOf(e);
+  const known = new Set(EVENTS.map(x => x.id));   // 掲載が終わったイベントの印はここで片付ける
+  for (const k of ["going", "maybe"]) state.prefs[k] = state.prefs[k].filter(id => id !== e.id && known.has(id));
+  if (was !== kind) state.prefs[kind].push(e.id);
   save(); computeMatches(); renderAll();
 }
 
@@ -491,6 +553,8 @@ function toggle(kind, v) {
 const EVENTS = DATA.events.map(e => ({ ...e, last: e.end_date || e.date }));
 for (const e of EVENTS) {
   e._lineup = (e.lineup || []).map(norm);
+  e._vars = (e.lineup || []).map(variants);
+  e._names = new Set(e._vars.flat());
   e._genres = (e.genres || []).map(norm);
   e._hay = norm([e.title, (e.lineup || []).join("\n"), e.text].join("\n"));
 }
@@ -498,15 +562,15 @@ for (const e of EVENTS) {
 const wordRe = s => new RegExp("(?<![a-z0-9])" + escRe(norm(s)) + "(?![a-z0-9])");
 function computeMatches() {
   const allArtists = [...FOLLOW.artists, ...state.prefs.artists.filter(x => !isFollowed(x))];
-  const A = allArtists.filter(x => norm(x)).map(x => [x, norm(x), wordRe(x)]);
+  const A = allArtists.filter(x => norm(x)).map(x => [x, core(x), wordRe(stripName(x) || x)]);
   const L = ROSTERS.map(([l, set]) => [l, set, wordRe(l)]);
   const K = state.prefs.keywords.filter(x => norm(x)).map(x => [x, wordRe(x)]);
   const G = state.prefs.genres.map(norm).filter(Boolean);
   for (const e of EVENTS) {
     e.hits = [];
-    for (const [raw, n, re] of A) if (e._lineup.includes(n) || re.test(e._hay)) e.hits.push({ kind: "artist", label: raw, w: 10 });
+    for (const [raw, n, re] of A) if (e._names.has(n) || re.test(e._hay)) e.hits.push({ kind: "artist", label: raw, w: 10 });
     for (const [l, set, re] of L) {
-      const acts = (e.lineup || []).filter((a, i) => set.has(e._lineup[i]) && !e.hits.some(x => x.kind === "artist" && norm(x.label) === e._lineup[i]));
+      const acts = (e.lineup || []).filter((a, i) => e._vars[i].some(x => set.has(x)) && !e.hits.some(x => x.kind === "artist" && e._vars[i].includes(core(x.label))));
       for (const a of acts.slice(0, 3)) e.hits.push({ kind: "label", label: `${l}: ${a}`, w: 8 });
       // ライブ会場は「WARP」を含む無関係な公演名が多いので、レーベル名そのものの一致はクラブ側だけで見る
       if (!acts.length && !isLive(e.venue) && re.test(e._hay)) e.hits.push({ kind: "label", label: l, w: 5 });
@@ -514,7 +578,8 @@ function computeMatches() {
     for (const [raw, re] of K) if (re.test(e._hay)) e.hits.push({ kind: "keyword", label: raw, w: 5 });
     (e.genres || []).forEach((g, i) => { if (G.includes(e._genres[i])) e.hits.push({ kind: "genre", label: g, w: 2 }); });
     e.score = e.hits.reduce((s, x) => s + x.w, 0);
-    e.strong = e.hits.some(x => x.kind !== "genre");
+    e.mark = markOf(e);
+    e.strong = !!e.mark || e.hits.some(x => x.kind !== "genre");
   }
 }
 const isNew = e => {
@@ -525,7 +590,7 @@ const isNew = e => {
 const venueOn = v => isLive(v) ? state.venues[v] === true : state.venues[v] !== false;
 const inScope = e => isLive(e.venue) ? (venueOn(e.venue) || e.strong) : venueOn(e.venue);
 const upcoming = () => EVENTS.filter(e => e.last >= TODAY && inScope(e));
-const visible = e => inScope(e) && (!state.onlyHits || e.score > 0);
+const visible = e => inScope(e) && (!state.onlyHits || e.score > 0 || !!e.mark);
 
 // ---------- rendering
 function dateBlock(e) {
@@ -544,6 +609,7 @@ function row(e) {
     dateBlock(e),
     h("div", { class: "body" },
       h("div", { class: "when" }, h("span", { class: "venue" }, vname(e)), e.open ? h("span", {}, e.open) : null,
+        e.mark ? h("span", { class: "tag mark " + e.mark }, MARK_LABEL[e.mark]) : null,
         isNew(e) ? h("span", { class: "tag new" }, "NEW") : null),
       h("div", { class: "title" }, e.title),
       e.hits.length ? h("div", { class: "why" }, e.hits.slice(0, 6).map(x => h("span", { class: "tag hit" + (x.kind === "label" ? " label" : "") }, (x.kind === "artist" ? "★ " : "") + x.label))) : null,
@@ -579,7 +645,14 @@ function renderHero() {
       h("span", {}, h("div", { class: "t" }, e.title), (e.lineup || []).length ? h("div", { class: "a" }, e.lineup.slice(0, 10).join(" / ")) : null),
       h("span", { class: "o" }, e.open || ""))));
 }
+function renderPlans() {
+  const list = EVENTS.filter(e => e.mark && e.last >= TODAY).sort((a, b) => a.date.localeCompare(b.date) || (a.mark === "going" ? -1 : 1));
+  const hd = document.getElementById("plansH"), box = document.getElementById("plans");
+  hd.hidden = box.hidden = !list.length;
+  fill(box, list.length ? rowList(list, 12, "") : null);
+}
 function renderTop() {
+  renderPlans();
   const n = state.prefs.artists.length + state.prefs.keywords.length + state.prefs.genres.length + FOLLOW.artists.length + FOLLOW.labels.length;
   const up = upcoming();
   const mine = up.filter(e => e.score > 0).sort((a, b) => (b.strong - a.strong) || a.date.localeCompare(b.date) || b.score - a.score);
@@ -590,7 +663,7 @@ function renderTop() {
   const fresh = up.filter(isNew).sort((a, b) => b.score - a.score || (b.first_seen || "").localeCompare(a.first_seen || "") || a.date.localeCompare(b.date));
   fill(document.getElementById("fresh"), rowList(fresh, 8, "直近7日間に追加されたイベントはありません。"));
 }
-function eventsOn(day) { return EVENTS.filter(e => e.date <= day && day <= e.last && visible(e)).sort((a, b) => b.score - a.score || isLive(a.venue) - isLive(b.venue) || a.venue.localeCompare(b.venue)); }
+function eventsOn(day) { return EVENTS.filter(e => e.date <= day && day <= e.last && visible(e)).sort((a, b) => !!b.mark - !!a.mark || b.score - a.score || isLive(a.venue) - isLive(b.venue) || a.venue.localeCompare(b.venue)); }
 function renderCal() {
   const [y, m] = state.month.split("-").map(Number);
   fill(document.getElementById("monthLabel"), `${y}.`, h("em", {}, pad(m)));
@@ -606,10 +679,10 @@ function renderCal() {
     cells.push(h("div", { class: cls, role: "button", tabindex: "0", "aria-label": `${fmtDay(key)} ${list.length}件`, onclick: pickDay,
       onkeydown: ev => { if (ev.target === ev.currentTarget && (ev.key === "Enter" || ev.key === " ")) { ev.preventDefault(); pickDay(); } } },
       h("span", { class: "num" }, String(d.getDate())),
-      list.slice(0, 3).map(e => h("button", { class: "ev" + (e.score > 0 ? " hit" : ""), style: `--vc:${vcolor(e.venue)}`, title: `${vname(e)} / ${e.title}`,
+      list.slice(0, 3).map(e => h("button", { class: "ev" + (e.score > 0 ? " hit" : "") + (e.mark ? " mark" : ""), style: `--vc:${vcolor(e.venue)}`, title: `${vname(e)} / ${e.title}`,
         onclick: ev => { ev.stopPropagation(); if (state.sel !== key) { state.sel = key; renderCal(); renderDay(); } openEvent(e); } }, e.title)),
       list.length > 3 ? h("span", { class: "rest", onclick: ev => { ev.stopPropagation(); pickDay(); document.getElementById("dayTitle").scrollIntoView({ behavior: "smooth", block: "start" }); } }, `ほか${list.length - 3}件`) : null,
-      h("span", { class: "dots" }, list.slice(0, 8).map(e => h("span", { class: "dot" + (e.score > 0 ? " hit" : ""), style: `--vc:${vcolor(e.venue)}` })))));
+      h("span", { class: "dots" }, list.slice(0, 8).map(e => h("span", { class: "dot" + (e.score > 0 ? " hit" : "") + (e.mark ? " mark" : ""), style: `--vc:${vcolor(e.venue)}` })))));
   }
   fill(document.getElementById("cal"), cells);
 }
@@ -625,7 +698,7 @@ function renderFilters() {
   const live = present.filter(isLive);
   fill(document.getElementById("filters"),
     present.filter(v => !isLive(v)).map(chip),
-    live.length ? [h("span", { class: "grp" }, "｜ライブ会場（未チェックは一致のみ表示）"), live.map(chip)] : null,
+    live.length ? [h("span", { class: "grp" }, "｜ライブ会場・ツアー（未チェックは一致のみ表示）"), live.map(chip)] : null,
     h("span", { class: "grp" }, "｜"),
     h("button", { class: "chip plain", "aria-pressed": String(state.onlyHits), onclick: () => { state.onlyHits = !state.onlyHits; renderAll(); } }, "★ 好みに一致だけ"));
 }
@@ -638,6 +711,38 @@ function pick(kind, label) {
   const ls = kind === "artists" ? labelsOf(label) : [];
   return h("button", { class: "pick", "aria-pressed": String(has(kind, label)), title: ls.length ? `${ls.join(", ")} からリリースあり` : null, onclick: () => toggle(kind, label) },
     label, ls.length ? h("span", { class: "lb" }, `  ${ls.join(", ")}`) : null);
+}
+// ---------- カレンダー登録（開始 = OPEN時刻。20時以降の開始は6時間、それ以外は3時間の枠。時刻不明・複数日は終日）
+function calTimes(e) {
+  const [y, m, d] = e.date.split("-").map(Number);
+  const t = /^(\d{1,2}):(\d{2})$/.exec(e.open || "");
+  const ymd = dt => `${dt.getUTCFullYear()}${pad(dt.getUTCMonth() + 1)}${pad(dt.getUTCDate())}`;
+  if (!t || (e.end_date && e.end_date !== e.date)) {
+    const [y2, m2, d2] = (e.end_date || e.date).split("-").map(Number);
+    return { allDay: true, start: ymd(new Date(Date.UTC(y, m - 1, d))), end: ymd(new Date(Date.UTC(y2, m2 - 1, d2 + 1))) };
+  }
+  const hh = +t[1], mm = +t[2];
+  const start = new Date(Date.UTC(y, m - 1, d, hh - 9, mm));               // 日本時間 → UTC
+  const end = new Date(start.getTime() + (hh >= 20 ? 6 : 3) * 36e5);
+  const z = dt => `${ymd(dt)}T${pad(dt.getUTCHours())}${pad(dt.getUTCMinutes())}00Z`;
+  return { allDay: false, start: z(start), end: z(end) };
+}
+const calDetails = e => [(e.lineup || []).slice(0, 30).join(" / "), /^https?:\/\//.test(e.url || "") ? e.url : ""].filter(Boolean).join("\n\n");
+function gcalUrl(e) {
+  const t = calTimes(e);
+  return "https://calendar.google.com/calendar/render?" + new URLSearchParams({ action: "TEMPLATE", text: e.title, dates: `${t.start}/${t.end}`, location: vname(e), details: calDetails(e) });
+}
+function downloadIcs(e) {
+  const t = calTimes(e);
+  const esc = v => String(v || "").replace(/\\/g, "\\\\").replace(/\n/g, "\\n").replace(/([,;])/g, "\\$1");
+  const stamp = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
+  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//club-calendar//JA", "BEGIN:VEVENT",
+    `UID:${e.id.replace(/[^\w.:-]/g, "_")}@club-calendar`, `DTSTAMP:${stamp}`,
+    t.allDay ? `DTSTART;VALUE=DATE:${t.start}` : `DTSTART:${t.start}`, t.allDay ? `DTEND;VALUE=DATE:${t.end}` : `DTEND:${t.end}`,
+    `SUMMARY:${esc(e.title)}`, `LOCATION:${esc(vname(e))}`, `DESCRIPTION:${esc(calDetails(e))}`, "END:VEVENT", "END:VCALENDAR"];
+  const a = h("a", { href: URL.createObjectURL(new Blob([lines.join("\r\n") + "\r\n"], { type: "text/calendar;charset=utf-8" })), download: "event.ics" });
+  document.body.append(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 5000);
 }
 // 出演者: 名前はWeb検索を開くリンク、★ はお気に入りの切り替え（別々に押せる）
 function actChip(label) {
@@ -659,9 +764,14 @@ function fillEvent(e) {
     e.price ? h("div", { class: "sub" }, e.price) : null,
     (e.genres || []).length ? [h("h4", {}, "ジャンル"), h("div", { class: "picks" }, e.genres.map(g => pick("genres", g)))] : null,
     h("h4", {}, "出演者"),
-    (e.lineup || []).length ? h("div", { class: "picks" }, e.lineup.map(actChip))
+    (e.lineup || []).length ? h("div", { class: "picks" }, e.lineup.flatMap(splitActs).map(actChip))
       : h("div", { class: "hint" }, "出演者を読み取れませんでした（未発表の場合もあります）。"),
     h("div", { class: "hint", style: "margin-top:10px" }, "名前を押すとWeb検索、☆を押すとお気に入り。ジャンルは押すと★が付きます。"),
+    h("h4", {}, "自分の予定"),
+    h("div", { class: "picks" },
+      ["going", "maybe"].map(k => h("button", { class: "pick markbtn", "aria-pressed": String(e.mark === k), onclick: () => setMark(e, k) }, MARK_LABEL[k])),
+      h("a", { class: "pick link", href: gcalUrl(e), target: "_blank", rel: "noopener noreferrer" }, "Googleカレンダーに追加 ↗"),
+      h("button", { class: "pick link", onclick: () => downloadIcs(e) }, "カレンダー用ファイル (.ics)")),
     e.text ? h("details", {}, h("summary", {}, "掲載情報（抜粋）"), h("pre", {}, e.text)) : null,
     h("div", { class: "foot" },
       safeUrl ? h("a", { class: "btn primary", href: safeUrl, target: "_blank", rel: "noopener noreferrer" }, "公式ページ ↗") : h("span", {}),
@@ -701,12 +811,12 @@ function rosterBox(l) {
   const list = (DATA.labels || {})[l] || [];
   // 今後のイベントに出演がある人を先頭に
   const playing = new Map();
-  for (const e of EVENTS) if (e.last >= TODAY) (e.lineup || []).forEach((a, i) => { if (!playing.has(e._lineup[i])) playing.set(e._lineup[i], e); });
-  const on = list.filter(a => playing.has(norm(a))), off = list.filter(a => !playing.has(norm(a)));
+  for (const e of EVENTS) if (e.last >= TODAY) e._vars.flat().forEach(x => { if (!playing.has(x)) playing.set(x, e); });
+  const on = list.filter(a => playing.has(core(a))), off = list.filter(a => !playing.has(core(a)));
   return h("div", { class: "roster" },
     h("div", { class: "hint" }, `${l} の所属アーティスト ${list.length}組（リリース数の多い順・MusicBrainz調べ）`),
     on.length ? h("div", { class: "picks", style: "margin-top:8px" }, on.map(a => h("button", { class: "pick", "aria-pressed": "true",
-      onclick: () => { prefsDlg.close(); openEvent(playing.get(norm(a))); } }, `${a} — 出演あり`))) : null,
+      onclick: () => { prefsDlg.close(); openEvent(playing.get(core(a))); } }, `${a} — 出演あり`))) : null,
     h("div", { class: "names" }, off.join(" ・ ")));
 }
 function fillPrefs() {
@@ -734,7 +844,7 @@ function fillPrefs() {
       h("div", { class: "foot", style: "margin-top:8px" }, msg, h("button", { class: "btn", onclick: () => {
         try {
           const j = JSON.parse(ta.value);
-          for (const k of ["artists", "keywords", "genres"]) state.prefs[k] = Array.isArray(j[k]) ? j[k].map(String) : [];
+          for (const k of PREF_KEYS) state.prefs[k] = Array.isArray(j[k]) ? j[k].map(String) : [];
           save(); computeMatches(); renderAll(); fillPrefs();
         } catch (_) { msg.textContent = "読み込めませんでした（形式が正しくありません）。"; }
       } }, "読み込む"))),

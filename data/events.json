@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T18:37+09:00",
+ "updated": "2026-11-21T00:28+09:00",
  "sources": {
   "asia": {
    "ok": true,
@@ -50,6 +50,16 @@
    "ok": true,
    "count": 108,
    "checked": "2026-11-20T18:37+09:00"
+  },
+  "cman": {
+   "ok": true,
+   "count": 164,
+   "checked": "2026-11-21T00:28+09:00"
+  },
+  "clubberia": {
+   "ok": true,
+   "count": 0,
+   "checked": "2026-11-21T00:27+09:00"
   }
  },
  "follow": {
@@ -491,60 +501,6 @@
   ]
  },
  "events": [
-  {
-   "id": "vent:vent_20261016",
-   "venue": "vent",
-   "date": "2026-10-16",
-   "url": "http://vent-tokyo.net/schedule/vent_20261016/",
-   "title": "Ata",
-   "open": "23:00",
-   "genres": [
-    "Techno",
-    "House",
-    "Disco"
-   ],
-   "lineup": [
-    "Ata",
-    "Dr. NISHIMURA",
-    "Hayato",
-    "Kasumisty",
-    "Lui",
-    "RIO",
-    "Blue"
-   ],
-   "text": "Ata\nDr. NISHIMURA\nHayato\nKasumisty\nLui\nRIO\nBlue",
-   "price": "¥4000",
-   "venue_name": "VENT",
-   "first_seen": null
-  },
-  {
-   "id": "womb:101626",
-   "venue": "womb",
-   "date": "2026-10-16",
-   "url": "https://www.womb.co.jp/ja/events/101626",
-   "title": "DEEP DIVE DRIVE",
-   "open": "23:00",
-   "genres": [
-    "Techno"
-   ],
-   "lineup": [
-    "DJ KURI",
-    "PETER VAN HOESEN",
-    "SO",
-    "DELTA FUNKTIONEN",
-    "FULL SENTIMENTAL",
-    "NICO",
-    "YO NISHIJIMA",
-    "JOHN PLAZA",
-    "LØST",
-    "OPML",
-    "REMI OHSUGI"
-   ],
-   "text": "23:00-4:30\nDOOR: ¥5000\nADVANCE TICKETS: ¥4000",
-   "price": "DOOR: ¥5000 / ADVANCE TICKETS: ¥4000",
-   "venue_name": "WOMB",
-   "first_seen": null
-  },
   {
    "id": "vent:ldg-x-mind-off",
    "venue": "vent",
@@ -1173,6 +1129,21 @@
    "first_seen": null
   },
   {
+   "id": "cman:non_2026-2026-11-01-東京",
+   "venue": "cman",
+   "date": "2026-11-01",
+   "url": "https://www.creativeman.co.jp/event/non_2026/",
+   "title": "のん（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "のん"
+   ],
+   "text": "のん（東京）\nのん\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:cinemastaff_20261101",
    "venue": "liquid",
    "date": "2026-11-01",
@@ -1436,6 +1407,21 @@
    "text": "[B4 Z HALL]\nDJs：BRESH Local DJs & Performers\nCYBERJAPAN DANCERS：MIYURI / KYRIE\nBRESH TOKYO 02/11 – Halloween Special Edition\nBRESH, THE MOST BEAUTIFUL PARTY IN THE WORLD GOES BACK TO ZEROTOKYO FOR A SPECIAL HALLOWEEN EDITION.\nBRING YOUR COSTUME, THE BEST ONE WILL WIN A PINK TICKET TO ACCESS EVERY BRESH THEY WANT.\nTell your friends and save the date, this is a party you don’t want to miss.",
    "price": "DOOR：¥5,000- / EARLY BIRD：¥3,500-（優先入場・入場料金含む）※SOLD OUT / FASTPASS TICKET TIER 1：¥4,000-（優先入場・入場料金含む）※SOLD OUT / FASTPASS TICKET TIER 2：¥4,500-（優先入場・入場料金含む） / VIP STAGE TICKET：¥10,000-（優先入場＋VIP STAGE・入場料金含む） / 整列開始：10:30PM / ※各種優待対象外",
    "venue_name": "ZERO TOKYO",
+   "first_seen": null
+  },
+  {
+   "id": "cman:the-bonez-suntown-the-second-2026-11-03-東京",
+   "venue": "cman",
+   "date": "2026-11-03",
+   "url": "https://www.creativeman.co.jp/event/the-bonez-suntown-the-second/",
+   "title": "The BONEZ（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "The BONEZ"
+   ],
+   "text": "The BONEZ（東京）\nThe BONEZ\n発売中",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -1902,6 +1888,21 @@
    "first_seen": null
   },
   {
+   "id": "cman:melaniec26-2026-11-06-東京",
+   "venue": "cman",
+   "date": "2026-11-06",
+   "url": "https://www.creativeman.co.jp/event/melaniec26/",
+   "title": "MELANIE C（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "MELANIE C"
+   ],
+   "text": "MELANIE C（東京）\nMELANIE C\n当日券あり",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "dommune:2026-110601",
    "venue": "dommune",
    "date": "2026-11-06",
@@ -2323,6 +2324,36 @@
    "first_seen": null
   },
   {
+   "id": "cman:death-cab-for-cutie_2026-2026-11-08-大阪",
+   "venue": "cman",
+   "date": "2026-11-08",
+   "url": "https://www.creativeman.co.jp/event/death-cab-for-cutie_2026/",
+   "title": "DEATH CAB FOR CUTIE（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "DEATH CAB FOR CUTIE"
+   ],
+   "text": "DEATH CAB FOR CUTIE（大阪）\nDEATH CAB FOR CUTIE\n当日券あり",
+   "venue_name": "大阪（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:bachikanshikokni_aisaretai-2026-11-08-東京",
+   "venue": "cman",
+   "date": "2026-11-08",
+   "url": "https://www.creativeman.co.jp/event/bachikanshikokni_aisaretai/",
+   "title": "バチカン市国に愛されたい（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "バチカン市国に愛されたい"
+   ],
+   "text": "バチカン市国に愛されたい（東京）\nバチカン市国に愛されたい",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:edl2_20261108",
    "venue": "liquid",
    "date": "2026-11-08",
@@ -2468,6 +2499,36 @@
    "first_seen": null
   },
   {
+   "id": "cman:death-cab-for-cutie_2026-2026-11-09-東京",
+   "venue": "cman",
+   "date": "2026-11-09",
+   "url": "https://www.creativeman.co.jp/event/death-cab-for-cutie_2026/",
+   "title": "DEATH CAB FOR CUTIE（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "DEATH CAB FOR CUTIE"
+   ],
+   "text": "DEATH CAB FOR CUTIE（東京）\nDEATH CAB FOR CUTIE\n当日券あり",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:xaosx888-2026-11-09-神奈川",
+   "venue": "cman",
+   "date": "2026-11-09",
+   "url": "https://www.creativeman.co.jp/event/xaosx888/",
+   "title": "XAOSX（神奈川）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "XAOSX"
+   ],
+   "text": "XAOSX（神奈川）\nXAOSX\n発売中",
+   "venue_name": "神奈川（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:shes_20261109",
    "venue": "liquid",
    "date": "2026-11-09",
@@ -2541,6 +2602,21 @@
    ],
    "text": "will hyde / LUCKY TAPES — KrosSphere\nwill hyde / LUCKY TAPES",
    "venue_name": "WWW X",
+   "first_seen": null
+  },
+  {
+   "id": "cman:mazzel-2nd-fan-meeting-2026-11-10-神奈川",
+   "venue": "cman",
+   "date": "2026-11-10",
+   "url": "https://www.creativeman.co.jp/event/mazzel-2nd-fan-meeting/",
+   "title": "MAZZEL（神奈川）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "MAZZEL"
+   ],
+   "text": "MAZZEL（神奈川）\nMAZZEL",
+   "venue_name": "神奈川（Creativeman）",
    "first_seen": null
   },
   {
@@ -3076,6 +3152,36 @@
    "first_seen": null
   },
   {
+   "id": "cman:band-maid-world-tour-2026-final-2026-11-13-東京",
+   "venue": "cman",
+   "date": "2026-11-13",
+   "url": "https://www.creativeman.co.jp/event/band-maid-world-tour-2026-final/",
+   "title": "BAND-MAID（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "BAND-MAID"
+   ],
+   "text": "BAND-MAID（東京）\nBAND-MAID",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:therapy-at-the-floor-2026-11-13-東京",
+   "venue": "cman",
+   "date": "2026-11-13",
+   "url": "https://www.creativeman.co.jp/event/therapy-at-the-floor/",
+   "title": "eill（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "eill"
+   ],
+   "text": "eill（東京）\neill",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:bakdropbomb_20261113",
    "venue": "liquid",
    "date": "2026-11-13",
@@ -3310,6 +3416,21 @@
    ],
    "text": "2026.11.14_SAT 23:00\n『BOTH WINGS 25周年-RAGGA RISE AGAIN in TOKYO-』\n➤ #clubasia\n- DOOR：¥3,500-\n- 1:00まで：LADIES FREE\n- ADV：¥2,500-\nhttps://cultureofasia.zaiko.io/buy/1CnB:Tms:8bf49\n-1F FLOOR-\nDUB PLATE SESSION EDITION\n★GUEST SOUND\nARTICAL PRIDE from 千葉\nBARRIER FREE from 大阪\nBLAST STAR from 東京\nMAXIMUM from 埼玉\n★HOST SOUND\nBOTH WINGS\n★FOOD\nJERK TIME\n★PHOTO\nRETASU\n★SOUND SYSTEM\nTRAVELLERS BOXXX\n-2F FLOOR-\nBACK TO BASIC ALL 80’S～2000’S NIGHT\n★SOUND (A-Z)\nBIG BLAZE WILDERS\nDJ KIXXX from MASTERPIECE SOUND\nMAD FREAK\nMAVERICK\nRACY BULLET\nRAW QUALITY\n★FLOOR VIBES\nUCHIKO\nAYA BLAZIN\nJOY\nMILKY\nSHIHO (FOPPISH)\n—————\n《ATTENTION》",
    "venue_name": "club asia",
+   "first_seen": null
+  },
+  {
+   "id": "cman:band-maid-world-tour-2026-final-2026-11-14-東京",
+   "venue": "cman",
+   "date": "2026-11-14",
+   "url": "https://www.creativeman.co.jp/event/band-maid-world-tour-2026-final/",
+   "title": "BAND-MAID（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "BAND-MAID"
+   ],
+   "text": "BAND-MAID（東京）\nBAND-MAID",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -3775,6 +3896,21 @@
    "first_seen": null
   },
   {
+   "id": "cman:atsuko-okatsuka26-2026-11-17-東京",
+   "venue": "cman",
+   "date": "2026-11-17",
+   "url": "https://www.creativeman.co.jp/event/atsuko-okatsuka26/",
+   "title": "ATSUKO OKATSUKA（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "ATSUKO OKATSUKA"
+   ],
+   "text": "ATSUKO OKATSUKA（東京）\nATSUKO OKATSUKA\nSOLD OUT",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:shibuyaluisant_20261117",
    "venue": "liquid",
    "date": "2026-11-17",
@@ -3933,6 +4069,36 @@
    ],
    "text": "🔥 EXODUS｜2026.11.18 WED 🔥\n📍#clubasia 1F･2F OPEN ➤ 23:00\nOPEN - 24:00 ENTRANCE FREE !\n✸ 𝐄𝐍𝐓𝐑𝐀𝐍𝐂𝐄\n23:00 - 24:00 ENTRANCE FREE\n24:00 - Till Dawn ¥2,000 +1D\nW/ PHOTO FLYER ¥1,500 +1D\n✸ MUSIC：HIP HOP / TECHNO / ROCK / DRUM & BASS / PHONK\nOn November 18, warai_motoko (GIZMO/Rave Racers) joins as the special guest.\nEXODUS keeps getting hotter. Pull up and check it.\n-————\n✸ 𝐆𝐔𝐄𝐒𝐓\nwarai_motoko (GIZMO/Rave Racers) @warai_motoko_raveracers\n✸ 𝐄𝐗𝐎𝐃𝐔𝐒 𝐃𝐉’𝐬\nFUJI TRILL @fuji_trill\nDJ KOTARO @dj_kotaro_\nKUROMAKU @9609_kuromaku\nLeisu @leisurely_w0lf\nKANT @kan.t.kotoro\nPIS @pis_prpr\nmisa nakamura @m1sanakamura\nyak @yak_swamp\nkyuuu @kyuuuuuuuuuuuuuuuu\nLoku @loku_369\nBAN @hvckslum3\n多様な価値観 @tayoukachi\nKI @__ki0000\n✸ 𝐋𝐈𝐕𝐄 𝐓𝐀𝐓𝐓𝐎𝐎\n羅十羅 @lajula_tattoo\nROTTEN SMITH @rottensmith99\n✸ 𝐋𝐈𝐕𝐄 𝐏𝐀𝐈𝐍𝐓\nMASAKI @masakinx_sw\n✸ 𝐄𝐗𝐇𝐈𝐁𝐈𝐓𝐈𝐎𝐍\n✸ 𝐅𝐎𝐎𝐃\nHell See @666hellsee666",
    "venue_name": "club asia",
+   "first_seen": null
+  },
+  {
+   "id": "cman:atsuko-okatsuka26-2026-11-18-東京",
+   "venue": "cman",
+   "date": "2026-11-18",
+   "url": "https://www.creativeman.co.jp/event/atsuko-okatsuka26/",
+   "title": "ATSUKO OKATSUKA（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "ATSUKO OKATSUKA"
+   ],
+   "text": "ATSUKO OKATSUKA（東京）\nATSUKO OKATSUKA\nSOLD OUT",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:blind-channel26-2026-11-18-東京",
+   "venue": "cman",
+   "date": "2026-11-18",
+   "url": "https://www.creativeman.co.jp/event/blind-channel26/",
+   "title": "BLIND CHANNEL（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "BLIND CHANNEL"
+   ],
+   "text": "BLIND CHANNEL（東京）\nBLIND CHANNEL\n当日券あり",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -4114,6 +4280,21 @@
    ],
    "text": "2026.11.19_THU 23:00\n『 club asia THURSDAY』➤ #clubasia\nVENUE：clubasia｜📍LOUNGE FLOOR\nPRICE：door ¥2,000\n✷ LINEUP\nAxefield (Intercept Records) From Amsterdam\nAlbino Sound\nNOVA\nRomy Mats\n🔽2F FLOOR『 𝗗𝗘𝗝𝗜!! 』と回遊可能🔽\n✷ LINEUP (AtoZ)\nTakeru\nS3R4PH\nSEKITOVA\nMinami-no-shima\nkiyota\nVJ\nCUE KITAZAWA",
    "venue_name": "club asia",
+   "first_seen": null
+  },
+  {
+   "id": "cman:blind-channel26-2026-11-19-大阪",
+   "venue": "cman",
+   "date": "2026-11-19",
+   "url": "https://www.creativeman.co.jp/event/blind-channel26/",
+   "title": "BLIND CHANNEL（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "BLIND CHANNEL"
+   ],
+   "text": "BLIND CHANNEL（大阪）\nBLIND CHANNEL\n当日券あり",
+   "venue_name": "大阪（Creativeman）",
    "first_seen": null
   },
   {
@@ -4344,6 +4525,21 @@
    ],
    "text": "LINE UP：\nQrion\nokadada\nPARKGOLF\nBUDDHAHOUSE\nSEKITOVA\nOPEN 23:00\nADV : ¥3,000\nDOOR : ¥3,500\nTICKET:\nRA\neplus",
    "venue_name": "CIRCUS Tokyo",
+   "first_seen": null
+  },
+  {
+   "id": "cman:akb48_schoolbag-2026-11-20-東京",
+   "venue": "cman",
+   "date": "2026-11-20",
+   "url": "https://www.creativeman.co.jp/event/akb48_schoolbag/",
+   "title": "スクールバッグ計画（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "スクールバッグ計画"
+   ],
+   "text": "スクールバッグ計画（東京）\nスクールバッグ計画",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -4682,6 +4878,36 @@
    "first_seen": null
   },
   {
+   "id": "cman:5sos-2026-11-21-東京",
+   "venue": "cman",
+   "date": "2026-11-21",
+   "url": "https://www.creativeman.co.jp/artist/2026/5sos/",
+   "title": "5 SECONDS OF SUMMER（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "5 SECONDS OF SUMMER"
+   ],
+   "text": "5 SECONDS OF SUMMER（東京）\n5 SECONDS OF SUMMER\nSOLD OUT",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:koiai_1st-anniversary-2026-11-21-東京",
+   "venue": "cman",
+   "date": "2026-11-21",
+   "url": "https://www.creativeman.co.jp/event/koiai_1st-anniversary/",
+   "title": "KOIAI（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "KOIAI"
+   ],
+   "text": "KOIAI（東京）\nKOIAI",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:yamaarashi_20261121",
    "venue": "liquid",
    "date": "2026-11-21",
@@ -4948,6 +5174,21 @@
    "first_seen": null
   },
   {
+   "id": "cman:5sos-2026-11-22-東京",
+   "venue": "cman",
+   "date": "2026-11-22",
+   "url": "https://www.creativeman.co.jp/artist/2026/5sos/",
+   "title": "5 SECONDS OF SUMMER（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "5 SECONDS OF SUMMER"
+   ],
+   "text": "5 SECONDS OF SUMMER（東京）\n5 SECONDS OF SUMMER\n当日券あり",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:riddimsaunter_20261122",
    "venue": "liquid",
    "date": "2026-11-22",
@@ -5167,6 +5408,21 @@
    "first_seen": null
   },
   {
+   "id": "cman:wolf-alice26-2026-11-23-東京",
+   "venue": "cman",
+   "date": "2026-11-23",
+   "url": "https://www.creativeman.co.jp/event/wolf-alice26/",
+   "title": "WOLF ALICE（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "WOLF ALICE"
+   ],
+   "text": "WOLF ALICE（東京）\nWOLF ALICE\n当日券あり",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:riddimsaunter_20261123",
    "venue": "liquid",
    "date": "2026-11-23",
@@ -5300,6 +5556,36 @@
    ],
    "text": "LINE UP：\nMESSIE\nand more\nOPEN 19:00-23:00\nADV：¥1,000\nTICKET：ITM",
    "venue_name": "CIRCUS Tokyo",
+   "first_seen": null
+  },
+  {
+   "id": "cman:11ironmaiden-2026-11-24-神奈川",
+   "venue": "cman",
+   "date": "2026-11-24",
+   "url": "https://www.creativeman.co.jp/artist/2026/11ironmaiden/",
+   "title": "IRON MAIDEN（神奈川）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "IRON MAIDEN"
+   ],
+   "text": "IRON MAIDEN（神奈川）\nIRON MAIDEN\n当日券あり",
+   "venue_name": "神奈川（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:reytons26-2026-11-24-大阪",
+   "venue": "cman",
+   "date": "2026-11-24",
+   "url": "https://www.creativeman.co.jp/event/reytons26/",
+   "title": "REYTONS（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "REYTONS"
+   ],
+   "text": "REYTONS（大阪）\nREYTONS\n当日券あり",
+   "venue_name": "大阪（Creativeman）",
    "first_seen": null
   },
   {
@@ -5480,6 +5766,96 @@
    "first_seen": null
   },
   {
+   "id": "cman:11ironmaiden-2026-11-25-神奈川",
+   "venue": "cman",
+   "date": "2026-11-25",
+   "url": "https://www.creativeman.co.jp/artist/2026/11ironmaiden/",
+   "title": "IRON MAIDEN（神奈川）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "IRON MAIDEN"
+   ],
+   "text": "IRON MAIDEN（神奈川）\nIRON MAIDEN\n当日券あり",
+   "venue_name": "神奈川（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:loudness-45th-anniversary-chapter6-2026-11-25-東京",
+   "venue": "cman",
+   "date": "2026-11-25",
+   "url": "https://www.creativeman.co.jp/event/loudness-45th-anniversary-chapter6/",
+   "title": "LOUDNESS（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "LOUDNESS"
+   ],
+   "text": "LOUDNESS（東京）\nLOUDNESS\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:michael-monroe26-2026-11-25-大阪",
+   "venue": "cman",
+   "date": "2026-11-25",
+   "url": "https://www.creativeman.co.jp/event/michael-monroe26/",
+   "title": "MICHAEL MONROE（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "MICHAEL MONROE"
+   ],
+   "text": "MICHAEL MONROE（大阪）\nMICHAEL MONROE\n発売中",
+   "venue_name": "大阪（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:queens-of-the-stone-age_2026-2026-11-25-東京",
+   "venue": "cman",
+   "date": "2026-11-25",
+   "url": "https://www.creativeman.co.jp/event/queens-of-the-stone-age_2026/",
+   "title": "QUEENS OF THE STONE AGE（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "QUEENS OF THE STONE AGE"
+   ],
+   "text": "QUEENS OF THE STONE AGE（東京）\nQUEENS OF THE STONE AGE\nSOLD OUT",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:reytons26-2026-11-25-東京",
+   "venue": "cman",
+   "date": "2026-11-25",
+   "url": "https://www.creativeman.co.jp/event/reytons26/",
+   "title": "REYTONS（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "REYTONS"
+   ],
+   "text": "REYTONS（東京）\nREYTONS\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:wolf-alice26-2026-11-25-大阪",
+   "venue": "cman",
+   "date": "2026-11-25",
+   "url": "https://www.creativeman.co.jp/event/wolf-alice26/",
+   "title": "WOLF ALICE（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "WOLF ALICE"
+   ],
+   "text": "WOLF ALICE（大阪）\nWOLF ALICE\n発売中",
+   "venue_name": "大阪（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:pasocom_music_club_20261125",
    "venue": "liquid",
    "date": "2026-11-25",
@@ -5610,6 +5986,66 @@
    ],
    "text": "LINE UP：\nSBTRKT\nOPEN 19:00\nADV: ¥3,000\nTICKET: RA",
    "venue_name": "CIRCUS Tokyo",
+   "first_seen": null
+  },
+  {
+   "id": "cman:good-kid26-2026-11-26-東京",
+   "venue": "cman",
+   "date": "2026-11-26",
+   "url": "https://www.creativeman.co.jp/event/good-kid26/",
+   "title": "GOOD KID（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "GOOD KID"
+   ],
+   "text": "GOOD KID（東京）\nGOOD KID\nSOLD OUT",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:michael-monroe26-2026-11-26-広島",
+   "venue": "cman",
+   "date": "2026-11-26",
+   "url": "https://www.creativeman.co.jp/event/michael-monroe26/",
+   "title": "MICHAEL MONROE（広島）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "MICHAEL MONROE"
+   ],
+   "text": "MICHAEL MONROE（広島）\nMICHAEL MONROE\n発売中",
+   "venue_name": "広島（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:queens-of-the-stone-age_2026-2026-11-26-愛知",
+   "venue": "cman",
+   "date": "2026-11-26",
+   "url": "https://www.creativeman.co.jp/event/queens-of-the-stone-age_2026/",
+   "title": "QUEENS OF THE STONE AGE（愛知）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "QUEENS OF THE STONE AGE"
+   ],
+   "text": "QUEENS OF THE STONE AGE（愛知）\nQUEENS OF THE STONE AGE\n発売中",
+   "venue_name": "愛知（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:tahiti-80-live-in-tokyo_26-2026-11-26-東京",
+   "venue": "cman",
+   "date": "2026-11-26",
+   "url": "https://www.creativeman.co.jp/event/tahiti-80-live-in-tokyo_26/",
+   "title": "TAHITI 80（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "TAHITI 80"
+   ],
+   "text": "TAHITI 80（東京）\nTAHITI 80\n発売中",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -5786,6 +6222,51 @@
    ],
    "text": "LINE UP：\n-LIVE-\nBIM\nFREEDOM\nYoshi T.\n-DJ-\nGeorge Bolton\nTukasa\nuin\nYujiliwada\nOPEN 23:00\nADV ¥3,500 + ¥800/1D（キーチェーン付き）\nDOOR ¥4,000 + ¥800/1D\nTICKET: LIVEPOCKET",
    "venue_name": "CIRCUS Tokyo",
+   "first_seen": null
+  },
+  {
+   "id": "cman:falilv-feeling-of-unity-2026-11-27-東京",
+   "venue": "cman",
+   "date": "2026-11-27",
+   "url": "https://www.creativeman.co.jp/event/falilv-feeling-of-unity/",
+   "title": "Fear, and Loathing in\nLas Vegas（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "Fear, and Loathing in\nLas Vegas"
+   ],
+   "text": "Fear, and Loathing in\nLas Vegas（東京）\nFear, and Loathing in\nLas Vegas\nSOLD OUT",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:loudness-45th-anniversary-chapter6-2026-11-27-大阪",
+   "venue": "cman",
+   "date": "2026-11-27",
+   "url": "https://www.creativeman.co.jp/event/loudness-45th-anniversary-chapter6/",
+   "title": "LOUDNESS（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "LOUDNESS"
+   ],
+   "text": "LOUDNESS（大阪）\nLOUDNESS\n発売中",
+   "venue_name": "大阪（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:michael-monroe26-2026-11-27-京都",
+   "venue": "cman",
+   "date": "2026-11-27",
+   "url": "https://www.creativeman.co.jp/event/michael-monroe26/",
+   "title": "MICHAEL MONROE（京都）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "MICHAEL MONROE"
+   ],
+   "text": "MICHAEL MONROE（京都）\nMICHAEL MONROE\nSOLD OUT",
+   "venue_name": "京都（Creativeman）",
    "first_seen": null
   },
   {
@@ -6115,6 +6596,36 @@
    "first_seen": null
   },
   {
+   "id": "cman:queens-of-the-stone-age_2026-2026-11-28-大阪",
+   "venue": "cman",
+   "date": "2026-11-28",
+   "url": "https://www.creativeman.co.jp/event/queens-of-the-stone-age_2026/",
+   "title": "QUEENS OF THE STONE AGE（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "QUEENS OF THE STONE AGE"
+   ],
+   "text": "QUEENS OF THE STONE AGE（大阪）\nQUEENS OF THE STONE AGE\n発売中",
+   "venue_name": "大阪（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:tyrkouaz-2nd-one-man-tour-2026-11-28-愛知",
+   "venue": "cman",
+   "date": "2026-11-28",
+   "url": "https://www.creativeman.co.jp/event/tyrkouaz-2nd-one-man-tour/",
+   "title": "Tyrkouaz（愛知）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "Tyrkouaz"
+   ],
+   "text": "Tyrkouaz（愛知）\nTyrkouaz\n発売中",
+   "venue_name": "愛知（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:nekosezo_20261128",
    "venue": "liquid",
    "date": "2026-11-28",
@@ -6285,6 +6796,21 @@
    "text": "[B4 Z HALL]\n〈HARD TECHNO / TECHNO〉\n-Locker Room-\nSPECIAL GUEST：DAISY\nDJ：DALJAE / KLYDE / STRATAH / INRIKUX\nVJ：Hatoto\nDANCERS：momoMc / AYA AVA\nCYBERJAPAN DANCERS：MIYURI / KYRIE / MINAMI / KURUMI\n[B4F ENTER]\n〈GROOVE / TECHNO〉\nDJ：OGOO / RE:ON / CALAVERA / SOLUNA\n[B3 RING]\n〈HARD TECHNO / TECHNO〉\nDJ：HOTARU / KATSU / KURU / KYUUU / YOXIKI (A-Z)\n[B2 R BAR]\n〈HIPHOP / ALL MIX〉\nDJ：NICORINA (MPC LIVE & DJ SET) / ROVA / HATSUYUKI / SATOSHI / SHUKI / BUMP / Nana-KO / ESTIL / Lapin\n[B1 TERRACE]\n〈HOUSE〉\nDJ：8号 / MeO / MAHIRU MORISAKI / SHIGEKI NISHIKAWA / MAKON / fuji / Chiharu / Yugo\nLocker Room feat. DAISY\nハードテクノパーティー「Locker Room」にイタリアの新星ハードテクノ・アシッドテクノDJ「DAISY」が来日!!",
    "price": "DOOR：¥3,500- / FASTPASS TICKET：¥3,000-（優先入場・入場料金含む） / U-25 TICKET：¥2,500- (優先入場・入場料金含む) / ※U-25 TICKET / 2026年11月28日までに25歳以下の方が対象です。 / チケット受付時に生年月日が確認できる写真付き身分証をご提示いただきます。ご本人様と年齢の確認が取れない場合は一般発売価格との差額をお支払いいただきます。",
    "venue_name": "ZERO TOKYO",
+   "first_seen": null
+  },
+  {
+   "id": "cman:tyrkouaz-2nd-one-man-tour-2026-11-29-大阪",
+   "venue": "cman",
+   "date": "2026-11-29",
+   "url": "https://www.creativeman.co.jp/event/tyrkouaz-2nd-one-man-tour/",
+   "title": "Tyrkouaz（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "Tyrkouaz"
+   ],
+   "text": "Tyrkouaz（大阪）\nTyrkouaz\n発売中",
+   "venue_name": "大阪（Creativeman）",
    "first_seen": null
   },
   {
@@ -6471,6 +6997,36 @@
    "first_seen": null
   },
   {
+   "id": "cman:michael-monroe26-2026-11-30-愛知",
+   "venue": "cman",
+   "date": "2026-11-30",
+   "url": "https://www.creativeman.co.jp/event/michael-monroe26/",
+   "title": "MICHAEL MONROE（愛知）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "MICHAEL MONROE"
+   ],
+   "text": "MICHAEL MONROE（愛知）\nMICHAEL MONROE\n発売中",
+   "venue_name": "愛知（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:two-door-cinema-club_2026-2026-11-30-東京",
+   "venue": "cman",
+   "date": "2026-11-30",
+   "url": "https://www.creativeman.co.jp/event/two-door-cinema-club_2026/",
+   "title": "TWO DOOR CINEMA CLUB（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "TWO DOOR CINEMA CLUB"
+   ],
+   "text": "TWO DOOR CINEMA CLUB（東京）\nTWO DOOR CINEMA CLUB\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:penthouse_20261130",
    "venue": "liquid",
    "date": "2026-11-30",
@@ -6544,6 +7100,66 @@
    ],
    "text": "LINE UP：\nAYA (UK)\nVMO\nOPEN 18:30 / START 19:30\nADV ¥5,000 + ¥800/1D\nDOOR ¥5,500 + ¥800/1D\nU-22 ¥3,000 + ¥800/1D\nTICKET: LIVEPOCKET",
    "venue_name": "CIRCUS Tokyo",
+   "first_seen": null
+  },
+  {
+   "id": "cman:12evanescence-2026-12-01-東京",
+   "venue": "cman",
+   "date": "2026-12-01",
+   "url": "https://www.creativeman.co.jp/artist/2026/12evanescence/",
+   "title": "EVANESCENCE（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "EVANESCENCE"
+   ],
+   "text": "EVANESCENCE（東京）\nEVANESCENCE\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:mazzel-2nd-fan-meeting-2026-12-01-埼玉",
+   "venue": "cman",
+   "date": "2026-12-01",
+   "url": "https://www.creativeman.co.jp/event/mazzel-2nd-fan-meeting/",
+   "title": "MAZZEL（埼玉）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "MAZZEL"
+   ],
+   "text": "MAZZEL（埼玉）\nMAZZEL",
+   "venue_name": "埼玉（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:michael-monroe26-2026-12-01-東京",
+   "venue": "cman",
+   "date": "2026-12-01",
+   "url": "https://www.creativeman.co.jp/event/michael-monroe26/",
+   "title": "MICHAEL MONROE（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "MICHAEL MONROE"
+   ],
+   "text": "MICHAEL MONROE（東京）\nMICHAEL MONROE\nSOLD OUT",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:two-door-cinema-club_2026-2026-12-01-愛知",
+   "venue": "cman",
+   "date": "2026-12-01",
+   "url": "https://www.creativeman.co.jp/event/two-door-cinema-club_2026/",
+   "title": "TWO DOOR CINEMA CLUB（愛知）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "TWO DOOR CINEMA CLUB"
+   ],
+   "text": "TWO DOOR CINEMA CLUB（愛知）\nTWO DOOR CINEMA CLUB\n発売中",
+   "venue_name": "愛知（Creativeman）",
    "first_seen": null
   },
   {
@@ -6626,6 +7242,51 @@
    ],
    "text": "",
    "venue_name": "WWW",
+   "first_seen": null
+  },
+  {
+   "id": "cman:12evanescence-2026-12-02-東京",
+   "venue": "cman",
+   "date": "2026-12-02",
+   "url": "https://www.creativeman.co.jp/artist/2026/12evanescence/",
+   "title": "EVANESCENCE（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "EVANESCENCE"
+   ],
+   "text": "EVANESCENCE（東京）\nEVANESCENCE\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:michael-monroe26-2026-12-02-東京",
+   "venue": "cman",
+   "date": "2026-12-02",
+   "url": "https://www.creativeman.co.jp/event/michael-monroe26/",
+   "title": "MICHAEL MONROE（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "MICHAEL MONROE"
+   ],
+   "text": "MICHAEL MONROE（東京）\nMICHAEL MONROE\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:two-door-cinema-club_2026-2026-12-02-大阪",
+   "venue": "cman",
+   "date": "2026-12-02",
+   "url": "https://www.creativeman.co.jp/event/two-door-cinema-club_2026/",
+   "title": "TWO DOOR CINEMA CLUB（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "TWO DOOR CINEMA CLUB"
+   ],
+   "text": "TWO DOOR CINEMA CLUB（大阪）\nTWO DOOR CINEMA CLUB\n発売中",
+   "venue_name": "大阪（Creativeman）",
    "first_seen": null
   },
   {
@@ -6732,6 +7393,21 @@
    "first_seen": null
   },
   {
+   "id": "cman:mazzel-2nd-fan-meeting-2026-12-03-群馬",
+   "venue": "cman",
+   "date": "2026-12-03",
+   "url": "https://www.creativeman.co.jp/event/mazzel-2nd-fan-meeting/",
+   "title": "MAZZEL（群馬）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "MAZZEL"
+   ],
+   "text": "MAZZEL（群馬）\nMAZZEL",
+   "venue_name": "群馬（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:sanetii_20261203",
    "venue": "liquid",
    "date": "2026-12-03",
@@ -6813,6 +7489,36 @@
    "lineup": [],
    "text": "",
    "venue_name": "ZERO TOKYO",
+   "first_seen": null
+  },
+  {
+   "id": "cman:12evanescence-2026-12-04-大阪",
+   "venue": "cman",
+   "date": "2026-12-04",
+   "url": "https://www.creativeman.co.jp/artist/2026/12evanescence/",
+   "title": "EVANESCENCE（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "EVANESCENCE"
+   ],
+   "text": "EVANESCENCE（大阪）\nEVANESCENCE\n発売中",
+   "venue_name": "大阪（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:mazzel-2nd-fan-meeting-2026-12-04-栃木",
+   "venue": "cman",
+   "date": "2026-12-04",
+   "url": "https://www.creativeman.co.jp/event/mazzel-2nd-fan-meeting/",
+   "title": "MAZZEL（栃木）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "MAZZEL"
+   ],
+   "text": "MAZZEL（栃木）\nMAZZEL",
+   "venue_name": "栃木（Creativeman）",
    "first_seen": null
   },
   {
@@ -7044,6 +7750,21 @@
    "first_seen": null
   },
   {
+   "id": "cman:anthem-destroy-the-boredom-2026-2026-12-05-神奈川",
+   "venue": "cman",
+   "date": "2026-12-05",
+   "url": "https://www.creativeman.co.jp/event/anthem-destroy-the-boredom-2026/",
+   "title": "ANTHEM（神奈川）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "ANTHEM"
+   ],
+   "text": "ANTHEM（神奈川）\nANTHEM\nSOLD OUT",
+   "venue_name": "神奈川（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:derrick-may_20261205",
    "venue": "liquid",
    "date": "2026-12-05",
@@ -7247,6 +7968,21 @@
    "text": "[B4 Z HALL]\nAVALON / WILL ATKINSON / SIMON PATTERSON B2B JOHN ASKEW / DAVID FORBES B2B GREG DOWNEY / DJ 34\nVJ : H2KGRAPHICS\n[B4F ENTER]\n– TCPT presents adrenaline –\nYOSHIMASA / AEMI / Moco-Azzalashi / yossy222 / ERI×2 / G-NAILS / HATSUYUKI\n[B3 RING]\n– TOKYO TRANCE COLLECTIVE feat. TRANCE FAMILY ASIA –\nREMO-CON / TETSUYA / XL (from Myanmar) / Lexii (from Taiwan) / MM (from Hong Kong) / Smash (from Malaysia)\n[B2 BOX]\n– Trance Family Japan presents Trance Classics –\nOCOT / KEN-GEE & Q / O-ZI & DJ NECO / Les tontons tranceurs / aypch\nVJ : Himetya\n[B2 R BAR]\n– TCPT presents abyss –\nBlue-S / BEPPU / ndk / INAGEE / ONNY / ITZ\nTRANCE ESSENTIALS presents VII X TOKYO 10th BIRTHDAY WEEKENDER\nHere’s the full lineup announced!\nフルラインナップ発表！",
    "price": "DOOR : ￥4,500- / EARLY BIRD : ￥3,000-（優先入場・入場料金含む）※SOLD OUT / FASTPASS TICKET : ￥4,000-（優先入場・入場料金含む）",
    "venue_name": "ZERO TOKYO",
+   "first_seen": null
+  },
+  {
+   "id": "cman:anthem-destroy-the-boredom-2026-2026-12-06-神奈川",
+   "venue": "cman",
+   "date": "2026-12-06",
+   "url": "https://www.creativeman.co.jp/event/anthem-destroy-the-boredom-2026/",
+   "title": "ANTHEM（神奈川）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "ANTHEM"
+   ],
+   "text": "ANTHEM（神奈川）\nANTHEM\nSOLD OUT",
+   "venue_name": "神奈川（Creativeman）",
    "first_seen": null
   },
   {
@@ -7474,6 +8210,21 @@
    "first_seen": null
   },
   {
+   "id": "cman:mwam-firestarter-tour-2026-2026-12-09-東京",
+   "venue": "cman",
+   "date": "2026-12-09",
+   "url": "https://www.creativeman.co.jp/event/mwam-firestarter-tour-2026/",
+   "title": "MAN WITH A MISSION（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "MAN WITH A MISSION"
+   ],
+   "text": "MAN WITH A MISSION（東京）\nMAN WITH A MISSION\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:odottebakarinokuni_20261209",
    "venue": "liquid",
    "date": "2026-12-09",
@@ -7568,6 +8319,36 @@
    ],
    "text": "GUEST LIVE:\nハヤシヒロユキ(POLYSICS)\nIQ3 AVSET\nTaro Aiko (M.A.S.F.)\nPATCHING FOR LIFE CREW:\nJUN (80KIDZ)\nKentaro Nakao\nKMMR\nSAKANA\nOPEN 19:00 – CLOSE 23:00\n前売りチケット : 2,500YEN + 1Drink\n当日チケット : 3,000YEN + 1Drink\nZAIKO：https://patching-for-anything.zaiko.io/ja/e/patching-for-life",
    "venue_name": "CIRCUS Tokyo",
+   "first_seen": null
+  },
+  {
+   "id": "cman:liza26-2026-12-10-東京",
+   "venue": "cman",
+   "date": "2026-12-10",
+   "url": "https://www.creativeman.co.jp/event/liza26/",
+   "title": "Liza（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "Liza"
+   ],
+   "text": "Liza（東京）\nLiza",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:mwam-firestarter-tour-2026-2026-12-10-東京",
+   "venue": "cman",
+   "date": "2026-12-10",
+   "url": "https://www.creativeman.co.jp/event/mwam-firestarter-tour-2026/",
+   "title": "MAN WITH A MISSION（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "MAN WITH A MISSION"
+   ],
+   "text": "MAN WITH A MISSION（東京）\nMAN WITH A MISSION\n発売中",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -7915,6 +8696,51 @@
    "first_seen": null
   },
   {
+   "id": "cman:deviloof-gokuraku-2026-12-12-東京",
+   "venue": "cman",
+   "date": "2026-12-12",
+   "url": "https://www.creativeman.co.jp/event/deviloof-gokuraku/",
+   "title": "DEVILOOF（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "DEVILOOF"
+   ],
+   "text": "DEVILOOF（東京）\nDEVILOOF\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:maria-chrysalis-2026-12-12-東京",
+   "venue": "cman",
+   "date": "2026-12-12",
+   "url": "https://www.creativeman.co.jp/event/maria-chrysalis/",
+   "title": "MARiA（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "MARiA"
+   ],
+   "text": "MARiA（東京）\nMARiA",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:hanabie26-2026-12-12-東京",
+   "venue": "cman",
+   "date": "2026-12-12",
+   "url": "https://www.creativeman.co.jp/event/hanabie26/",
+   "title": "花冷え。（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "花冷え。"
+   ],
+   "text": "SOLD OUT",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:shintokyo_20261212",
    "venue": "liquid",
    "date": "2026-12-12",
@@ -8112,6 +8938,21 @@
    "first_seen": null
   },
   {
+   "id": "cman:tyrkouaz-2nd-one-man-tour-2026-12-13-東京",
+   "venue": "cman",
+   "date": "2026-12-13",
+   "url": "https://www.creativeman.co.jp/event/tyrkouaz-2nd-one-man-tour/",
+   "title": "Tyrkouaz（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "Tyrkouaz"
+   ],
+   "text": "Tyrkouaz（東京）\nTyrkouaz\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:sheenomirin_20261213",
    "venue": "liquid",
    "date": "2026-12-13",
@@ -8225,6 +9066,36 @@
    "first_seen": null
   },
   {
+   "id": "cman:cat-power26-2026-12-14-東京",
+   "venue": "cman",
+   "date": "2026-12-14",
+   "url": "https://www.creativeman.co.jp/event/cat-power26/",
+   "title": "CAT POWER（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "CAT POWER"
+   ],
+   "text": "CAT POWER（東京）\nCAT POWER\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:six60-26-2026-12-14-東京",
+   "venue": "cman",
+   "date": "2026-12-14",
+   "url": "https://www.creativeman.co.jp/event/six60-26/",
+   "title": "SIX60（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "SIX60"
+   ],
+   "text": "SIX60（東京）\nSIX60\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:kuusoromance_20261214",
    "venue": "liquid",
    "date": "2026-12-14",
@@ -8267,6 +9138,51 @@
    ],
    "text": "SIX60\nSIX60",
    "venue_name": "UNIT",
+   "first_seen": null
+  },
+  {
+   "id": "cman:a-perfect-circle-puscifer-2026-12-15-東京",
+   "venue": "cman",
+   "date": "2026-12-15",
+   "url": "https://www.creativeman.co.jp/event/a-perfect-circle-puscifer/",
+   "title": "A Perfect Circle（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "A Perfect Circle"
+   ],
+   "text": "A Perfect Circle（東京）\nA Perfect Circle\nSOLD OUT",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:domi-jd-beck26-2026-12-15-東京",
+   "venue": "cman",
+   "date": "2026-12-15",
+   "url": "https://www.creativeman.co.jp/event/domi-jd-beck26/",
+   "title": "DOMi & JD BECK（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "DOMi & JD BECK"
+   ],
+   "text": "DOMi & JD BECK（東京）\nDOMi & JD BECK\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:reiko-winterland-vol3-2026-12-15-東京",
+   "venue": "cman",
+   "date": "2026-12-15",
+   "url": "https://www.creativeman.co.jp/event/reiko-winterland-vol3/",
+   "title": "REIKO（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "REIKO"
+   ],
+   "text": "REIKO（東京）\nREIKO",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -8337,6 +9253,21 @@
    "first_seen": null
   },
   {
+   "id": "cman:zilqy_tour2026-2026-12-16-東京",
+   "venue": "cman",
+   "date": "2026-12-16",
+   "url": "https://www.creativeman.co.jp/event/zilqy_tour2026/",
+   "title": "Zilqy（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "Zilqy"
+   ],
+   "text": "Zilqy（東京）\nZilqy\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:ali_20261216",
    "venue": "liquid",
    "date": "2026-12-16",
@@ -8382,6 +9313,51 @@
    ],
    "text": "Pretty Chuu",
    "venue_name": "UNIT",
+   "first_seen": null
+  },
+  {
+   "id": "cman:a-perfect-circle-puscifer-2026-12-17-大阪",
+   "venue": "cman",
+   "date": "2026-12-17",
+   "url": "https://www.creativeman.co.jp/event/a-perfect-circle-puscifer/",
+   "title": "A Perfect Circle（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "A Perfect Circle"
+   ],
+   "text": "A Perfect Circle（大阪）\nA Perfect Circle\n発売中",
+   "venue_name": "大阪（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:domi-jd-beck26-2026-12-17-大阪",
+   "venue": "cman",
+   "date": "2026-12-17",
+   "url": "https://www.creativeman.co.jp/event/domi-jd-beck26/",
+   "title": "DOMi & JD BECK（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "DOMi & JD BECK"
+   ],
+   "text": "DOMi & JD BECK（大阪）\nDOMi & JD BECK\n発売中",
+   "venue_name": "大阪（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:passcode-unlimited-x-2026-12-17-東京",
+   "venue": "cman",
+   "date": "2026-12-17",
+   "url": "https://www.creativeman.co.jp/event/passcode-unlimited-x/",
+   "title": "PassCode（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "PassCode"
+   ],
+   "text": "PassCode（東京）\nPassCode\n発売中",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -8501,6 +9477,36 @@
    ],
    "text": "LINE UP：\nriria\nSaint Ludo\n+more TBA\nOPEN 23:00\nADV: ¥4,400\nTICKET: RA",
    "venue_name": "CIRCUS Tokyo",
+   "first_seen": null
+  },
+  {
+   "id": "cman:domi-jd-beck26-2026-12-18-愛知",
+   "venue": "cman",
+   "date": "2026-12-18",
+   "url": "https://www.creativeman.co.jp/event/domi-jd-beck26/",
+   "title": "DOMi & JD BECK（愛知）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "DOMi & JD BECK"
+   ],
+   "text": "DOMi & JD BECK（愛知）\nDOMi & JD BECK\n発売中",
+   "venue_name": "愛知（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:passcode-unlimited-x-2026-12-18-東京",
+   "venue": "cman",
+   "date": "2026-12-18",
+   "url": "https://www.creativeman.co.jp/event/passcode-unlimited-x/",
+   "title": "PassCode（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "PassCode"
+   ],
+   "text": "PassCode（東京）\nPassCode\n発売中",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -8715,6 +9721,21 @@
    "first_seen": null
   },
   {
+   "id": "cman:bmsg-trainee_2026-2026-12-19-神奈川",
+   "venue": "cman",
+   "date": "2026-12-19",
+   "url": "https://www.creativeman.co.jp/event/bmsg-trainee_2026/",
+   "title": "BMSG TRAINEE（神奈川）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "BMSG TRAINEE"
+   ],
+   "text": "BMSG TRAINEE（神奈川）\nBMSG TRAINEE",
+   "venue_name": "神奈川（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:20260729_ogreyouasshole",
    "venue": "liquid",
    "date": "2026-12-19",
@@ -8861,6 +9882,36 @@
    "text": "[B4 Z HALL]\nAnfisa Letyago\nVJ：Photone\n[B2 BOX]\n〈TECHNO〉\nBRYAN / POSTMAN / cicori / Kazuma / Amélie and more\n[B2 R BAR]\n〈OPEN FORMAT〉\nHATSUYUKI / Hisappi and more\n[B1 TERRACE]\n〈HOUSE〉\nSHIGEKI NISHIKAWA / 25 and more\nESSENCE",
    "price": "DOOR：¥5,500- / FASTPASS TICKET：¥4,500-（優先入場・入場料金含む） / 整列開始：10PM",
    "venue_name": "ZERO TOKYO",
+   "first_seen": null
+  },
+  {
+   "id": "cman:bmsg-trainee_2026-2026-12-20-神奈川",
+   "venue": "cman",
+   "date": "2026-12-20",
+   "url": "https://www.creativeman.co.jp/event/bmsg-trainee_2026/",
+   "title": "BMSG TRAINEE（神奈川）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "BMSG TRAINEE"
+   ],
+   "text": "BMSG TRAINEE（神奈川）\nBMSG TRAINEE",
+   "venue_name": "神奈川（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:spotify-on-stage-tokyo-2026-2026-12-20-東京",
+   "venue": "cman",
+   "date": "2026-12-20",
+   "url": "https://www.creativeman.co.jp/event/spotify-on-stage-tokyo-2026/",
+   "title": "Spotify On Stage Tokyo 2026（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "Spotify On Stage Tokyo 2026"
+   ],
+   "text": "Spotify On Stage Tokyo 2026（東京）\nSpotify On Stage Tokyo 2026\n発売中",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -9031,6 +10082,21 @@
    ],
    "text": "FIVE NEW OLD / レトロリロン — FIVE NEW OLD presents \"Easy Come, Easy Go. vol.21\"\nFIVE NEW OLD / レトロリロン",
    "venue_name": "WWW X",
+   "first_seen": null
+  },
+  {
+   "id": "cman:legend-release-party-2026-12-23-東京",
+   "venue": "cman",
+   "date": "2026-12-23",
+   "url": "https://www.creativeman.co.jp/event/legend-release-party/",
+   "title": "ちゃんみな（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "ちゃんみな"
+   ],
+   "text": "ちゃんみな（東京）\nちゃんみな",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -9933,6 +10999,36 @@
    "first_seen": null
   },
   {
+   "id": "cman:sienna-spiro_2027-2027-01-04-東京",
+   "venue": "cman",
+   "date": "2027-01-04",
+   "url": "https://www.creativeman.co.jp/event/sienna-spiro_2027/",
+   "title": "SIENNA SPIRO（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "SIENNA SPIRO"
+   ],
+   "text": "SIENNA SPIRO（東京）\nSIENNA SPIRO\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:kim-gordon_rosonicextra-2027-01-06-大阪",
+   "venue": "cman",
+   "date": "2027-01-06",
+   "url": "https://www.creativeman.co.jp/event/kim-gordon_rosonicextra/",
+   "title": "KIM GORDON（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "KIM GORDON"
+   ],
+   "text": "KIM GORDON（大阪）\nKIM GORDON\n発売中",
+   "venue_name": "大阪（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "oeast:merry-bad-tune-凱旋武者修⾏tour-2026",
    "venue": "oeast",
    "date": "2027-01-06",
@@ -9948,6 +11044,36 @@
    "first_seen": null
   },
   {
+   "id": "cman:kim-gordon_rosonicextra-2027-01-07-東京",
+   "venue": "cman",
+   "date": "2027-01-07",
+   "url": "https://www.creativeman.co.jp/event/kim-gordon_rosonicextra/",
+   "title": "KIM GORDON（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "KIM GORDON"
+   ],
+   "text": "KIM GORDON（東京）\nKIM GORDON\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:violet-grohl_rosonicextra-2027-01-07-大阪",
+   "venue": "cman",
+   "date": "2027-01-07",
+   "url": "https://www.creativeman.co.jp/event/violet-grohl_rosonicextra/",
+   "title": "VIOLET GROHL（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "VIOLET GROHL"
+   ],
+   "text": "VIOLET GROHL（大阪）\nVIOLET GROHL\n発売中",
+   "venue_name": "大阪（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:paddles_20270107",
    "venue": "liquid",
    "date": "2027-01-07",
@@ -9960,6 +11086,51 @@
    ],
    "text": "the paddles — ⼈⽣の登場⼈物として -天王⼭編-\nthe paddles",
    "venue_name": "LIQUIDROOM",
+   "first_seen": null
+  },
+  {
+   "id": "cman:dove-ellis_rosonicextra-2027-01-08-東京",
+   "venue": "cman",
+   "date": "2027-01-08",
+   "url": "https://www.creativeman.co.jp/event/dove-ellis_rosonicextra/",
+   "title": "DOVE ELLIS（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "DOVE ELLIS"
+   ],
+   "text": "DOVE ELLIS（東京）\nDOVE ELLIS\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:oddre-japan-tour-2026-2027-2027-01-08-東京",
+   "venue": "cman",
+   "date": "2027-01-08",
+   "url": "https://www.creativeman.co.jp/event/oddre-japan-tour-2026-2027/",
+   "title": "OddRe:（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "OddRe:"
+   ],
+   "text": "OddRe:（東京）\nOddRe:\nSOLD OUT",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:violet-grohl_rosonicextra-2027-01-08-東京",
+   "venue": "cman",
+   "date": "2027-01-08",
+   "url": "https://www.creativeman.co.jp/event/violet-grohl_rosonicextra/",
+   "title": "VIOLET GROHL（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "VIOLET GROHL"
+   ],
+   "text": "VIOLET GROHL（東京）\nVIOLET GROHL\n発売中",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -10209,6 +11380,36 @@
    "first_seen": null
   },
   {
+   "id": "cman:befirst27-2027-01-11-東京",
+   "venue": "cman",
+   "date": "2027-01-11",
+   "url": "https://www.creativeman.co.jp/event/befirst27/",
+   "title": "BE:FIRST（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "BE:FIRST"
+   ],
+   "text": "BE:FIRST（東京）\nBE:FIRST",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:pale-waves_rosonicextra-2027-01-11-大阪",
+   "venue": "cman",
+   "date": "2027-01-11",
+   "url": "https://www.creativeman.co.jp/event/pale-waves_rosonicextra/",
+   "title": "PALE WAVES（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "PALE WAVES"
+   ],
+   "text": "PALE WAVES（大阪）\nPALE WAVES\n発売中",
+   "venue_name": "大阪（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "unit:14828",
    "venue": "unit",
    "date": "2027-01-11",
@@ -10256,6 +11457,52 @@
    "first_seen": null
   },
   {
+   "id": "cman:befirst27-2027-01-12-東京",
+   "venue": "cman",
+   "date": "2027-01-12",
+   "url": "https://www.creativeman.co.jp/event/befirst27/",
+   "title": "BE:FIRST（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "BE:FIRST"
+   ],
+   "text": "BE:FIRST（東京）\nBE:FIRST",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:kula-shaker_rosonicextra-2027-01-12-愛知",
+   "venue": "cman",
+   "date": "2027-01-12",
+   "url": "https://www.creativeman.co.jp/event/kula-shaker_rosonicextra/",
+   "title": "KULA SHAKER（愛知）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "KULA SHAKER"
+   ],
+   "text": "KULA SHAKER（愛知）\nKULA SHAKER\n発売中",
+   "venue_name": "愛知（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:suede-bloc-party_rosonicextra-2027-01-12-大阪",
+   "venue": "cman",
+   "date": "2027-01-12",
+   "url": "https://www.creativeman.co.jp/event/suede-bloc-party_rosonicextra/",
+   "title": "SUEDE / BLOC PARTY（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "SUEDE",
+    "BLOC PARTY"
+   ],
+   "text": "SUEDE / BLOC PARTY（大阪）\nSUEDE / BLOC PARTY\n発売中",
+   "venue_name": "大阪（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:chaosaurorasauce_20270112",
    "venue": "liquid",
    "date": "2027-01-12",
@@ -10299,6 +11546,21 @@
    ],
    "text": "chef's — chef's ONEMAN SHOW TOUR \"Neubiss 再演\"\nchef's",
    "venue_name": "WWW",
+   "first_seen": null
+  },
+  {
+   "id": "cman:kula-shaker_rosonicextra-2027-01-13-大阪",
+   "venue": "cman",
+   "date": "2027-01-13",
+   "url": "https://www.creativeman.co.jp/event/kula-shaker_rosonicextra/",
+   "title": "KULA SHAKER（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "KULA SHAKER"
+   ],
+   "text": "KULA SHAKER（大阪）\nKULA SHAKER\n発売中",
+   "venue_name": "大阪（Creativeman）",
    "first_seen": null
   },
   {
@@ -10456,6 +11718,21 @@
    "first_seen": null
   },
   {
+   "id": "cman:mafumafu27-2027-01-16-東京",
+   "venue": "cman",
+   "date": "2027-01-16",
+   "url": "https://www.creativeman.co.jp/event/mafumafu27/",
+   "title": "まふまふ（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "まふまふ"
+   ],
+   "text": "まふまふ（東京）\nまふまふ",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "oeast:mighty-crown",
    "venue": "oeast",
    "date": "2027-01-16",
@@ -10511,6 +11788,21 @@
    "lineup": [],
    "text": "",
    "venue_name": "ZERO TOKYO",
+   "first_seen": null
+  },
+  {
+   "id": "cman:mafumafu27-2027-01-17-東京",
+   "venue": "cman",
+   "date": "2027-01-17",
+   "url": "https://www.creativeman.co.jp/event/mafumafu27/",
+   "title": "まふまふ（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "まふまふ"
+   ],
+   "text": "まふまふ（東京）\nまふまふ",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -10573,6 +11865,21 @@
    "first_seen": null
   },
   {
+   "id": "cman:man-with-a-mission_2027-2027-01-20-東京",
+   "venue": "cman",
+   "date": "2027-01-20",
+   "url": "https://www.creativeman.co.jp/event/man-with-a-mission_2027/",
+   "title": "MAN WITH A MISSION（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "MAN WITH A MISSION"
+   ],
+   "text": "MAN WITH A MISSION（東京）\nMAN WITH A MISSION",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "oeast:blue-25th-anniversary-tour-2027-day2",
    "venue": "oeast",
    "date": "2027-01-20",
@@ -10621,6 +11928,36 @@
    "first_seen": null
   },
   {
+   "id": "cman:man-with-a-mission_2027-2027-01-21-東京",
+   "venue": "cman",
+   "date": "2027-01-21",
+   "url": "https://www.creativeman.co.jp/event/man-with-a-mission_2027/",
+   "title": "MAN WITH A MISSION（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "MAN WITH A MISSION"
+   ],
+   "text": "MAN WITH A MISSION（東京）\nMAN WITH A MISSION",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:sirup-tour-2027-2027-01-21-神奈川",
+   "venue": "cman",
+   "date": "2027-01-21",
+   "url": "https://www.creativeman.co.jp/event/sirup-tour-2027/",
+   "title": "SIRUP（神奈川）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "SIRUP"
+   ],
+   "text": "SIRUP（神奈川）\nSIRUP",
+   "venue_name": "神奈川（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "oeast:synapse-003-byライブナタリー",
    "venue": "oeast",
    "date": "2027-01-21",
@@ -10662,6 +11999,36 @@
    "lineup": [],
    "text": "",
    "venue_name": "ZERO TOKYO",
+   "first_seen": null
+  },
+  {
+   "id": "cman:furui-riho-hall-tour-2027-2027-01-22-東京",
+   "venue": "cman",
+   "date": "2027-01-22",
+   "url": "https://www.creativeman.co.jp/event/furui-riho-hall-tour-2027/",
+   "title": "Furui Riho（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "Furui Riho"
+   ],
+   "text": "Furui Riho（東京）\nFurui Riho",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:the-lemon-twigs_2027-2027-01-22-東京",
+   "venue": "cman",
+   "date": "2027-01-22",
+   "url": "https://www.creativeman.co.jp/event/the-lemon-twigs_2027/",
+   "title": "THE LEMON TWIGS（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "THE LEMON TWIGS"
+   ],
+   "text": "THE LEMON TWIGS（東京）\nTHE LEMON TWIGS\n発売中",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -10708,6 +12075,36 @@
    "first_seen": null
   },
   {
+   "id": "cman:the-lemon-twigs_2027-2027-01-23-京都",
+   "venue": "cman",
+   "date": "2027-01-23",
+   "url": "https://www.creativeman.co.jp/event/the-lemon-twigs_2027/",
+   "title": "THE LEMON TWIGS（京都）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "THE LEMON TWIGS"
+   ],
+   "text": "THE LEMON TWIGS（京都）\nTHE LEMON TWIGS\nSOLD OUT",
+   "venue_name": "京都（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:ako-londog-2027-01-23-東京",
+   "venue": "cman",
+   "date": "2027-01-23",
+   "url": "https://www.creativeman.co.jp/event/ako-londog/",
+   "title": "a子（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "a子"
+   ],
+   "text": "a子（東京）\na子",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "unit:14714",
    "venue": "unit",
    "date": "2027-01-23",
@@ -10750,6 +12147,21 @@
    "lineup": [],
    "text": "",
    "venue_name": "ZERO TOKYO",
+   "first_seen": null
+  },
+  {
+   "id": "cman:the-lemon-twigs_2027-2027-01-24-大阪",
+   "venue": "cman",
+   "date": "2027-01-24",
+   "url": "https://www.creativeman.co.jp/event/the-lemon-twigs_2027/",
+   "title": "THE LEMON TWIGS（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "THE LEMON TWIGS"
+   ],
+   "text": "THE LEMON TWIGS（大阪）\nTHE LEMON TWIGS\n発売中",
+   "venue_name": "大阪（Creativeman）",
    "first_seen": null
   },
   {
@@ -10922,6 +12334,21 @@
    "first_seen": null
   },
   {
+   "id": "cman:sace6_2027-2027-01-29-東京",
+   "venue": "cman",
+   "date": "2027-01-29",
+   "url": "https://www.creativeman.co.jp/event/sace6_2027/",
+   "title": "sace6（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "sace6"
+   ],
+   "text": "sace6（東京）\nsace6\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:daoko_20270129",
    "venue": "liquid",
    "date": "2027-01-29",
@@ -10966,6 +12393,21 @@
    "lineup": [],
    "text": "",
    "venue_name": "ZERO TOKYO",
+   "first_seen": null
+  },
+  {
+   "id": "cman:element-sicks27-2027-01-30-東京",
+   "venue": "cman",
+   "date": "2027-01-30",
+   "url": "https://www.creativeman.co.jp/event/element-sicks27/",
+   "title": "Element Sicks（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "Element Sicks"
+   ],
+   "text": "Element Sicks（東京）\nElement Sicks",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -11029,6 +12471,21 @@
    "first_seen": null
   },
   {
+   "id": "cman:element-sicks27-2027-01-31-東京",
+   "venue": "cman",
+   "date": "2027-01-31",
+   "url": "https://www.creativeman.co.jp/event/element-sicks27/",
+   "title": "Element Sicks（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "Element Sicks"
+   ],
+   "text": "Element Sicks（東京）\nElement Sicks",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "oeast:arakezuri-9th-anniv-tour-「9周年番狂せ」",
    "venue": "oeast",
    "date": "2027-01-31",
@@ -11072,6 +12529,51 @@
    "first_seen": null
   },
   {
+   "id": "cman:the_snuts_2027-2027-02-01-東京",
+   "venue": "cman",
+   "date": "2027-02-01",
+   "url": "https://www.creativeman.co.jp/event/the_snuts_2027/",
+   "title": "THE SNUTS（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "THE SNUTS"
+   ],
+   "text": "THE SNUTS（東京）\nTHE SNUTS\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:ari-hicks26-2027-02-02-東京",
+   "venue": "cman",
+   "date": "2027-02-02",
+   "url": "https://www.creativeman.co.jp/event/ari-hicks26/",
+   "title": "Ari Hicks（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "Ari Hicks"
+   ],
+   "text": "Ari Hicks（東京）\nAri Hicks\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:the_snuts_2027-2027-02-02-大阪",
+   "venue": "cman",
+   "date": "2027-02-02",
+   "url": "https://www.creativeman.co.jp/event/the_snuts_2027/",
+   "title": "THE SNUTS（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "THE SNUTS"
+   ],
+   "text": "THE SNUTS（大阪）\nTHE SNUTS\n発売中",
+   "venue_name": "大阪（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "www:020180",
    "venue": "www",
    "date": "2027-02-02",
@@ -11084,6 +12586,21 @@
    ],
    "text": "鬼の右腕 — 鬼灯寄席\n鬼の右腕",
    "venue_name": "WWW",
+   "first_seen": null
+  },
+  {
+   "id": "cman:pil27-2027-02-03-愛知",
+   "venue": "cman",
+   "date": "2027-02-03",
+   "url": "https://www.creativeman.co.jp/event/pil27/",
+   "title": "PUBLIC IMAGE LTD.（愛知）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "PUBLIC IMAGE LTD."
+   ],
+   "text": "PUBLIC IMAGE LTD.（愛知）\nPUBLIC IMAGE LTD.\n発売中",
+   "venue_name": "愛知（Creativeman）",
    "first_seen": null
   },
   {
@@ -11142,6 +12659,21 @@
    ],
    "text": "LINE UP：\nTiffany Day\nand more\nOPEN 17:00-21:15\nTICKET SOLD OUT",
    "venue_name": "CIRCUS Tokyo",
+   "first_seen": null
+  },
+  {
+   "id": "cman:pil27-2027-02-05-大阪",
+   "venue": "cman",
+   "date": "2027-02-05",
+   "url": "https://www.creativeman.co.jp/event/pil27/",
+   "title": "PUBLIC IMAGE LTD.（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "PUBLIC IMAGE LTD."
+   ],
+   "text": "PUBLIC IMAGE LTD.（大阪）\nPUBLIC IMAGE LTD.\n発売中",
+   "venue_name": "大阪（Creativeman）",
    "first_seen": null
   },
   {
@@ -11262,6 +12794,36 @@
    "first_seen": null
   },
   {
+   "id": "cman:pil27-2027-02-07-神奈川",
+   "venue": "cman",
+   "date": "2027-02-07",
+   "url": "https://www.creativeman.co.jp/event/pil27/",
+   "title": "PUBLIC IMAGE LTD.（神奈川）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "PUBLIC IMAGE LTD."
+   ],
+   "text": "PUBLIC IMAGE LTD.（神奈川）\nPUBLIC IMAGE LTD.\nSOLD OUT",
+   "venue_name": "神奈川（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:snack_eill2027-2027-02-07-東京",
+   "venue": "cman",
+   "date": "2027-02-07",
+   "url": "https://www.creativeman.co.jp/event/snack_eill2027/",
+   "title": "eill（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "eill"
+   ],
+   "text": "eill（東京）\neill",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "oeast:7thvega-tour-2027-prisma",
    "venue": "oeast",
    "date": "2027-02-07",
@@ -11320,6 +12882,36 @@
    "first_seen": null
   },
   {
+   "id": "cman:finn-wolfhard_2027-2027-02-08-大阪",
+   "venue": "cman",
+   "date": "2027-02-08",
+   "url": "https://www.creativeman.co.jp/event/finn-wolfhard_2027/",
+   "title": "FINN WOLFHARD（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "FINN WOLFHARD"
+   ],
+   "text": "FINN WOLFHARD（大阪）\nFINN WOLFHARD\n発売中",
+   "venue_name": "大阪（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:pil27-2027-02-08-東京",
+   "venue": "cman",
+   "date": "2027-02-08",
+   "url": "https://www.creativeman.co.jp/event/pil27/",
+   "title": "PUBLIC IMAGE LTD.（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "PUBLIC IMAGE LTD."
+   ],
+   "text": "PUBLIC IMAGE LTD.（東京）\nPUBLIC IMAGE LTD.\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "unit:15387",
    "venue": "unit",
    "date": "2027-02-08",
@@ -11335,6 +12927,21 @@
    ],
    "text": "Tom Meighan & SAHAJi Live in Tokyo'27\nTOM MEIGHAN / AZIZ IBRAHIM / SAHAJi / NICK BRINE",
    "venue_name": "UNIT",
+   "first_seen": null
+  },
+  {
+   "id": "cman:finn-wolfhard_2027-2027-02-09-東京",
+   "venue": "cman",
+   "date": "2027-02-09",
+   "url": "https://www.creativeman.co.jp/event/finn-wolfhard_2027/",
+   "title": "FINN WOLFHARD（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "FINN WOLFHARD"
+   ],
+   "text": "FINN WOLFHARD（東京）\nFINN WOLFHARD\n発売中",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -11416,6 +13023,21 @@
    "first_seen": null
   },
   {
+   "id": "cman:oliviadean27-2027-02-11-神奈川",
+   "venue": "cman",
+   "date": "2027-02-11",
+   "url": "https://www.creativeman.co.jp/artist/2027/oliviadean27/",
+   "title": "OLIVIA DEAN（神奈川）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "OLIVIA DEAN"
+   ],
+   "text": "OLIVIA DEAN（神奈川）\nOLIVIA DEAN",
+   "venue_name": "神奈川（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "oeast:dovetail【s-n-004】",
    "venue": "oeast",
    "date": "2027-02-11",
@@ -11448,6 +13070,21 @@
    "first_seen": null
   },
   {
+   "id": "cman:02weezer-2027-02-12-東京",
+   "venue": "cman",
+   "date": "2027-02-12",
+   "url": "https://www.creativeman.co.jp/artist/2027/02weezer/",
+   "title": "WEEZER（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "WEEZER"
+   ],
+   "text": "WEEZER（東京）\nWEEZER\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "zero:tba-33",
    "venue": "zero",
    "date": "2027-02-12",
@@ -11460,6 +13097,21 @@
    "lineup": [],
    "text": "",
    "venue_name": "ZERO TOKYO",
+   "first_seen": null
+  },
+  {
+   "id": "cman:02weezer-2027-02-13-東京",
+   "venue": "cman",
+   "date": "2027-02-13",
+   "url": "https://www.creativeman.co.jp/artist/2027/02weezer/",
+   "title": "WEEZER（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "WEEZER"
+   ],
+   "text": "WEEZER（東京）\nWEEZER\n発売中",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -11567,6 +13219,66 @@
    "first_seen": null
   },
   {
+   "id": "cman:02weezer-2027-02-15-京都",
+   "venue": "cman",
+   "date": "2027-02-15",
+   "url": "https://www.creativeman.co.jp/artist/2027/02weezer/",
+   "title": "WEEZER（京都）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "WEEZER"
+   ],
+   "text": "WEEZER（京都）\nWEEZER\n発売中",
+   "venue_name": "京都（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:father-of-peace27-2027-02-16-東京",
+   "venue": "cman",
+   "date": "2027-02-16",
+   "url": "https://www.creativeman.co.jp/event/father-of-peace27/",
+   "title": "FATHER OF PEACE（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "FATHER OF PEACE"
+   ],
+   "text": "FATHER OF PEACE（東京）\nFATHER OF PEACE",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:02weezer-2027-02-16-大阪",
+   "venue": "cman",
+   "date": "2027-02-16",
+   "url": "https://www.creativeman.co.jp/artist/2027/02weezer/",
+   "title": "WEEZER（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "WEEZER"
+   ],
+   "text": "WEEZER（大阪）\nWEEZER\n発売中",
+   "venue_name": "大阪（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:chapterhouse27-2027-02-17-東京",
+   "venue": "cman",
+   "date": "2027-02-17",
+   "url": "https://www.creativeman.co.jp/event/chapterhouse27/",
+   "title": "CHAPTERHOUSE（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "CHAPTERHOUSE"
+   ],
+   "text": "CHAPTERHOUSE（東京）\nCHAPTERHOUSE\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "oeast:chapterhouse",
    "venue": "oeast",
    "date": "2027-02-17",
@@ -11580,6 +13292,51 @@
    ],
    "text": "CHAPTERHOUSE \"WHIRLPOOL 35TH ANNIVERSARY JAPAN TOUR 2027\" Performing their classic debut album in full\nCHAPTERHOUSE / Tokyo Shoegazer",
    "venue_name": "Spotify O-EAST",
+   "first_seen": null
+  },
+  {
+   "id": "cman:chapterhouse27-2027-02-18-大阪",
+   "venue": "cman",
+   "date": "2027-02-18",
+   "url": "https://www.creativeman.co.jp/event/chapterhouse27/",
+   "title": "CHAPTERHOUSE（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "CHAPTERHOUSE"
+   ],
+   "text": "CHAPTERHOUSE（大阪）\nCHAPTERHOUSE\n発売中",
+   "venue_name": "大阪（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:father-of-peace27-2027-02-18-大阪",
+   "venue": "cman",
+   "date": "2027-02-18",
+   "url": "https://www.creativeman.co.jp/event/father-of-peace27/",
+   "title": "FATHER OF PEACE（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "FATHER OF PEACE"
+   ],
+   "text": "FATHER OF PEACE（大阪）\nFATHER OF PEACE",
+   "venue_name": "大阪（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:02weezer-2027-02-18-愛知",
+   "venue": "cman",
+   "date": "2027-02-18",
+   "url": "https://www.creativeman.co.jp/artist/2027/02weezer/",
+   "title": "WEEZER（愛知）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "WEEZER"
+   ],
+   "text": "WEEZER（愛知）\nWEEZER\n発売中",
+   "venue_name": "愛知（Creativeman）",
    "first_seen": null
   },
   {
@@ -11684,6 +13441,21 @@
    "first_seen": null
   },
   {
+   "id": "cman:father-of-peace27-2027-02-21-京都",
+   "venue": "cman",
+   "date": "2027-02-21",
+   "url": "https://www.creativeman.co.jp/event/father-of-peace27/",
+   "title": "FATHER OF PEACE（京都）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "FATHER OF PEACE"
+   ],
+   "text": "FATHER OF PEACE（京都）\nFATHER OF PEACE",
+   "venue_name": "京都（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "oeast:e-zuka-live-2027-ギター弾こうぜ！gthz-〜感謝還暦-前夜祭〜",
    "venue": "oeast",
    "date": "2027-02-21",
@@ -11710,6 +13482,21 @@
    "lineup": [],
    "text": "",
    "venue_name": "ZERO TOKYO",
+   "first_seen": null
+  },
+  {
+   "id": "cman:father-of-peace27-2027-02-22-広島",
+   "venue": "cman",
+   "date": "2027-02-22",
+   "url": "https://www.creativeman.co.jp/event/father-of-peace27/",
+   "title": "FATHER OF PEACE（広島）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "FATHER OF PEACE"
+   ],
+   "text": "FATHER OF PEACE（広島）\nFATHER OF PEACE",
+   "venue_name": "広島（Creativeman）",
    "first_seen": null
   },
   {
@@ -11756,6 +13543,36 @@
    ],
    "text": "XinU — XinU 5th Anniversary 1st Album “XinU” LP Record Release Live XinU Xings \"XinU\"\nXinU",
    "venue_name": "WWW",
+   "first_seen": null
+  },
+  {
+   "id": "cman:sirup-tour-2027-2027-02-23-東京",
+   "venue": "cman",
+   "date": "2027-02-23",
+   "url": "https://www.creativeman.co.jp/event/sirup-tour-2027/",
+   "title": "SIRUP（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "SIRUP"
+   ],
+   "text": "SIRUP（東京）\nSIRUP",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:skryu-live-tour-2027-2027-02-23-東京",
+   "venue": "cman",
+   "date": "2027-02-23",
+   "url": "https://www.creativeman.co.jp/event/skryu-live-tour-2027/",
+   "title": "SKRYU（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "SKRYU"
+   ],
+   "text": "SKRYU（東京）\nSKRYU",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -11812,6 +13629,66 @@
    "first_seen": null
   },
   {
+   "id": "cman:father-of-peace27-2027-02-24-愛知",
+   "venue": "cman",
+   "date": "2027-02-24",
+   "url": "https://www.creativeman.co.jp/event/father-of-peace27/",
+   "title": "FATHER OF PEACE（愛知）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "FATHER OF PEACE"
+   ],
+   "text": "FATHER OF PEACE（愛知）\nFATHER OF PEACE",
+   "venue_name": "愛知（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:paledusk-live-2027-02-24-東京",
+   "venue": "cman",
+   "date": "2027-02-24",
+   "url": "https://www.creativeman.co.jp/event/paledusk-live/",
+   "title": "Paledusk（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "Paledusk"
+   ],
+   "text": "Paledusk（東京）\nPaledusk",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:sleep-theory_2027-2027-02-24-東京",
+   "venue": "cman",
+   "date": "2027-02-24",
+   "url": "https://www.creativeman.co.jp/event/sleep-theory_2027/",
+   "title": "SLEEP THEORY（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "SLEEP THEORY"
+   ],
+   "text": "SLEEP THEORY（東京）\nSLEEP THEORY\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:banshimoku-iai-2027-02-24-東京",
+   "venue": "cman",
+   "date": "2027-02-24",
+   "url": "https://www.creativeman.co.jp/event/banshimoku-iai/",
+   "title": "板歯目（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "板歯目"
+   ],
+   "text": "板歯目（東京）\n板歯目",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:whiteash_20270224",
    "venue": "liquid",
    "date": "2027-02-24",
@@ -11839,6 +13716,36 @@
    ],
    "text": "SLEEP THEORY ASIA TOUR 2027 JAPAN\nSLEEP THEORY",
    "venue_name": "Spotify O-EAST",
+   "first_seen": null
+  },
+  {
+   "id": "cman:gurriers27-2027-02-25-東京",
+   "venue": "cman",
+   "date": "2027-02-25",
+   "url": "https://www.creativeman.co.jp/event/gurriers27/",
+   "title": "GURRIERS（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "GURRIERS"
+   ],
+   "text": "GURRIERS（東京）\nGURRIERS",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:skryu-live-tour-2027-2027-02-25-群馬",
+   "venue": "cman",
+   "date": "2027-02-25",
+   "url": "https://www.creativeman.co.jp/event/skryu-live-tour-2027/",
+   "title": "SKRYU（群馬）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "SKRYU"
+   ],
+   "text": "SKRYU（群馬）\nSKRYU",
+   "venue_name": "群馬（Creativeman）",
    "first_seen": null
   },
   {
@@ -11883,6 +13790,36 @@
    "lineup": [],
    "text": "",
    "venue_name": "ZERO TOKYO",
+   "first_seen": null
+  },
+  {
+   "id": "cman:bleech93-2027-02-26-東京",
+   "venue": "cman",
+   "date": "2027-02-26",
+   "url": "https://www.creativeman.co.jp/event/bleech93/",
+   "title": "BLEECH 9:3（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "BLEECH 9:3"
+   ],
+   "text": "BLEECH 9:3（東京）\nBLEECH 9:3",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:father-of-peace27-2027-02-26-東京",
+   "venue": "cman",
+   "date": "2027-02-26",
+   "url": "https://www.creativeman.co.jp/event/father-of-peace27/",
+   "title": "FATHER OF PEACE（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "FATHER OF PEACE"
+   ],
+   "text": "FATHER OF PEACE（東京）\nFATHER OF PEACE",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -11959,6 +13896,21 @@
    "first_seen": null
   },
   {
+   "id": "cman:otsumami-feat-mikan-2027-2027-02-27-東京",
+   "venue": "cman",
+   "date": "2027-02-27",
+   "url": "https://www.creativeman.co.jp/event/otsumami-feat-mikan-2027/",
+   "title": "otsumami feat.mikan（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "otsumami feat.mikan"
+   ],
+   "text": "otsumami feat.mikan（東京）\notsumami feat.mikan\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "oeast:jinmenusagi-1stワンマンライブ-「one-man-alxve」",
    "venue": "oeast",
    "date": "2027-02-27",
@@ -12006,6 +13958,21 @@
    "text": "[OTHER]\n【2nd LINEUP】\nVJ : Q 昆 / poifull\n【1st LINEUP】\nVJ : U-TARO / magukabe / higrasy / ;3ZUTAMA / mønobright\nand more…",
    "price": "※チケット詳細はチケットページをご覧ください。",
    "venue_name": "ZERO TOKYO",
+   "first_seen": null
+  },
+  {
+   "id": "cman:fake-live-2027-2027-02-28-東京",
+   "venue": "cman",
+   "date": "2027-02-28",
+   "url": "https://www.creativeman.co.jp/event/fake-live-2027/",
+   "title": "FAKE? LIVE 2027 「Full Circle」（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "FAKE? LIVE 2027 「Full Circle」"
+   ],
+   "text": "FAKE? LIVE 2027 「Full Circle」（東京）\nFAKE? LIVE 2027 「Full Circle」",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -12068,6 +14035,21 @@
    "first_seen": null
   },
   {
+   "id": "cman:atsuko-okatsuka27-2027-03-03-東京",
+   "venue": "cman",
+   "date": "2027-03-03",
+   "url": "https://www.creativeman.co.jp/event/atsuko-okatsuka27/",
+   "title": "ATSUKO OKATSUKA（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "ATSUKO OKATSUKA"
+   ],
+   "text": "ATSUKO OKATSUKA（東京）\nATSUKO OKATSUKA\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:cro-magnons_20270303",
    "venue": "liquid",
    "date": "2027-03-03",
@@ -12110,6 +14092,21 @@
    ],
    "text": "WESTSIDE COWBOY\nWESTSIDE COWBOY",
    "venue_name": "WWW X",
+   "first_seen": null
+  },
+  {
+   "id": "cman:akmu_2027-2027-03-05-大阪",
+   "venue": "cman",
+   "date": "2027-03-05",
+   "url": "https://www.creativeman.co.jp/event/akmu_2027/",
+   "title": "AKMU（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "AKMU"
+   ],
+   "text": "AKMU（大阪）\nAKMU",
+   "venue_name": "大阪（Creativeman）",
    "first_seen": null
   },
   {
@@ -12176,6 +14173,21 @@
    "first_seen": null
   },
   {
+   "id": "cman:befirst27-2027-03-06-埼玉",
+   "venue": "cman",
+   "date": "2027-03-06",
+   "url": "https://www.creativeman.co.jp/event/befirst27/",
+   "title": "BE:FIRST（埼玉）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "BE:FIRST"
+   ],
+   "text": "BE:FIRST（埼玉）\nBE:FIRST",
+   "venue_name": "埼玉（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:harha_20270306",
    "venue": "liquid",
    "date": "2027-03-06",
@@ -12188,6 +14200,51 @@
    ],
    "text": "harha — harha one man live『ON YOUR MARKS! DEADHEAT!!』\nharha",
    "venue_name": "LIQUIDROOM",
+   "first_seen": null
+  },
+  {
+   "id": "cman:akmu_2027-2027-03-07-東京",
+   "venue": "cman",
+   "date": "2027-03-07",
+   "url": "https://www.creativeman.co.jp/event/akmu_2027/",
+   "title": "AKMU（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "AKMU"
+   ],
+   "text": "AKMU（東京）\nAKMU",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:befirst27-2027-03-07-埼玉",
+   "venue": "cman",
+   "date": "2027-03-07",
+   "url": "https://www.creativeman.co.jp/event/befirst27/",
+   "title": "BE:FIRST（埼玉）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "BE:FIRST"
+   ],
+   "text": "BE:FIRST（埼玉）\nBE:FIRST",
+   "venue_name": "埼玉（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:real-traum-2027-03-07-東京",
+   "venue": "cman",
+   "date": "2027-03-07",
+   "url": "https://www.creativeman.co.jp/event/real-traum/",
+   "title": "REAL TRAUM（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "REAL TRAUM"
+   ],
+   "text": "REAL TRAUM（東京）\nREAL TRAUM",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -12241,6 +14298,37 @@
    "first_seen": null
   },
   {
+   "id": "cman:03uw_b3k-2027-03-11-東京",
+   "venue": "cman",
+   "date": "2027-03-11",
+   "url": "https://www.creativeman.co.jp/artist/2027/03uw_b3k/",
+   "title": "Underworld × Brutalismus3000（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "Underworld",
+    "Brutalismus3000"
+   ],
+   "text": "Underworld × Brutalismus3000（東京）\nUnderworld / Brutalismus3000",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:feeble-little-horse-2027-03-11-東京",
+   "venue": "cman",
+   "date": "2027-03-11",
+   "url": "https://www.creativeman.co.jp/event/feeble-little-horse/",
+   "title": "feeble little horse（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "feeble little horse"
+   ],
+   "text": "feeble little horse（東京）\nfeeble little horse\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "unit:15261",
    "venue": "unit",
    "date": "2027-03-11",
@@ -12254,6 +14342,21 @@
    ],
    "text": "DRAIN JAPAN TOUR 2027\nDRAIN / TBA",
    "venue_name": "UNIT",
+   "first_seen": null
+  },
+  {
+   "id": "cman:feeble-little-horse-2027-03-12-東京",
+   "venue": "cman",
+   "date": "2027-03-12",
+   "url": "https://www.creativeman.co.jp/event/feeble-little-horse/",
+   "title": "feeble little horse（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "feeble little horse"
+   ],
+   "text": "feeble little horse（東京）\nfeeble little horse\nSOLD OUT",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -12289,6 +14392,21 @@
    ],
    "text": "GOTTHARD MORE STEREO CRUSH TOUR 2027\nGotthard",
    "venue_name": "UNIT",
+   "first_seen": null
+  },
+  {
+   "id": "cman:aile-the-shota27-2027-03-13-東京",
+   "venue": "cman",
+   "date": "2027-03-13",
+   "url": "https://www.creativeman.co.jp/event/aile-the-shota27/",
+   "title": "Aile The Shota（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "Aile The Shota"
+   ],
+   "text": "Aile The Shota（東京）\nAile The Shota\nSOLD OUT",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -12332,6 +14450,21 @@
    ],
    "text": "Hammer Head Shark — air in hurt tour\nHammer Head Shark",
    "venue_name": "WWW X",
+   "first_seen": null
+  },
+  {
+   "id": "cman:red-warriors-2027-2027-03-14-東京",
+   "venue": "cman",
+   "date": "2027-03-14",
+   "url": "https://www.creativeman.co.jp/event/red-warriors-2027/",
+   "title": "RED WARRIORS（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "RED WARRIORS"
+   ],
+   "text": "RED WARRIORS（東京）\nRED WARRIORS",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -12408,6 +14541,21 @@
    "first_seen": null
   },
   {
+   "id": "cman:utanoprince-all-star-stage-beginning-2027-03-18-千葉",
+   "venue": "cman",
+   "date": "2027-03-18",
+   "url": "https://www.creativeman.co.jp/event/utanoprince-all-star-stage-beginning/",
+   "title": "「うたの☆プリンスさまっ♪ ALL STAR STAGE -BEGINNING-」（千葉）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "「うたの☆プリンスさまっ♪ ALL STAR STAGE -BEGINNING-」"
+   ],
+   "text": "",
+   "venue_name": "千葉（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:mizuirono_inu_20270318",
    "venue": "liquid",
    "date": "2027-03-18",
@@ -12420,6 +14568,51 @@
    ],
    "text": "mizuirono_inu — FUCKIN' BEAUTIFUL WORLD\nmizuirono_inu",
    "venue_name": "LIQUIDROOM",
+   "first_seen": null
+  },
+  {
+   "id": "cman:chilldspot-6th-one-man-2027-03-19-東京",
+   "venue": "cman",
+   "date": "2027-03-19",
+   "url": "https://www.creativeman.co.jp/event/chilldspot-6th-one-man/",
+   "title": "chilldspot（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "chilldspot"
+   ],
+   "text": "chilldspot（東京）\nchilldspot\nSOLD OUT",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:utanoprince-all-star-stage-beginning-2027-03-19-千葉",
+   "venue": "cman",
+   "date": "2027-03-19",
+   "url": "https://www.creativeman.co.jp/event/utanoprince-all-star-stage-beginning/",
+   "title": "「うたの☆プリンスさまっ♪ ALL STAR STAGE -BEGINNING-」（千葉）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "「うたの☆プリンスさまっ♪ ALL STAR STAGE -BEGINNING-」"
+   ],
+   "text": "",
+   "venue_name": "千葉（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:bachikanshikokni-aisaretai-3rd-2027-03-19-東京",
+   "venue": "cman",
+   "date": "2027-03-19",
+   "url": "https://www.creativeman.co.jp/event/bachikanshikokni-aisaretai-3rd/",
+   "title": "バチカン市国に愛されたい（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "バチカン市国に愛されたい"
+   ],
+   "text": "バチカン市国に愛されたい（東京）\nバチカン市国に愛されたい",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -12450,6 +14643,36 @@
    ],
    "text": "どんぐりず — DONGURIZU ONE MAN TOUR 2027\nどんぐりず",
    "venue_name": "WWW X",
+   "first_seen": null
+  },
+  {
+   "id": "cman:fake-live-2027-2027-03-20-東京",
+   "venue": "cman",
+   "date": "2027-03-20",
+   "url": "https://www.creativeman.co.jp/event/fake-live-2027/",
+   "title": "FAKE? LIVE 2027 「Full Circle」（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "FAKE? LIVE 2027 「Full Circle」"
+   ],
+   "text": "FAKE? LIVE 2027 「Full Circle」（東京）\nFAKE? LIVE 2027 「Full Circle」",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:utanoprince-all-star-stage-beginning-2027-03-20-千葉",
+   "venue": "cman",
+   "date": "2027-03-20",
+   "url": "https://www.creativeman.co.jp/event/utanoprince-all-star-stage-beginning/",
+   "title": "「うたの☆プリンスさまっ♪ ALL STAR STAGE -BEGINNING-」（千葉）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "「うたの☆プリンスさまっ♪ ALL STAR STAGE -BEGINNING-」"
+   ],
+   "text": "",
+   "venue_name": "千葉（Creativeman）",
    "first_seen": null
   },
   {
@@ -12530,6 +14753,51 @@
    "first_seen": null
   },
   {
+   "id": "cman:jeremy-quartus-patchwork-coyote-2027-03-21-東京",
+   "venue": "cman",
+   "date": "2027-03-21",
+   "url": "https://www.creativeman.co.jp/event/jeremy-quartus-patchwork-coyote/",
+   "title": "Jeremy Quartus（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "Jeremy Quartus"
+   ],
+   "text": "Jeremy Quartus（東京）\nJeremy Quartus",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:utanoprince-all-star-stage-beginning-2027-03-21-千葉",
+   "venue": "cman",
+   "date": "2027-03-21",
+   "url": "https://www.creativeman.co.jp/event/utanoprince-all-star-stage-beginning/",
+   "title": "「うたの☆プリンスさまっ♪ ALL STAR STAGE -BEGINNING-」（千葉）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "「うたの☆プリンスさまっ♪ ALL STAR STAGE -BEGINNING-」"
+   ],
+   "text": "",
+   "venue_name": "千葉（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:tarlight-polaris27-2027-03-21-東京",
+   "venue": "cman",
+   "date": "2027-03-21",
+   "url": "https://www.creativeman.co.jp/event/tarlight-polaris27/",
+   "title": "すたぽら（StarLight PolaRis）（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "すたぽら(StarLight PolaRis)"
+   ],
+   "text": "すたぽら（StarLight PolaRis）（東京）\nすたぽら(StarLight PolaRis)",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:lilliline_20270321",
    "venue": "liquid",
    "date": "2027-03-21",
@@ -12574,6 +14842,36 @@
    ],
    "text": "cali≠gari / 白石元久 / ササブチヒロシ — cali≠gari TOUR「Re(member):17」\ncali≠gari / 白石元久 / ササブチヒロシ",
    "venue_name": "WWW X",
+   "first_seen": null
+  },
+  {
+   "id": "cman:utanoprince-all-star-stage-beginning-2027-03-22-千葉",
+   "venue": "cman",
+   "date": "2027-03-22",
+   "url": "https://www.creativeman.co.jp/event/utanoprince-all-star-stage-beginning/",
+   "title": "「うたの☆プリンスさまっ♪ ALL STAR STAGE -BEGINNING-」（千葉）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "「うたの☆プリンスさまっ♪ ALL STAR STAGE -BEGINNING-」"
+   ],
+   "text": "",
+   "venue_name": "千葉（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:tarlight-polaris27-2027-03-22-東京",
+   "venue": "cman",
+   "date": "2027-03-22",
+   "url": "https://www.creativeman.co.jp/event/tarlight-polaris27/",
+   "title": "すたぽら（StarLight PolaRis）（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "すたぽら(StarLight PolaRis)"
+   ],
+   "text": "すたぽら（StarLight PolaRis）（東京）\nすたぽら(StarLight PolaRis)",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -12667,6 +14965,21 @@
    "first_seen": null
   },
   {
+   "id": "cman:luov-link-up-2027-03-26-東京",
+   "venue": "cman",
+   "date": "2027-03-26",
+   "url": "https://www.creativeman.co.jp/event/luov-link-up/",
+   "title": "Luov（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "Luov"
+   ],
+   "text": "Luov（東京）\nLuov",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "liquid:lauradayromance_20270326",
    "venue": "liquid",
    "date": "2027-03-26",
@@ -12709,6 +15022,36 @@
    ],
    "text": "Luov — Luov ONEMAN TOUR 2027 『LINK UP』\nLuov",
    "venue_name": "WWW",
+   "first_seen": null
+  },
+  {
+   "id": "cman:ikitsugilive26-2027-03-27-東京",
+   "venue": "cman",
+   "date": "2027-03-27",
+   "url": "https://www.creativeman.co.jp/event/ikitsugilive26/",
+   "title": "イキヅライブ！ラブライブ！BLUEBIRD（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "イキヅライブ!ラブライブ!BLUEBIRD"
+   ],
+   "text": "イキヅライブ！ラブライブ！BLUEBIRD（東京）\nイキヅライブ!ラブライブ!BLUEBIRD",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:ikitsugilive26-2027-03-28-東京",
+   "venue": "cman",
+   "date": "2027-03-28",
+   "url": "https://www.creativeman.co.jp/event/ikitsugilive26/",
+   "title": "イキヅライブ！ラブライブ！BLUEBIRD（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "イキヅライブ!ラブライブ!BLUEBIRD"
+   ],
+   "text": "イキヅライブ！ラブライブ！BLUEBIRD（東京）\nイキヅライブ!ラブライブ!BLUEBIRD",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -12784,6 +15127,21 @@
    ],
    "text": "Les Imprimés — JAPAN TOUR 2027\nLes Imprimés",
    "venue_name": "WWW X",
+   "first_seen": null
+  },
+  {
+   "id": "cman:cosmos-people27-2027-04-02-東京",
+   "venue": "cman",
+   "date": "2027-04-02",
+   "url": "https://www.creativeman.co.jp/event/cosmos-people27/",
+   "title": "宇宙人Cosmos People（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "宇宙人Cosmos People"
+   ],
+   "text": "宇宙人Cosmos People（東京）\n宇宙人Cosmos People",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {
@@ -12907,6 +15265,51 @@
    "first_seen": null
   },
   {
+   "id": "cman:squeeze26-2027-04-08-東京",
+   "venue": "cman",
+   "date": "2027-04-08",
+   "url": "https://www.creativeman.co.jp/event/squeeze26/",
+   "title": "SQUEEZE（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "SQUEEZE"
+   ],
+   "text": "SQUEEZE（東京）\nSQUEEZE\n発売中",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:squeeze26-2027-04-09-大阪",
+   "venue": "cman",
+   "date": "2027-04-09",
+   "url": "https://www.creativeman.co.jp/event/squeeze26/",
+   "title": "SQUEEZE（大阪）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "SQUEEZE"
+   ],
+   "text": "SQUEEZE（大阪）\nSQUEEZE\n発売中",
+   "venue_name": "大阪（Creativeman）",
+   "first_seen": null
+  },
+  {
+   "id": "cman:starglow-arena-tour-2027-2027-04-10-東京",
+   "venue": "cman",
+   "date": "2027-04-10",
+   "url": "https://www.creativeman.co.jp/event/starglow-arena-tour-2027/",
+   "title": "STARGLOW（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "STARGLOW"
+   ],
+   "text": "STARGLOW（東京）\nSTARGLOW",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": null
+  },
+  {
    "id": "oeast:synchronicity27",
    "venue": "oeast",
    "date": "2027-04-10",
@@ -12917,6 +15320,21 @@
    "lineup": [],
    "text": "SYNCHRONICITY'27",
    "venue_name": "Spotify O-EAST",
+   "first_seen": null
+  },
+  {
+   "id": "cman:starglow-arena-tour-2027-2027-04-11-東京",
+   "venue": "cman",
+   "date": "2027-04-11",
+   "url": "https://www.creativeman.co.jp/event/starglow-arena-tour-2027/",
+   "title": "STARGLOW（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "STARGLOW"
+   ],
+   "text": "STARGLOW（東京）\nSTARGLOW",
+   "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
   {

@@ -47,7 +47,7 @@ const PREFS_MAX_KEYS = 300;
 
 function cleanPrefs_(d) {
   const out = {};
-  ['artists', 'keywords', 'genres'].forEach(function (k) {
+  ['artists', 'keywords', 'genres', 'going', 'maybe'].forEach(function (k) {
     out[k] = (Array.isArray(d && d[k]) ? d[k] : []).slice(0, 500).map(function (x) { return String(x).slice(0, 100); });
   });
   return out;
@@ -65,7 +65,7 @@ function prefs_(d) {
     let sheet = ss.getSheetByName(PREFS_SHEET);
     if (!sheet) {
       sheet = ss.insertSheet(PREFS_SHEET);
-      sheet.appendRow(['key', 'data', 't', 'updated']);
+      sheet.appendRow(['key', 'data', 't', 'updated', 'email', 'notified']);
       sheet.setFrozenRows(1);
     }
     const n = sheet.getLastRow() - 1;
@@ -73,8 +73,16 @@ function prefs_(d) {
     const i = keys.indexOf(key);
     if (d.action === 'prefs_get') {
       if (i < 0) return json_({ ok: true, found: false });
-      const row = sheet.getRange(i + 2, 2, 1, 2).getValues()[0];
-      return json_({ ok: true, found: true, data: cleanPrefs_(JSON.parse(row[0] || '{}')), t: Number(row[1]) || 0 });
+      const row = sheet.getRange(i + 2, 2, 1, 4).getValues()[0];
+      return json_({ ok: true, found: true, data: cleanPrefs_(JSON.parse(row[0] || '{}')), t: Number(row[1]) || 0, notify: !!row[3] });
+    }
+    if (d.action === 'notify_set') {   // 新着メールの宛先。空文字で停止。送るのは許可済みの宛先だけ
+      if (i < 0) return json_({ ok: false, error: 'nokey' });
+      const email = String(d.email || '').trim().toLowerCase().slice(0, 200);
+      if (email && !/^[^\s@,;<>"]+@[^\s@,;<>"]+\.[a-z]{2,}$/.test(email)) return json_({ ok: false, error: 'email' });
+      if (email && !notifyAllowed_(ss, email)) return json_({ ok: false, error: 'not_allowed' });
+      sheet.getRange(i + 2, 5, 1, 2).setValues([[email, '']]);
+      return json_({ ok: true, notify: !!email });
     }
     const t = Number(d.t) || Date.now();
     const data = JSON.stringify(cleanPrefs_(d.data));
@@ -91,10 +99,142 @@ function prefs_(d) {
   }
 }
 
+// ---- 新着メール ----
+// 宛先にできるのは、このスクリプトの持ち主のアドレスと、シート「notify_allow」のA列に書いたアドレスだけ
+// （誰でも好きな宛先を登録できると、迷惑メールの踏み台になるため）
+const DATA_URL = 'https://kinakonism.github.io/club-calendar/data/events.json';
+const SITE_URL = 'https://kinakonism.github.io/club-calendar/';
+
+function notifyAllowed_(ss, email) {
+  if (email === String(Session.getEffectiveUser().getEmail()).toLowerCase()) return true;
+  let sh = ss.getSheetByName('notify_allow');
+  if (!sh) { sh = ss.insertSheet('notify_allow'); sh.appendRow(['新着メールを送ってよいアドレス（1行に1つ）']); }
+  const n = sh.getLastRow() - 1;
+  if (n < 1) return false;
+  return sh.getRange(2, 1, n, 1).getValues().some(function (r) { return String(r[0]).trim().toLowerCase() === email; });
+}
+
+// サイト側（index.html）と同じ照合ルール
+function norm_(s) { return String(s || '').normalize('NFKC').toLowerCase().replace(/[’`]/g, "'").replace(/\s+/g, ' ').trim(); }
+function stripName_(s) {
+  return String(s || '').normalize('NFKC').replace(/(?<=.)[(\[【〈<][^)\]】〉>]*[)\]】〉>]/g, ' ')
+    .replace(/\s+[-–—]\s*(live|dj|dj set|live set|hybrid set)\s*[-–—]?\s*$/i, ' ')
+    .replace(/\s+(live set|dj set|hybrid set|live)\s*$/i, ' ').replace(/\s+/g, ' ').trim();
+}
+function core_(s) { const c = norm_(stripName_(s)); return c.length >= 2 ? c : norm_(s); }
+function variants_(s) {
+  const out = [norm_(s), core_(s)];
+  String(s || '').split(/\s+(?:b2b|b3b|vs\.?)\s+/i).forEach(function (x) { if (x.trim()) out.push(core_(x)); });
+  return out.filter(function (x) { return x; });
+}
+function wordRe_(s) {
+  return new RegExp('(?<![a-z0-9])' + norm_(s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(?![a-z0-9])');
+}
+
+function matchEvents_(data, prefs, today) {
+  const follow = data.follow || {};
+  const artists = (follow.artists || []).concat(prefs.artists || []).filter(function (x) { return norm_(x); })
+    .map(function (x) { return [x, core_(x), wordRe_(stripName_(x) || x)]; });
+  const rosters = (follow.labels || []).map(function (l) {
+    const set = {};
+    ((data.labels || {})[l] || []).forEach(function (a) { [norm_(a), core_(a)].forEach(function (n) { if (n.length >= 3) set[n] = true; }); });
+    return [l, set];
+  });
+  const keywords = (prefs.keywords || []).filter(function (x) { return norm_(x); }).map(function (x) { return [x, wordRe_(x)]; });
+  const out = [];
+  (data.events || []).forEach(function (e) {
+    if ((e.end_date || e.date) < today) return;
+    const vars = (e.lineup || []).map(variants_);
+    const names = {};
+    vars.forEach(function (v) { v.forEach(function (x) { names[x] = true; }); });
+    const hay = norm_([e.title, (e.lineup || []).join('\n'), e.text].join('\n'));
+    const hits = [];
+    artists.forEach(function (a) { if ((names[a[1]] || a[2].test(hay)) && hits.indexOf(a[0]) < 0) hits.push(a[0]); });
+    rosters.forEach(function (r) {
+      (e.lineup || []).forEach(function (a, i) {
+        if (hits.length < 6 && vars[i].some(function (x) { return r[1][x]; }) && !artists.some(function (t) { return vars[i].indexOf(t[1]) >= 0; })) hits.push(r[0] + ': ' + a);
+      });
+    });
+    keywords.forEach(function (k) { if (k[1].test(hay)) hits.push(k[0]); });
+    if (hits.length) out.push({ e: e, hits: hits });
+  });
+  return out.sort(function (a, b) { return a.e.date < b.e.date ? -1 : a.e.date > b.e.date ? 1 : 0; });
+}
+
+function eventLine_(m) {
+  const e = m.e, p = e.date.split('-');
+  const dow = ['日', '月', '火', '水', '木', '金', '土'][new Date(Number(p[0]), Number(p[1]) - 1, Number(p[2])).getDay()];
+  return Number(p[1]) + '/' + Number(p[2]) + '(' + dow + ') ' + (e.venue_name || e.venue) + (e.open ? ' ' + e.open : '') +
+    '\n  ' + e.title + '\n  一致: ' + m.hits.slice(0, 6).join(' / ') + (/^https?:\/\//.test(e.url || '') ? '\n  ' + e.url : '');
+}
+
+// 毎朝のトリガーで動く。お気に入りに一致する「まだ知らせていない」イベントをメールする
+function dailyNotify() {
+  const sheetId = PropertiesService.getScriptProperties().getProperty('SHEET_ID');
+  if (!sheetId) return;
+  const ss = SpreadsheetApp.openById(sheetId);
+  const sheet = ss.getSheetByName(PREFS_SHEET);
+  if (!sheet || sheet.getLastRow() < 2) return;
+  const rows = sheet.getRange(2, 1, sheet.getLastRow() - 1, 6).getValues();
+  if (!rows.some(function (r) { return r[4]; })) return;
+  const data = JSON.parse(UrlFetchApp.fetch(DATA_URL, { muteHttpExceptions: false }).getContentText());
+  const today = Utilities.formatDate(new Date(), 'Asia/Tokyo', 'yyyy-MM-dd');
+  rows.forEach(function (r, idx) {
+    const email = String(r[4] || '').trim().toLowerCase();
+    if (!email || !notifyAllowed_(ss, email)) return;
+    try {
+      const prefs = cleanPrefs_(JSON.parse(r[1] || '{}'));
+      const matches = matchEvents_(data, prefs, today);
+      const first = !r[5];
+      const seen = {};
+      (first ? [] : JSON.parse(r[5])).forEach(function (id) { seen[id] = true; });
+      const fresh = matches.filter(function (m) { return !seen[m.e.id]; });
+      if (fresh.length) {
+        const shown = fresh.slice(0, 30);
+        MailApp.sendEmail(email,
+          '[Club Calendar] ' + (first ? 'お気に入りに一致するイベント ' : '新着 ') + fresh.length + '件',
+          (first ? '新着メールの登録ありがとうございます。いま掲載されている、お気に入りに一致するイベントです。\n以降は新しく見つかった分だけお知らせします。\n\n'
+                 : 'お気に入りに一致するイベントが新しく見つかりました。\n\n') +
+          shown.map(eventLine_).join('\n\n') + (fresh.length > shown.length ? '\n\n…ほか ' + (fresh.length - shown.length) + '件' : '') +
+          '\n\n' + SITE_URL + '\n（止めるときは、サイトの「好みを設定」→「端末間で同期」から）');
+      }
+      // 知らせた分として、今一致している今後のイベントのIDを覚える（空だと毎回「初回」になるので必ず何か入れる）
+      sheet.getRange(idx + 2, 6).setValue(JSON.stringify(matches.map(function (m) { return m.e.id; }).slice(0, 1500)) );
+    } catch (err) {
+      console.error('notify failed for row ' + (idx + 2) + ': ' + err);
+    }
+  });
+}
+
+// 1回だけ実行する: 毎朝8時台（日本時間）に dailyNotify を動かすトリガーを作る
+function setupNotify() {
+  const exists = ScriptApp.getProjectTriggers().some(function (t) { return t.getHandlerFunction() === 'dailyNotify'; });
+  if (!exists) ScriptApp.newTrigger('dailyNotify').timeBased().everyDays(1).atHour(8).inTimezone('Asia/Tokyo').create();
+  UrlFetchApp.fetch(DATA_URL);   // 外部取得の権限もここで承認しておく
+  Logger.log('notify trigger ready');
+}
+
+// clubberia 検索用: 同期されているお気に入りアーティストの合算（名前だけ。誰のものかは返さない）
+function watchList_() {
+  const sheetId = PropertiesService.getScriptProperties().getProperty('SHEET_ID');
+  const sheet = sheetId && SpreadsheetApp.openById(sheetId).getSheetByName(PREFS_SHEET);
+  if (!sheet || sheet.getLastRow() < 2) return [];
+  const seen = {}, out = [];
+  sheet.getRange(2, 2, sheet.getLastRow() - 1, 1).getValues().forEach(function (r) {
+    try {
+      cleanPrefs_(JSON.parse(r[0] || '{}')).artists.forEach(function (a) {
+        const k = core_(a);
+        if (k.length >= 2 && !seen[k] && out.length < 100) { seen[k] = true; out.push(stripName_(a) || a); }
+      });
+    } catch (err) { /* 壊れた行は飛ばす */ }
+  });
+  return out;
+}
+
 function doPost(e) {
   try {
     const d = JSON.parse((e && e.postData && e.postData.contents) || '{}');
-    if (d.action === 'prefs_get' || d.action === 'prefs_set') return prefs_(d);
+    if (d.action === 'prefs_get' || d.action === 'prefs_set' || d.action === 'notify_set') return prefs_(d);
     if (d.website) return json_({ ok: true });  // 人には見えない欄が埋まっていたら bot とみなして黙って捨てる
     const kind = String(d.kind || '').slice(0, 20);
     const text = String(d.text || '').trim().slice(0, MAX_TEXT);
@@ -134,6 +274,7 @@ function doPost(e) {
   }
 }
 
-function doGet() {
+function doGet(e) {
+  if (e && e.parameter && e.parameter.list === 'watch') return json_({ ok: true, artists: watchList_() });
   return json_({ ok: true, service: 'club-calendar requests' });
 }

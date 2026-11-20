@@ -38,7 +38,13 @@ VENUES = {
     "unit": "UNIT",
     "www": "WWW",
     "oeast": "Spotify O-EAST",
+    "cman": "Creativeman",        # 招聘元の公演カレンダー（全国の来日ツアー）
+    "clubberia": "clubberia",     # 追っているアーティスト名で検索して見つけた、登録会場以外の出演
 }
+# 追っているアーティスト一覧（合言葉同期で保存されたお気に入りの合算。名前だけで、誰のものかは含まない）
+WATCH_URL = "https://script.google.com/macros/s/AKfycbyxCLBCsKaNhf86W1BnQODR-FGsgeZtQ5Uu_QcvDfIYaPISjWcCSCcG_WEtVO5D5_aIgQ/exec?list=watch"
+WATCH_MAX = 60
+ALLOW_EMPTY = {"clubberia"}   # 0件が正常にありうる取得元
 
 
 # ---------------------------------------------------------------- helpers
@@ -686,7 +692,115 @@ def scrape_dommune():
     return list(events.values())
 
 
-SCRAPERS = {"asia": scrape_asia, "circus": scrape_circus, "zero": scrape_zero, "womb": scrape_womb,
+# ---------------------------------------------------------------- 来日・他会場（Creativeman / clubberia）
+
+def scrape_cman():
+    events = {}
+    for y, m in months_ahead(LIVE_MONTHS_AHEAD):
+        try:
+            page = fetch(f"https://www.creativeman.co.jp/event/?cmy={y}&cmm={m:02d}")
+        except Exception as e:
+            print(f"  cman {y}/{m}: {e}", file=sys.stderr)
+            continue
+        for cell in re.split(r'<td class="p-calendar__cell', page)[1:]:
+            d = re.search(r'p-calendar__label">\s*(\d{1,2})\s*<', cell)
+            if not d:
+                continue
+            date = f"{y}-{m:02d}-{int(d.group(1)):02d}"
+            for live in cell.split('class="p-calendar__live"')[1:]:
+                href = re.search(r'<a href="(https://www\.creativeman\.co\.jp/[^"]+)"', live)
+                body = re.search(r'<a [^>]*>(.*?)</a>', live, re.S)
+                if not (href and body) or "<s>" in body.group(1):   # 取り消し線 = 中止
+                    continue
+                area = first(r'p-calendar__areaLabel[^>]*>(.*?)</div>', body.group(1))
+                name = to_text(re.sub(r'<div.*?</div>', "", body.group(1), flags=re.S)).replace("\xa0", " ").strip()
+                status = first(r'p-text-label[^>]*>(.*?)</div>', live)
+                if not name or "中止" in status:
+                    continue
+                slug = href.group(1).rstrip("/").rsplit("/", 1)[-1][:60]
+                ev = live_event("cman", f"{slug}-{date}-{area}", date, href.group(1), f"{name}（{area}）" if area else name,
+                                split_acts(name), "", status)
+                ev["venue_name"] = f"{area}（Creativeman）" if area else "Creativeman"
+                events[ev["id"]] = ev
+    return list(events.values())
+
+
+def watch_list():
+    """clubberia で検索するアーティスト名。follow.json ＋ 同期済みのお気に入り（取れなければ follow.json だけ）。"""
+    names = []
+    try:
+        names += [str(a) for a in json.loads((DATA / "follow.json").read_text(encoding="utf-8")).get("artists", [])]
+    except Exception:
+        pass
+    try:
+        got = json.loads(fetch(WATCH_URL))
+        names += [str(a) for a in got.get("artists", [])]
+    except Exception as e:
+        print(f"  watch list: {e}", file=sys.stderr)
+    seen, out = set(), []
+    for n in names:
+        n = unicodedata.normalize("NFKC", n).strip()
+        if 2 <= len(n) <= 60 and n.lower() not in seen:
+            seen.add(n.lower())
+            out.append(n)
+    return out[:WATCH_MAX]
+
+
+def scrape_clubberia():
+    events = {}
+    names = watch_list()
+    print(f"  clubberia: {len(names)} artists", file=sys.stderr)
+    for name in names:
+        time.sleep(1.0)
+        try:
+            page = fetch("https://clubberia.com/ja/events/search/?keyword=" + urllib.parse.quote(name))
+        except Exception as e:
+            print(f"  clubberia {name}: {e}", file=sys.stderr)
+            continue
+        for art in page.split('<article class="c-post')[1:]:
+            href = re.search(r'href="(/ja/events/(\d+)[^"]*)"', art)
+            d = re.search(r'c-post__day">\s*(\d{1,2})\.(\d{1,2})', art)
+            title = first(r'c-post__title">(.*?)</h3>', art)
+            if not (href and d and title):
+                continue
+            mo, day = int(d.group(1)), int(d.group(2))
+            year = TODAY.year + (1 if mo < TODAY.month - 1 else 0)   # 年の表示がないので近い未来の年とみなす
+            try:
+                date = dt.date(year, mo, day)
+            except ValueError:
+                continue
+            if date < TODAY:
+                continue
+            venue = re.sub(r"^@\s*", "", first(r'c-post__venue">(.*?)</div>', art))
+            eid = f"clubberia:{href.group(2)}"
+            if eid in events:
+                if name not in events[eid]["lineup"]:
+                    events[eid]["lineup"].append(name)
+                continue
+            ev = live_event("clubberia", href.group(2), date.isoformat(), "https://clubberia.com" + href.group(1), title, [name], "",
+                            f"@ {venue}" if venue else "")
+            ev["venue_name"] = venue or "clubberia"
+            events[eid] = ev
+    return list(events.values())
+
+
+def drop_duplicates(events):
+    """clubberia で見つけた出演が、登録会場側にすでに載っている場合は登録会場側だけ残す。"""
+    by_date = {}
+    for e in events:
+        if e.get("venue") != "clubberia":
+            by_date.setdefault(e["date"], []).append(unicodedata.normalize("NFKC", " ".join([e.get("title", "")] + (e.get("lineup") or []))).lower())
+    out = []
+    for e in events:
+        if e.get("venue") == "clubberia":
+            names = [unicodedata.normalize("NFKC", a).lower() for a in e.get("lineup") or []]
+            if any(n and n in hay for n in names for hay in by_date.get(e["date"], [])):
+                continue
+        out.append(e)
+    return out
+
+
+SCRAPERS = {"cman": scrape_cman, "clubberia": scrape_clubberia, "asia": scrape_asia, "circus": scrape_circus, "zero": scrape_zero, "womb": scrape_womb,
             "vent": scrape_vent, "dommune": scrape_dommune,
             "liquid": scrape_liquid, "unit": scrape_unit, "www": scrape_www, "oeast": scrape_oeast}
 
@@ -783,7 +897,7 @@ def main():
         print(f"[{venue}] scraping…", file=sys.stderr)
         try:
             fresh = SCRAPERS[venue]()
-            if not fresh:
+            if not fresh and venue not in ALLOW_EMPTY:
                 raise RuntimeError("0 events")
             sources[venue] = {"ok": True, "count": len(fresh), "checked": now}
         except Exception as e:
@@ -794,7 +908,9 @@ def main():
             merged.update({e["id"]: e for e in old})
             continue
         # 一覧から消えた過去イベントも保持期間内は残す
-        merged.update({e["id"]: e for e in old})
+        # （clubberia は検索結果なので、追うのをやめた分が残り続けないよう毎回入れ替える）
+        if venue != "clubberia":
+            merged.update({e["id"]: e for e in old})
         for e in fresh:
             e.setdefault("venue_name", VENUES[venue])
             old_e = prev_by_id.get(e["id"])
@@ -812,7 +928,7 @@ def main():
             merged[e["id"]] = e
 
     cutoff = (TODAY - dt.timedelta(days=KEEP_PAST_DAYS)).isoformat()
-    events = [e for e in merged.values() if (e.get("end_date") or e["date"]) >= cutoff]
+    events = drop_duplicates([e for e in merged.values() if (e.get("end_date") or e["date"]) >= cutoff])
     for e in events:
         e["text"] = strip_prose(e.get("text", ""))
     events.sort(key=lambda e: (e["date"], e["venue"], e["title"]))
