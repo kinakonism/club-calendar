@@ -1,6 +1,8 @@
 {
   "artists": ["Squarepusher", "Aphex Twin"],
   "labels": [
-    {"name": "Warp", "mbid": "46f0f4cd-8aab-4b33-b698-f459faf64190"}
+    {"name": "Warp", "mbid": "46f0f4cd-8aab-4b33-b698-f459faf64190"},
+    {"name": "mau5trap", "mbid": "7537b81d-1721-468f-ad2c-66b369432069"},
+    {"name": "hau5trap", "mbid": "4cf85332-733e-4b88-9856-7221030a6750"}
   ]
 }
