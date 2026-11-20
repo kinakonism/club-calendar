@@ -41,9 +41,60 @@ function json_(obj) {
   return ContentService.createTextOutput(JSON.stringify(obj)).setMimeType(ContentService.MimeType.JSON);
 }
 
+// ---- お気に入りの同期（合言葉のハッシュをキーに、好みのJSONを1行で持つ）----
+const PREFS_SHEET = 'prefs';
+const PREFS_MAX_KEYS = 300;
+
+function cleanPrefs_(d) {
+  const out = {};
+  ['artists', 'keywords', 'genres'].forEach(function (k) {
+    out[k] = (Array.isArray(d && d[k]) ? d[k] : []).slice(0, 500).map(function (x) { return String(x).slice(0, 100); });
+  });
+  return out;
+}
+
+function prefs_(d) {
+  const key = String(d.key || '');
+  if (!/^[0-9a-f]{64}$/.test(key)) return json_({ ok: false, error: 'key' });
+  const sheetId = PropertiesService.getScriptProperties().getProperty('SHEET_ID');
+  if (!sheetId) return json_({ ok: false, error: 'setup' });
+  const lock = LockService.getScriptLock();
+  lock.waitLock(8000);
+  try {
+    const ss = SpreadsheetApp.openById(sheetId);
+    let sheet = ss.getSheetByName(PREFS_SHEET);
+    if (!sheet) {
+      sheet = ss.insertSheet(PREFS_SHEET);
+      sheet.appendRow(['key', 'data', 't', 'updated']);
+      sheet.setFrozenRows(1);
+    }
+    const n = sheet.getLastRow() - 1;
+    const keys = n > 0 ? sheet.getRange(2, 1, n, 1).getValues().map(function (r) { return r[0]; }) : [];
+    const i = keys.indexOf(key);
+    if (d.action === 'prefs_get') {
+      if (i < 0) return json_({ ok: true, found: false });
+      const row = sheet.getRange(i + 2, 2, 1, 2).getValues()[0];
+      return json_({ ok: true, found: true, data: cleanPrefs_(JSON.parse(row[0] || '{}')), t: Number(row[1]) || 0 });
+    }
+    const t = Number(d.t) || Date.now();
+    const data = JSON.stringify(cleanPrefs_(d.data));
+    if (data.length > 40000) return json_({ ok: false, error: 'size' });
+    if (i < 0) {
+      if (n >= PREFS_MAX_KEYS) return json_({ ok: false, error: 'full' });
+      sheet.appendRow([key, data, t, new Date()]);
+    } else {
+      sheet.getRange(i + 2, 2, 1, 3).setValues([[data, t, new Date()]]);
+    }
+    return json_({ ok: true, t: t });
+  } finally {
+    lock.releaseLock();
+  }
+}
+
 function doPost(e) {
   try {
     const d = JSON.parse((e && e.postData && e.postData.contents) || '{}');
+    if (d.action === 'prefs_get' || d.action === 'prefs_set') return prefs_(d);
     if (d.website) return json_({ ok: true });  // 人には見えない欄が埋まっていたら bot とみなして黙って捨てる
     const kind = String(d.kind || '').slice(0, 20);
     const text = String(d.text || '').trim().slice(0, MAX_TEXT);

@@ -236,6 +236,7 @@ button.pick.label { cursor: pointer; }
 .act.on button { color: var(--accent); }
 .act .lb { color: var(--hot); font-size: 11.5px; font-weight: 700; }
 .field { margin-top: 14px; }
+.field .btn { white-space: nowrap; flex: none; }
 .field label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 5px; }
 .field input, .dlg textarea { width: 100%; background: var(--panel-2); border: 1px solid var(--line); border-radius: 4px; padding: 8px 11px; }
 .dlg textarea:not(.code) { font: inherit; min-height: 100px; resize: vertical; }
@@ -360,8 +361,113 @@ try {
   if (saved && saved.prefs) for (const k of ["artists", "keywords", "genres"]) if (Array.isArray(saved.prefs[k])) state.prefs[k] = saved.prefs[k].map(String);
   if (saved && saved.venues) state.venues = saved.venues;
 } catch (_) { /* 保存領域が使えなくても表示はできる */ }
-function save() {
+function store() {
   try { localStorage.setItem(STORE, JSON.stringify({ prefs: state.prefs, venues: state.venues })); } catch (_) {}
+}
+function save() { store(); queuePush(); }
+
+// ---------- 合言葉でお気に入りを端末間同期
+// 合言葉そのものは保存も送信もしない。SHA-256 にした値だけをキーとして使う。新しい方で上書き（最後に変えた端末が勝つ）。
+const SYNC_STORE = "club-calendar:sync";
+let sync = null;          // { key, t }  t = この端末で最後に好みを変えた時刻
+let syncMsg = "";
+try { const j = JSON.parse(localStorage.getItem(SYNC_STORE) || "null"); if (j && /^[0-9a-f]{64}$/.test(j.key)) sync = { key: j.key, t: Number(j.t) || 0 }; } catch (_) {}
+function storeSync() {
+  try { sync ? localStorage.setItem(SYNC_STORE, JSON.stringify(sync)) : localStorage.removeItem(SYNC_STORE); } catch (_) {}
+}
+function setSyncMsg(text) {
+  syncMsg = text;
+  const el = document.getElementById("syncMsg");
+  if (el) el.textContent = text;
+}
+// Apps Script はたまに応答が返らないので、10秒で打ち切って送り直す
+async function api(body) {
+  if (!REQUEST_ENDPOINT) return null;
+  for (let attempt = 0; attempt < 3; attempt++) {
+    const ctl = new AbortController();
+    const timer = setTimeout(() => ctl.abort(), 10000);
+    try {
+      const res = await fetch(REQUEST_ENDPOINT, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, signal: ctl.signal, body: JSON.stringify(body) });
+      return await res.json();
+    } catch (_) { /* 送り直す */ } finally { clearTimeout(timer); }
+  }
+  return null;
+}
+async function syncKey(pass) {
+  const bytes = new TextEncoder().encode("club-calendar:prefs:" + pass.normalize("NFKC").trim());
+  return [...new Uint8Array(await crypto.subtle.digest("SHA-256", bytes))].map(b => b.toString(16).padStart(2, "0")).join("");
+}
+const nowHM = () => { const d = new Date(); return `${pad(d.getHours())}:${pad(d.getMinutes())}`; };
+let pushTimer = null;
+function queuePush() {
+  if (!sync) return;
+  sync.t = Date.now(); storeSync();
+  clearTimeout(pushTimer);
+  pushTimer = setTimeout(pushPrefs, 1500);
+}
+async function pushPrefs() {
+  if (!sync) return false;
+  const key = sync.key, t = sync.t;
+  setSyncMsg("同期中…");
+  const j = await api({ action: "prefs_set", key, t, data: state.prefs });
+  if (!sync || sync.key !== key) return false;
+  setSyncMsg(j && j.ok ? `同期済み（${nowHM()}）` : "同期できませんでした。次に開いたときにもう一度試します。");
+  return !!(j && j.ok);
+}
+function adoptPrefs(data, t) {
+  for (const k of ["artists", "keywords", "genres"]) state.prefs[k] = Array.isArray(data && data[k]) ? data[k].map(String) : [];
+  sync.t = t; storeSync(); store();
+  computeMatches(); renderAll();
+  if (prefsDlg.open) fillPrefs();
+}
+// merge = true: 同期を始めるとき。この端末の分とサーバーの分を合わせる（どちらも消さない）
+async function pullPrefs(merge) {
+  if (!sync) return false;
+  const key = sync.key;
+  setSyncMsg("同期中…");
+  const j = await api({ action: "prefs_get", key });
+  if (!sync || sync.key !== key) return false;
+  if (!j || !j.ok) { setSyncMsg("同期できませんでした。次に開いたときにもう一度試します。"); return false; }
+  if (!j.found) { if (!sync.t) sync.t = Date.now(); storeSync(); return pushPrefs(); }
+  if (merge) {
+    const out = {};
+    for (const k of ["artists", "keywords", "genres"]) {
+      out[k] = [...state.prefs[k]];
+      for (const v of (j.data[k] || [])) if (!out[k].some(x => norm(x) === norm(v))) out[k].push(String(v));
+    }
+    adoptPrefs(out, Date.now());
+    return pushPrefs();
+  }
+  if (j.t > sync.t) { adoptPrefs(j.data, j.t); setSyncMsg(`同期済み（${nowHM()}）`); return true; }
+  if (j.t < sync.t) return pushPrefs();
+  setSyncMsg(`同期済み（${nowHM()}）`);
+  return true;
+}
+function syncSection() {
+  const status = h("span", { class: "hint", id: "syncMsg", role: "status" }, syncMsg);
+  if (sync) return [
+    h("h4", {}, "端末間で同期"),
+    h("div", { class: "hint" }, "この端末は同期中です。同じ合言葉を入れた端末と、お気に入り（アーティスト・キーワード・ジャンル）が同じになります。"),
+    h("div", { class: "foot", style: "margin-top:8px" }, status, h("span", { style: "display:flex;gap:8px" },
+      h("button", { class: "btn", onclick: () => pullPrefs(false) }, "今すぐ同期"),
+      h("button", { class: "btn", onclick: () => { sync = null; storeSync(); syncMsg = "同期をやめました。この端末のお気に入りはそのまま残ります。"; fillPrefs(); } }, "同期をやめる")))];
+  const pass = h("input", { type: "text", placeholder: "合言葉（8文字以上）", "aria-label": "合言葉", autocomplete: "off", autocapitalize: "off", spellcheck: "false" });
+  const go = h("button", { class: "btn" }, "同期する");
+  go.addEventListener("click", async () => {
+    const v = pass.value.normalize("NFKC").trim();
+    if (v.length < 8) { setSyncMsg("合言葉は8文字以上にしてください。"); pass.focus(); return; }
+    if (!(window.crypto && crypto.subtle)) { setSyncMsg("このブラウザでは同期を使えません。"); return; }
+    go.disabled = true;
+    sync = { key: await syncKey(v), t: 0 };
+    const ok = await pullPrefs(true);
+    if (!ok) { sync = null; storeSync(); syncMsg = "同期を始められませんでした。少し待ってからもう一度お試しください。"; }
+    fillPrefs();
+  });
+  return [
+    h("h4", {}, "端末間で同期"),
+    h("div", { class: "hint" }, "合言葉を決めて、使う端末すべてで同じものを入れると、お気に入りが同じになります。ブラウザのデータを消しても、合言葉を入れ直せば戻ります。合言葉を知っている人は内容を見たり変えたりできるので、推測されにくいものにしてください。"),
+    h("div", { class: "field", style: "display:flex;gap:8px" }, pass, go),
+    h("div", { style: "margin-top:8px" }, status)];
 }
 // リポジトリ側（data/follow.json）で固定フォローしているアーティスト・レーベルと、レーベルの所属アーティスト
 const FOLLOW = { artists: (DATA.follow && DATA.follow.artists) || [], labels: (DATA.follow && DATA.follow.labels) || [] };
@@ -604,7 +710,7 @@ function fillPrefs() {
   const msg = h("span", { class: "hint" });
   fill(document.getElementById("prefsBody"),
     h("h3", {}, "好みを設定"),
-    h("div", { class: "hint" }, "一致したイベントが「あなた向け」とカレンダーで強調されます。このブラウザにだけ保存されます。"),
+    h("div", { class: "hint" }, "一致したイベントが「あなた向け」とカレンダーで強調されます。このブラウザに保存されます（下の「端末間で同期」で他の端末と揃えられます）。"),
     prefSection("artists", "アーティスト", "例: DJ Nobu", topCounts(e => e.lineup || [], "artists", 14)),
     h("h4", {}, "レーベル（所属アーティストごと追う）"),
     h("div", { class: "picks" }, FOLLOW.labels.length
@@ -616,7 +722,8 @@ function fillPrefs() {
     h("div", { class: "hint", style: "margin-top:8px" }, "レーベルと常時フォローの追加は「追加リクエスト」から送ってください。"),
     prefSection("keywords", "パーティー名などのキーワード", "例: BLACK SMOKER / りんご音楽祭", null),
     prefSection("genres", "ジャンル", "例: Techno", topCounts(e => e.genres || [], "genres", 16)),
-    h("details", {}, h("summary", {}, "別の端末に移す（書き出し・読み込み）"),
+    syncSection(),
+    h("details", {}, h("summary", {}, "手動で別の端末に移す（書き出し・読み込み）"),
       h("div", { class: "hint", style: "margin:8px 0" }, "下の文字列をコピーし、別の端末のこの欄に貼り付けて「読み込む」を押してください。"),
       ta,
       h("div", { class: "foot", style: "margin-top:8px" }, msg, h("button", { class: "btn", onclick: () => {
@@ -723,6 +830,7 @@ document.getElementById("todayBtn").addEventListener("click", () => { state.mont
 
 computeMatches();
 renderAll();
+if (sync) pullPrefs(false);
 </script>
 </body>
 </html>
