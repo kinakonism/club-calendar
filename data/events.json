@@ -1,65 +1,65 @@
 {
- "updated": "2026-11-21T00:28+09:00",
+ "updated": "2026-11-21T02:03+09:00",
  "sources": {
   "asia": {
    "ok": true,
    "count": 20,
-   "checked": "2026-11-20T18:37+09:00"
+   "checked": "2026-11-21T02:03+09:00"
   },
   "circus": {
    "ok": true,
-   "count": 27,
-   "checked": "2026-11-20T18:37+09:00"
+   "count": 26,
+   "checked": "2026-11-21T02:03+09:00"
   },
   "zero": {
    "ok": true,
    "count": 70,
-   "checked": "2026-11-20T18:37+09:00"
+   "checked": "2026-11-21T02:03+09:00"
   },
   "womb": {
    "ok": true,
-   "count": 50,
-   "checked": "2026-11-20T18:37+09:00"
+   "count": 49,
+   "checked": "2026-11-21T02:03+09:00"
   },
   "vent": {
    "ok": true,
-   "count": 27,
-   "checked": "2026-11-20T18:37+09:00"
+   "count": 26,
+   "checked": "2026-11-21T02:03+09:00"
   },
   "dommune": {
    "ok": true,
    "count": 23,
-   "checked": "2026-11-20T18:37+09:00"
+   "checked": "2026-11-21T02:03+09:00"
   },
   "liquid": {
    "ok": true,
-   "count": 110,
-   "checked": "2026-11-20T18:37+09:00"
+   "count": 111,
+   "checked": "2026-11-21T02:03+09:00"
   },
   "unit": {
    "ok": true,
    "count": 83,
-   "checked": "2026-11-20T18:37+09:00"
+   "checked": "2026-11-21T02:03+09:00"
   },
   "www": {
    "ok": true,
-   "count": 173,
-   "checked": "2026-11-20T18:37+09:00"
+   "count": 175,
+   "checked": "2026-11-21T02:03+09:00"
   },
   "oeast": {
    "ok": true,
-   "count": 108,
-   "checked": "2026-11-20T18:37+09:00"
+   "count": 109,
+   "checked": "2026-11-21T02:03+09:00"
   },
   "cman": {
    "ok": true,
    "count": 164,
-   "checked": "2026-11-21T00:28+09:00"
+   "checked": "2026-11-21T02:03+09:00"
   },
   "clubberia": {
    "ok": true,
    "count": 0,
-   "checked": "2026-11-21T00:27+09:00"
+   "checked": "2026-11-21T02:03+09:00"
   }
  },
  "follow": {
@@ -7693,11 +7693,22 @@
    "title": "Marlon Hoffstadt",
    "open": "11PM",
    "genres": [
+    "Hard Techno",
     "Rave",
+    "Techno",
     "Trance"
    ],
    "lineup": [
     "Marlon Hoffstadt",
+    "ecec",
+    "N2",
+    "STRATAH",
+    "GT",
+    "TECHNO_TARITERU?",
+    "YURI VALEN",
+    "O.GOO",
+    "VÏVÏ",
+    "BA-CHI",
     "white",
     "ten",
     "HTK",
@@ -7705,7 +7716,7 @@
     "B.cee",
     "Ev and more"
    ],
-   "text": "[B4 Z HALL]\nMarlon Hoffstadt\nVJ：Julius Iwata\n[B2 BOX]\n〈TECHNO / UKG / BASS〉\nRikk / ramu / NOIA / Omeme_gangimari / O.TAK / Ninja.jp (RAIZEN SPECIAL LIVE SET) / æ-chan / RayMI20\n[B2 R BAR]\n〈OPEN FORMAT〉\n[B1 TERRACE]\n〈HOUSE〉\nwhite / ten / HTK / Seido / B.cee / Ev and more\nMarlon Hoffstadt",
+   "text": "[B4 Z HALL]\nMarlon Hoffstadt / ecec / N² / STRATAH\nVJ：Julius Iwata\n[B3 RING]\nGT / TECHNO_TARITERU? / YURI VALEN / O.GOO / VÏVÏ\n[B2 BOX]\n〈TECHNO / UKG / BASS〉\nRikk / ramu / NOIA / Omeme_gangimari / O.TAK / Ninja.jp (RAIZEN SPECIAL LIVE SET) / æ-chan / RayMI20\n[B2 R BAR]\n〈OPEN FORMAT〉\n[B1 TERRACE]\n〈HOUSE〉\nBA-CHI- / white / ten / HTK / Seido / B.cee / Ev and more\nMarlon Hoffstadt",
    "price": "DOOR：¥6,000- / FASTPASS TICKET：¥5,000-（優先入場・入場料金含む） / 整列開始：10PM",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
@@ -8920,6 +8931,7 @@
     "TATSUYA",
     "Kijta",
     "Hisappi",
+    "MINORU",
     "Biscuit Brain",
     "REN® and more",
     "Mary-chan",
@@ -8932,7 +8944,7 @@
     "MELODIC HOUSE & TECHNO",
     "LJ:NeeGo"
    ],
-   "text": "[B4 Z HALL]\nMAU P / ALEXANDER M / ANDY DEDE / EIGHT\nVJ：Photone\n[B3 RING]\nTENJU / ARASHI / KOTONO SHIRAI / HERO / MAREI\n[B2 BOX]\n〈TECHNO〉\nTATSUYA / Kijta / Hisappi / Biscuit Brain / REN® and more\n[B2 R BAR]\n〈OPEN FORMAT〉\nMary-chan / HATSUYUKI / CHORDTUNEZ / Kenskzm / P DISK / Yukino Tochibora / MARSH and more\n[B1 TERRACE]\n〈HOUSE / TECH HOUSE / MELODIC HOUSE & TECHNO〉\nAY x TAKUTO / Airu x Passion Mod (The Drip House) / Keigo (Small World) / KURIOS / Stev3NN / ZIMA\nLJ：NeeGo\nMAU P",
+   "text": "[B4 Z HALL]\nMAU P / ALEXANDER M / ANDY DEDE / EIGHT\nVJ：Photone\n[B3 RING]\nTENJU / ARASHI / KOTONO SHIRAI / HERO / MAREI\n[B2 BOX]\n〈TECHNO〉\nTATSUYA / Kijta / Hisappi / MINORU / Biscuit Brain / REN® and more\n[B2 R BAR]\n〈OPEN FORMAT〉\nMary-chan / HATSUYUKI / CHORDTUNEZ / Kenskzm / P DISK / Yukino Tochibora / MARSH and more\n[B1 TERRACE]\n〈HOUSE / TECH HOUSE / MELODIC HOUSE & TECHNO〉\nAY x TAKUTO / Airu x Passion Mod (The Drip House) / Keigo (Small World) / KURIOS / Stev3NN / ZIMA\nLJ：NeeGo\nMAU P",
    "price": "DOOR：TBA / FASTPASS TICKET：¥6,000-（優先入場・入場料金含む） / PRIORITY TICKET：¥8,000-（優先入場＋最前エリア・入場料金含む) ※SOLD OUT / 整列開始：10PM",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
@@ -9876,10 +9888,11 @@
     "Amélie and more",
     "HATSUYUKI",
     "Hisappi and more",
+    "MeO",
     "SHIGEKI NISHIKAWA",
     "25 and more"
    ],
-   "text": "[B4 Z HALL]\nAnfisa Letyago\nVJ：Photone\n[B2 BOX]\n〈TECHNO〉\nBRYAN / POSTMAN / cicori / Kazuma / Amélie and more\n[B2 R BAR]\n〈OPEN FORMAT〉\nHATSUYUKI / Hisappi and more\n[B1 TERRACE]\n〈HOUSE〉\nSHIGEKI NISHIKAWA / 25 and more\nESSENCE",
+   "text": "[B4 Z HALL]\nAnfisa Letyago\nVJ：Photone\n[B2 BOX]\n〈TECHNO〉\nBRYAN / POSTMAN / cicori / Kazuma / Amélie and more\n[B2 R BAR]\n〈OPEN FORMAT〉\nHATSUYUKI / Hisappi and more\n[B1 TERRACE]\n〈HOUSE〉\nMeO / SHIGEKI NISHIKAWA / 25 and more\nESSENCE",
    "price": "DOOR：¥5,500- / FASTPASS TICKET：¥4,500-（優先入場・入場料金含む） / 整列開始：10PM",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
@@ -10815,6 +10828,7 @@
     "Gohlem",
     "NOIA",
     "O.Goo",
+    "MINORU",
     "Amélie",
     "AMANE and more",
     "RICECAKE",
@@ -10825,7 +10839,7 @@
     "POSTMAN",
     "8号 and more"
    ],
-   "text": "[B4 Z HALL]\nHIROKO YAMAMURA / RISA TANIGUCHI / Tamanaramen / DJ Cony\nVJ：Photone\n[B4F ENTER]\n〈TECHNO / UKG〉\n綾瀬凛 / Gohlem / NOIA / O.Goo / Amélie / AMANE and more\n[B1 TERRACE]\n〈HOUSE〉\nRICECAKE / HATSUYUKI / Kenskzm / daijiro misawa / SATOSHI / POSTMAN / 8号 and more\nESSENCE",
+   "text": "[B4 Z HALL]\nHIROKO YAMAMURA / RISA TANIGUCHI / Tamanaramen / DJ Cony\nVJ：Photone\n[B4F ENTER]\n〈TECHNO / UKG〉\n綾瀬凛 / Gohlem / NOIA / O.Goo / MINORU / Amélie / AMANE and more\n[B1 TERRACE]\n〈HOUSE〉\nRICECAKE / HATSUYUKI / Kenskzm / daijiro misawa / SATOSHI / POSTMAN / 8号 and more\nESSENCE",
    "price": "DOOR：¥3,500- / FASTPASS TICKET：¥3,000-（優先入場・入場料金含む） / 整列開始：10PM",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
@@ -10971,7 +10985,7 @@
    "venue": "www",
    "date": "2026-12-31",
    "url": "https://www-shibuya.jp/schedule/020211.php",
-   "title": "Laraaji -108 rings set- / ??? -108 BPM set- / vq / Minna-no-Kimochi / +TBA — WWW New Year Party 2026-27 -108 Spirits-",
+   "title": "Laraaji -108 rings set- / ??? -108 BPM set- / vq / Minna-no-Kimochi / 祝福の食品まつり a.k.a The Blessed foodman / +TBA — WWW New Year Party 2026-27 -108 Spirits-",
    "open": "21:00",
    "genres": [],
    "lineup": [
@@ -10979,9 +10993,10 @@
     "??? -108 BPM set-",
     "vq",
     "Minna-no-Kimochi",
+    "祝福の食品まつり a.k.a The Blessed foodman",
     "+TBA"
    ],
-   "text": "Laraaji -108 rings set- / ??? -108 BPM set- / vq / Minna-no-Kimochi / +TBA — WWW New Year Party 2026-27 -108 Spirits-\nLaraaji -108 rings set- / ??? -108 BPM set- / vq / Minna-no-Kimochi / +TBA",
+   "text": "Laraaji -108 rings set- / ??? -108 BPM set- / vq / Minna-no-Kimochi / 祝福の食品まつり a.k.a The Blessed foodman / +TBA",
    "venue_name": "WWW & WWW X & WWW β",
    "first_seen": null
   },
@@ -11626,6 +11641,25 @@
    "first_seen": null
   },
   {
+   "id": "oeast:vmo-with-merzbow-presents-dark-matter",
+   "venue": "oeast",
+   "date": "2027-01-14",
+   "url": "https://shibuya-o.com/east/schedule/vmo-with-merzbow-presents-dark-matter/",
+   "title": "VMO with MERZBOW presents DARK MATTER",
+   "open": "18:30",
+   "genres": [],
+   "lineup": [
+    "VMO with MERZBOW - 音楽",
+    "Kezzardrix - 映像",
+    "MES - レーザー",
+    "丸井通勢 - 照明",
+    "runurunu - 立体造形"
+   ],
+   "text": "VMO with MERZBOW presents DARK MATTER\nVMO with MERZBOW - 音楽 / Kezzardrix - 映像 / MES - レーザー / 丸井通勢 - 照明 / runurunu - 立体造形",
+   "venue_name": "Spotify O-EAST",
+   "first_seen": "2026-11-21"
+  },
+  {
    "id": "unit:15213",
    "venue": "unit",
    "date": "2027-01-14",
@@ -11703,6 +11737,23 @@
    "price": "¥4000",
    "venue_name": "VENT",
    "first_seen": null
+  },
+  {
+   "id": "www:020237",
+   "venue": "www",
+   "date": "2027-01-15",
+   "url": "https://www-shibuya.jp/schedule/020237.php",
+   "title": "Bonbero with Band：Kaito Nakada (Gt.) / Keity (Ba.) / So Kanno (Dr.) — Bonbero ONE-MAN LIVE \"HideAway\"",
+   "open": "19:00",
+   "genres": [],
+   "lineup": [
+    "Bonbero with Band:Kaito Nakada (Gt.)",
+    "Keity (Ba.)",
+    "So Kanno (Dr.)"
+   ],
+   "text": "Bonbero with Band：Kaito Nakada (Gt.) / Keity (Ba.) / So Kanno (Dr.) — Bonbero ONE-MAN LIVE \"HideAway\"\nBonbero with Band:Kaito Nakada (Gt.) / Keity (Ba.) / So Kanno (Dr.)",
+   "venue_name": "WWW X",
+   "first_seen": "2026-11-21"
   },
   {
    "id": "zero:tba-9",
@@ -12163,6 +12214,21 @@
    "text": "THE LEMON TWIGS（大阪）\nTHE LEMON TWIGS\n発売中",
    "venue_name": "大阪（Creativeman）",
    "first_seen": null
+  },
+  {
+   "id": "liquid:hzettrio_20270124",
+   "venue": "liquid",
+   "date": "2027-01-24",
+   "url": "https://www.liquidroom.net/schedule/hzettrio_20270124",
+   "title": "H ZETTRIO — H ZETTRIO LIVE 2027 GET UP！ — ROAD TO 100 —",
+   "open": "17:00",
+   "genres": [],
+   "lineup": [
+    "H ZETTRIO"
+   ],
+   "text": "H ZETTRIO — H ZETTRIO LIVE 2027 GET UP！ — ROAD TO 100 —\nH ZETTRIO",
+   "venue_name": "LIQUIDROOM",
+   "first_seen": "2026-11-21"
   },
   {
    "id": "www:020222",
@@ -13366,6 +13432,21 @@
    "text": "",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
+  },
+  {
+   "id": "www:020243",
+   "venue": "www",
+   "date": "2027-02-19",
+   "url": "https://www-shibuya.jp/schedule/020243.php",
+   "title": "Oll Korrect — Oll Korrect presents “OKAY DAY”",
+   "open": "18:00",
+   "genres": [],
+   "lineup": [
+    "Oll Korrect"
+   ],
+   "text": "Oll Korrect — Oll Korrect presents “OKAY DAY”\nOll Korrect",
+   "venue_name": "WWW",
+   "first_seen": "2026-11-21"
   },
   {
    "id": "zero:tba-40",
