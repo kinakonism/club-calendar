@@ -1,65 +1,65 @@
 {
- "updated": "2026-11-21T10:53+09:00",
+ "updated": "2026-11-22T09:49+09:00",
  "sources": {
   "asia": {
    "ok": true,
    "count": 20,
-   "checked": "2026-11-21T10:53+09:00"
+   "checked": "2026-11-22T09:49+09:00"
   },
   "circus": {
    "ok": true,
-   "count": 25,
-   "checked": "2026-11-21T10:53+09:00"
+   "count": 24,
+   "checked": "2026-11-22T09:49+09:00"
   },
   "zero": {
    "ok": true,
    "count": 70,
-   "checked": "2026-11-21T10:53+09:00"
+   "checked": "2026-11-22T09:49+09:00"
   },
   "womb": {
    "ok": true,
-   "count": 49,
-   "checked": "2026-11-21T10:53+09:00"
+   "count": 48,
+   "checked": "2026-11-22T09:49+09:00"
   },
   "vent": {
    "ok": true,
-   "count": 26,
-   "checked": "2026-11-21T10:53+09:00"
+   "count": 25,
+   "checked": "2026-11-22T09:49+09:00"
   },
   "dommune": {
    "ok": true,
-   "count": 23,
-   "checked": "2026-11-21T10:53+09:00"
+   "count": 24,
+   "checked": "2026-11-22T09:49+09:00"
   },
   "liquid": {
    "ok": true,
    "count": 111,
-   "checked": "2026-11-21T10:53+09:00"
+   "checked": "2026-11-22T09:49+09:00"
   },
   "unit": {
    "ok": true,
    "count": 83,
-   "checked": "2026-11-21T10:53+09:00"
+   "checked": "2026-11-22T09:49+09:00"
   },
   "www": {
    "ok": true,
    "count": 175,
-   "checked": "2026-11-21T10:53+09:00"
+   "checked": "2026-11-22T09:49+09:00"
   },
   "oeast": {
    "ok": true,
-   "count": 109,
-   "checked": "2026-11-21T10:53+09:00"
+   "count": 111,
+   "checked": "2026-11-22T09:49+09:00"
   },
   "cman": {
    "ok": true,
    "count": 164,
-   "checked": "2026-11-21T10:53+09:00"
+   "checked": "2026-11-22T09:49+09:00"
   },
   "clubberia": {
    "ok": true,
    "count": 0,
-   "checked": "2026-11-21T10:53+09:00"
+   "checked": "2026-11-22T09:49+09:00"
   }
  },
  "follow": {
@@ -501,60 +501,6 @@
   ]
  },
  "events": [
-  {
-   "id": "vent:ldg-x-mind-off",
-   "venue": "vent",
-   "date": "2026-10-17",
-   "url": "http://vent-tokyo.net/schedule/ldg-x-mind-off/",
-   "title": "LDG x MIND OFF",
-   "open": "23:00",
-   "genres": [
-    "Techno"
-   ],
-   "lineup": [
-    "Petar Dundov",
-    "Yama",
-    "Yuta x Dani Savant",
-    "VJ 100LDK",
-    "Yanes",
-    "Shelly",
-    "KIRIHHARA",
-    "Raul"
-   ],
-   "text": "Petar Dundov\nYama\nYuta x Dani Savant\nVJ 100LDK\nYanes\nShelly\nKIRIHHARA\nRaul",
-   "price": "¥4500",
-   "venue_name": "VENT",
-   "first_seen": null
-  },
-  {
-   "id": "womb:101726",
-   "venue": "womb",
-   "date": "2026-10-17",
-   "url": "https://www.womb.co.jp/ja/events/101726",
-   "title": "SESSION 25TH ANNIVERSARY",
-   "open": "23:00",
-   "genres": [
-    "Techno"
-   ],
-   "lineup": [
-    "BART SKILS",
-    "DRUNKEN KONG",
-    "TOMMY WADA",
-    "KARIBIZA",
-    "AHREUM",
-    "OHTA",
-    "KRIS FUJI",
-    "KIKU",
-    "Q'HEY",
-    "KULAGE",
-    "YU-S-KE",
-    "SOMA OUE"
-   ],
-   "text": "23:00-4:30\nDOOR: ¥4000 *UNDER 23 ¥2000\nADVANCE TICKETS: ¥3500",
-   "price": "DOOR: ¥4000 *UNDER 23 ¥2000 / ADVANCE TICKETS: ¥3500",
-   "venue_name": "WOMB",
-   "first_seen": null
-  },
   {
    "id": "womb:101826",
    "venue": "womb",
@@ -5856,6 +5802,31 @@
    "first_seen": null
   },
   {
+   "id": "dommune:2026-112501",
+   "venue": "dommune",
+   "date": "2026-11-25",
+   "url": "https://www.dommune.com/streamings/2026/112501/",
+   "title": "｢EVICSHEN aka VICTORIA SHEN」GIGANOISE VOL.183",
+   "open": "19:30",
+   "genres": [],
+   "lineup": [
+    "EIVCSHEN a.k.a VICTORIA SHEN",
+    "ASTRO",
+    "HAAR",
+    "一楽義光",
+    "天鼓",
+    "T .MIKAWA",
+    "河端一",
+    "毛利桂",
+    "和田晋侍",
+    "安永桃瀬",
+    "KUBA"
+   ],
+   "text": "",
+   "venue_name": "DOMMUNE",
+   "first_seen": "2026-11-22"
+  },
+  {
    "id": "liquid:pasocom_music_club_20261125",
    "venue": "liquid",
    "date": "2026-11-25",
@@ -6997,6 +6968,25 @@
    "first_seen": null
   },
   {
+   "id": "asia:261130-williams",
+   "venue": "asia",
+   "date": "2026-11-30",
+   "url": "https://clubasia.jp/events/261130-williams",
+   "title": "Williams",
+   "open": "23:00",
+   "genres": [
+    "House",
+    "All Mix"
+   ],
+   "lineup": [
+    "DJ KAZ",
+    "El Azul as BLES"
+   ],
+   "text": "6月からスタートした第五月曜レギュラー・Williams！\n新たに VJ・Peeping Tom & Big! a.k.a. Sumokingsの参加が決定！！！\nDJ KAZ (Project 301)\nEl Azul as BLES\n————-\n2026/11/30(mon)\n『Williams』\nwilliams will take you to new heights.\n-Main Floor-\nHOWIE B\nDJ NORI\nDJ KAZ (Project 301)\nEl Azul as BLES\nVJ : VIDEOGRAM & Peeping Tom & Big! a.k.a. Sumokings\n-1F Floor-\nDJ:\nHIKARU\nYO.AN\nBungo\nTAIHEI\nFOOD:\nTAKOBAR\nPOP UP BOOTH:\nALL MUST DANCE™︎\nstart 23:00〜\nfee 3000yen + 1d\nAdv 2000yen + 1d\nAt clubasia\nINFO : https://clubasia.jp/en/events/261130-williams\n—————\n《ATTENTION》",
+   "venue_name": "club asia",
+   "first_seen": "2026-11-22"
+  },
+  {
    "id": "cman:michael-monroe26-2026-11-30-愛知",
    "venue": "cman",
    "date": "2026-11-30",
@@ -8086,6 +8076,49 @@
    "first_seen": null
   },
   {
+   "id": "zero:sync-1206",
+   "venue": "zero",
+   "date": "2026-12-06",
+   "url": "https://zerotokyo.jp/event/sync-1206/",
+   "title": "SYNC.",
+   "open": "11PM",
+   "genres": [
+    "Afro / Amapiano",
+    "Bass Tech",
+    "Hip Hop",
+    "Latin",
+    "Pops",
+    "Tech House",
+    "Techno"
+   ],
+   "lineup": [
+    "ad the blip",
+    "BUSTA-ROW",
+    "HIRAGY",
+    "HISASHI",
+    "KEE",
+    "MA$A",
+    "PHILLY",
+    "Rii",
+    "Chin-Nen",
+    "EDO",
+    "LIL HAPPY",
+    "RYO2",
+    "SHIGEKI",
+    "TAKUMA",
+    "Tomo",
+    "H3R0",
+    "HARUKA",
+    "LanN",
+    "SOKI",
+    "WISK"
+   ],
+   "text": "[B3 RING]\nad the blip / BUSTA-ROW / HIRAGY / HISASHI / KEE / MA$A / PHILLY / Rii\n(A to Z)\n[B2 R BAR]\nChin-Nen / EDO / LIL HAPPY / RYO2 / SHIGEKI / TAKUMA / Tomo\n(A to Z)\n[B1 TERRACE]\nEDO / H3R0 / HARUKA / LanN / LIL HAPPY / MA$A / SHIGEKI / SOKI / WISK\n(A to Z)\n[OTHER]\n[ DANCER ]\nKIKKO & Yuna\nand more…\nSYNC.\n🍸 CÎROC SUPPORTED PARTY\nTokyo’s ultimate Sunday night experience.\n// CONCEPT\n// FLOOR DIRECTION\n🔊 B3 : RING [Global Tech Groove]\nGenre : Tech House / Bass Tech / Techno\n🥂 B2 : R BAR [International Anthem]\nGenre : Open Format (Hip Hop / Billboard Pop)\n🌴 B1 : TERRACE [Tribal Rhythm]\nGenre : Latin / Afrobeats",
+   "price": "DOOR：¥2,500-",
+   "venue_name": "ZERO TOKYO",
+   "first_seen": "2026-11-22"
+  },
+  {
    "id": "zero:tba-34",
    "venue": "zero",
    "date": "2026-12-06",
@@ -8933,6 +8966,7 @@
     "Hisappi",
     "MINORU",
     "Biscuit Brain",
+    "ISSHIN",
     "REN® and more",
     "Mary-chan",
     "HATSUYUKI",
@@ -8944,7 +8978,7 @@
     "MELODIC HOUSE & TECHNO",
     "LJ:NeeGo"
    ],
-   "text": "[B4 Z HALL]\nMAU P / ALEXANDER M / ANDY DEDE / EIGHT\nVJ：Photone\n[B3 RING]\nTENJU / ARASHI / KOTONO SHIRAI / HERO / MAREI\n[B2 BOX]\n〈TECHNO〉\nTATSUYA / Kijta / Hisappi / MINORU / Biscuit Brain / REN® and more\n[B2 R BAR]\n〈OPEN FORMAT〉\nMary-chan / HATSUYUKI / CHORDTUNEZ / Kenskzm / P DISK / Yukino Tochibora / MARSH and more\n[B1 TERRACE]\n〈HOUSE / TECH HOUSE / MELODIC HOUSE & TECHNO〉\nAY x TAKUTO / Airu x Passion Mod (The Drip House) / Keigo (Small World) / KURIOS / Stev3NN / ZIMA\nLJ：NeeGo\nMAU P",
+   "text": "[B4 Z HALL]\nMAU P / ALEXANDER M / ANDY DEDE / EIGHT\nVJ：Photone\n[B3 RING]\nTENJU / ARASHI / KOTONO SHIRAI / HERO / MAREI\n[B2 BOX]\n〈TECHNO〉\nTATSUYA / Kijta / Hisappi / MINORU / Biscuit Brain / ISSHIN / REN® and more\n[B2 R BAR]\n〈OPEN FORMAT〉\nMary-chan / HATSUYUKI / CHORDTUNEZ / Kenskzm / P DISK / Yukino Tochibora / MARSH and more\n[B1 TERRACE]\n〈HOUSE / TECH HOUSE / MELODIC HOUSE & TECHNO〉\nAY x TAKUTO / Airu x Passion Mod (The Drip House) / Keigo (Small World) / KURIOS / Stev3NN / ZIMA\nLJ：NeeGo\nMAU P",
    "price": "DOOR：TBA / FASTPASS TICKET：¥6,000-（優先入場・入場料金含む） / PRIORITY TICKET：¥8,000-（優先入場＋最前エリア・入場料金含む) ※SOLD OUT / 整列開始：10PM",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
@@ -9668,11 +9702,33 @@
    "first_seen": null
   },
   {
+   "id": "asia:261219-classics",
+   "venue": "asia",
+   "date": "2026-12-19",
+   "url": "https://clubasia.jp/events/261219-classics",
+   "title": "RETURN TO THE 90's \"CLASSICS\"",
+   "open": "23:00",
+   "genres": [
+    "Hip Hop",
+    "R&B"
+   ],
+   "lineup": [
+    "GAGLE",
+    "RIPE STATE",
+    "STRANGE EP-02- Release live",
+    "Mitsu the Beats *90s SET",
+    "WATARAI,K-BOOGIE,NORIHITO,MEEK,KOZA,Allen"
+   ],
+   "text": "RETURN TO THE 90's\n\"CLASSICS\"\n2026.12/19.SAT\nopen:23:00 @clubasia\nADV TICKET : ¥3,000(DRINK別)\n▶︎ Zaiko Ticket :\nDOOR : ¥3,500(DRINK別)\n————\n【MAIN FLOOR・90's HIPHOP】\nGUEST LIVE : GAGLE\nRELEASE LIVE:RIPE STATE\n-STRANGE EP-02- Release live\nGUEST DJ : Mitsu the Beats *90s SET\nDJ:WATARAI,K-BOOGIE,NORIHITO,MEEK,KOZA,Allen\nVJ:MKNYone + Phonemics\n【2F・90's R&B】\nDJ:ICE,DJ Yoshii aka DJ Y?,KENTA,HALOON,DDT-TROPICANA,Itsuki,Liill Rina,OTK\n【1F・SOUL,FUNK】\nFOOD:OutSide,マガリビ by KIDOTAMA\n————\n《ATTENTION》",
+   "venue_name": "club asia",
+   "first_seen": "2026-11-22"
+  },
+  {
    "id": "circus:cyber-rui『project-reboot』release-party",
    "venue": "circus",
    "date": "2026-12-19",
    "url": "https://circus-tokyo.jp/event/cyber-rui%e3%80%8eproject-reboot%e3%80%8frelease-party/",
-   "title": "CYBER RUI『project reboot』RELEASE PARTY",
+   "title": "CYBER RUI『project reboot』RELEASE PARTY “Hz”",
    "open": "23:00",
    "genres": [
     "Ambient"
@@ -9896,6 +9952,22 @@
    "price": "DOOR：¥5,500- / FASTPASS TICKET：¥4,500-（優先入場・入場料金含む） / 整列開始：10PM",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
+  },
+  {
+   "id": "asia:mama.-presents-midnight-live-『冷凍湖』",
+   "venue": "asia",
+   "date": "2026-12-20",
+   "url": "https://clubasia.jp/events/mama.-presents-midnight-live-『冷凍湖』",
+   "title": "MAMA. presents MIDNIGHT LIVE 『冷凍湖",
+   "open": "23:30",
+   "genres": [
+    "Visual",
+    "Band"
+   ],
+   "lineup": [],
+   "text": "ACT： MAMA. / CHAQLA. / 夜光蟲 / おいでよ！幽霊ズ / FUR DJ：永山銀\nTICKET：ADV 5,000- / DAY 6,000-\n【FC SITE &OFFICIAL HP 「CRY BABY.」】 https://mama.fanpla.jp\n[ ご注意 ] 《ATTENTION》\n(マイナンバーカード、パスポートなど)(学生証は不可)",
+   "venue_name": "club asia",
+   "first_seen": "2026-11-22"
   },
   {
    "id": "cman:bmsg-trainee_2026-2026-12-20-神奈川",
@@ -10366,6 +10438,26 @@
    "first_seen": null
   },
   {
+   "id": "asia:block-exodus",
+   "venue": "asia",
+   "date": "2026-12-26",
+   "url": "https://clubasia.jp/events/block-exodus",
+   "title": "BLOCK “EXODUS COMPILATION ALBUM\" RELEASE PARTY",
+   "open": "23:00",
+   "genres": [
+    "Hip Hop",
+    "Live"
+   ],
+   "lineup": [
+    "Coming Soon...",
+    "information",
+    "EXODUS \"COMPILATION ALBUM\""
+   ],
+   "text": "────────\n❍ FEE\n・Early Bird ¥3,500+1D\n・Adv ¥4,000+1D\n・Door ¥4,500+1D\n❍ TICKET\nhttps://cultureofasia.zaiko.io/ja/e/block-exodus\n────────\n❍ LINE UP\nComing Soon...\n────────\n❍ 𝐢𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧\n2026.12.23 wed\n𝐄𝐗𝐎𝐃𝐔𝐒 \"𝐂𝐎𝐌𝐏𝐈𝐋𝐀𝐓𝐈𝐎𝐍 𝐀𝐋𝐁𝐔𝐌\"\nRELEASE!!!!",
+   "venue_name": "club asia",
+   "first_seen": "2026-11-22"
+  },
+  {
    "id": "circus:traxman",
    "venue": "circus",
    "date": "2026-12-26",
@@ -10511,6 +10603,45 @@
    "price": "TBA",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
+  },
+  {
+   "id": "asia:sprayfest-26",
+   "venue": "asia",
+   "date": "2026-12-27",
+   "url": "https://clubasia.jp/events/sprayfest-26",
+   "title": "SPRAYBOX Presents「SPRAYFEST ‘26",
+   "open": "23:00",
+   "genres": [
+    "Bassline",
+    "Garage"
+   ],
+   "lineup": [
+    "DJ Q",
+    "BANGA RALLY",
+    "Carpainter B2B andrew",
+    "OBXR.",
+    "viwiv",
+    "SPRAYBOX",
+    "eastaudio SOUNDSYSTEM",
+    "Catarrh Nisin",
+    "Numb'n'dub",
+    "ONJUICY",
+    "HEAVEN'S GATE CREW",
+    "KO3",
+    "NEKO MAFIA",
+    "sekizu1 B2B ZAZEN",
+    "WATARU",
+    "Guchon",
+    "HALU",
+    "Ogasawara",
+    "OTA B2B Rash Bonë",
+    "Oyubi",
+    "Submerse",
+    "VECSILLE B2B MOOTOO"
+   ],
+   "text": "[ TCKET ]\n----------------------------\n✹ SPRAYFEST is back this year to celebrate the 5th anniversary of SPRAYBOX.\n[ Ticket Information ]\n────────\n□ FEE\n・adv ¥3,500\n・adv (音源付) ¥4,500\n・door ¥4,500\n□ TICKET｜RA\nhttps://ja.ra.co/events/2551563\n────────\nLINE_UP\n✹ SPECIAL GUEST：\nDJ Q\n□ MAIN FLOOR\nBANGA RALLY (Jacotanu & kyo)\nCarpainter B2B andrew\nOBXR.\nviwiv\nSPRAYBOX\neastaudio SOUNDSYSTEM\nCatarrh Nisin\nNumb'n'dub\nONJUICY\nVJs\nPoifull\nwawawa\n□ 2nd FLOOR\n2swing vs Uh-U!\nHEAVEN'S GATE CREW\nKO3\nNEKO MAFIA\nsekizu1 B2B ZAZEN\nWATARU\n□ LOUNGE FLOOR\nGuchon\nHALU\nOgasawara\nOTA B2B Rash Bonë\nOyubi\nSubmerse\nVECSILLE B2B MOOTOO",
+   "venue_name": "club asia",
+   "first_seen": "2026-11-22"
   },
   {
    "id": "oeast:leading-premium-年末感謝祭26",
@@ -11102,6 +11233,35 @@
    "text": "the paddles — ⼈⽣の登場⼈物として -天王⼭編-\nthe paddles",
    "venue_name": "LIQUIDROOM",
    "first_seen": null
+  },
+  {
+   "id": "oeast:never-end-roll-1stワンマンライブ〜1st-roll〜",
+   "venue": "oeast",
+   "date": "2027-01-07",
+   "url": "https://shibuya-o.com/east/schedule/never-end-roll-1st%e3%83%af%e3%83%b3%e3%83%9e%e3%83%b3%e3%83%a9%e3%82%a4%e3%83%96%e3%80%9c1st-roll%e3%80%9c/",
+   "title": "NEVER END ROLL 1stワンマンライブ〜1st ROLL〜",
+   "open": "18:00",
+   "genres": [],
+   "lineup": [],
+   "text": "NEVER END ROLL 1stワンマンライブ〜1st ROLL〜",
+   "venue_name": "Spotify O-EAST",
+   "first_seen": "2026-11-22"
+  },
+  {
+   "id": "circus:nimino",
+   "venue": "circus",
+   "date": "2027-01-08",
+   "url": "https://circus-tokyo.jp/event/nimino/",
+   "title": "NIMINO",
+   "open": "23:00",
+   "genres": [],
+   "lineup": [
+    "nimino",
+    "Wes Mills"
+   ],
+   "text": "LINE UP：\nnimino\nWes Mills\nand more\nOPEN 23:00\nADV: ¥3,500\nTICKET: ITM",
+   "venue_name": "CIRCUS Tokyo",
+   "first_seen": "2026-11-22"
   },
   {
    "id": "cman:dove-ellis_rosonicextra-2027-01-08-東京",
@@ -11754,6 +11914,22 @@
    "text": "Bonbero with Band：Kaito Nakada (Gt.) / Keity (Ba.) / So Kanno (Dr.) — Bonbero ONE-MAN LIVE \"HideAway\"\nBonbero with Band:Kaito Nakada (Gt.) / Keity (Ba.) / So Kanno (Dr.)",
    "venue_name": "WWW X",
    "first_seen": "2026-11-21"
+  },
+  {
+   "id": "zero:gold-disc-0115",
+   "venue": "zero",
+   "date": "2027-01-15",
+   "url": "https://zerotokyo.jp/event/gold-disc-0115/",
+   "title": "GOLD DISC",
+   "open": "11PM",
+   "genres": [
+    "All Mix"
+   ],
+   "lineup": [],
+   "text": "[OTHER]\n【出演】\nKOTONOHOUSE / PSYQUI / t+pazolite / 原口沙輔\n(A to Z)\nGOLD DISC\nZEROTOKYOの看板イベント、GOLD DISC開催！\n【アップグレード特典】\n・特典で限定ステッカーをエントランスにてプレゼント\n・Z LOUNGEはフリーシートあり",
+   "price": "DOOR：¥4,500- / FASTPASS TICKET：¥4,000-（優先入場・入場料金含む） / アップグレード付きFASTPASS TICKET：¥6,000-（優先入場・入場料金含む） / 整列開始：10PM",
+   "venue_name": "ZERO TOKYO",
+   "first_seen": "2026-11-22"
   },
   {
    "id": "zero:tba-9",
@@ -15119,6 +15295,21 @@
    "text": "イキヅライブ！ラブライブ！BLUEBIRD（東京）\nイキヅライブ!ラブライブ!BLUEBIRD",
    "venue_name": "東京（Creativeman）",
    "first_seen": null
+  },
+  {
+   "id": "oeast:三⽉春のパンタシア祭り-2027-単独ライブ編-2",
+   "venue": "oeast",
+   "date": "2027-03-27",
+   "url": "https://shibuya-o.com/east/schedule/%e4%b8%89%e2%bd%89%e6%98%a5%e3%81%ae%e3%83%91%e3%83%b3%e3%82%bf%e3%82%b7%e3%82%a2%e7%a5%ad%e3%82%8a-2027-%e5%8d%98%e7%8b%ac%e3%83%a9%e3%82%a4%e3%83%96%e7%b7%a8-2/",
+   "title": "三⽉春のパン(タシア)祭り 2027 -単独ライブ編-",
+   "open": "16:30",
+   "genres": [],
+   "lineup": [
+    "三月のパンタシア"
+   ],
+   "text": "三⽉春のパン(タシア)祭り 2027 -単独ライブ編-\n三月のパンタシア",
+   "venue_name": "Spotify O-EAST",
+   "first_seen": "2026-11-22"
   },
   {
    "id": "cman:ikitsugilive26-2027-03-28-東京",
