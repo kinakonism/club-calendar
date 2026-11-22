@@ -748,7 +748,7 @@ function downloadIcs(e) {
 function actChip(label) {
   const ls = labelsOf(label), on = has("artists", label);
   return h("span", { class: "act" + (on ? " on" : "") },
-    h("a", { href: "https://www.google.com/search?q=" + encodeURIComponent(label + " music"), target: "_blank", rel: "noopener noreferrer",
+    h("a", { href: /* iga=0: iPhoneでGoogleアプリに飛ばさず、ブラウザのまま開く */ "https://www.google.com/search?iga=0&q=" + encodeURIComponent(label + " music"), target: "_blank", rel: "noopener noreferrer",
       title: `「${label}」をWeb検索` }, label, ls.length ? h("span", { class: "lb" }, `  ${ls.join(", ")}`) : null),
     h("button", { "aria-pressed": String(on), "aria-label": `${label} をお気に入り${on ? "から外す" : "に追加"}`, title: on ? "お気に入りから外す" : "お気に入りに追加",
       onclick: () => toggle("artists", label) }, on ? "★" : "☆"));
