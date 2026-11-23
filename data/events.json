@@ -1,65 +1,65 @@
 {
- "updated": "2026-11-22T09:49+09:00",
+ "updated": "2026-11-23T10:16+09:00",
  "sources": {
   "asia": {
    "ok": true,
    "count": 20,
-   "checked": "2026-11-22T09:49+09:00"
+   "checked": "2026-11-23T10:16+09:00"
   },
   "circus": {
    "ok": true,
-   "count": 24,
-   "checked": "2026-11-22T09:49+09:00"
+   "count": 23,
+   "checked": "2026-11-23T10:16+09:00"
   },
   "zero": {
    "ok": true,
    "count": 70,
-   "checked": "2026-11-22T09:49+09:00"
+   "checked": "2026-11-23T10:16+09:00"
   },
   "womb": {
    "ok": true,
-   "count": 48,
-   "checked": "2026-11-22T09:49+09:00"
+   "count": 47,
+   "checked": "2026-11-23T10:16+09:00"
   },
   "vent": {
    "ok": true,
    "count": 25,
-   "checked": "2026-11-22T09:49+09:00"
+   "checked": "2026-11-23T10:16+09:00"
   },
   "dommune": {
    "ok": true,
    "count": 24,
-   "checked": "2026-11-22T09:49+09:00"
+   "checked": "2026-11-23T10:16+09:00"
   },
   "liquid": {
    "ok": true,
    "count": 111,
-   "checked": "2026-11-22T09:49+09:00"
+   "checked": "2026-11-23T10:16+09:00"
   },
   "unit": {
    "ok": true,
    "count": 83,
-   "checked": "2026-11-22T09:49+09:00"
+   "checked": "2026-11-23T10:16+09:00"
   },
   "www": {
    "ok": true,
-   "count": 175,
-   "checked": "2026-11-22T09:49+09:00"
+   "count": 176,
+   "checked": "2026-11-23T10:16+09:00"
   },
   "oeast": {
    "ok": true,
    "count": 111,
-   "checked": "2026-11-22T09:49+09:00"
+   "checked": "2026-11-23T10:16+09:00"
   },
   "cman": {
    "ok": true,
    "count": 164,
-   "checked": "2026-11-22T09:49+09:00"
+   "checked": "2026-11-23T10:16+09:00"
   },
   "clubberia": {
    "ok": true,
    "count": 0,
-   "checked": "2026-11-22T09:49+09:00"
+   "checked": "2026-11-23T10:16+09:00"
   }
  },
  "follow": {
@@ -501,35 +501,6 @@
   ]
  },
  "events": [
-  {
-   "id": "womb:101826",
-   "venue": "womb",
-   "date": "2026-10-18",
-   "url": "https://www.womb.co.jp/ja/events/101826",
-   "title": "ASK TASK",
-   "open": "23:00",
-   "genres": [
-    "Tech House",
-    "Hard Techno"
-   ],
-   "lineup": [
-    "Y'K",
-    "You Liang",
-    "Dylahn",
-    "Kino Carey",
-    "KIBΘ",
-    "CHIKA",
-    "K4BUKI",
-    "CALAVERA",
-    "RÉ:ØN",
-    "SOULUNA",
-    "NAOHIRO YAKO"
-   ],
-   "text": "23:00-4:30\nDOOR: ¥1500",
-   "price": "DOOR: ¥1500",
-   "venue_name": "WOMB",
-   "first_seen": null
-  },
   {
    "id": "dommune:2026-101901",
    "venue": "dommune",
@@ -5490,6 +5461,35 @@
    "first_seen": null
   },
   {
+   "id": "asia:party-hard-tuesday-mobile-spot",
+   "venue": "asia",
+   "date": "2026-11-24",
+   "url": "https://clubasia.jp/events/party-hard-tuesday-mobile-spot",
+   "title": "KAPPATSU DANGAN Pro. PRESENTS PARTY HARD TUESDAY × MOBILE SPOT -MOBILE SPOT 5th ANNIVERSARY-",
+   "open": "24:00",
+   "genres": [
+    "Reggae / Dancehall"
+   ],
+   "lineup": [
+    "毎週火曜心配無用",
+    "HIPHOP R&B",
+    "AFRO BEATS",
+    "DJ KIXXX from MASTERPIECE SOUND",
+    "DIAMOND NUTZ from BIG BLAZE WILDERS",
+    "RACY BULLET",
+    "DJ Kentaro",
+    "(DMC World Champion",
+    "TOMY-NT",
+    "DJ MINOYAMA",
+    "にっちよめ",
+    "DJ YMG",
+    "MANZO_NOW"
+   ],
+   "text": "KAPPATSU DANGAN Pro. PRESENTS\nPARTY HARD TUESDAY\n× MOBILE SPOT\n-MOBILE SPOT 5th ANNIVERSARY-\n毎週火曜心配無用\n11/24 (TUE)\nOPEN / START 24:00-\nDOOR：¥2,500\nDANCEHALL / REGGAE / HIPHOP R&B / AFRO BEATS\n【1F LOUNGE】\n-PARTY HARD TUESDAY-\nDJ KIXXX from MASTERPIECE SOUND @dj_kixxx\nDIAMOND NUTZ from BIG BLAZE WILDERS @djdiamondnutz\nRACY BULLET @masamatixxx @kdp405\n【2F FLOOR】\n-MOBILE SPOT 5th ANNIVERSARY-\nDJ Kentaro @djkentaro_official\n(DMC World Champion / DMC World Hall Of Fame)\nTOMY-NT (N.T.ORIGINAL) @_tomynt_\nDJ MINOYAMA @djminoyama\nにっちよめ @nicchomechome\nDJ YMG @ymg_bmj\n#MANZO_NOW\n【Food】\nマガリビ MAGHARIBI @magharibi_ @tamamikido\nラブサン @everybodylovesthesunshine__\nINFO : https://clubasia.jp/en/events/261124-pht-mbspt5th\n-———\n《ATTENTION》\n#PARTYHARDTUESDAY #毎週火曜心配無用 #MOBILESPOT",
+   "venue_name": "club asia",
+   "first_seen": "2026-11-23"
+  },
+  {
    "id": "circus:messie-circus-tokyo-pop-up",
    "venue": "circus",
    "date": "2026-11-24",
@@ -5943,6 +5943,32 @@
    "text": "2026.11.26_THU 23:00\n『 𝗰𝗹𝘂𝗯𝗮𝘀𝗶𝗮 𝗧𝗛𝗨𝗥𝗦𝗗𝗔𝗬 』➤ #clubasia\nVENUE：clubasia｜2nd FLOOR\nPRICE：-24:00 ¥1,000 / door ¥2,000\n✷ LINEUP (AtoZ)\nAcrocanthosaurus\ngalaxychinchilla\nMoEPiKA\nryuu",
    "venue_name": "club asia",
    "first_seen": null
+  },
+  {
+   "id": "asia:club-asia-thursday-1126",
+   "venue": "asia",
+   "date": "2026-11-26",
+   "url": "https://clubasia.jp/events/club-asia-thursday-1126",
+   "title": "club asia THURSDAY",
+   "open": "23:00",
+   "genres": [
+    "Bass",
+    "Techno"
+   ],
+   "lineup": [
+    "MIUTE",
+    "SPRINGLING",
+    "sazy x Kanato",
+    "KotaroUchida",
+    "Acrocanthosaurus",
+    "galaxychinchilla",
+    "MoEPiKA",
+    "ryuu",
+    "編集済み · 2週間前"
+   ],
+   "text": "2026.11.26_THU 23:00\n『 𝗰𝗹𝘂𝗯𝗮𝘀𝗶𝗮 𝗧𝗛𝗨𝗥𝗦𝗗𝗔𝗬 』➤ #clubasia\nVENUE：clubasia｜📍1F LOUNGE\nPRICE：OPEN-24:00 ¥1,000 / DOOR ¥2,000\n✷ LINEUP\nMIUTE @miute__\nSPRINGLING @s0undsex\nsazy x Kanato @sazablizry @kanatowishingyou\nKotaroUchida @ktrucd\n🔽2F FLOORと回遊可能🔽\n<2nd FLOOR>\nAcrocanthosaurus @taiyoyoyoyoyo\ngalaxychinchilla @galaxychinchilla\nMoEPiKA @moe____pika\nryuu @rryyuu_0910\nMIUTE\nSPRINGLING\nsazy x Kanato\nKotaroUchida\n編集済み · 2週間前",
+   "venue_name": "club asia",
+   "first_seen": "2026-11-23"
   },
   {
    "id": "circus:sbtrkt",
@@ -6484,27 +6510,28 @@
     "Techno"
    ],
    "lineup": [
-    "AYAKA",
+    "MAMAZU",
+    "JUNKO ONAGI",
+    "RYOOKY",
+    "SWELY",
+    "YUXI",
     "B",
     "CAPTAIN 25",
-    "JUNKO ONAGI",
     "MASA.M",
     "MOMØMIN",
     "NICO",
-    "RYOOKY",
-    "SAIMURA",
     "SHOW",
+    "AYAKA",
+    "SAIMURA",
     "SPECIAL K",
-    "SWELY",
     "TORAS",
     "YUTAMAN",
     "遠藤吉田",
-    "MORE ARTISTS TO BE ANNOUNCED...",
+    "LOA TOKYO - LIKE HEAVEN",
     "LOA TOKYO — LIKE HEAVEN.",
-    "Beyond boundaries, beyond reality.",
-    "LOA TOKYO - LIKE HEAVEN"
+    "Beyond boundaries, beyond reality."
    ],
-   "text": "2026.11.28_ SAT / 23:00-\nclubasia\nDOOR : ¥4,500\nDISCOUNT : ¥3,000\n《 3 FLOOR PARTY 》\nSHOP : AGE BANCHO\nDECO : EARTHIST\nLINE UP (A–Z)\nAYAKA\nB\nCAPTAIN 25\nJUNKO ONAGI\nMASA.M\nMOMØMIN\nNICO\nRYOOKY\nSAIMURA\nSHOW\nSPECIAL K\nSWELY\nTORAS\nYUTAMAN\n遠藤吉田\nMORE ARTISTS TO BE ANNOUNCED…\nLOA TOKYO — LIKE HEAVEN.\nBeyond boundaries, beyond reality.\nLOA TOKYO - LIKE HEAVEN\n———————————————————————————-\n《ATTENTION》",
+   "text": "2026.11.28_SAT 23:00\n『 LOA TOKYO - LIKE HEAVEN 』➤ #clubasia\n- VENUE：clubasia, SHIBUYA\n- TIME：23:00 - 05:00\n- PRICE：DOOR ¥4,500 / DISCOUNT ¥3,000\n《 3 FLOOR PARTY 》\n✷ LINE UP\nMAMAZU @mamazu\nJUNKO ONAGI @jnco0417\nRYOOKY @ryooky_ls_d\nSWELY @swely_69\nYUXI @dj_yuxi\nB @b_sounds_3\nCAPTAIN 25 @dj_captain25_irina\nMASA.M @djmasa__tokyo\nMOMØMIN @momomin.music\nNICO @ncoonline\nSHOW @showurata_dj_lazzzy\nAYAKA @ayakateen821\nSAIMURA @djsaimura\nSPECIAL K @special_k3187\nTORAS @toras_sho.horikawa\nYUTAMAN @yutaman_369\n遠藤吉田 @puster_music @mugen_psy\n✷ SOUND\nMORIKAWA / JUNSUK OH @juggernaut________\n✷ DECO\nEARTHIST @earthist_creators_commune\n✷ LAZER\nLIQUID @liquidfestival\n✷ SHOP\nAGE BANCHO @agebanchooooo\n✷ SHOOT\nTRIP ADVISER @trip_advisor_official\n✷ VJ\n1F YAMANASHI（HAKAAKI x fuk@kichi）\n@hakaaki\n2F NAOKI SAWANO @naoki_sawano\nLOA TOKYO - LIKE HEAVEN\nLOA TOKYO — LIKE HEAVEN.\nBeyond boundaries, beyond reality.",
    "venue_name": "club asia",
    "first_seen": null
   },
@@ -6638,7 +6665,7 @@
    "date": "2026-11-28",
    "url": "https://shibuya-o.com/east/schedule/palette-parade-bandset-oneman-live%e3%80%8eriot-parade%e3%80%8f/",
    "title": "Palette Parade BANDSET ONEMAN LIVE『RIOT PARADE』",
-   "open": "15:15",
+   "open": "17:30",
    "genres": [],
    "lineup": [
     "Palette Parade"
@@ -9500,10 +9527,52 @@
    "title": "COINCIDENCE",
    "open": "11PM",
    "genres": [
-    "All Mix"
+    "All Mix",
+    "Drum & Bass",
+    "Dubstep",
+    "Hard Techno",
+    "Hip Hop",
+    "House",
+    "Latin",
+    "Pops",
+    "Psychedelic",
+    "Techno",
+    "Trance"
    ],
-   "lineup": [],
-   "text": "COINCIDENCE",
+   "lineup": [
+    "YUTARO",
+    "NOGU",
+    "MOTOMICHI",
+    "HALU",
+    "JET",
+    "YOPITCH",
+    "MC NON.",
+    "PSYCHEDELIC",
+    "綾瀬凛",
+    "舞音",
+    "osushidayo",
+    "TEITOKU",
+    "SMRY*/",
+    "Sinkai Gang",
+    "デバカエル",
+    "C-Program",
+    "K-sta",
+    "BIRTHDAY BASH:YUKINO",
+    "YUKINO",
+    "Kenskzm",
+    "DADO",
+    "non",
+    "fuma",
+    "WISK",
+    "CH1KA",
+    "HALTZ",
+    "Naomiagar",
+    "SHINTARO",
+    "NASA",
+    "Kon",
+    "HARUTO"
+   ],
+   "text": "[B3 RING]\n〈ALL MIX〉\nGUEST DJ：YUTARO\nDJ：NOGU / MOTOMICHI / HALU / JET / YOPITCH\nMC：MC NON.\nDANCER：CHISA / Rui\nParty Queen Tokyo DANCER：YUKI / YOI\n[B2 BOX]\n〈PSYCHEDELIC / TRANCE / HARD TECHNO / DnB / DUBSTEP〉\nDJ：綾瀬凛 / 舞音 / osushidayo / TEITOKU / /*SMRY*/ / Sinkai Gang / デバカエル\nLIVE：C-Program / K-sta\n[B2 R BAR]\n〈HOUSE / TECHNO〉\n-VIBRIBA-\nBIRTHDAY BASH：YUKINO\nDJ：YUKINO / Kenskzm / DADO / non / fuma / WISK / CH1KA / HALTZ\n[B1 TERRACE]\n〈LATIN / HIPHOP / POPS〉\nDJ：Naomiagar / SHINTARO / NASA / Kon / HARUTO\n[OTHER]\nPromoter：AKILA LAMODA\nCOINCIDENCE",
    "price": "DOOR：¥2,500-",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
@@ -9938,17 +10007,18 @@
    "lineup": [
     "Anfisa Letyago",
     "BRYAN",
-    "POSTMAN",
     "cicori",
+    "ERR",
     "Kazuma",
     "Amélie and more",
     "HATSUYUKI",
-    "Hisappi and more",
+    "Hisappi",
+    "POSTMAN",
     "MeO",
     "SHIGEKI NISHIKAWA",
     "25 and more"
    ],
-   "text": "[B4 Z HALL]\nAnfisa Letyago\nVJ：Photone\n[B2 BOX]\n〈TECHNO〉\nBRYAN / POSTMAN / cicori / Kazuma / Amélie and more\n[B2 R BAR]\n〈OPEN FORMAT〉\nHATSUYUKI / Hisappi and more\n[B1 TERRACE]\n〈HOUSE〉\nMeO / SHIGEKI NISHIKAWA / 25 and more\nESSENCE",
+   "text": "[B4 Z HALL]\nAnfisa Letyago\nVJ：Photone\n[B2 BOX]\n〈TECHNO〉\nBRYAN / cicori / ERR / Kazuma / Amélie and more\n[B2 R BAR]\n〈OPEN FORMAT〉\nHATSUYUKI / Hisappi / POSTMAN / and more\n[B1 TERRACE]\n〈HOUSE〉\nMeO / SHIGEKI NISHIKAWA / 25 and more\nESSENCE",
    "price": "DOOR：¥5,500- / FASTPASS TICKET：¥4,500-（優先入場・入場料金含む） / 整列開始：10PM",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
@@ -10959,9 +11029,10 @@
     "Gohlem",
     "NOIA",
     "O.Goo",
+    "sumi",
     "MINORU",
     "Amélie",
-    "AMANE and more",
+    "AMANE",
     "RICECAKE",
     "HATSUYUKI",
     "Kenskzm",
@@ -10970,7 +11041,7 @@
     "POSTMAN",
     "8号 and more"
    ],
-   "text": "[B4 Z HALL]\nHIROKO YAMAMURA / RISA TANIGUCHI / Tamanaramen / DJ Cony\nVJ：Photone\n[B4F ENTER]\n〈TECHNO / UKG〉\n綾瀬凛 / Gohlem / NOIA / O.Goo / MINORU / Amélie / AMANE and more\n[B1 TERRACE]\n〈HOUSE〉\nRICECAKE / HATSUYUKI / Kenskzm / daijiro misawa / SATOSHI / POSTMAN / 8号 and more\nESSENCE",
+   "text": "[B4 Z HALL]\nHIROKO YAMAMURA / RISA TANIGUCHI / Tamanaramen / DJ Cony\nVJ：Photone\n[B4F ENTER]\n〈TECHNO / UKG〉\n綾瀬凛 / Gohlem / NOIA / O.Goo / sumi / MINORU / Amélie / AMANE\n[B1 TERRACE]\n〈HOUSE〉\nRICECAKE / HATSUYUKI / Kenskzm / daijiro misawa / SATOSHI / POSTMAN / 8号 and more\nESSENCE",
    "price": "DOOR：¥3,500- / FASTPASS TICKET：¥3,000-（優先入場・入場料金含む） / 整列開始：10PM",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
@@ -12216,6 +12287,20 @@
    "first_seen": null
   },
   {
+   "id": "zero:coincidence-0121",
+   "venue": "zero",
+   "date": "2027-01-21",
+   "url": "https://zerotokyo.jp/event/coincidence-0121/",
+   "title": "COINCIDENCE",
+   "open": "11PM",
+   "genres": [],
+   "lineup": [],
+   "text": "COINCIDENCE",
+   "price": "DOOR：¥2,500-",
+   "venue_name": "ZERO TOKYO",
+   "first_seen": "2026-11-23"
+  },
+  {
    "id": "zero:tba-15",
    "venue": "zero",
    "date": "2027-01-21",
@@ -13008,6 +13093,24 @@
    "first_seen": null
   },
   {
+   "id": "www:020254",
+   "venue": "www",
+   "date": "2027-02-06",
+   "url": "https://www-shibuya.jp/schedule/020254.php",
+   "title": "AFRO PARKER / 西恵利香 / YONA YONA WEEKENDERS / wnfu — para de casa 15th anniversary \"ESSLECTION 2027\"",
+   "open": "16:00",
+   "genres": [],
+   "lineup": [
+    "AFRO PARKER",
+    "西恵利香",
+    "YONA YONA WEEKENDERS",
+    "wnfu"
+   ],
+   "text": "AFRO PARKER / 西恵利香 / YONA YONA WEEKENDERS / wnfu — para de casa 15th anniversary \"ESSLECTION 2027\"\nAFRO PARKER / 西恵利香 / YONA YONA WEEKENDERS / wnfu",
+   "venue_name": "WWW X",
+   "first_seen": "2026-11-23"
+  },
+  {
    "id": "www:020064",
    "venue": "www",
    "date": "2027-02-06",
@@ -13595,6 +13698,20 @@
    "text": "電脳ヒメカ — 電脳ヒメカ 毒牙メノ生誕ONEMAN LIVE「冥王ノ証」\n電脳ヒメカ",
    "venue_name": "WWW X",
    "first_seen": null
+  },
+  {
+   "id": "zero:coincidence-0218",
+   "venue": "zero",
+   "date": "2027-02-18",
+   "url": "https://zerotokyo.jp/event/coincidence-0218/",
+   "title": "COINCIDENCE",
+   "open": "11PM",
+   "genres": [],
+   "lineup": [],
+   "text": "COINCIDENCE",
+   "price": "DOOR：¥2,500-",
+   "venue_name": "ZERO TOKYO",
+   "first_seen": "2026-11-23"
   },
   {
    "id": "zero:tba-39",
