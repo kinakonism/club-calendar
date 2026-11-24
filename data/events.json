@@ -1,65 +1,65 @@
 {
- "updated": "2026-11-23T10:16+09:00",
+ "updated": "2026-11-24T14:05+09:00",
  "sources": {
   "asia": {
    "ok": true,
    "count": 20,
-   "checked": "2026-11-23T10:16+09:00"
+   "checked": "2026-11-24T14:05+09:00"
   },
   "circus": {
    "ok": true,
-   "count": 23,
-   "checked": "2026-11-23T10:16+09:00"
+   "count": 22,
+   "checked": "2026-11-24T14:05+09:00"
   },
   "zero": {
    "ok": true,
    "count": 70,
-   "checked": "2026-11-23T10:16+09:00"
+   "checked": "2026-11-24T14:05+09:00"
   },
   "womb": {
    "ok": true,
    "count": 47,
-   "checked": "2026-11-23T10:16+09:00"
+   "checked": "2026-11-24T14:05+09:00"
   },
   "vent": {
    "ok": true,
    "count": 25,
-   "checked": "2026-11-23T10:16+09:00"
+   "checked": "2026-11-24T14:05+09:00"
   },
   "dommune": {
    "ok": true,
-   "count": 24,
-   "checked": "2026-11-23T10:16+09:00"
+   "count": 25,
+   "checked": "2026-11-24T14:05+09:00"
   },
   "liquid": {
    "ok": true,
    "count": 111,
-   "checked": "2026-11-23T10:16+09:00"
+   "checked": "2026-11-24T14:05+09:00"
   },
   "unit": {
    "ok": true,
-   "count": 83,
-   "checked": "2026-11-23T10:16+09:00"
+   "count": 84,
+   "checked": "2026-11-24T14:05+09:00"
   },
   "www": {
    "ok": true,
    "count": 176,
-   "checked": "2026-11-23T10:16+09:00"
+   "checked": "2026-11-24T14:05+09:00"
   },
   "oeast": {
    "ok": true,
-   "count": 111,
-   "checked": "2026-11-23T10:16+09:00"
+   "count": 113,
+   "checked": "2026-11-24T14:05+09:00"
   },
   "cman": {
    "ok": true,
    "count": 164,
-   "checked": "2026-11-23T10:16+09:00"
+   "checked": "2026-11-24T14:05+09:00"
   },
   "clubberia": {
    "ok": true,
    "count": 0,
-   "checked": "2026-11-23T10:16+09:00"
+   "checked": "2026-11-24T14:05+09:00"
   }
  },
  "follow": {
@@ -501,35 +501,6 @@
   ]
  },
  "events": [
-  {
-   "id": "dommune:2026-101901",
-   "venue": "dommune",
-   "date": "2026-10-19",
-   "url": "https://www.dommune.com/streamings/2026/101901/",
-   "title": "P.O.N.D. Presents DOMMUNE × P.O.N.D.2026 ｢re/sort」NIGHT",
-   "open": "18:30",
-   "genres": [],
-   "lineup": [
-    "田岡美紗子",
-    "NEW DOMAIN",
-    "玉山拓郎",
-    "GC magazine",
-    "tamanaramen",
-    "川端健太",
-    "百野幹人",
-    "みずかみしゅうと",
-    "HAL",
-    "kerocchi",
-    "LI MUYUN",
-    "キョウ カク",
-    "宇川直宏",
-    "肥髙茉実",
-    "小山田米呂"
-   ],
-   "text": "",
-   "venue_name": "DOMMUNE",
-   "first_seen": null
-  },
   {
    "id": "dommune:2026-102002",
    "venue": "dommune",
@@ -5782,7 +5753,7 @@
    "lineup": [
     "REYTONS"
    ],
-   "text": "REYTONS（東京）\nREYTONS\n発売中",
+   "text": "REYTONS（東京）\nREYTONS\n当日券あり",
    "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
@@ -5797,7 +5768,7 @@
    "lineup": [
     "WOLF ALICE"
    ],
-   "text": "WOLF ALICE（大阪）\nWOLF ALICE\n発売中",
+   "text": "WOLF ALICE（大阪）\nWOLF ALICE\n当日券あり",
    "venue_name": "大阪（Creativeman）",
    "first_seen": null
   },
@@ -6046,6 +6017,25 @@
    "first_seen": null
   },
   {
+   "id": "dommune:2026-112601",
+   "venue": "dommune",
+   "date": "2026-11-26",
+   "url": "https://www.dommune.com/streamings/2026/112601/",
+   "title": "Yumi Hara’s GROOVE STUDY （Yumi Hara、Chris Cutler、Sudoh Toshiaki）",
+   "open": "19:30",
+   "genres": [],
+   "lineup": [
+    "ユミ・ハラ",
+    "クリス・カトラー",
+    "須藤俊明",
+    "梅津和時",
+    "多田葉子"
+   ],
+   "text": "",
+   "venue_name": "DOMMUNE",
+   "first_seen": "2026-11-24"
+  },
+  {
    "id": "liquid:knosis_20261126",
    "venue": "liquid",
    "date": "2026-11-26",
@@ -6267,6 +6257,28 @@
    "first_seen": null
   },
   {
+   "id": "dommune:2026-112701",
+   "venue": "dommune",
+   "date": "2026-11-27",
+   "url": "https://www.dommune.com/streamings/2026/112701/",
+   "title": "RUSH! PRODUCTION Presents HOWIE B",
+   "open": "19:00",
+   "genres": [],
+   "lineup": [
+    "Howie B",
+    "Howie Bfeat. QxQx【Dr.D／human1】",
+    "「HOWIE B × QxQx",
+    "AIと音楽表現の現在地」Howie B",
+    "QxQx",
+    "吉岡加奈",
+    "高山康志",
+    "宇川直宏"
+   ],
+   "text": "",
+   "venue_name": "DOMMUNE",
+   "first_seen": "2026-11-24"
+  },
+  {
    "id": "liquid:anorak_20261127",
    "venue": "liquid",
    "date": "2026-11-27",
@@ -6439,6 +6451,15 @@
     "WATARU",
     "OPENING DJ:TRID3NT",
     "Melodic Bass",
+    "Mainstream Club Sound & Global Tech House",
+    "TAKUMA",
+    "NAGISA",
+    "RYO2",
+    "HIRAGY",
+    "RION",
+    "NANAMI",
+    "MYUMYU",
+    "AOI",
     "Zen Masuta",
     "SHINTARO",
     "HATSUYUKI",
@@ -6447,7 +6468,7 @@
     "TGER",
     "YOPITCH"
    ],
-   "text": "[B4 Z HALL]\n〈TECHNO / BASS MUSIC / HOUSE〉\n-NEON STARS-\nDJ：N² / OTA / Seimei B2B Carpainter / VECSILLE / WATARU (A to Z)\nOPENING DJ：TRID3NT\nDANCER：POLE DANCERS / CYBERJAPAN DANCERS\nVJ：BIGBABY / Jür Nishizato\n[B4F ENTER]\n〈Melodic Bass〉\n-Between Dreams-\nDJ：EPHYRA / fukuichi / ish! / Kazukino b2b kzero / knell / SLEEPY HEVD / Yakumob2b Skynap / ZI:AE (A to Z)\n[B2 BOX]\n〈TECHNO〉\nDJ：綾瀬凛 / TAIYO(跳梁跋扈) / ramu / Ryuga Nomoto (Ginza member) / NOIA / ama / æ-chan / MINORU / AMANE\n[B2 R BAR]\n〈OPEN FORMAT〉\nDJ：Zen Masuta / SHINTARO / HATSUYUKI / Kenskzm / FUMI / TGER / YOPITCH\n[B1 TERRACE]\n〈HOUSE〉\nNEON STARS Vol.04\nFROM ZERO TO THE STARS\nZEROTOKYOの回遊性をフルに使ったエンターテイメントパーティー!!",
+   "text": "[B4 Z HALL]\n〈TECHNO / BASS MUSIC / HOUSE〉\n-NEON STARS-\nDJ：N² / OTA / Seimei B2B Carpainter / VECSILLE / WATARU (A to Z)\nOPENING DJ：TRID3NT\nDANCER：POLE DANCERS / CYBERJAPAN DANCERS\nVJ：BIGBABY / Jür Nishizato\n[B4F ENTER]\n〈Melodic Bass〉\n-Between Dreams-\nDJ：EPHYRA / fukuichi / ish! / Kazukino b2b kzero / knell / SLEEPY HEVD / Yakumob2b Skynap / ZI:AE (A to Z)\n[B3 RING]\n〈Mainstream Club Sound & Global Tech House〉\n-THE:ZERO-\nGUEST DJ：TAKUMA / NAGISA\nDJ：RYO2 / HIRAGY / RION / NANAMI / MYUMYU / AOI\n[B2 BOX]\n〈TECHNO〉\nDJ：綾瀬凛 / TAIYO(跳梁跋扈) / ramu / Ryuga Nomoto (Ginza member) / NOIA / ama / æ-chan / MINORU / AMANE\n[B2 R BAR]\n〈OPEN FORMAT〉\nDJ：Zen Masuta / SHINTARO / HATSUYUKI / Kenskzm / FUMI / TGER / YOPITCH\n[B1 TERRACE]\n〈HOUSE〉\nNEON STARS Vol.04\nFROM ZERO TO THE STARS\nZEROTOKYOの回遊性をフルに使ったエンターテイメントパーティー!!",
    "price": "DOOR：¥3,500- / DOOR U-25：¥2,500- / FASTPASS TICKET：¥2,500-（優先入場・入場料金含む） / U-25 TICKET：¥2,000- (優先入場・入場料金含む) / ※U-25 TICKET / 2026年11月27日までに25歳以下の方が対象です。 / チケット受付時に生年月日が確認できる写真付き身分証をご提示いただきます。ご本人様と年齢の確認が取れない場合は一般発売価格との差額をお支払いいただきます。 / 整列開始：10PM",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
@@ -7398,14 +7419,14 @@
    "venue": "www",
    "date": "2026-12-02",
    "url": "https://www-shibuya.jp/schedule/020021.php",
-   "title": "downy / The Novembers — 情けの首 with SYNCHRONICITY",
+   "title": "downy / The Novembers — 【開催延期】情けの首 with SYNCHRONICITY",
    "open": "18:00",
    "genres": [],
    "lineup": [
     "downy",
     "The Novembers"
    ],
-   "text": "downy / The Novembers — 情けの首 with SYNCHRONICITY\ndowny / The Novembers",
+   "text": "downy / The Novembers — 【開催延期】情けの首 with SYNCHRONICITY\ndowny / The Novembers",
    "venue_name": "WWW X",
    "first_seen": null
   },
@@ -7507,6 +7528,55 @@
    "text": "",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
+  },
+  {
+   "id": "asia:bigpork-cannabis-26th-anniversary-party",
+   "venue": "asia",
+   "date": "2026-12-04",
+   "url": "https://clubasia.jp/events/bigpork-cannabis-26th-anniversary-party",
+   "title": "BIGPORK』 CANNABIS 26th ANNIVERSARY PARTY",
+   "open": "23:00",
+   "genres": [
+    "Hip Hop",
+    "Techno"
+   ],
+   "lineup": [
+    "GOD",
+    "JUMADIBA",
+    "BIM",
+    "Neibiss",
+    "Campanella",
+    "ziproom",
+    "Yoshi T.",
+    "Yank",
+    "KOPY",
+    "SIMAXOX",
+    "WASP",
+    "Licaxxx",
+    "SAMO",
+    "Kotsu",
+    "kengotaki",
+    "MoEPiKA",
+    "CYBERHACKSYSTEM",
+    "DJ DISK",
+    "Yujiiiwada",
+    "KATOMAN",
+    "George Bolton",
+    "ecec",
+    "Lui",
+    "hayatohattori",
+    "GIZMO",
+    "BIGBRO",
+    "MAGDRON",
+    "UNIONJAXXX",
+    "YYIOY",
+    "kenchan",
+    "KOBA",
+    "VISUAL DESIGH"
+   ],
+   "text": "2026.12.04 fri『𝐁𝐈𝐆𝐏𝐎𝐑𝐊』\nCANNABIS 26th ANNIVERSARY PARTY\nSupported by\nIQOS / HABUSH / PINE & SONS / 月極\n@iqos_jp @habush.jp @pine_sons@tsukigime.space\n📍#clubasia ➤ 23:00\n────────\n❍ FEE\n・adv ¥4,000\n・door ¥4.500\n❍ TICKET｜check on profile link 🔗\nhttps://cultureofasia.zaiko.io/e/bigpork-cannabis26th\n────────\n❍ Lineup\nGOD @god_gangofdance\n???\nJUMADIBA @jumadiba_assaji\nBIM @bim_otg\nNeibiss @neibiss_ @hyun_is_1000 @ratiff\nCampanella @campanella_mdm\nziproom @ziproom.zig @shimon.zip @arich.zip\nYoshi T. @yoshitee_\nYank @yankwav\nKOPY @yukokure\nSIMAXOX @sima_x0x\nWASP @w__a__s__p @_sotayamashita_@yamadagen\nLicaxxx @licaxxx1\nSAMO @muusamo_\nKotsu @kotsu0830\nkengotaki @kengotaki_\nMoEPiKA @moe____pika\nCYBERHACKSYSTEM @prodbychs\nDJ DISK @omg_djdisk\nYujiiiwada @yujiiiwada\nKATOMAN (BeatCafe) @katomandlc\nGeorge Bolton @george.b81\necec @ecec_fc\nLui @lui_hirano\nhayatohattori @hayatohattori\nGIZMO @yuji_ug @age_shoukatai\nBIGBRO @bigbro_takeo\nMAGDRON (BlackWeirdos) @magdron\nUNIONJAXXX @kamata_takao @hiroshi_sato@shunsuke_isobe\nYYIOY (SHOOP) @yyioy\nkenchan @kenchantokyo\nKOBA @ryutaro_kobayashi\n❍ FOOD @pine_sons\n❍ VISUAL DESIGH @jc__viva",
+   "venue_name": "club asia",
+   "first_seen": "2026-11-24"
   },
   {
    "id": "cman:12evanescence-2026-12-04-大阪",
@@ -8890,8 +8960,12 @@
    "title": "しるしはない",
    "open": "16:00",
    "genres": [],
-   "lineup": [],
-   "text": "",
+   "lineup": [
+    "hardnuts",
+    "Le Makeup",
+    "safmusic (band set)"
+   ],
+   "text": "hardnuts / Le Makeup / safmusic (band set)",
    "venue_name": "UNIT",
    "first_seen": null
   },
@@ -8992,8 +9066,8 @@
     "Kijta",
     "Hisappi",
     "MINORU",
+    "CHAOZ",
     "Biscuit Brain",
-    "ISSHIN",
     "REN® and more",
     "Mary-chan",
     "HATSUYUKI",
@@ -9001,11 +9075,12 @@
     "Kenskzm",
     "P DISK",
     "Yukino Tochibora",
-    "MARSH and more",
+    "MARSH",
+    "ISSHIN",
     "MELODIC HOUSE & TECHNO",
     "LJ:NeeGo"
    ],
-   "text": "[B4 Z HALL]\nMAU P / ALEXANDER M / ANDY DEDE / EIGHT\nVJ：Photone\n[B3 RING]\nTENJU / ARASHI / KOTONO SHIRAI / HERO / MAREI\n[B2 BOX]\n〈TECHNO〉\nTATSUYA / Kijta / Hisappi / MINORU / Biscuit Brain / ISSHIN / REN® and more\n[B2 R BAR]\n〈OPEN FORMAT〉\nMary-chan / HATSUYUKI / CHORDTUNEZ / Kenskzm / P DISK / Yukino Tochibora / MARSH and more\n[B1 TERRACE]\n〈HOUSE / TECH HOUSE / MELODIC HOUSE & TECHNO〉\nAY x TAKUTO / Airu x Passion Mod (The Drip House) / Keigo (Small World) / KURIOS / Stev3NN / ZIMA\nLJ：NeeGo\nMAU P",
+   "text": "[B4 Z HALL]\nMAU P / ALEXANDER M / ANDY DEDE / EIGHT\nVJ：Photone\n[B3 RING]\nTENJU / ARASHI / KOTONO SHIRAI / HERO / MAREI\n[B2 BOX]\n〈TECHNO〉\nTATSUYA / Kijta / Hisappi / MINORU / CHAOZ / Biscuit Brain / REN® and more\n[B2 R BAR]\n〈OPEN FORMAT〉\nMary-chan / HATSUYUKI / CHORDTUNEZ / Kenskzm / P DISK / Yukino Tochibora / MARSH / ISSHIN\n[B1 TERRACE]\n〈HOUSE / TECH HOUSE / MELODIC HOUSE & TECHNO〉\nAY x TAKUTO / Airu x Passion Mod (The Drip House) / Keigo (Small World) / KURIOS / Stev3NN / ZIMA\nLJ：NeeGo\nMAU P",
    "price": "DOOR：TBA / FASTPASS TICKET：¥6,000-（優先入場・入場料金含む） / PRIORITY TICKET：¥8,000-（優先入場＋最前エリア・入場料金含む) ※SOLD OUT / 整列開始：10PM",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
@@ -9560,7 +9635,7 @@
     "BIRTHDAY BASH:YUKINO",
     "YUKINO",
     "Kenskzm",
-    "DADO",
+    "DADO B2B etomo",
     "non",
     "fuma",
     "WISK",
@@ -9572,7 +9647,7 @@
     "Kon",
     "HARUTO"
    ],
-   "text": "[B3 RING]\n〈ALL MIX〉\nGUEST DJ：YUTARO\nDJ：NOGU / MOTOMICHI / HALU / JET / YOPITCH\nMC：MC NON.\nDANCER：CHISA / Rui\nParty Queen Tokyo DANCER：YUKI / YOI\n[B2 BOX]\n〈PSYCHEDELIC / TRANCE / HARD TECHNO / DnB / DUBSTEP〉\nDJ：綾瀬凛 / 舞音 / osushidayo / TEITOKU / /*SMRY*/ / Sinkai Gang / デバカエル\nLIVE：C-Program / K-sta\n[B2 R BAR]\n〈HOUSE / TECHNO〉\n-VIBRIBA-\nBIRTHDAY BASH：YUKINO\nDJ：YUKINO / Kenskzm / DADO / non / fuma / WISK / CH1KA / HALTZ\n[B1 TERRACE]\n〈LATIN / HIPHOP / POPS〉\nDJ：Naomiagar / SHINTARO / NASA / Kon / HARUTO\n[OTHER]\nPromoter：AKILA LAMODA\nCOINCIDENCE",
+   "text": "[B3 RING]\n〈ALL MIX〉\nGUEST DJ：YUTARO\nDJ：NOGU / MOTOMICHI / HALU / JET / YOPITCH\nMC：MC NON.\nDANCER：CHISA / Rui\nParty Queen Tokyo DANCER：YUKI / YOI\n[B2 BOX]\n〈PSYCHEDELIC / TRANCE / HARD TECHNO / DnB / DUBSTEP〉\nDJ：綾瀬凛 / 舞音 / osushidayo / TEITOKU / /*SMRY*/ / Sinkai Gang / デバカエル\nLIVE：C-Program / K-sta\n[B2 R BAR]\n〈HOUSE / TECHNO〉\n-VIBRIBA-\nBIRTHDAY BASH：YUKINO\nDJ：YUKINO / Kenskzm / DADO B2B etomo / non / fuma / WISK / CH1KA / HALTZ\n[B1 TERRACE]\n〈LATIN / HIPHOP / POPS〉\nDJ：Naomiagar / SHINTARO / NASA / Kon / HARUTO\n[OTHER]\nPromoter：AKILA LAMODA\nCOINCIDENCE",
    "price": "DOOR：¥2,500-",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
@@ -9763,9 +9838,30 @@
    "lineup": [
     "PROGRESSIVE HOUSE",
     "Steve Angello",
-    "SUPPORT:TJO"
+    "SUPPORT:TJO",
+    "YAMARIKI",
+    "PUNK N MATRIX",
+    "MITSUO FUKUDA",
+    "Dan Miyagishi",
+    "Tatsuki-kinesis",
+    "VIANCA",
+    "YOSHIMASA",
+    "INAGEE",
+    "SakuraJac",
+    "ERI×2",
+    "ITZ",
+    "HID3",
+    "竜馬",
+    "MAENOMERI",
+    "YUKI NAGAKAWA",
+    "Gohlem",
+    "HATSUYUKI",
+    "AY",
+    "TAKUTO",
+    "CHORDTUNEZ",
+    "TGER"
    ],
-   "text": "[B4 Z HALL]\n〈PROGRESSIVE HOUSE / HOUSE〉\n-THE ONE-\nSPECIAL GUEST : Steve Angello\nSUPPORT：TJO\nDJ：AXON / LEMI / SA!D\nVJ：Shun Nagasawa / Jür Nishizato\nDANCER：CYBERJAPAN DANCERS\nTHE ONE Presents Steve Angello",
+   "text": "[B4 Z HALL]\n〈PROGRESSIVE HOUSE / HOUSE〉\n-THE ONE-\nSPECIAL GUEST : Steve Angello\nSUPPORT：TJO\nDJ：AXON / LEMI / SA!D\nVJ：Shun Nagasawa / Jür Nishizato\nDANCER：CYBERJAPAN DANCERS\n[B4F ENTER]\n〈HOUSE〉\nDJ：YAMARIKI / PUNK N MATRIX / MITSUO FUKUDA / Dan Miyagishi / Tatsuki-kinesis / VIANCA\n[B3 RING]\n〈EDM〉\nDJ：YOSHIMASA / INAGEE / SakuraJac (Konjac & i-sakurai) / ERI×2 / ITZ / HID3 / 竜馬 / MAENOMERI\n[B2 R BAR]\n〈ALL MIX〉\nDJ：YUKI NAGAKAWA / Gohlem / HATSUYUKI / AY / TAKUTO / CHORDTUNEZ / TGER\nTHE ONE Presents Steve Angello",
    "price": "DOOR：TBA / TICKET：(B3 Z LOUNGE ACCESS・別途1ドリンク800円) / EARLY BIRD：¥5,500- ※SOLD OUT / U-25：¥5,500- ※SOLD OUT / FASTPASS TIER 1：¥6,500- / GOLD TICKET：(エントランス最優先入場・Z HALL入場保証&最前列エリア・B3 Z LOUNGE ACCESS・別途1ドリンク800円) / GOLD TICKET EARLY BIRD：¥10,500- ※SOLD OUT / GOLD TICKET：¥12,500- / ※全ての前売りチケットは別途1ドリンク800円購入必須となります。 / For all advance tickets : need to buy 1 drink. / ※U-25 TICKET / 2026年12月18日までに25歳以下の方が対象です。 / チケット受付時に生年月日が確認できる写真付き身分証をご提示いただきます。ご本人様と年齢の確認が取れない場合は一般発売価格との差額をお支払いいただきます。 / ※混雑時に入店規制や、メインホールへの入場規制を行う場合がございます。 / FASTPASS TICKETをお持ちの方も入店規制があった場合に、入店ができない場合がございますので、お早めにご来場ください。 / ※GOLD TICKETをお持ちの方は、入場規制があった場合もZ HALLへの再入場を保証いたします。 / 整列開始：10PM",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
@@ -10087,6 +10183,21 @@
    "first_seen": null
   },
   {
+   "id": "oeast:xmas-love-2",
+   "venue": "oeast",
+   "date": "2026-12-20",
+   "url": "https://shibuya-o.com/east/schedule/xmas-love-2/",
+   "title": "Xmas Love",
+   "open": "16:00",
+   "genres": [],
+   "lineup": [
+    "Original Love Jazz Trio"
+   ],
+   "text": "Xmas Love\nOriginal Love Jazz Trio",
+   "venue_name": "Spotify O-EAST",
+   "first_seen": "2026-11-24"
+  },
+  {
    "id": "unit:15351",
    "venue": "unit",
    "date": "2026-12-20",
@@ -10161,6 +10272,19 @@
    "text": "DECEMBER’S CHILDREN\nDECEMBER’S CHILDREN / Zilqy 青木陽菜 East Of Eden",
    "venue_name": "LIQUIDROOM",
    "first_seen": null
+  },
+  {
+   "id": "oeast:eight-bridge-the-recommended-show",
+   "venue": "oeast",
+   "date": "2026-12-21",
+   "url": "https://shibuya-o.com/east/schedule/eight-bridge-the-recommended-show/",
+   "title": "\"EIGHT BRIDGE - The Recommended Show -\" at Spotify O-EAST",
+   "open": "17:00",
+   "genres": [],
+   "lineup": [],
+   "text": "\"EIGHT BRIDGE - The Recommended Show -\" at Spotify O-EAST",
+   "venue_name": "Spotify O-EAST",
+   "first_seen": "2026-11-24"
   },
   {
    "id": "www:019992",
@@ -10765,22 +10889,14 @@
    "date": "2026-12-27",
    "url": "https://zerotokyo.jp/event/the-team-end-of-the-year-2026-1227/",
    "title": "THE TEAM -END OF THE YEAR 2026-",
-   "open": "RING STAGE OPEN 23:00 Z HALL OPEN 24:00",
+   "open": "OPEN 23:00 / CLOSE 4:30 RING STAGE OPEN 23:00 Z HALL OPEN 24:00",
    "genres": [
     "Hip Hop"
    ],
    "lineup": [
-    "GANMI",
-    "AmamiQueen & KYOKA",
-    "$RAM HEADS",
-    "NoCAP CLUB TOKYO",
-    "ODDRAW",
-    "ODORI",
-    "lumière",
-    "coming soon....",
     "coming soon.."
    ],
-   "text": "[B4 Z HALL]\nGANMI / AmamiQueen & KYOKA / $RAM HEADS / NoCAP CLUB TOKYO / ODDRAW / ODORI / lumière\ncoming soon….\n[B3 RING]\ncoming soon..\nTHE TEAM -END OF THE YEAR 2026-\n【イベントに関しての注意事項】",
+   "text": "[B4 Z HALL]\n[B3 RING]\ncoming soon..\nTHE TEAM -END OF THE YEAR 2026-\n【イベントに関しての注意事項】",
    "price": "DOOR（当日）：¥4,000＋別途1D / ADV TICKET（一般／前売り）：¥3,500＋別途1D / GOLD TICKET（優先入場／限定ポストカード付き）（100枚限定）：¥7,000＋別途1D",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
@@ -11033,6 +11149,7 @@
     "MINORU",
     "Amélie",
     "AMANE",
+    "maikoo",
     "RICECAKE",
     "HATSUYUKI",
     "Kenskzm",
@@ -11041,7 +11158,7 @@
     "POSTMAN",
     "8号 and more"
    ],
-   "text": "[B4 Z HALL]\nHIROKO YAMAMURA / RISA TANIGUCHI / Tamanaramen / DJ Cony\nVJ：Photone\n[B4F ENTER]\n〈TECHNO / UKG〉\n綾瀬凛 / Gohlem / NOIA / O.Goo / sumi / MINORU / Amélie / AMANE\n[B1 TERRACE]\n〈HOUSE〉\nRICECAKE / HATSUYUKI / Kenskzm / daijiro misawa / SATOSHI / POSTMAN / 8号 and more\nESSENCE",
+   "text": "[B4 Z HALL]\nHIROKO YAMAMURA / RISA TANIGUCHI / Tamanaramen / DJ Cony\nVJ：Photone\n[B4F ENTER]\n〈TECHNO / UKG〉\n綾瀬凛 / Gohlem / NOIA / O.Goo / sumi / MINORU / Amélie / AMANE\n[B1 TERRACE]\n〈HOUSE〉\nmaikoo / RICECAKE / HATSUYUKI / Kenskzm / daijiro misawa / SATOSHI / POSTMAN / 8号 and more\nESSENCE",
    "price": "DOOR：¥3,500- / FASTPASS TICKET：¥3,000-（優先入場・入場料金含む） / 整列開始：10PM",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
@@ -15873,6 +15990,21 @@
    "text": "Dizzy Sunfist \"OUR DREAM IS NOT DEAD\" TOUR 2027\nDizzy Sunfist",
    "venue_name": "Spotify O-EAST",
    "first_seen": null
+  },
+  {
+   "id": "unit:15569",
+   "venue": "unit",
+   "date": "2027-04-23",
+   "url": "https://www.unit-tokyo.com/schedule/15569/",
+   "title": "Luciela 1st Full Album『蛇哭』Release Tour",
+   "open": "18:00",
+   "genres": [],
+   "lineup": [
+    "Luciela"
+   ],
+   "text": "Luciela 1st Full Album『蛇哭』Release Tour\nLuciela",
+   "venue_name": "UNIT",
+   "first_seen": "2026-11-24"
   },
   {
    "id": "liquid:flowercompanyz_20270429",
