@@ -1,65 +1,65 @@
 {
- "updated": "2026-11-24T14:05+09:00",
+ "updated": "2026-11-25T12:53+09:00",
  "sources": {
   "asia": {
    "ok": true,
    "count": 20,
-   "checked": "2026-11-24T14:05+09:00"
+   "checked": "2026-11-25T12:53+09:00"
   },
   "circus": {
    "ok": true,
-   "count": 22,
-   "checked": "2026-11-24T14:05+09:00"
+   "count": 21,
+   "checked": "2026-11-25T12:53+09:00"
   },
   "zero": {
    "ok": true,
    "count": 70,
-   "checked": "2026-11-24T14:05+09:00"
+   "checked": "2026-11-25T12:53+09:00"
   },
   "womb": {
    "ok": true,
-   "count": 47,
-   "checked": "2026-11-24T14:05+09:00"
+   "count": 46,
+   "checked": "2026-11-25T12:53+09:00"
   },
   "vent": {
    "ok": true,
    "count": 25,
-   "checked": "2026-11-24T14:05+09:00"
+   "checked": "2026-11-25T12:53+09:00"
   },
   "dommune": {
    "ok": true,
-   "count": 25,
-   "checked": "2026-11-24T14:05+09:00"
+   "count": 23,
+   "checked": "2026-11-25T12:53+09:00"
   },
   "liquid": {
    "ok": true,
-   "count": 111,
-   "checked": "2026-11-24T14:05+09:00"
+   "count": 112,
+   "checked": "2026-11-25T12:53+09:00"
   },
   "unit": {
    "ok": true,
-   "count": 84,
-   "checked": "2026-11-24T14:05+09:00"
+   "count": 86,
+   "checked": "2026-11-25T12:53+09:00"
   },
   "www": {
    "ok": true,
    "count": 176,
-   "checked": "2026-11-24T14:05+09:00"
+   "checked": "2026-11-25T12:53+09:00"
   },
   "oeast": {
    "ok": true,
-   "count": 113,
-   "checked": "2026-11-24T14:05+09:00"
+   "count": 115,
+   "checked": "2026-11-25T12:53+09:00"
   },
   "cman": {
    "ok": true,
-   "count": 164,
-   "checked": "2026-11-24T14:05+09:00"
+   "count": 165,
+   "checked": "2026-11-25T12:53+09:00"
   },
   "clubberia": {
    "ok": true,
    "count": 0,
-   "checked": "2026-11-24T14:05+09:00"
+   "checked": "2026-11-25T12:53+09:00"
   }
  },
  "follow": {
@@ -501,70 +501,6 @@
   ]
  },
  "events": [
-  {
-   "id": "dommune:2026-102002",
-   "venue": "dommune",
-   "date": "2026-10-20",
-   "url": "https://www.dommune.com/streamings/2026/102002/",
-   "title": "PUNK50周年記念PROGRAM 映画『CBGB』ニューヨーク、PUNKが生まれた場所 SPECIAL!!",
-   "open": "21:00",
-   "genres": [],
-   "lineup": [
-    "Randall Miller",
-    "Jody Savin",
-    "鳥井賀句",
-    "高木完",
-    "東瀬戸悟",
-    "阿木譲",
-    "Matthew Waldman"
-   ],
-   "text": "",
-   "venue_name": "DOMMUNE",
-   "first_seen": null
-  },
-  {
-   "id": "dommune:2026-102001",
-   "venue": "dommune",
-   "date": "2026-10-20",
-   "url": "https://www.dommune.com/streamings/2026/102001/",
-   "title": "大竹昭子著『写真があってよかった。森山大道伝』（新潮社）刊行記念番組 ｢森山大道のどん底時代」再生の契機となった『写真時代』のこと",
-   "open": "19:00",
-   "genres": [],
-   "lineup": [
-    "大竹昭子",
-    "宮本和英",
-    "末井昭",
-    "山門恭彦"
-   ],
-   "text": "",
-   "venue_name": "DOMMUNE",
-   "first_seen": null
-  },
-  {
-   "id": "womb:102026",
-   "venue": "womb",
-   "date": "2026-10-20",
-   "url": "https://www.womb.co.jp/ja/events/102026",
-   "title": "ASIA TECH PRODUCED BY 2K21 RECORDS JAPAN",
-   "open": "23:00",
-   "genres": [
-    "Electro House",
-    "Tech House",
-    "Techno"
-   ],
-   "lineup": [
-    "JUSTIN OWEN",
-    "WONDERBOI",
-    "Cody-K",
-    "S4KU",
-    "SABLEYE",
-    "MUNAGE"
-   ],
-   "text": "23:00-4:30\nDOOR: ¥1500",
-   "price": "DOOR: ¥1500",
-   "venue_name": "WOMB",
-   "first_seen": null
-  },
   {
    "id": "womb:102126",
    "venue": "womb",
@@ -5708,7 +5644,7 @@
    "lineup": [
     "LOUDNESS"
    ],
-   "text": "LOUDNESS（東京）\nLOUDNESS\n発売中",
+   "text": "LOUDNESS（東京）\nLOUDNESS\n当日券あり",
    "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
@@ -5723,7 +5659,7 @@
    "lineup": [
     "MICHAEL MONROE"
    ],
-   "text": "MICHAEL MONROE（大阪）\nMICHAEL MONROE\n発売中",
+   "text": "MICHAEL MONROE（大阪）\nMICHAEL MONROE\n当日券あり",
    "venue_name": "大阪（Creativeman）",
    "first_seen": null
   },
@@ -5982,7 +5918,7 @@
    "lineup": [
     "MICHAEL MONROE"
    ],
-   "text": "MICHAEL MONROE（広島）\nMICHAEL MONROE\n発売中",
+   "text": "MICHAEL MONROE（広島）\nMICHAEL MONROE\n当日券あり",
    "venue_name": "広島（Creativeman）",
    "first_seen": null
   },
@@ -7095,6 +7031,21 @@
    "first_seen": null
   },
   {
+   "id": "unit:15581",
+   "venue": "unit",
+   "date": "2026-11-30",
+   "url": "https://www.unit-tokyo.com/schedule/15581/",
+   "title": "MAJORITY PARADE After Party",
+   "open": "19:00",
+   "genres": [],
+   "lineup": [
+    "衛星とカラテア"
+   ],
+   "text": "MAJORITY PARADE After Party\n衛星とカラテア",
+   "venue_name": "UNIT",
+   "first_seen": "2026-11-25"
+  },
+  {
    "id": "www:020054",
    "venue": "www",
    "date": "2026-11-30",
@@ -7431,6 +7382,22 @@
    "first_seen": null
   },
   {
+   "id": "asia:club-asia-tomodachi100-thu",
+   "venue": "asia",
+   "date": "2026-12-03",
+   "url": "https://clubasia.jp/events/club-asia-tomodachi100-thu",
+   "title": "club asia THURSDAY tomodachi100 THURSDAY",
+   "open": "23:00",
+   "genres": [
+    "Electro",
+    "Dj"
+   ],
+   "lineup": [],
+   "text": "2026.12.3_THU 23:00-\n『 𝗰𝗹𝘂𝗯 𝗮𝘀𝗶𝗮 𝘁𝗼𝗺𝗼𝗱𝗮𝗰𝗵𝗶𝟭𝟬𝟬 𝗧𝗛𝗨𝗥𝗦𝗗𝗔𝗬 』➤ #clubasia\nVENUE：clubasia｜📍LOUNGE FLOOR\nPRICE：OPEN-24:00 ¥1,000 / DOOR ¥2,000\n⚡️ tomodachi100 ☁️\ngalaxychinchilla\nmionn\nmoemiki\npìccolo\nバイレファンキかけ子\n🔁2F FLOORと回遊可能!! 🔁",
+   "venue_name": "club asia",
+   "first_seen": "2026-11-25"
+  },
+  {
    "id": "cman:mazzel-2nd-fan-meeting-2026-12-03-群馬",
    "venue": "cman",
    "date": "2026-12-03",
@@ -7494,8 +7461,8 @@
     "KAORU INOUE",
     "MASANORI IKEDA"
    ],
-   "text": "21:00-4:30 (1F: 21:00 OPEN / 2F: 23:00 OPEN)\nDOOR: ¥2500",
-   "price": "DOOR: ¥2500",
+   "text": "21:00-4:30 (1F: 21:00 OPEN / 2F: 23:00 OPEN)\nDOOR: ¥2500\nADVANCE TICKET: ¥2000",
+   "price": "DOOR: ¥2500 / ADVANCE TICKET: ¥2000",
    "venue_name": "WOMB",
    "first_seen": null
   },
@@ -7826,7 +7793,7 @@
     "VECSILLE",
     "YESS"
    ],
-   "text": "LINE UP：\nNOTION\nNOWAY*\nSAKO\nVECSILLE\nYESS\nOPEN 23:00\nADV: ¥4,000\nTICKET: RA\nNOTION",
+   "text": "LINE UP：\nNOTION\nNOWAY*\nSAKO\nVECSILLE\nYESS\nOPEN 23:00\nADV: ¥4,000\nFinal release: ¥4,500\nTICKET: RA\nNOTION",
    "venue_name": "CIRCUS Tokyo",
    "first_seen": null
   },
@@ -9068,7 +9035,8 @@
     "MINORU",
     "CHAOZ",
     "Biscuit Brain",
-    "REN® and more",
+    "REN®",
+    "Hina",
     "Mary-chan",
     "HATSUYUKI",
     "CHORDTUNEZ",
@@ -9080,7 +9048,7 @@
     "MELODIC HOUSE & TECHNO",
     "LJ:NeeGo"
    ],
-   "text": "[B4 Z HALL]\nMAU P / ALEXANDER M / ANDY DEDE / EIGHT\nVJ：Photone\n[B3 RING]\nTENJU / ARASHI / KOTONO SHIRAI / HERO / MAREI\n[B2 BOX]\n〈TECHNO〉\nTATSUYA / Kijta / Hisappi / MINORU / CHAOZ / Biscuit Brain / REN® and more\n[B2 R BAR]\n〈OPEN FORMAT〉\nMary-chan / HATSUYUKI / CHORDTUNEZ / Kenskzm / P DISK / Yukino Tochibora / MARSH / ISSHIN\n[B1 TERRACE]\n〈HOUSE / TECH HOUSE / MELODIC HOUSE & TECHNO〉\nAY x TAKUTO / Airu x Passion Mod (The Drip House) / Keigo (Small World) / KURIOS / Stev3NN / ZIMA\nLJ：NeeGo\nMAU P",
+   "text": "[B4 Z HALL]\nMAU P / ALEXANDER M / ANDY DEDE / EIGHT\nVJ：Photone\n[B3 RING]\nTENJU / ARASHI / KOTONO SHIRAI / HERO / MAREI\n[B2 BOX]\n〈TECHNO〉\nTATSUYA / Kijta / Hisappi / MINORU / CHAOZ / Biscuit Brain / REN® / Hina\n[B2 R BAR]\n〈OPEN FORMAT〉\nMary-chan / HATSUYUKI / CHORDTUNEZ / Kenskzm / P DISK / Yukino Tochibora / MARSH / ISSHIN\n[B1 TERRACE]\n〈HOUSE / TECH HOUSE / MELODIC HOUSE & TECHNO〉\nAY x TAKUTO / Airu x Passion Mod (The Drip House) / Keigo (Small World) / KURIOS / Stev3NN / ZIMA\nLJ：NeeGo\nMAU P",
    "price": "DOOR：TBA / FASTPASS TICKET：¥6,000-（優先入場・入場料金含む） / PRIORITY TICKET：¥8,000-（優先入場＋最前エリア・入場料金含む) ※SOLD OUT / 整列開始：10PM",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
@@ -9662,10 +9630,9 @@
    "genres": [],
    "lineup": [
     "riria",
-    "Saint Ludo",
-    "more TBA"
+    "Saint Ludo"
    ],
-   "text": "LINE UP：\nriria\nSaint Ludo\n+more TBA\nOPEN 23:00\nADV: ¥4,400\nTICKET: RA",
+   "text": "LINE UP：\nriria\nSaint Ludo\n+MORE\nOPEN 23:00\nADV: ¥4,400\nTICKET: RA\nイープラス : https://eplus.jp/riria/",
    "venue_name": "CIRCUS Tokyo",
    "first_seen": null
   },
@@ -10440,6 +10407,22 @@
    "first_seen": null
   },
   {
+   "id": "oeast:palette-parade-2man-live『session』-vol-4",
+   "venue": "oeast",
+   "date": "2026-12-24",
+   "url": "https://shibuya-o.com/east/schedule/palette-parade-2man-live%e3%80%8esession%e3%80%8f-vol-4/",
+   "title": "Palette Parade 2MAN LIVE『SESSION』 vol.4",
+   "open": "18:15",
+   "genres": [],
+   "lineup": [
+    "Palette Parade",
+    "ハルニシオン"
+   ],
+   "text": "Palette Parade 2MAN LIVE『SESSION』 vol.4\nPalette Parade / ハルニシオン",
+   "venue_name": "Spotify O-EAST",
+   "first_seen": "2026-11-25"
+  },
+  {
    "id": "unit:15118",
    "venue": "unit",
    "date": "2026-12-24",
@@ -10643,11 +10626,42 @@
     "Live"
    ],
    "lineup": [
-    "Coming Soon...",
-    "information",
-    "EXODUS \"COMPILATION ALBUM\""
+    "TYOSiN",
+    "042ghxst",
+    "YDIZZY",
+    "釈迦坊主",
+    "JUBEE",
+    "D-SETO",
+    "S TILL I DIE",
+    "rirugiliyangugili",
+    "KNZZ",
+    "Leon Fanourakis",
+    "who28",
+    "KVGGLV",
+    "山田ギャル神宮",
+    "FULLMATIC XX",
+    "ATSUKI",
+    "DJ itako",
+    "DJ Ogdoad",
+    "misa nakamura",
+    "kyuuu",
+    "yak",
+    "YU-RI",
+    "Leisu",
+    "HIGH-TONE",
+    "KANT",
+    "BAN",
+    "Loku",
+    "STORM",
+    "$hirutaro",
+    "VJ REAKS",
+    "REAKS",
+    "CAMERA",
+    "JET",
+    "泉",
+    "LIL CAT"
    ],
-   "text": "────────\n❍ FEE\n・Early Bird ¥3,500+1D\n・Adv ¥4,000+1D\n・Door ¥4,500+1D\n❍ TICKET\nhttps://cultureofasia.zaiko.io/ja/e/block-exodus\n────────\n❍ LINE UP\nComing Soon...\n────────\n❍ 𝐢𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧\n2026.12.23 wed\n𝐄𝐗𝐎𝐃𝐔𝐒 \"𝐂𝐎𝐌𝐏𝐈𝐋𝐀𝐓𝐈𝐎𝐍 𝐀𝐋𝐁𝐔𝐌\"\nRELEASE!!!!",
+   "text": "────────\n❍ FEE\n・E̶a̶r̶l̶y̶ ̶B̶i̶r̶d̶ ̶¥̶3̶,̶5̶0̶0̶+̶1̶D̶ SOLDOUT\n・Adv ¥4,000+1D\n・Door ¥4,500+1D\n❍ TICKET\nhttps://cultureofasia.zaiko.io/ja/e/block-exodus\n────────\n[ LINE UP ]\n❍ MAIN FLOOR\nTYOSiN\n042ghxst\nYDIZZY\n釈迦坊主\nJUBEE\nD-SETO\nS TILL I DIE\nrirugiliyangugili\nKNZZ\nLeon Fanourakis\nwho28\nKVGGLV\n山田ギャル神宮\n❍ 2nd FLOOR\nFULLMATIC XX\nATSUKI\nDJ itako\nDJ Ogdoad\nmisa nakamura\nkyuuu\nyak\nJellyf!sh\n❍ LOUNGE FLOOR\nYU-RI\nLeisu\nHIGH-TONE\nKANT\nBAN\nLoku\nSTORM\n$hirutaro\n❍ VJ REAKS\nREAKS\n❍ CAMERA\nJET\n泉\nLIL CAT\n❍ FOOD\nHell See\n────────\n❍ 𝐢𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧\n2026.12.23 wed\n𝐄𝐗𝐎𝐃𝐔𝐒 \"𝐂𝐎𝐌𝐏𝐈𝐋𝐀𝐓𝐈𝐎𝐍 𝐀𝐋𝐁𝐔𝐌\"\nRELEASE!!!!",
    "venue_name": "club asia",
    "first_seen": "2026-11-22"
   },
@@ -11053,6 +11067,21 @@
    "first_seen": null
   },
   {
+   "id": "oeast:ハルニシオン年末感謝祭-無銭ライブ",
+   "venue": "oeast",
+   "date": "2026-12-29",
+   "url": "https://shibuya-o.com/east/schedule/%e3%83%8f%e3%83%ab%e3%83%8b%e3%82%b7%e3%82%aa%e3%83%b3%e5%b9%b4%e6%9c%ab%e6%84%9f%e8%ac%9d%e7%a5%ad-%e7%84%a1%e9%8a%ad%e3%83%a9%e3%82%a4%e3%83%96/",
+   "title": "ハルニシオン年末感謝祭 無銭ライブ",
+   "open": "13:15",
+   "genres": [],
+   "lineup": [
+    "ハルニシオン"
+   ],
+   "text": "ハルニシオン年末感謝祭 無銭ライブ\nハルニシオン",
+   "venue_name": "Spotify O-EAST",
+   "first_seen": "2026-11-25"
+  },
+  {
    "id": "womb:122926",
    "venue": "womb",
    "date": "2026-12-29",
@@ -11274,10 +11303,9 @@
    "open": "",
    "genres": [],
    "lineup": [
-    "liquidroom presents NEW YEAR FESTIVAL 2027",
-    "石野卓球 group_inou FCO. DYGL & MORE TO BE ANNOUNCED!"
+    "liquidroom presents NEW YEAR FESTIVAL 2027"
    ],
-   "text": "liquidroom presents NEW YEAR FESTIVAL 2027\nliquidroom presents NEW YEAR FESTIVAL 2027 / 石野卓球 group_inou FCO. DYGL & MORE TO BE ANNOUNCED!",
+   "text": "liquidroom presents NEW YEAR FESTIVAL 2027\nliquidroom presents NEW YEAR FESTIVAL 2027",
    "venue_name": "LIQUIDROOM",
    "first_seen": null
   },
@@ -12051,6 +12079,22 @@
    "text": "",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
+  },
+  {
+   "id": "liquid:converge_20270115",
+   "venue": "liquid",
+   "date": "2027-01-15",
+   "url": "https://www.liquidroom.net/schedule/converge_20270115",
+   "title": "CONVERGE — JAPAN TOUR 2027",
+   "open": "18:00",
+   "genres": [],
+   "lineup": [
+    "CONVERGE",
+    "CONVERGE GUEST: kamomekamome MERZBOW and Balázs Pándi geji"
+   ],
+   "text": "CONVERGE — JAPAN TOUR 2027\nCONVERGE / CONVERGE GUEST: kamomekamome MERZBOW and Balázs Pándi geji",
+   "venue_name": "LIQUIDROOM",
+   "first_seen": "2026-11-25"
   },
   {
    "id": "oeast:aa-x-fader-circuit",
@@ -13696,6 +13740,21 @@
    "first_seen": null
   },
   {
+   "id": "cman:chapterhouse27-2027-02-16-東京",
+   "venue": "cman",
+   "date": "2027-02-16",
+   "url": "https://www.creativeman.co.jp/event/chapterhouse27/",
+   "title": "CHAPTERHOUSE（東京）",
+   "open": "",
+   "genres": [],
+   "lineup": [
+    "CHAPTERHOUSE"
+   ],
+   "text": "CHAPTERHOUSE（東京）\nCHAPTERHOUSE",
+   "venue_name": "東京（Creativeman）",
+   "first_seen": "2026-11-25"
+  },
+  {
    "id": "cman:father-of-peace27-2027-02-16-東京",
    "venue": "cman",
    "date": "2027-02-16",
@@ -14208,6 +14267,21 @@
    "text": "SLEEP THEORY ASIA TOUR 2027 JAPAN\nSLEEP THEORY",
    "venue_name": "Spotify O-EAST",
    "first_seen": null
+  },
+  {
+   "id": "unit:15574",
+   "venue": "unit",
+   "date": "2027-02-24",
+   "url": "https://www.unit-tokyo.com/schedule/15574/",
+   "title": "- WHERE THE LIGHT BECOMES THE FIRE-",
+   "open": "18:00",
+   "genres": [],
+   "lineup": [
+    "Crystal Lake"
+   ],
+   "text": "- WHERE THE LIGHT BECOMES THE FIRE-\nCrystal Lake",
+   "venue_name": "UNIT",
+   "first_seen": "2026-11-25"
   },
   {
    "id": "cman:gurriers27-2027-02-25-東京",
