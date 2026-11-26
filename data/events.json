@@ -1,65 +1,65 @@
 {
- "updated": "2026-11-25T12:53+09:00",
+ "updated": "2026-11-26T12:19+09:00",
  "sources": {
   "asia": {
    "ok": true,
    "count": 20,
-   "checked": "2026-11-25T12:53+09:00"
+   "checked": "2026-11-26T12:19+09:00"
   },
   "circus": {
    "ok": true,
-   "count": 21,
-   "checked": "2026-11-25T12:53+09:00"
+   "count": 20,
+   "checked": "2026-11-26T12:19+09:00"
   },
   "zero": {
    "ok": true,
    "count": 70,
-   "checked": "2026-11-25T12:53+09:00"
+   "checked": "2026-11-26T12:19+09:00"
   },
   "womb": {
    "ok": true,
    "count": 46,
-   "checked": "2026-11-25T12:53+09:00"
+   "checked": "2026-11-26T12:19+09:00"
   },
   "vent": {
    "ok": true,
    "count": 25,
-   "checked": "2026-11-25T12:53+09:00"
+   "checked": "2026-11-26T12:19+09:00"
   },
   "dommune": {
    "ok": true,
    "count": 23,
-   "checked": "2026-11-25T12:53+09:00"
+   "checked": "2026-11-26T12:19+09:00"
   },
   "liquid": {
    "ok": true,
-   "count": 112,
-   "checked": "2026-11-25T12:53+09:00"
+   "count": 119,
+   "checked": "2026-11-26T12:19+09:00"
   },
   "unit": {
    "ok": true,
-   "count": 86,
-   "checked": "2026-11-25T12:53+09:00"
+   "count": 87,
+   "checked": "2026-11-26T12:19+09:00"
   },
   "www": {
    "ok": true,
-   "count": 176,
-   "checked": "2026-11-25T12:53+09:00"
+   "count": 180,
+   "checked": "2026-11-26T12:19+09:00"
   },
   "oeast": {
    "ok": true,
    "count": 115,
-   "checked": "2026-11-25T12:53+09:00"
+   "checked": "2026-11-26T12:19+09:00"
   },
   "cman": {
    "ok": true,
    "count": 165,
-   "checked": "2026-11-25T12:53+09:00"
+   "checked": "2026-11-26T12:19+09:00"
   },
   "clubberia": {
    "ok": true,
    "count": 0,
-   "checked": "2026-11-25T12:53+09:00"
+   "checked": "2026-11-26T12:19+09:00"
   }
  },
  "follow": {
@@ -501,34 +501,6 @@
   ]
  },
  "events": [
-  {
-   "id": "womb:102126",
-   "venue": "womb",
-   "date": "2026-10-21",
-   "url": "https://www.womb.co.jp/ja/events/102126",
-   "title": "RECOMBINATION",
-   "open": "23:00",
-   "genres": [
-    "Drum & Bass",
-    "Hard Techno"
-   ],
-   "lineup": [
-    "DJ AKi",
-    "KEiTA",
-    "JABBA",
-    "ASSIGN",
-    "RNG",
-    "ASIN",
-    "CHIKA",
-    "SHO",
-    "YOXIKI",
-    "YURI VALEN"
-   ],
-   "text": "23:00-4:30\nDOOR: ¥1500",
-   "price": "DOOR: ¥1500",
-   "venue_name": "WOMB",
-   "first_seen": null
-  },
   {
    "id": "womb:102226",
    "venue": "womb",
@@ -5948,7 +5920,7 @@
    "lineup": [
     "TAHITI 80"
    ],
-   "text": "TAHITI 80（東京）\nTAHITI 80\n発売中",
+   "text": "TAHITI 80（東京）\nTAHITI 80\n当日券あり",
    "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
@@ -6632,6 +6604,39 @@
    "first_seen": null
   },
   {
+   "id": "unit:15587",
+   "venue": "unit",
+   "date": "2026-11-28",
+   "url": "https://www.unit-tokyo.com/schedule/15587/",
+   "title": "Pickyou 4th Anniversary Party",
+   "open": "23:00",
+   "genres": [],
+   "lineup": [
+    "ralph",
+    "Litty",
+    "ShowyVICTOR",
+    "Ryota",
+    "nasthug",
+    "NAMU",
+    "RHTokyo /MEL EDEN",
+    "ADY TILE",
+    "Itoichi&Nayu",
+    "YUVIE(FULLHOUSE)",
+    "SAKURA(AMAPINIGHT)",
+    "Rose&KC",
+    "Vick Okada",
+    "Kiola",
+    "Carolie Internet",
+    "Miyo&Yu",
+    "SPRINGLING",
+    "TIGHT",
+    "Takuma Amakasu"
+   ],
+   "text": "Pickyou 4th Anniversary Party",
+   "venue_name": "UNIT",
+   "first_seen": "2026-11-26"
+  },
+  {
    "id": "womb:112826",
    "venue": "womb",
    "date": "2026-11-28",
@@ -6745,10 +6750,9 @@
     "SHIGEKI NISHIKAWA",
     "MAKON",
     "fuji",
-    "Chiharu",
-    "Yugo"
+    "Chiharu"
    ],
-   "text": "[B4 Z HALL]\n〈HARD TECHNO / TECHNO〉\n-Locker Room-\nSPECIAL GUEST：DAISY\nDJ：DALJAE / KLYDE / STRATAH / INRIKUX\nVJ：Hatoto\nDANCERS：momoMc / AYA AVA\nCYBERJAPAN DANCERS：MIYURI / KYRIE / MINAMI / KURUMI\n[B4F ENTER]\n〈GROOVE / TECHNO〉\nDJ：OGOO / RE:ON / CALAVERA / SOLUNA\n[B3 RING]\n〈HARD TECHNO / TECHNO〉\nDJ：HOTARU / KATSU / KURU / KYUUU / YOXIKI (A-Z)\n[B2 R BAR]\n〈HIPHOP / ALL MIX〉\nDJ：NICORINA (MPC LIVE & DJ SET) / ROVA / HATSUYUKI / SATOSHI / SHUKI / BUMP / Nana-KO / ESTIL / Lapin\n[B1 TERRACE]\n〈HOUSE〉\nDJ：8号 / MeO / MAHIRU MORISAKI / SHIGEKI NISHIKAWA / MAKON / fuji / Chiharu / Yugo\nLocker Room feat. DAISY\nハードテクノパーティー「Locker Room」にイタリアの新星ハードテクノ・アシッドテクノDJ「DAISY」が来日!!",
+   "text": "[B4 Z HALL]\n〈HARD TECHNO / TECHNO〉\n-Locker Room-\nSPECIAL GUEST：DAISY\nDJ：DALJAE / KLYDE / STRATAH / INRIKUX\nVJ：Hatoto\nDANCERS：momoMc / AYA AVA\nCYBERJAPAN DANCERS：MIYURI / KYRIE / MINAMI / KURUMI\n[B4F ENTER]\n〈GROOVE / TECHNO〉\nDJ：OGOO / RE:ON / CALAVERA / SOLUNA\n[B3 RING]\n〈HARD TECHNO / TECHNO〉\nDJ：HOTARU / KATSU / KURU / KYUUU / YOXIKI (A-Z)\n[B2 R BAR]\n〈HIPHOP / ALL MIX〉\nDJ：NICORINA (MPC LIVE & DJ SET) / ROVA / HATSUYUKI / SATOSHI / SHUKI / BUMP / Nana-KO / ESTIL / Lapin\n[B1 TERRACE]\n〈HOUSE〉\nDJ：8号 / MeO / MAHIRU MORISAKI / SHIGEKI NISHIKAWA / MAKON / fuji / Chiharu\nLocker Room feat. DAISY\nハードテクノパーティー「Locker Room」にイタリアの新星ハードテクノ・アシッドテクノDJ「DAISY」が来日!!",
    "price": "DOOR：¥3,500- / FASTPASS TICKET：¥3,000-（優先入場・入場料金含む） / U-25 TICKET：¥2,500- (優先入場・入場料金含む) / ※U-25 TICKET / 2026年11月28日までに25歳以下の方が対象です。 / チケット受付時に生年月日が確認できる写真付き身分証をご提示いただきます。ご本人様と年齢の確認が取れない場合は一般発売価格との差額をお支払いいただきます。",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
@@ -9048,7 +9052,7 @@
     "MELODIC HOUSE & TECHNO",
     "LJ:NeeGo"
    ],
-   "text": "[B4 Z HALL]\nMAU P / ALEXANDER M / ANDY DEDE / EIGHT\nVJ：Photone\n[B3 RING]\nTENJU / ARASHI / KOTONO SHIRAI / HERO / MAREI\n[B2 BOX]\n〈TECHNO〉\nTATSUYA / Kijta / Hisappi / MINORU / CHAOZ / Biscuit Brain / REN® / Hina\n[B2 R BAR]\n〈OPEN FORMAT〉\nMary-chan / HATSUYUKI / CHORDTUNEZ / Kenskzm / P DISK / Yukino Tochibora / MARSH / ISSHIN\n[B1 TERRACE]\n〈HOUSE / TECH HOUSE / MELODIC HOUSE & TECHNO〉\nAY x TAKUTO / Airu x Passion Mod (The Drip House) / Keigo (Small World) / KURIOS / Stev3NN / ZIMA\nLJ：NeeGo\nMAU P",
+   "text": "[B4 Z HALL]\nMAU P / ALEXANDER M / ANDY DEDE / EIGHT\nVJ：Photone\n[B3 RING]\nTENJU / ARASHI / KOTONO SHIRAI / HERO / MAREI\n[B2 BOX]\n〈TECHNO〉\nTATSUYA / Kijta / Hisappi / MINORU / CHAOZ / Biscuit Brain / REN® / Hina\n[B2 R BAR]\n〈OPEN FORMAT〉\nMary-chan / HATSUYUKI / CHORDTUNEZ / Kenskzm / P DISK / Yukino Tochibora / MARSH / ISSHIN\n[B1 TERRACE]\n〈HOUSE / TECH HOUSE / MELODIC HOUSE & TECHNO〉\nAY x TAKUTO / Airu x Passion Mod (The Drip House) / Keigo (Small World) / KURIOS / Stev3NN / ZIMA / satoru\nLJ：NeeGo\nMAU P",
    "price": "DOOR：TBA / FASTPASS TICKET：¥6,000-（優先入場・入場料金含む） / PRIORITY TICKET：¥8,000-（優先入場＋最前エリア・入場料金含む) ※SOLD OUT / 整列開始：10PM",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
@@ -10077,11 +10081,12 @@
     "HATSUYUKI",
     "Hisappi",
     "POSTMAN",
+    "TENRAN",
     "MeO",
     "SHIGEKI NISHIKAWA",
     "25 and more"
    ],
-   "text": "[B4 Z HALL]\nAnfisa Letyago\nVJ：Photone\n[B2 BOX]\n〈TECHNO〉\nBRYAN / cicori / ERR / Kazuma / Amélie and more\n[B2 R BAR]\n〈OPEN FORMAT〉\nHATSUYUKI / Hisappi / POSTMAN / and more\n[B1 TERRACE]\n〈HOUSE〉\nMeO / SHIGEKI NISHIKAWA / 25 and more\nESSENCE",
+   "text": "[B4 Z HALL]\nAnfisa Letyago\nVJ：Photone\n[B2 BOX]\n〈TECHNO〉\nBRYAN / cicori / ERR / Kazuma / Amélie and more\n[B2 R BAR]\n〈OPEN FORMAT〉\nHATSUYUKI / Hisappi / POSTMAN / and more\n[B1 TERRACE]\n〈HOUSE〉\nTENRAN / MeO / SHIGEKI NISHIKAWA / 25 and more\nESSENCE",
    "price": "DOOR：¥5,500- / FASTPASS TICKET：¥4,500-（優先入場・入場料金含む） / 整列開始：10PM",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
@@ -10252,6 +10257,30 @@
    "text": "\"EIGHT BRIDGE - The Recommended Show -\" at Spotify O-EAST",
    "venue_name": "Spotify O-EAST",
    "first_seen": "2026-11-24"
+  },
+  {
+   "id": "womb:122126",
+   "venue": "womb",
+   "date": "2026-12-21",
+   "url": "https://www.womb.co.jp/ja/events/122126",
+   "title": "INFUSE_INTO",
+   "open": "23:00",
+   "genres": [
+    "Hard Techno",
+    "Schranz",
+    "Industrial"
+   ],
+   "lineup": [
+    "ASIN",
+    "CHIKA",
+    "SHO",
+    "YOXIKI",
+    "YURI VALEN"
+   ],
+   "text": "23:00-4:30\nDOOR: ¥1500",
+   "price": "DOOR: ¥1500",
+   "venue_name": "WOMB",
+   "first_seen": "2026-11-26"
   },
   {
    "id": "www:019992",
@@ -10602,6 +10631,40 @@
    "first_seen": null
   },
   {
+   "id": "www:020263",
+   "venue": "www",
+   "date": "2026-12-25",
+   "url": "https://www-shibuya.jp/schedule/020263.php",
+   "title": "Palette Parade — PALEPARE CHRISTMAS 2026",
+   "open": "18:30",
+   "genres": [],
+   "lineup": [
+    "Palette Parade"
+   ],
+   "text": "Palette Parade — PALEPARE CHRISTMAS 2026\nPalette Parade",
+   "venue_name": "WWW",
+   "first_seen": "2026-11-26"
+  },
+  {
+   "id": "zero:bunker-1225",
+   "venue": "zero",
+   "date": "2026-12-25",
+   "url": "https://zerotokyo.jp/event/bunker-1225/",
+   "title": "EUFORIA × BUNKER",
+   "open": "11PM",
+   "genres": [
+    "Hard Techno",
+    "Techno"
+   ],
+   "lineup": [
+    "JOVYNN"
+   ],
+   "text": "[B4 Z HALL]\n〈HARD TECHNO〉\n-EUFORIA × BUNKER-\nDJ：JOVYNN\n[B4F ENTER]\nCOMING SOON\n[B3 RING]\nCOMING SOON\n[B2 BOX]\nCOMING SOON\n[B2 R BAR]\nCOMING SOON\nEUFORIA × BUNKER\nMerry X’mas!!\nクリスマスの夜にEUFORIA × BUNKER開催決定!!\nABOUT\nhttps://www.instagram.com/bunker.tokyo/?hl=ja\nhttps://www.instagram.com/euforia.tokyo/",
+   "price": "DOOR：¥5,000- / XMAS Early Bird（早割）＋Priority(優先入場)：¥1,000- / ADV（前売り券）：¥3,500- / ADV（前売り券）＋Priority pass(優先入場)：¥4,500- / 4名グループチケット＋Priority pass(優先入場)：¥12,000- / 整列開始：10PM",
+   "venue_name": "ZERO TOKYO",
+   "first_seen": "2026-11-26"
+  },
+  {
    "id": "zero:tba-67",
    "venue": "zero",
    "date": "2026-12-25",
@@ -10779,6 +10842,22 @@
    "first_seen": null
   },
   {
+   "id": "www:020266",
+   "venue": "www",
+   "date": "2026-12-26",
+   "url": "https://www-shibuya.jp/schedule/020266.php",
+   "title": "NOT WONK / TBA — NOT WONK TOUR “A Brother of Warchild”",
+   "open": "17:15",
+   "genres": [],
+   "lineup": [
+    "NOT WONK",
+    "TBA"
+   ],
+   "text": "NOT WONK / TBA — NOT WONK TOUR “A Brother of Warchild”\nNOT WONK / TBA",
+   "venue_name": "WWW",
+   "first_seen": "2026-11-26"
+  },
+  {
    "id": "www:020230",
    "venue": "www",
    "date": "2026-12-26",
@@ -10850,6 +10929,22 @@
    "text": "[ TCKET ]\n----------------------------\n✹ SPRAYFEST is back this year to celebrate the 5th anniversary of SPRAYBOX.\n[ Ticket Information ]\n────────\n□ FEE\n・adv ¥3,500\n・adv (音源付) ¥4,500\n・door ¥4,500\n□ TICKET｜RA\nhttps://ja.ra.co/events/2551563\n────────\nLINE_UP\n✹ SPECIAL GUEST：\nDJ Q\n□ MAIN FLOOR\nBANGA RALLY (Jacotanu & kyo)\nCarpainter B2B andrew\nOBXR.\nviwiv\nSPRAYBOX\neastaudio SOUNDSYSTEM\nCatarrh Nisin\nNumb'n'dub\nONJUICY\nVJs\nPoifull\nwawawa\n□ 2nd FLOOR\n2swing vs Uh-U!\nHEAVEN'S GATE CREW\nKO3\nNEKO MAFIA\nsekizu1 B2B ZAZEN\nWATARU\n□ LOUNGE FLOOR\nGuchon\nHALU\nOgasawara\nOTA B2B Rash Bonë\nOyubi\nSubmerse\nVECSILLE B2B MOOTOO",
    "venue_name": "club asia",
    "first_seen": "2026-11-22"
+  },
+  {
+   "id": "liquid:shinseikamattechan_20261227",
+   "venue": "liquid",
+   "date": "2026-12-27",
+   "url": "https://www.liquidroom.net/schedule/shinseikamattechan_20261227",
+   "title": "神聖かまってちゃん — split tour 2026「17歳の処方箋」",
+   "open": "17:00",
+   "genres": [],
+   "lineup": [
+    "神聖かまってちゃん",
+    "神聖かまってちゃん GUEST:ZAZEN BOYS"
+   ],
+   "text": "",
+   "venue_name": "LIQUIDROOM",
+   "first_seen": "2026-11-26"
   },
   {
    "id": "oeast:leading-premium-年末感謝祭26",
@@ -11193,6 +11288,42 @@
    "first_seen": null
   },
   {
+   "id": "liquid:senkousai_20261230",
+   "venue": "liquid",
+   "date": "2026-12-30",
+   "url": "https://www.liquidroom.net/schedule/senkousai_20261230",
+   "title": "閃光祭 ’26",
+   "open": "12:30",
+   "genres": [],
+   "lineup": [
+    "閃光祭 ’26",
+    "点染テンセイ少女。",
+    "GANGDEMIC",
+    "キュン!?恋堕ちキューピッド",
+    "闇雲",
+    "Panic Monster !n Wonderland",
+    "ルシフェルの園。",
+    "魔訶不思議変革者-デスデス-",
+    "戦国アニマル極楽浄土",
+    "「いつかのネバーランド」",
+    "憑依中毒-シャーマンホリック-",
+    "Dr.CUTTER",
+    "Meteorite of the huge ICE",
+    "独裁人間",
+    "終幕劇場",
+    "ミヤコワスレ",
+    "Margaret",
+    "アイスクリーム夢少女",
+    "CURE RiS",
+    "???",
+    "ティアラボ",
+    "傾奇隊"
+   ],
+   "text": "閃光祭 ’26",
+   "venue_name": "LIQUIDROOM",
+   "first_seen": "2026-11-26"
+  },
+  {
    "id": "oeast:j-2026「放火魔大暴年会」",
    "venue": "oeast",
    "date": "2026-12-30",
@@ -11289,7 +11420,7 @@
     "All Mix"
    ],
    "lineup": [],
-   "text": "[OTHER]\n【LINEUP】\nGUEST ARTIST : 初音ミク (39ch×Vtai SET)\nARTIST : Yunomi / picco / なみぐる / 前澤 & icesawder\nZ HALL VJ : Hatoto / Takayuki Tominaga / BigBaBy / Jür Nishizato / rionpi\nRING VJ : poifull / Saina / wawawa\nand more!!",
+   "text": "[OTHER]\n【LINEUP】\nGUEST ARTIST : 初音ミク (39ch×Vtai SET)\nand more!!\nZ HALL VJ : Hatoto / Takayuki Tominaga / BigBaBy / Jür Nishizato / rionpi\nRING VJ : poifull / Saina / wawawa",
    "price": "DOOR : TBA / VIP TICKET（着席指定席） : ￥120,000 (5名様まで入場可能・Z HALL入場保証・エントランス最優先入場) / PREMIUM TICKET : ￥10,000 (エントランス優先入場・Z HALL入場保証・最前列エリア入場・1ドリンクチケット付き) / FASTPASS TICKET TIER 1 : ￥5,500 (ドリンクチケットなし) / FASTPASS TICKET TIER 2 : TBA / ※本イベントはオールナイト公演のため、20歳未満の方はご入場いただけません。ご入場時にご本人確認と年齢確認を行いますので、顔写真付きの身分証明書（運転免許証 / パスポート / 住民基本台帳カード / マイナンバーカード / 在留カード / 特別永住者証明書）をご提示ください。ご提示いただけない場合は、いかなる理由でもご入場いただけませんので、あらかじめご了承ください。 / 抽選受付期間（全券種共通） 2026年11月13日（金）12:00〜11月27日（金）23:59 / 抽選結果発表 2026年11月28日（土）予定 / 【VIP TICKET（着席指定席）】 / 〈特典〉 / ・レッドブルウォッカセット×1（CIROC×1、Red Bull×6） / 〈注意事項〉 / ・座席は、ZEROTOKYO B4F「Z HALL」のFV7〜14の中から抽選で決定します。シートはお選びいただけません。チケット1枚につき5名様までご入場いただけます。VIP TICKETでは最前列エリアにはご入場いただけません。 / ・チケットは代表者の方がお申し込みください。当日は、ご同伴の皆様がお揃いのうえでご来場ください。 / ・VIP TICKETをご利用の方は、全員ZEROTOKYO 1FのVIP専用レーンにて受付をお願いいたします。22:00より列整理を開始し、22:30より身分証明書の確認、荷物チェック・ボディチェック、チケットのもぎりを行います。入場開始は23:00です。 / ・受付時に顔写真付き身分証明書で年齢確認を行い、確認が取れた方に専用リストバンドをお渡しします。遅れてご来場される方がいる場合は、代表者の方が受付でその旨をお伝えください。遅れてご来場される方は、24:30（翌0:30）までにZEROTOKYOにて受付をお済ませください。 / ※混雑時は、入店規制やメインホールへの入場規制を行う場合がございます。入店規制時は、FASTPASS TICKETをお持ちの方もご入店いただけない場合がございますので、お早めにご来場ください。",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
@@ -11655,13 +11786,23 @@
    "venue": "www",
    "date": "2027-01-09",
    "url": "https://www-shibuya.jp/schedule/020217.php",
-   "title": "WWW presents PISTACHIO STUDIO — WWW presents PISTACHIO STUDIO",
+   "title": "鈴木真海子 / Youth of Roots / w.a.u & Friends / uin & Friends / CBS & Chicken Is Nice / BEAT SUMOU / TOSHIKI HAYASHI(%C) / TAJIMA HAL / 安藤つ良し / 凸凹。 / MONKWORKBASE and More... — WWW presents PISTACHIO STUDIO",
    "open": "17:00",
    "genres": [],
    "lineup": [
-    "WWW presents PISTACHIO STUDIO"
+    "鈴木真海子",
+    "Youth of Roots",
+    "w.a.u & Friends",
+    "uin & Friends",
+    "CBS & Chicken Is Nice",
+    "BEAT SUMOU",
+    "TOSHIKI HAYASHI(%C)",
+    "TAJIMA HAL",
+    "安藤つ良し",
+    "凸凹。",
+    "MONKWORKBASE and More..."
    ],
-   "text": "WWW presents PISTACHIO STUDIO — WWW presents PISTACHIO STUDIO\nWWW presents PISTACHIO STUDIO",
+   "text": "",
    "venue_name": "WWW & WWW X & WWW β",
    "first_seen": null
   },
@@ -12192,6 +12333,26 @@
    "first_seen": null
   },
   {
+   "id": "liquid:sabasister_20270116",
+   "venue": "liquid",
+   "date": "2027-01-16",
+   "url": "https://www.liquidroom.net/schedule/sabasister_20270116",
+   "title": "サバシスター / Blue Mash / Conton Candy — さばちゃんといっしょ2027",
+   "open": "17:00",
+   "genres": [],
+   "lineup": [
+    "サバシスター",
+    "Blue Mash",
+    "Conton Candy",
+    "サバシスター",
+    "Blue Mash",
+    "Conton Candy"
+   ],
+   "text": "サバシスター / Blue Mash / Conton Candy / サバシスター / Blue Mash / Conton Candy",
+   "venue_name": "LIQUIDROOM",
+   "first_seen": "2026-11-26"
+  },
+  {
    "id": "oeast:mighty-crown",
    "venue": "oeast",
    "date": "2027-01-16",
@@ -12269,14 +12430,14 @@
    "venue": "liquid",
    "date": "2027-01-17",
    "url": "https://www.liquidroom.net/schedule/sablehills_20270117",
-   "title": "Sable Hills — Sable Hills \"Homura Japan Tour 2027\"",
+   "title": "Sable Hills — Sable Hills",
    "open": "17:00",
    "genres": [],
    "lineup": [
     "Sable Hills",
-    "Sable Hills + Special Guest"
+    "Sable Hills Guest:Fear, and Loathing in Las Vegas"
    ],
-   "text": "Sable Hills — Sable Hills \"Homura Japan Tour 2027\"\nSable Hills / Sable Hills + Special Guest",
+   "text": "Sable Hills — Sable Hills\nSable Hills / Sable Hills Guest:Fear, and Loathing in Las Vegas",
    "venue_name": "LIQUIDROOM",
    "first_seen": null
   },
@@ -12337,6 +12498,21 @@
    "text": "MAN WITH A MISSION（東京）\nMAN WITH A MISSION",
    "venue_name": "東京（Creativeman）",
    "first_seen": null
+  },
+  {
+   "id": "liquid:kingsari_20270120",
+   "venue": "liquid",
+   "date": "2027-01-20",
+   "url": "https://www.liquidroom.net/schedule/kingsari_20270120",
+   "title": "キングサリ — Kingsari Last Live",
+   "open": "17:30",
+   "genres": [],
+   "lineup": [
+    "キングサリ"
+   ],
+   "text": "キングサリ — Kingsari Last Live\nキングサリ",
+   "venue_name": "LIQUIDROOM",
+   "first_seen": "2026-11-26"
   },
   {
    "id": "oeast:blue-25th-anniversary-tour-2027-day2",
@@ -12798,13 +12974,14 @@
    "venue": "www",
    "date": "2027-01-28",
    "url": "https://www-shibuya.jp/schedule/020142.php",
-   "title": "寺久保伶矢 — WWW presents 寺久保伶矢 One-Man Live \"DUAL V\"",
+   "title": "寺久保伶矢 GUEST：REJAY / Skaai — WWW presents 寺久保伶矢 One-Man Live \"DUAL V\"",
    "open": "19:00",
    "genres": [],
    "lineup": [
-    "寺久保伶矢"
+    "寺久保伶矢 GUEST:REJAY",
+    "Skaai"
    ],
-   "text": "寺久保伶矢 — WWW presents 寺久保伶矢 One-Man Live \"DUAL V\"\n寺久保伶矢",
+   "text": "寺久保伶矢 GUEST：REJAY / Skaai — WWW presents 寺久保伶矢 One-Man Live \"DUAL V\"\n寺久保伶矢 GUEST:REJAY / Skaai",
    "venue_name": "WWW",
    "first_seen": null
   },
@@ -12927,6 +13104,25 @@
    "text": "Legendary Butterfly\nLouie Vega",
    "venue_name": "Spotify O-EAST",
    "first_seen": null
+  },
+  {
+   "id": "www:020260",
+   "venue": "www",
+   "date": "2027-01-30",
+   "url": "https://www-shibuya.jp/schedule/020260.php",
+   "title": "Till Yawuh / Yuki Maekawa / Taigo / XTAL / Takuya Matsumoto — House of Jade Presents \"Till Yawuh - Hoodina EP\" Release Party",
+   "open": "23:30",
+   "genres": [],
+   "lineup": [
+    "Till Yawuh",
+    "Yuki Maekawa",
+    "Taigo",
+    "XTAL",
+    "Takuya Matsumoto"
+   ],
+   "text": "Till Yawuh / Yuki Maekawa / Taigo / XTAL / Takuya Matsumoto",
+   "venue_name": "WWWβ",
+   "first_seen": "2026-11-26"
   },
   {
    "id": "www:020112",
@@ -13105,6 +13301,24 @@
    "text": "LINE UP：\nTiffany Day\nand more\nOPEN 19:00-23:00\nTICKET SOLD OUT",
    "venue_name": "CIRCUS Tokyo",
    "first_seen": null
+  },
+  {
+   "id": "liquid:griotto_20270204",
+   "venue": "liquid",
+   "date": "2027-02-04",
+   "url": "https://www.liquidroom.net/schedule/griotto_20270204",
+   "title": "KANA-BOON / NELKE — 「GRIOTTO」",
+   "open": "18:15",
+   "genres": [],
+   "lineup": [
+    "KANA-BOON",
+    "NELKE",
+    "KANA-BOON",
+    "NELKE"
+   ],
+   "text": "KANA-BOON / NELKE — 「GRIOTTO」\nKANA-BOON / NELKE / KANA-BOON / NELKE",
+   "venue_name": "LIQUIDROOM",
+   "first_seen": "2026-11-26"
   },
   {
    "id": "www:020236",
@@ -14345,6 +14559,27 @@
    "first_seen": null
   },
   {
+   "id": "www:020262",
+   "venue": "www",
+   "date": "2027-02-25",
+   "url": "https://www-shibuya.jp/schedule/020262.php",
+   "title": "青葉市子 / 網守将平 / xxx / 詩的な食卓 / パソコン音楽クラブ / 福原音 / LAUSBUB — ユーバランス2027",
+   "open": "17:30",
+   "genres": [],
+   "lineup": [
+    "青葉市子",
+    "網守将平",
+    "xxx",
+    "詩的な食卓",
+    "パソコン音楽クラブ",
+    "福原音",
+    "LAUSBUB"
+   ],
+   "text": "青葉市子 / 網守将平 / xxx / 詩的な食卓 / パソコン音楽クラブ / 福原音 / LAUSBUB — ユーバランス2027\n青葉市子 / 網守将平 / xxx / 詩的な食卓 / パソコン音楽クラブ / 福原音 / LAUSBUB",
+   "venue_name": "WWW X",
+   "first_seen": "2026-11-26"
+  },
+  {
    "id": "zero:tba-44",
    "venue": "zero",
    "date": "2027-02-25",
@@ -14861,6 +15096,21 @@
    "text": "矢野妃菜喜presents「ひなまつり2027」\n矢野妃菜喜 / 青木陽菜 / 直田姫奈",
    "venue_name": "Spotify O-EAST",
    "first_seen": null
+  },
+  {
+   "id": "liquid:alstake_20270310",
+   "venue": "liquid",
+   "date": "2027-03-10",
+   "url": "https://www.liquidroom.net/schedule/alstake_20270310",
+   "title": "アルステイク — 君の人生のこれまでとこれからの違いツアー",
+   "open": "18:00",
+   "genres": [],
+   "lineup": [
+    "アルステイク"
+   ],
+   "text": "アルステイク",
+   "venue_name": "LIQUIDROOM",
+   "first_seen": "2026-11-26"
   },
   {
    "id": "cman:03uw_b3k-2027-03-11-東京",
@@ -16049,6 +16299,22 @@
    "text": "BABYTANTS — DON'T STOP, SUPER BABY！-BABYTANTS BAND SET ONEMAN LIVE-\nBABYTANTS",
    "venue_name": "LIQUIDROOM",
    "first_seen": null
+  },
+  {
+   "id": "liquid:wod_20270421",
+   "venue": "liquid",
+   "date": "2027-04-21",
+   "url": "https://www.liquidroom.net/schedule/wod_20270421",
+   "title": "w.o.d. presents“TOUCH THE PINK MOON 2027”",
+   "open": "17:30",
+   "genres": [],
+   "lineup": [
+    "w.o.d. presents“TOUCH THE PINK MOON 2027”",
+    "w.o.d. ※ゲストあり"
+   ],
+   "text": "w.o.d. presents“TOUCH THE PINK MOON 2027”\nw.o.d. presents“TOUCH THE PINK MOON 2027” / w.o.d. ※ゲストあり",
+   "venue_name": "LIQUIDROOM",
+   "first_seen": "2026-11-26"
   },
   {
    "id": "oeast:dizzy-sunfist-our-dream-is-not-dead-tour-2027",
