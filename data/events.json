@@ -1,65 +1,65 @@
 {
- "updated": "2026-11-26T12:19+09:00",
+ "updated": "2026-11-27T12:24+09:00",
  "sources": {
   "asia": {
    "ok": true,
-   "count": 20,
-   "checked": "2026-11-26T12:19+09:00"
+   "count": 19,
+   "checked": "2026-11-27T12:24+09:00"
   },
   "circus": {
    "ok": true,
-   "count": 20,
-   "checked": "2026-11-26T12:19+09:00"
+   "count": 22,
+   "checked": "2026-11-27T12:24+09:00"
   },
   "zero": {
    "ok": true,
    "count": 70,
-   "checked": "2026-11-26T12:19+09:00"
+   "checked": "2026-11-27T12:24+09:00"
   },
   "womb": {
    "ok": true,
-   "count": 46,
-   "checked": "2026-11-26T12:19+09:00"
+   "count": 45,
+   "checked": "2026-11-27T12:24+09:00"
   },
   "vent": {
    "ok": true,
    "count": 25,
-   "checked": "2026-11-26T12:19+09:00"
+   "checked": "2026-11-27T12:24+09:00"
   },
   "dommune": {
    "ok": true,
    "count": 23,
-   "checked": "2026-11-26T12:19+09:00"
+   "checked": "2026-11-27T12:24+09:00"
   },
   "liquid": {
    "ok": true,
    "count": 119,
-   "checked": "2026-11-26T12:19+09:00"
+   "checked": "2026-11-27T12:24+09:00"
   },
   "unit": {
    "ok": true,
-   "count": 87,
-   "checked": "2026-11-26T12:19+09:00"
+   "count": 88,
+   "checked": "2026-11-27T12:24+09:00"
   },
   "www": {
    "ok": true,
-   "count": 180,
-   "checked": "2026-11-26T12:19+09:00"
+   "count": 183,
+   "checked": "2026-11-27T12:24+09:00"
   },
   "oeast": {
    "ok": true,
-   "count": 115,
-   "checked": "2026-11-26T12:19+09:00"
+   "count": 116,
+   "checked": "2026-11-27T12:24+09:00"
   },
   "cman": {
    "ok": true,
    "count": 165,
-   "checked": "2026-11-26T12:19+09:00"
+   "checked": "2026-11-27T12:24+09:00"
   },
   "clubberia": {
    "ok": true,
    "count": 0,
-   "checked": "2026-11-26T12:19+09:00"
+   "checked": "2026-11-27T12:24+09:00"
   }
  },
  "follow": {
@@ -501,27 +501,6 @@
   ]
  },
  "events": [
-  {
-   "id": "womb:102226",
-   "venue": "womb",
-   "date": "2026-10-22",
-   "url": "https://www.womb.co.jp/ja/events/102226",
-   "title": "BABA LOOP -TAKEOVER-",
-   "open": "23:00",
-   "genres": [
-    "Tech House"
-   ],
-   "lineup": [
-    "GIORGIO NOLA",
-    "JUSTIN TIME",
-    "TOSHI",
-    "WAN ISSARA"
-   ],
-   "text": "23:00-4:30\nDOOR: ¥2000",
-   "price": "DOOR: ¥2000",
-   "venue_name": "WOMB",
-   "first_seen": null
-  },
   {
    "id": "dommune:2026-102301",
    "venue": "dommune",
@@ -5905,7 +5884,7 @@
    "lineup": [
     "QUEENS OF THE STONE AGE"
    ],
-   "text": "QUEENS OF THE STONE AGE（愛知）\nQUEENS OF THE STONE AGE\n発売中",
+   "text": "QUEENS OF THE STONE AGE（愛知）\nQUEENS OF THE STONE AGE\n当日券あり",
    "venue_name": "愛知（Creativeman）",
    "first_seen": null
   },
@@ -6533,7 +6512,7 @@
    "lineup": [
     "QUEENS OF THE STONE AGE"
    ],
-   "text": "QUEENS OF THE STONE AGE（大阪）\nQUEENS OF THE STONE AGE\n発売中",
+   "text": "QUEENS OF THE STONE AGE（大阪）\nQUEENS OF THE STONE AGE\n当日券あり",
    "venue_name": "大阪（Creativeman）",
    "first_seen": null
   },
@@ -7501,6 +7480,19 @@
    "first_seen": null
   },
   {
+   "id": "zero:tba-2",
+   "venue": "zero",
+   "date": "2026-12-03",
+   "url": "https://zerotokyo.jp/event/tba-2/",
+   "title": "TBA",
+   "open": "",
+   "genres": [],
+   "lineup": [],
+   "text": "",
+   "venue_name": "ZERO TOKYO",
+   "first_seen": "2026-11-27"
+  },
+  {
    "id": "asia:bigpork-cannabis-26th-anniversary-party",
    "venue": "asia",
    "date": "2026-12-04",
@@ -7780,6 +7772,39 @@
    "first_seen": null
   },
   {
+   "id": "asia:emunkc",
+   "venue": "asia",
+   "date": "2026-12-05",
+   "url": "https://clubasia.jp/events/emunkc",
+   "title": "ゑむNKC",
+   "open": "22:30",
+   "genres": [
+    "Live",
+    "Bass"
+   ],
+   "lineup": [
+    "DNGDNGDNG",
+    "MNKC",
+    "Akira Arasawa",
+    "Louis Shannon",
+    "de-sheevo",
+    "森",
+    "chomo",
+    "青",
+    "ヒロト",
+    "Aki Kitajima",
+    "Hi樂",
+    "IYO & TAICHI",
+    "SUNGA",
+    "Sakuma",
+    "Romy Mats",
+    "Ozwick"
+   ],
+   "text": "2026.12.5_SAT\n『ゑむNKC 』\n📍club asia\n🛹22:30-23:00 EVISEN試写会 (Japanese Super Rat)\n⏰23:00-05:00 ALL FLOORS OPEN\n────────\n✸ PRICE\n・~23:00 ¥2,000\n・adv ¥4,000+1D\n・door ¥5,000+1D\n・U23 ¥3,000+1D\n✸ TICKET\n・ZAIKO｜https://cultureofasia.zaiko.io/ja/e/mnkc-dngdngdng\n・RA｜https://ja.ra.co/events/2594516\n────────\n✸ MAIN FLOOR\n🛹22:30-23:00 EVISEN試写会(Japanese Super Rat)\n▼23:00~ ▼\nDNGDNGDNG (from Peru)\nMNKC\nAkira Arasawa\nLouis Shannon\nde-sheevo\n✸ LOUNGE FLOOR - Dance sports -\n森\nchomo\n青\nヒロト(JP)\nAki Kitajima\nHi樂\nIYO & TAICHI\n✸ 2nd FLOOR -Base-Floor -\nSUNGA(Base set)\nSakuma (Base set)\nRomy Mats\nOzwick",
+   "venue_name": "club asia",
+   "first_seen": "2026-11-27"
+  },
+  {
    "id": "circus:notion-in-tokyo",
    "venue": "circus",
    "date": "2026-12-05",
@@ -7904,7 +7929,7 @@
    "date": "2026-12-05",
    "url": "https://www.unit-tokyo.com/schedule/15063/",
    "title": "「I MIDI」",
-   "open": "18:00",
+   "open": "17:00",
    "genres": [],
    "lineup": [
     "北村蕗"
@@ -8226,6 +8251,23 @@
    "text": "MARQUEE祭 Vol.186",
    "venue_name": "Spotify O-EAST",
    "first_seen": null
+  },
+  {
+   "id": "www:020267",
+   "venue": "www",
+   "date": "2026-12-07",
+   "url": "https://www-shibuya.jp/schedule/020267.php",
+   "title": "Charmpal Link / I'mew（あいみゅう）/ Pinky Spice / ゆるめるモ!/ ルージュブック — 6分の1.6",
+   "open": "18:00",
+   "genres": [],
+   "lineup": [
+    "Charmpal Link",
+    "I'mew(あいみゅう)/ Pinky Spice",
+    "ゆるめるモ!/ ルージュブック"
+   ],
+   "text": "",
+   "venue_name": "WWW X",
+   "first_seen": "2026-11-27"
   },
   {
    "id": "www:020052",
@@ -9434,6 +9476,21 @@
    "text": "Pretty Chuu",
    "venue_name": "UNIT",
    "first_seen": null
+  },
+  {
+   "id": "www:020269",
+   "venue": "www",
+   "date": "2026-12-16",
+   "url": "https://www-shibuya.jp/schedule/020269.php",
+   "title": "INUWASI — INUMATSURI Xmas 2026〝 holy night 〟",
+   "open": "19:00",
+   "genres": [],
+   "lineup": [
+    "INUWASI"
+   ],
+   "text": "INUWASI — INUMATSURI Xmas 2026〝 holy night 〟\nINUWASI",
+   "venue_name": "WWW X",
+   "first_seen": "2026-11-27"
   },
   {
    "id": "cman:a-perfect-circle-puscifer-2026-12-17-大阪",
@@ -10878,16 +10935,42 @@
    "venue": "zero",
    "date": "2026-12-26",
    "url": "https://zerotokyo.jp/event/neon-stars-1226/",
-   "title": "NEON STARS",
+   "title": "NEON STARS Vol.05",
    "open": "11PM",
    "genres": [
     "Bass",
-    "Open Format",
+    "House",
     "Techno"
    ],
-   "lineup": [],
-   "text": "[B4 Z HALL]\nTBA\nNEON STARS",
-   "price": "TBA",
+   "lineup": [
+    "VIVID",
+    "OPENING DJ:TRID3NT",
+    "Mainstream Club Sound & Global Tech House",
+    "ramu",
+    "Omeme_gangimari",
+    "cicori",
+    "OJ3",
+    "MAHIRU MORISAKI",
+    "MAKON",
+    "æ-chan",
+    "偶然寺",
+    "MPC LIVE PERFORMANCE:NANA",
+    "Zen Masuta",
+    "ROVA",
+    "SHINTARO",
+    "HATSUYUKI",
+    "YOPITCH",
+    "galaxyyy",
+    "DANG",
+    "BA-CHI",
+    "H∀C©",
+    "TAKU",
+    "Ninja.jp",
+    "m∀tthew",
+    "わたさくJJ"
+   ],
+   "text": "[B4 Z HALL]\n〈TECHNO / BASS MUSIC / HOUSE〉\n-NEON STARS-\nGUEST：VIVID\nDJ：CHIKA / NOWAY* / Rejection / SA!D (A to Z)\nOPENING DJ：TRID3NT\nDANCER：POLE DANCERS / CYBERJAPAN DANCERS\nVJ：BIGBABY / Jür Nishizato\n[B3 RING]\n〈Mainstream Club Sound & Global Tech House〉\n-THE:ZERO-\n[B2 BOX]\n〈TECHNO〉\nDJ：ramu / Omeme_gangimari / cicori / OJ3 / MAHIRU MORISAKI / MAKON / æ-chan / 偶然寺\n[B2 R BAR]\n〈OPEN FORMAT〉\nMPC LIVE PERFORMANCE：NANA\nDJ：Zen Masuta / ROVA / SHINTARO / HATSUYUKI / YOPITCH / galaxyyy / DANG\n[B1 TERRACE]\n〈HOUSE〉\nDJ：BA-CHI- / H∀C© / TAKU / Ninja.jp (RAIZEN SPECIAL LIVE SET) / m∀tthew / わたさくJJ\nNEON STARS Vol.05\nFROM ZERO TO THE STARS\nZEROTOKYOの回遊性をフルに使ったエンターテイメントパーティー!!",
+   "price": "DOOR：¥3,500- / DOOR U-25：¥2,500- / FASTPASS TICKET：¥2,500- (優先入場・入場料金含む) / U-25 TICKET：¥2,000- (優先入場・入場料金含む) / ※U-25 TICKET / 2026年12月26日までに25歳以下の方が対象です。 / チケット受付時に生年月日が確認できる写真付き身分証をご提示いただきます。ご本人様と年齢の確認が取れない場合は一般発売価格との差額をお支払いいただきます。 / 整列開始：10PM",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
   },
@@ -10993,6 +11076,21 @@
    "first_seen": null
   },
   {
+   "id": "www:020268",
+   "venue": "www",
+   "date": "2026-12-27",
+   "url": "https://www-shibuya.jp/schedule/020268.php",
+   "title": "yosugala — yosugala単独「今日のコスプレはサンタ！」",
+   "open": "16:15",
+   "genres": [],
+   "lineup": [
+    "yosugala"
+   ],
+   "text": "yosugala — yosugala単独「今日のコスプレはサンタ！」\nyosugala",
+   "venue_name": "WWW X",
+   "first_seen": "2026-11-27"
+  },
+  {
    "id": "zero:the-team-end-of-the-year-2026-1227",
    "venue": "zero",
    "date": "2026-12-27",
@@ -11002,11 +11100,9 @@
    "genres": [
     "Hip Hop"
    ],
-   "lineup": [
-    "coming soon.."
-   ],
-   "text": "[B4 Z HALL]\n[B3 RING]\ncoming soon..\nTHE TEAM -END OF THE YEAR 2026-\n【イベントに関しての注意事項】",
-   "price": "DOOR（当日）：¥4,000＋別途1D / ADV TICKET（一般／前売り）：¥3,500＋別途1D / GOLD TICKET（優先入場／限定ポストカード付き）（100枚限定）：¥7,000＋別途1D",
+   "lineup": [],
+   "text": "[B4 Z HALL]\n(AtoZ)\n[B3 RING]\n(AtoZ)\nTHE TEAM -END OF THE YEAR 2026-\n【イベントに関しての注意事項】",
+   "price": "DOOR（当日）：¥4,000＋別途1D / ADV TICKET（一般／前売り）：¥3,500＋別途1D / GOLD TICKET（優先入場／限定ポストカード付き）（100枚限定）：¥7,000＋別途1D ※SOLD OUT",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
   },
@@ -11121,15 +11217,17 @@
    "venue": "www",
    "date": "2026-12-28",
    "url": "https://www-shibuya.jp/schedule/020225.php",
-   "title": "[Live] aTak / Takuya Kuroda Solo set / さらさ (Duo Set) and more [Guest] 田我流 and more — aTak 音楽大忘年会 2026",
+   "title": "[Live] aTak / Takuya Kuroda Solo set / さらさ (Duo Set) / 寺久保伶矢 [Guest] 田我流 / 鈴木真海子 — aTak 音楽大忘年会 2026",
    "open": "17:00",
    "genres": [],
    "lineup": [
     "[Live] aTak",
     "Takuya Kuroda Solo set",
-    "さらさ (Duo Set) and more [Guest] 田我流 and more"
+    "さらさ (Duo Set)",
+    "寺久保伶矢 [Guest] 田我流",
+    "鈴木真海子"
    ],
-   "text": "[Live] aTak / Takuya Kuroda Solo set / さらさ (Duo Set) and more [Guest] 田我流 and more — aTak 音楽大忘年会 2026\n[Live] aTak / Takuya Kuroda Solo set / さらさ (Duo Set) and more [Guest] 田我流 and more",
+   "text": "[Live] aTak / Takuya Kuroda Solo set / さらさ (Duo Set) / 寺久保伶矢 [Guest] 田我流 / 鈴木真海子 — aTak 音楽大忘年会 2026\n[Live] aTak / Takuya Kuroda Solo set / さらさ (Duo Set) / 寺久保伶矢 [Guest] 田我流 / 鈴木真海子",
    "venue_name": "WWW X",
    "first_seen": null
   },
@@ -11278,11 +11376,12 @@
     "HATSUYUKI",
     "Kenskzm",
     "daijiro misawa",
+    "MeO",
     "SATOSHI",
     "POSTMAN",
-    "8号 and more"
+    "8号"
    ],
-   "text": "[B4 Z HALL]\nHIROKO YAMAMURA / RISA TANIGUCHI / Tamanaramen / DJ Cony\nVJ：Photone\n[B4F ENTER]\n〈TECHNO / UKG〉\n綾瀬凛 / Gohlem / NOIA / O.Goo / sumi / MINORU / Amélie / AMANE\n[B1 TERRACE]\n〈HOUSE〉\nmaikoo / RICECAKE / HATSUYUKI / Kenskzm / daijiro misawa / SATOSHI / POSTMAN / 8号 and more\nESSENCE",
+   "text": "[B4 Z HALL]\nHIROKO YAMAMURA / RISA TANIGUCHI / Tamanaramen / DJ Cony\nVJ：Photone\n[B4F ENTER]\n〈TECHNO / UKG〉\n綾瀬凛 / Gohlem / NOIA / O.Goo / sumi / MINORU / Amélie / AMANE\n[B1 TERRACE]\n〈HOUSE〉\nmaikoo / RICECAKE / HATSUYUKI / Kenskzm / daijiro misawa / MeO / SATOSHI / POSTMAN / 8号\nESSENCE",
    "price": "DOOR：¥3,500- / FASTPASS TICKET：¥3,000-（優先入場・入場料金含む） / 整列開始：10PM",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
@@ -11426,6 +11525,33 @@
    "first_seen": null
   },
   {
+   "id": "circus:unitcircus-presents-paradise-circus",
+   "venue": "circus",
+   "date": "2026-12-31",
+   "url": "https://circus-tokyo.jp/event/unitcircus-presents-paradise-circus/",
+   "title": "UNIT&CIRCUS presents PARADISE CIRCUS",
+   "open": "22:00",
+   "genres": [],
+   "lineup": [
+    "ALIX PEREZ",
+    "BENNY L",
+    "ETHERWOOD",
+    "HUGH HARDIE",
+    "MAKOTO",
+    "M,I.O",
+    "V DUBS",
+    "Sci-Fi Noemi",
+    "RANNA",
+    "MaXXXim",
+    "Miyu",
+    "Ange Paradiz",
+    "MILA"
+   ],
+   "text": "LINE UP：\n-B1 FLOOR-\nALIX PEREZ\nBENNY L\nETHERWOOD\nHUGH HARDIE\nMAKOTO\nM,I.O (NEKO MAFIA)\nV DUBS\nVJ: CONOSYUNYA\n-1st FLOOR-\nSci-Fi Noemi\nRANNA\nMaXXXim\nMiyu\nAnge Paradiz\nMILA\nOPEN 22:00\nDOOR: ¥6,000\nADV: ¥5,000\nTICKET: eplus / RA",
+   "venue_name": "CIRCUS Tokyo",
+   "first_seen": "2026-11-27"
+  },
+  {
    "id": "liquid:lr_nyp2027_20261231",
    "venue": "liquid",
    "date": "2026-12-31",
@@ -11439,6 +11565,36 @@
    "text": "liquidroom presents NEW YEAR FESTIVAL 2027\nliquidroom presents NEW YEAR FESTIVAL 2027",
    "venue_name": "LIQUIDROOM",
    "first_seen": null
+  },
+  {
+   "id": "unit:15593",
+   "venue": "unit",
+   "date": "2026-12-31",
+   "url": "https://www.unit-tokyo.com/schedule/15593/",
+   "title": "PARADISE CIRCUS",
+   "open": "22:00",
+   "genres": [],
+   "lineup": [
+    "JAEL",
+    "kZm",
+    "MC YALLAH",
+    "RYOTA ft. RIKO DAN",
+    "SKIN ON SKIN",
+    "VJ: JACKSON KAKI",
+    "ALIX PEREZ",
+    "BENNY L",
+    "ETHERWOOD",
+    "HUGH HARDIE",
+    "MAKOTO",
+    "NEKO MAFIA",
+    "V DUBS",
+    "VJ: CONOSYUNYA",
+    "FULLHOUSE",
+    "MORE TBA"
+   ],
+   "text": "PARADISE CIRCUS",
+   "venue_name": "UNIT",
+   "first_seen": "2026-11-27"
   },
   {
    "id": "womb:123126",
@@ -11786,22 +11942,10 @@
    "venue": "www",
    "date": "2027-01-09",
    "url": "https://www-shibuya.jp/schedule/020217.php",
-   "title": "鈴木真海子 / Youth of Roots / w.a.u & Friends / uin & Friends / CBS & Chicken Is Nice / BEAT SUMOU / TOSHIKI HAYASHI(%C) / TAJIMA HAL / 安藤つ良し / 凸凹。 / MONKWORKBASE and More... — WWW presents PISTACHIO STUDIO",
+   "title": "鈴木真海子｜Youth of Roots｜w.a.u & Friends｜uin & Friends｜CBS & Chicken Is Nice｜BEAT SUMOU｜TOSHIKI HAYASHI(%C)｜TAJIMA HAL｜安藤つ良し｜凸凹。｜MONKWORKBASE and More... — WWW presents PISTACHIO STUDIO",
    "open": "17:00",
    "genres": [],
-   "lineup": [
-    "鈴木真海子",
-    "Youth of Roots",
-    "w.a.u & Friends",
-    "uin & Friends",
-    "CBS & Chicken Is Nice",
-    "BEAT SUMOU",
-    "TOSHIKI HAYASHI(%C)",
-    "TAJIMA HAL",
-    "安藤つ良し",
-    "凸凹。",
-    "MONKWORKBASE and More..."
-   ],
+   "lineup": [],
    "text": "",
    "venue_name": "WWW & WWW X & WWW β",
    "first_seen": null
@@ -12442,6 +12586,21 @@
    "first_seen": null
   },
   {
+   "id": "oeast:satoh-friends-tour",
+   "venue": "oeast",
+   "date": "2027-01-17",
+   "url": "https://shibuya-o.com/east/schedule/satoh-friends-tour/",
+   "title": "SATOH “Friends” Tour",
+   "open": "17:00",
+   "genres": [],
+   "lineup": [
+    "SATOH"
+   ],
+   "text": "SATOH “Friends” Tour\nSATOH",
+   "venue_name": "Spotify O-EAST",
+   "first_seen": "2026-11-27"
+  },
+  {
    "id": "www:020027",
    "venue": "www",
    "date": "2027-01-17",
@@ -12649,6 +12808,34 @@
    "text": "",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
+  },
+  {
+   "id": "circus:feed-1st-anniversary",
+   "venue": "circus",
+   "date": "2027-01-22",
+   "url": "https://circus-tokyo.jp/event/feed-1st-anniversary/",
+   "title": "FEED 1ST ANNIVERSARY",
+   "open": "23:00",
+   "genres": [],
+   "lineup": [
+    "Monkey Timers",
+    "SUNGA B2B CMT",
+    "DISC CAMP FOREST",
+    "RYO",
+    "SOUL SIDE",
+    "fkaai",
+    "ty cero",
+    "AZU",
+    "lone raver",
+    "shuto",
+    "MIU",
+    "aobA",
+    "issei",
+    "SUPPORT:SURPASS"
+   ],
+   "text": "LINE UP：\nMonkey Timers\nSUNGA B2B CMT\nDISC CAMP FOREST\nRYO (RAISE BOOT)\nSOUL SIDE\nfkaai\nty cero\nAZU\nlone raver\nshuto\nMIU\naobA\nissei\nVJ：J\nFOOD：TOUI RYUJI\nSUPPORT：SURPASS\nOPEN: 23:00\nDOOR: ¥3,500",
+   "venue_name": "CIRCUS Tokyo",
+   "first_seen": "2026-11-27"
   },
   {
    "id": "cman:furui-riho-hall-tour-2027-2027-01-22-東京",
@@ -13451,6 +13638,23 @@
    "text": "",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
+  },
+  {
+   "id": "circus:zero",
+   "venue": "circus",
+   "date": "2027-02-06",
+   "url": "https://circus-tokyo.jp/event/zero/",
+   "title": "ZERO",
+   "open": "23:00",
+   "genres": [],
+   "lineup": [
+    "COOP + UKF PRESENT",
+    "ZERO",
+    "ryota -SPECIAL GUEST"
+   ],
+   "text": "COOP + UKF PRESENT\nLINE UP：\nZERO\nryota -SPECIAL GUEST-\nand more\nOPEN 23:00\nEARLY BIRD: ¥3,500\nADV: ¥4,000\nTICKET: ITM",
+   "venue_name": "CIRCUS Tokyo",
+   "first_seen": "2026-11-27"
   },
   {
    "id": "liquid:penguinresearch_20270206",
@@ -14508,7 +14712,7 @@
    "lineup": [
     "GURRIERS"
    ],
-   "text": "GURRIERS（東京）\nGURRIERS",
+   "text": "GURRIERS（東京）\nGURRIERS\n発売中",
    "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
