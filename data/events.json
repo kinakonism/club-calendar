@@ -1,65 +1,65 @@
 {
- "updated": "2026-11-27T12:24+09:00",
+ "updated": "2026-11-28T12:00+09:00",
  "sources": {
   "asia": {
    "ok": true,
-   "count": 19,
-   "checked": "2026-11-27T12:24+09:00"
+   "count": 18,
+   "checked": "2026-11-28T12:00+09:00"
   },
   "circus": {
    "ok": true,
-   "count": 22,
-   "checked": "2026-11-27T12:24+09:00"
+   "count": 23,
+   "checked": "2026-11-28T12:00+09:00"
   },
   "zero": {
    "ok": true,
    "count": 70,
-   "checked": "2026-11-27T12:24+09:00"
+   "checked": "2026-11-28T12:00+09:00"
   },
   "womb": {
    "ok": true,
-   "count": 45,
-   "checked": "2026-11-27T12:24+09:00"
+   "count": 44,
+   "checked": "2026-11-28T12:00+09:00"
   },
   "vent": {
    "ok": true,
-   "count": 25,
-   "checked": "2026-11-27T12:24+09:00"
+   "count": 24,
+   "checked": "2026-11-28T12:00+09:00"
   },
   "dommune": {
    "ok": true,
-   "count": 23,
-   "checked": "2026-11-27T12:24+09:00"
+   "count": 21,
+   "checked": "2026-11-28T12:00+09:00"
   },
   "liquid": {
    "ok": true,
    "count": 119,
-   "checked": "2026-11-27T12:24+09:00"
+   "checked": "2026-11-28T12:00+09:00"
   },
   "unit": {
    "ok": true,
-   "count": 88,
-   "checked": "2026-11-27T12:24+09:00"
+   "count": 90,
+   "checked": "2026-11-28T12:00+09:00"
   },
   "www": {
    "ok": true,
-   "count": 183,
-   "checked": "2026-11-27T12:24+09:00"
+   "count": 184,
+   "checked": "2026-11-28T12:00+09:00"
   },
   "oeast": {
    "ok": true,
-   "count": 116,
-   "checked": "2026-11-27T12:24+09:00"
+   "count": 118,
+   "checked": "2026-11-28T12:00+09:00"
   },
   "cman": {
    "ok": true,
    "count": 165,
-   "checked": "2026-11-27T12:24+09:00"
+   "checked": "2026-11-28T12:00+09:00"
   },
   "clubberia": {
    "ok": true,
    "count": 0,
-   "checked": "2026-11-27T12:24+09:00"
+   "checked": "2026-11-28T12:00+09:00"
   }
  },
  "follow": {
@@ -501,95 +501,6 @@
   ]
  },
  "events": [
-  {
-   "id": "dommune:2026-102301",
-   "venue": "dommune",
-   "date": "2026-10-23",
-   "url": "https://www.dommune.com/streamings/2026/102301/",
-   "title": "NANZUKA PRESENTS ｢蔦谷喜一のぬりえと肉筆画」─戦後日本の大衆文化と視覚表現",
-   "open": "19:30",
-   "genres": [],
-   "lineup": [
-    "工藤健志",
-    "曽田大資",
-    "曽田天倉"
-   ],
-   "text": "",
-   "venue_name": "DOMMUNE",
-   "first_seen": null
-  },
-  {
-   "id": "dommune:2026-102302",
-   "venue": "dommune",
-   "date": "2026-10-23",
-   "url": "https://www.dommune.com/streamings/2026/102302/",
-   "title": "巻上公一Presents ｢JAZZ ART せんがわ 即興音楽の未知なる可能性」",
-   "open": "21:30",
-   "genres": [],
-   "lineup": [
-    "巻上公一",
-    "坂本弘道",
-    "坂口光央",
-    "巻上公一（Voice"
-   ],
-   "text": "",
-   "venue_name": "DOMMUNE",
-   "first_seen": null
-  },
-  {
-   "id": "vent:vent_20261023",
-   "venue": "vent",
-   "date": "2026-10-23",
-   "url": "http://vent-tokyo.net/schedule/vent_20261023/",
-   "title": "DISKO KLUBB",
-   "open": "23:00",
-   "genres": [
-    "House",
-    "Disco"
-   ],
-   "lineup": [
-    "Eric Duncan",
-    "Monkey Timers",
-    "YOSHIHAARAA",
-    "Rami",
-    "Haruto",
-    "mitoChang",
-    "Senma"
-   ],
-   "text": "Eric Duncan\nMonkey Timers\nYOSHIHAARAA\nRami\nHaruto\nmitoChang\nSenma",
-   "venue_name": "VENT",
-   "first_seen": null
-  },
-  {
-   "id": "womb:102326",
-   "venue": "womb",
-   "date": "2026-10-23",
-   "url": "https://www.womb.co.jp/ja/events/102326",
-   "title": "INTER 4TH ANNIVERSARY EDITION",
-   "open": "23:00",
-   "genres": [
-    "Techno",
-    "House"
-   ],
-   "lineup": [
-    "SHINICHI OSAWA",
-    "DJ EMMA",
-    "SHANNON BROTHERS",
-    "ANNE FUTAGAMI",
-    "AKIRA ARASAWA",
-    "CAPTAIN 25",
-    "HANNAH",
-    "MUSCLE ∞ BROTHERS",
-    "STRATAH",
-    "YURI VALEN",
-    "KUNPEI",
-    "SHIHAL"
-   ],
-   "text": "23:00-4:30\nDOOR: ¥3500 *UNDER 24 & BEFORE 0:00 ¥2500\nADVANCE TICKETS: ¥3000",
-   "price": "DOOR: ¥3500 *UNDER 24 & BEFORE 0:00 ¥2500 / ADVANCE TICKETS: ¥3000",
-   "venue_name": "WOMB",
-   "first_seen": null
-  },
   {
    "id": "vent:pacific-mode-x-solstice",
    "venue": "vent",
@@ -6124,7 +6035,7 @@
    "lineup": [
     "LOUDNESS"
    ],
-   "text": "LOUDNESS（大阪）\nLOUDNESS\n発売中",
+   "text": "LOUDNESS（大阪）\nLOUDNESS\n当日券あり",
    "venue_name": "大阪（Creativeman）",
    "first_seen": null
   },
@@ -6581,6 +6492,21 @@
    "text": "Palette Parade BANDSET ONEMAN LIVE『RIOT PARADE』\nPalette Parade",
    "venue_name": "Spotify O-EAST",
    "first_seen": null
+  },
+  {
+   "id": "unit:15606",
+   "venue": "unit",
+   "date": "2026-11-28",
+   "url": "https://www.unit-tokyo.com/schedule/15606/",
+   "title": "-超！はっぴー創造記念日！-",
+   "open": "16:20",
+   "genres": [],
+   "lineup": [
+    "HAPPY CREATORS"
+   ],
+   "text": "-超！はっぴー創造記念日！-\nHAPPY CREATORS",
+   "venue_name": "UNIT",
+   "first_seen": "2026-11-28"
   },
   {
    "id": "unit:15587",
@@ -7381,6 +7307,27 @@
    "first_seen": "2026-11-25"
   },
   {
+   "id": "circus:ramko-helvetica-one-man-live-after-party",
+   "venue": "circus",
+   "date": "2026-12-03",
+   "url": "https://circus-tokyo.jp/event/ramko-helvetica-one-man-live-after-party/",
+   "title": "Ramko Helvetica One Man Live -After Party-",
+   "open": "23:00",
+   "genres": [],
+   "lineup": [
+    "Ramko Helvetica",
+    "hirihiri",
+    "asterisk*",
+    "fogsettings",
+    "NordOst",
+    "YONEDA",
+    "Yurushite Nyan"
+   ],
+   "text": "LINE UP：\nRamko Helvetica\nhirihiri\nasterisk*\nfogsettings\nNordOst\nYONEDA\nYurushite Nyan\nOPEN 23:00\nDOOR: ¥2,000 + 2D\nワンマンチケット所持者 ¥1,000 + 2D",
+   "venue_name": "CIRCUS Tokyo",
+   "first_seen": "2026-11-28"
+  },
+  {
    "id": "cman:mazzel-2nd-fan-meeting-2026-12-03-群馬",
    "venue": "cman",
    "date": "2026-12-03",
@@ -7465,6 +7412,37 @@
    "text": "川辺素 (Band Set) / スカート (Band Set) / パソコン音楽クラブ (DJ Set) — 川辺素 “行方不明” Release Show at WWW\n川辺素 (Band Set) / スカート (Band Set) / パソコン音楽クラブ (DJ Set)",
    "venue_name": "WWW",
    "first_seen": null
+  },
+  {
+   "id": "zero:paxproject-1203",
+   "venue": "zero",
+   "date": "2026-12-03",
+   "url": "https://zerotokyo.jp/event/paxproject-1203/",
+   "title": "PAXPROJECT",
+   "open": "11PM",
+   "genres": [
+    "Hip Hop",
+    "House",
+    "Techno"
+   ],
+   "lineup": [
+    "ARASHI x YUUGOH",
+    "CUGV",
+    "u5 x YIVmilter",
+    "XUNA",
+    "GOD GUYS",
+    "bony x YUUGO",
+    "MYUMA x ACHIRI",
+    "Rat",
+    "CHIHIRO",
+    "Killy",
+    "Yackle",
+    "TAKERU"
+   ],
+   "text": "[B3 RING]\nARASHI x YUUGOH / CUGV / u5 x YIVmilter / XUNA\n[B2 BOX]\nGOD GUYS / bony x YUUGO / MYUMA x ACHIRI / Rat / (NON)\n[B2 R BAR]\nCHIHIRO / Killy / Yackle / TAKERU\n[OTHER]\n【GUEST BARTENDER】\nあきお\nPAXPROJECT",
+   "price": "DOOR：¥2,500-",
+   "venue_name": "ZERO TOKYO",
+   "first_seen": "2026-11-28"
   },
   {
    "id": "zero:tba-32",
@@ -7767,7 +7745,7 @@
     "Ev and more"
    ],
    "text": "[B4 Z HALL]\nMarlon Hoffstadt / ecec / N² / STRATAH\nVJ：Julius Iwata\n[B3 RING]\nGT / TECHNO_TARITERU? / YURI VALEN / O.GOO / VÏVÏ\n[B2 BOX]\n〈TECHNO / UKG / BASS〉\nRikk / ramu / NOIA / Omeme_gangimari / O.TAK / Ninja.jp (RAIZEN SPECIAL LIVE SET) / æ-chan / RayMI20\n[B2 R BAR]\n〈OPEN FORMAT〉\n[B1 TERRACE]\n〈HOUSE〉\nBA-CHI- / white / ten / HTK / Seido / B.cee / Ev and more\nMarlon Hoffstadt",
-   "price": "DOOR：¥6,000- / FASTPASS TICKET：¥5,000-（優先入場・入場料金含む） / 整列開始：10PM",
+   "price": "DOOR：¥6,000- / FASTPASS TICKET：¥5,000-（優先入場・入場料金含む） / GOLD PASS TICKET：¥2,000- / 【GOLD PASS特典】 / ・GOLD PASS TICKETをお持ちの方は、Z HALL DJブース後方ステージエリア入場可能 / ※本チケットは公演チケットではございません。 / ※GOLD PASSの特典の利用には、「FASTPASS TICKET」をご購入していただく必要があります。 / ※GOLD PASS TICKETのみでのご入場はできません。 / ※GOLD PASS TICKETは、いかなる場合でも払い戻しはいたしません。 / ※Z HALL DJブース後方ステージエリアの利用につきまして、貴重品はご自身の責任で管理をお願いいたします。 / 万が一、紛失・盗難等の被害に遭われましても、主催者は一切の責任を負いかねます。 / 整列開始：10PM",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
   },
@@ -8402,9 +8380,10 @@
    "open": "18:00",
    "genres": [],
    "lineup": [
-    "Calmera"
+    "Calmera",
+    "【ゲスト】きいやま商店"
    ],
-   "text": "Calmera the 20th Anniversary LIVE「カルメラ成人式 東京篇」振替公演\nCalmera",
+   "text": "Calmera the 20th Anniversary LIVE「カルメラ成人式 東京篇」振替公演\nCalmera / 【ゲスト】きいやま商店",
    "venue_name": "Spotify O-EAST",
    "first_seen": null
   },
@@ -8453,6 +8432,28 @@
    "text": "ギャランティーク和恵 — ギャランティーク和恵 THANKSGIVING LIVE「5CECCU2026」\nギャランティーク和恵",
    "venue_name": "WWW",
    "first_seen": null
+  },
+  {
+   "id": "asia:onoregatenshi",
+   "venue": "asia",
+   "date": "2026-12-10",
+   "url": "https://clubasia.jp/events/onoregatenshi",
+   "title": "-seaketa × やねこ presents- 『 己が天使",
+   "open": "23:00",
+   "genres": [
+    "Electronic"
+   ],
+   "lineup": [
+    "NO EYES",
+    "揺楽瑠香",
+    "武田俊輔",
+    "PU$$Y好好",
+    "mionn",
+    "seaketa"
+   ],
+   "text": "2026.12.10 (Thu) Open 23:00\n🎪club asia 2nd FLOOR @clubasia\n💰Door ¥2000-\n🎄LIVE\nNO EYES @noeyesmgmt\n揺楽瑠香 @westmountain.0730\n🔔DJ\n武田俊輔 @shunsuke__takeda\nPU$$Y好好 @morimimimi\nmionn @__mionn__\nseaketa @imseeketa\n🍽️FOOD\nやねこ亭 @yanekote @_baa_ram_ewe_\n🪄FLYER\n武田俊輔 @shunsuke__takeda\n🔁LOUNGE FLOORと回遊可能!! 🔁",
+   "venue_name": "club asia",
+   "first_seen": "2026-11-28"
   },
   {
    "id": "circus:patching-for-lifeplay-dance-music-with-modular-synth",
@@ -10832,6 +10833,33 @@
    "first_seen": null
   },
   {
+   "id": "oeast:bud-150",
+   "venue": "oeast",
+   "date": "2026-12-26",
+   "url": "https://shibuya-o.com/east/schedule/bud-150/",
+   "title": "BUD 150",
+   "open": "19:00",
+   "genres": [],
+   "lineup": [
+    "YUVIE",
+    "STUTS",
+    "Dungeoneering",
+    "KID FRESINO",
+    "FELINE",
+    "MONSTER BALLAZ",
+    "JOMMY",
+    "VaVa",
+    "パソコン音楽クラブ",
+    "PAS TASTA",
+    "KOLLIN",
+    "Peterparker69",
+    "RISA TANIGUCHI"
+   ],
+   "text": "BUD 150",
+   "venue_name": "Spotify O-EAST",
+   "first_seen": "2026-11-28"
+  },
+  {
    "id": "unit:14983",
    "venue": "unit",
    "date": "2026-12-26",
@@ -11889,6 +11917,23 @@
    "first_seen": null
   },
   {
+   "id": "circus:oppidan-in-tokyo-2027",
+   "venue": "circus",
+   "date": "2027-01-09",
+   "url": "https://circus-tokyo.jp/event/oppidan-in-tokyo-2027/",
+   "title": "OPPIDAN IN TOKYO 2027",
+   "open": "23:00",
+   "genres": [
+    "UK Garage"
+   ],
+   "lineup": [
+    "Oppidan"
+   ],
+   "text": "LINE UP：\nOppidan (UK)\nand more\nOPEN 23:00\nADV: ¥3,500\nTICKET: RA",
+   "venue_name": "CIRCUS Tokyo",
+   "first_seen": "2026-11-28"
+  },
+  {
    "id": "liquid:j_20270109",
    "venue": "liquid",
    "date": "2027-01-09",
@@ -12586,6 +12631,21 @@
    "first_seen": null
   },
   {
+   "id": "oeast:satoh-friends-release-tour",
+   "venue": "oeast",
+   "date": "2027-01-17",
+   "url": "https://shibuya-o.com/east/schedule/satoh-friends-release-tour/",
+   "title": "SATOH “Friends” Release Tour",
+   "open": "17:00",
+   "genres": [],
+   "lineup": [
+    "SATOH"
+   ],
+   "text": "SATOH “Friends” Release Tour\nSATOH",
+   "venue_name": "Spotify O-EAST",
+   "first_seen": "2026-11-28"
+  },
+  {
    "id": "oeast:satoh-friends-tour",
    "venue": "oeast",
    "date": "2027-01-17",
@@ -12642,6 +12702,21 @@
    "text": "Blue 25th Anniversary Tour 【振替公演】\nBlue",
    "venue_name": "Spotify O-EAST",
    "first_seen": null
+  },
+  {
+   "id": "www:020270",
+   "venue": "www",
+   "date": "2027-01-19",
+   "url": "https://www-shibuya.jp/schedule/020270.php",
+   "title": "HzMe — 藤井優衣生誕祭2027 ~優衣・食・住・心〜",
+   "open": "18:30",
+   "genres": [],
+   "lineup": [
+    "HzMe"
+   ],
+   "text": "HzMe — 藤井優衣生誕祭2027 ~優衣・食・住・心〜\nHzMe",
+   "venue_name": "WWW",
+   "first_seen": "2026-11-28"
   },
   {
    "id": "cman:man-with-a-mission_2027-2027-01-20-東京",
@@ -12909,6 +12984,23 @@
    "text": "",
    "venue_name": "ZERO TOKYO",
    "first_seen": null
+  },
+  {
+   "id": "asia:afterimage--naohiro-yako-25-years-of-visual-journey",
+   "venue": "asia",
+   "date": "2027-01-23",
+   "url": "https://clubasia.jp/events/afterimage--naohiro-yako-25-years-of-visual-journey",
+   "title": "AFTERIMAGE -NAOHIRO YAKO 25 YEARS OF VISUAL JOURNEY-",
+   "open": "23:00",
+   "genres": [
+    "All Mix"
+   ],
+   "lineup": [
+    "Naohiro Yako"
+   ],
+   "text": "AFTERIMAGE -NAOHIRO YAKO 25 YEARS OF VISUAL JOURNEY-\n────────\n❍ PRICE\n・Early Bird ¥4,000 + 1D\n・adv ¥4,500 + 1D\n・door ¥5,000 + 1D\n❍ TICKET｜ZAIKO\nhttps://cultureofasia.zaiko.io/ja/e/afterimage-naohiroyako\n────────\n❍ 1st LINEUP\nVJ：Naohiro Yako (flapper3 Inc.)\n…and more\n---------------------\nNaohiro Yako (flapper3 Inc.)\nhttp://flapper3.co.jp\nhttps://www.instagram.com/yako_flpr3\nhttps://x.com/yako_FLPR3",
+   "venue_name": "club asia",
+   "first_seen": "2026-11-28"
   },
   {
    "id": "cman:the-lemon-twigs_2027-2027-01-23-京都",
@@ -13282,15 +13374,36 @@
    "venue": "oeast",
    "date": "2027-01-30",
    "url": "https://shibuya-o.com/east/schedule/ageha-25th-anniversary%e3%80%8clegendary-butterfly%e3%80%8d/",
-   "title": "Legendary Butterfly",
+   "title": "Legendary Butterfly DAY TIME（第一部）",
    "open": "15:00",
    "genres": [],
    "lineup": [
     "Louie Vega"
    ],
-   "text": "Legendary Butterfly\nLouie Vega",
+   "text": "Legendary Butterfly DAY TIME（第一部）\nLouie Vega",
    "venue_name": "Spotify O-EAST",
    "first_seen": null
+  },
+  {
+   "id": "oeast:ozora-one-day-in-tokyo-2027",
+   "venue": "oeast",
+   "date": "2027-01-30",
+   "url": "https://shibuya-o.com/east/schedule/ozora-one-day-in-tokyo-2027/",
+   "title": "OZORA One Day in Tokyo 2027 NIGHT TIME (第二部)",
+   "open": "23:00",
+   "genres": [],
+   "lineup": [
+    "DICKSTER (NANO RECORDS",
+    "UK)",
+    "LIVE : MIROK (GRASSHOPPER RECORDS)",
+    "FROM OZORA (Hungary) : WEGHA",
+    "TSU",
+    "KATI KATONA (VJ)",
+    "and more"
+   ],
+   "text": "OZORA One Day in Tokyo 2027 NIGHT TIME (第二部)",
+   "venue_name": "Spotify O-EAST",
+   "first_seen": "2026-11-28"
   },
   {
    "id": "www:020260",
@@ -14183,7 +14296,7 @@
    "lineup": [
     "FATHER OF PEACE"
    ],
-   "text": "FATHER OF PEACE（東京）\nFATHER OF PEACE",
+   "text": "FATHER OF PEACE（東京）\nFATHER OF PEACE\n発売中",
    "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
@@ -14259,7 +14372,7 @@
    "lineup": [
     "FATHER OF PEACE"
    ],
-   "text": "FATHER OF PEACE（大阪）\nFATHER OF PEACE",
+   "text": "FATHER OF PEACE（大阪）\nFATHER OF PEACE\n発売中",
    "venue_name": "大阪（Creativeman）",
    "first_seen": null
   },
@@ -14419,7 +14532,7 @@
    "lineup": [
     "FATHER OF PEACE"
    ],
-   "text": "FATHER OF PEACE（京都）\nFATHER OF PEACE",
+   "text": "FATHER OF PEACE（京都）\nFATHER OF PEACE\n発売中",
    "venue_name": "京都（Creativeman）",
    "first_seen": null
   },
@@ -14463,7 +14576,7 @@
    "lineup": [
     "FATHER OF PEACE"
    ],
-   "text": "FATHER OF PEACE（広島）\nFATHER OF PEACE",
+   "text": "FATHER OF PEACE（広島）\nFATHER OF PEACE\n発売中",
    "venue_name": "広島（Creativeman）",
    "first_seen": null
   },
@@ -14607,7 +14720,7 @@
    "lineup": [
     "FATHER OF PEACE"
    ],
-   "text": "FATHER OF PEACE（愛知）\nFATHER OF PEACE",
+   "text": "FATHER OF PEACE（愛知）\nFATHER OF PEACE\n発売中",
    "venue_name": "愛知（Creativeman）",
    "first_seen": null
   },
@@ -14822,7 +14935,7 @@
    "lineup": [
     "FATHER OF PEACE"
    ],
-   "text": "FATHER OF PEACE（東京）\nFATHER OF PEACE",
+   "text": "FATHER OF PEACE（東京）\nFATHER OF PEACE\n発売中",
    "venue_name": "東京（Creativeman）",
    "first_seen": null
   },
@@ -16222,6 +16335,21 @@
    "text": "サカグチアミ — サカグチアミ ワンマンツアー「who am i︖ -Band set-」\nサカグチアミ",
    "venue_name": "LIQUIDROOM",
    "first_seen": null
+  },
+  {
+   "id": "unit:15601",
+   "venue": "unit",
+   "date": "2027-04-03",
+   "url": "https://www.unit-tokyo.com/schedule/15601/",
+   "title": "60 OVER drive TOUR 2027",
+   "open": "16:15",
+   "genres": [],
+   "lineup": [
+    "SPARKS GO GO"
+   ],
+   "text": "60 OVER drive TOUR 2027\nSPARKS GO GO",
+   "venue_name": "UNIT",
+   "first_seen": "2026-11-28"
   },
   {
    "id": "www:020227",
